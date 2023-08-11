@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>And($Profile.Name &lt;&gt; &#39;System Administrator&#39;, $Profile.Name &lt;&gt; &#39;Integration API&#39;,NOT(ISNEW()), NOT($Permission.Customer_Support_Leads),
+NOT($Permission.Web_Support),
+NOT($Permission.CRA_Leads),
+NOT($Permission.AR_Leads),
+NOT($Profile.Name = &quot;Customer Support User&quot;),
+NOT($Profile.Name = &quot;Customer Experience Specialist&quot;),
+NOT($Profile.Name = &quot;Customer Experience Specialist (General Case)&quot;),
+ISCHANGED(AccountId),
+PRIORVALUE(AccountId) &lt;&gt;&#39;0013u00000uIsB8&#39;, PRIORVALUE(AccountId)&lt;&gt;&#39;0013u00000vlqE8&#39;)</errorConditionFormula>
+    <errorMessage>Account cannot be changed, please go to Related Tab-&gt;Related Accounts-&gt;Add Relationship to add contact to new account.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areGuestUsersAllowed>false</areGuestUsersAllowed>
+    <deploymentFeature>LiveAgent</deploymentFeature>
+    <deploymentType>Web</deploymentType>
+    <embeddedServiceCustomComponents>
+        <componentBundleType>LightningComponentBundle</componentBundleType>
+        <customComponent>chatMessage</customComponent>
+        <customComponentType>LA_PlainTextChatMessage</customComponentType>
+    </embeddedServiceCustomComponents>
+    <embeddedServiceCustomLabels>
+        <customLabel>LA_Chat_ExtendedHeader_ChatStateHeaderGreeting_04I3u0000004F14_5320630</customLabel>
+        <labelKey>LA_Chat_ExtendedHeader_ChatStateHeaderGreeting</labelKey>
+    </embeddedServiceCustomLabels>
+    <isEnabled>true</isEnabled>
+    <masterLabel>Chat</masterLabel>
+    <shouldHideAuthDialog>false</shouldHideAuthDialog>
+    <site>Community</site>
+</EmbeddedServiceConfig>

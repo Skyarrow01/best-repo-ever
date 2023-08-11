@@ -1,0 +1,95 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "092ac7b7-19a4-4999-a5be-cb60c5bc0491",
+  "label" : "CyberSecurity Best Practices",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "61bc7efb-be47-45fe-ab3a-6cd7d7eb459b",
+          "columns" : [ {
+            "UUID" : "5350deca-a2b8-4da4-a612-e0f4583f4d75",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "5",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "ed110b70-8be6-4598-829f-bf93ff9e142a",
+            "columnKey" : "480a6",
+            "columnName" : "Column 2",
+            "columnWidth" : "7",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "61bc7efb-be47-45fe-ab3a-6cd7d7eb459b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Cybersecurity Best Practices</h1><p style=\"text-align: center;\"><br></p><p>Welcome to our collection of articles on cybersecurity best practices for securing your operational technology. Our articles cover a wide range of topics and are designed to equip you with the knowledge and tools necessary to protect your systems and equipment from cyber threats. Browse our collection today to learn about these essential cybersecurity practices and how they can help you safeguard your equipment and systems.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "db9a7239-7255-4c6e-bc32-255aa87b2b20",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5350deca-a2b8-4da4-a612-e0f4583f4d75",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "articleListPageSize" : 10,
+            "showTitle" : true,
+            "title" : "Articles",
+            "topicId" : "0TODQ000000CaW44AK"
+          },
+          "componentName" : "selfService:topicRelatedArticle",
+          "id" : "8a14d054-6c8b-4d66-b5cb-95fac16a5d1c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ed110b70-8be6-4598-829f-bf93ff9e142a",
+        "regionLabel" : "Column 2",
+        "regionName" : "480a6",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9fdcddd3-a4e6-48c5-a90b-eb058ef88dc2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "CyberSecurity Best Practices"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f55be8fa-ca17-407a-8da2-a856d8583ddd",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6b9c761e-7e46-4ba1-b184-93e31bd62ab6",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-cybersecurity-best-practices"
+}

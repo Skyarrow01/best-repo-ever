@@ -1,0 +1,4 @@
+<apex:page standardController="Account" extensions="BCEfxCAReview" action="{!startCreditPull}" >
+    <apex:sectionHeader title="Equifax Canada Commercial Review Account Temp page" subtitle="{!account.name}"/>
+    <apex:pageMessages />
+</apex:page>

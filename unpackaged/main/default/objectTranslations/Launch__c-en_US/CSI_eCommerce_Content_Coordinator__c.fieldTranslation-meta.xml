@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Launch Data Steward --></label>
+        <name>CSI_eCommerce_Content_Coordinator__c</name>
+        <relationshipLabel><!-- Launches (Launch Data Steward) --></relationshipLabel>
+    </CustomFieldTranslation>

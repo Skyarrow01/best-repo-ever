@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to Customer after a Community Case is created.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ADC_Letterhead</letterhead>
+    <name>Community Case Created</name>
+    <style>freeForm</style>
+    <subject>Your AutomationDirect Technical Inquiry</subject>
+    <textOnly>Thank you for taking the time to fill out our inquiry form.
+
+Your request will be assigned to a member of our Technical Support team for follow-up. Please allow up to two business days for a response. Please do not reply to this email.
+
+For reference, details of your request are shown below.
+
+Contact Information:
+
+Name: {!Case.Contact}
+Company: {!Case.Company__c}
+Address: {!Case.Street__c}, {!Case.City__c}, {!Case.State__c}, {!Case.Postal_Code__c}, {!Case.Country__c}
+Phone: {!Case.Phone__c}
+Email: {!Case.Email_Formula__c}
+
+About the Inquiry:
+
+Case Number: {!Case.CaseNumber}
+Product Group: {!Case.Product_Group__c}
+Product: {!Case.Product__c}
+Subject: {!Case.Subject}
+Description: {!Case.Description}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

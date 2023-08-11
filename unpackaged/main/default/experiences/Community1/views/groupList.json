@@ -1,0 +1,65 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "b67a5e04-2d27-46e9-afb9-9aa516a7f828",
+  "label" : "Group List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><strong style=\"font-size: 16px;\">Welcome To AutomationDirect Community Groups!</strong></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Groups are a great way to get connected! To join any group or to see private groups you must be a member of the community. Click login to sign up today! </span></p><p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "794f6800-39ca-408c-98d6-461e56688f8a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d6a6f15d-fa68-4a1a-9834-9c657f05f824",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "forceCommunity:groupObjectHome",
+      "id" : "fef91cf8-476c-4e84-a2ab-872b2781df40",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e96c70c0-ff73-4317-8a1d-f9d02c0bb9c6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a2b2992d-96e8-44a6-aa10-4a6543faa3c0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p>New groups will be added periodcally or upon your request. If you would like to request a new group be added please contact the community moderator and a member of the AutomationDirect Community team will reach out regarding your request.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "8b6b394f-03a2-4566-8032-e529a7d0e5e6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "label" : "Message Moderator",
+        "userId" : "0053u000003TrfzAAC"
+      },
+      "componentName" : "forceChatter:newMessageButton",
+      "id" : "273f0cdd-51aa-488e-bb61-c58e7d9d66ae",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f14abf40-3474-49e8-b886-408c524e2824",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-0F9"
+}

@@ -1,0 +1,101 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "b395b7c3-c95b-4aca-8c1d-6d81ad3e08f8",
+  "label" : "Library",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "c1740b06-5a9f-45ff-b70d-a524d917d792",
+          "columns" : [ {
+            "UUID" : "45d6abe5-f6d7-4a61-bd19-a0297f08a34c",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "c1740b06-5a9f-45ff-b70d-a524d917d792",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p> </p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "0ddd2761-7de9-48af-9a39-c602c1017b9d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><a href=\"https://library.automationdirect.com/\" target=\"_blank\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.libraryautomationlogo.1}\" /></a></p>\n<p style=\"text-align: center;\"><br /></p>\n<p style=\"text-align: center;\"><b style=\"font-size: 14px;\">AutomationDirect’s library is full of technical articles for the budding engineer and beyond with a wide range of topics, types of articles and more to explore.&nbsp;&nbsp;</b></p>\n<p style=\"text-align: center;\"><b style=\"font-size: 14px;\">You’ll also find additional categories on the library for our newsletter, eBooks, Automation Notebook and much more!&nbsp;</b></p>\n<p style=\"text-align: center;\"><b style=\"font-size: 14px;\">Choose a category below or the library home page above to get started.&nbsp;</b></p>\n<p style=\"text-align: center;\"><br /></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "3fec97c3-2cc2-45de-91a1-b90a6170fc4f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bannerBackgroundColor" : "",
+            "bannerPosition" : "top",
+            "bannerSizePercent" : 15,
+            "borderRadius" : 20,
+            "haveBanner" : false,
+            "iconBackgroundColor" : "rgb(255,255,255)",
+            "iconSize" : "medium",
+            "noImageColor" : "rgb(212, 212, 212)",
+            "overlay" : "rgba(0,0,0,0.01)",
+            "templateType" : "default",
+            "tileMenuEditor" : "Library",
+            "titleColor" : "",
+            "titleFontSize" : "medium",
+            "titleHorizontalAlign" : "center"
+          },
+          "componentName" : "community_navigation:tileMenu",
+          "id" : "0e9c1646-118a-475b-8de4-7955da59f6e9",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "45d6abe5-f6d7-4a61-bd19-a0297f08a34c",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8c337c83-9607-4cc3-85d4-4451d98ec87a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Library"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "822d7712-d936-452a-9656-df339bb154d3",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "177bb552-c466-4de5-b8ad-21cfe586b21e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-library"
+}

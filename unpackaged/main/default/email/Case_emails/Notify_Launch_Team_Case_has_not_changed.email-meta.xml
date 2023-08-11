@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Launch Team when Case Status is still Open and status has not Changed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ADC_Internal_Letterhead</letterhead>
+    <name>Notify Launch Team Case  has not changed</name>
+    <style>freeForm</style>
+    <subject>Product Launch Case {!Case.CaseNumber}-{!Case.Launch__c} still open.</subject>
+    <textOnly>Product Launch Case {!Case.CaseNumber}-{!Case.Launch__c} still open and not actively being worked.
+
+Case #:  {!Case.CaseNumber}
+Launch:  {!Case.Launch__c}
+Status:  {!Case.Status}
+Owner: {!Case.OwnerFullName}
+Launch Part #&#39;s {!Case.Launch_Part_s__c}
+Location: {!Case.Location_of_Error_Issue__c}
+Define Error/Issue:  {!Case.Define_Error_Issue__c}
+Showstopper?: {!Case.Showstopper__c}
+Build Prior to Retest:  {!Case.Build_prior_to_Retest__c}
+Team Ownership: {!Case.Team_Ownership__c}
+Subject: {!Case.Subject}
+Description: {!Case.Description}
+
+Additional Notes: {!Case.Additional_Notes__c}
+
+
+Case Link: {!Case.Link}
+
+Future Testing: https://future.automationdirect.com/adc/home/home</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

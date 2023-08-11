@@ -1,0 +1,11 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="Button1Text" type="String" default="Read Community Guidelines"/>
+    <aura:attribute name="Button1URL" type="String" default="/Community-Guidelines" />
+    <aura:attribute name="Button2Text" type="String" default="User Guide"/>
+    <aura:attribute name="Button2URL" type="String" default="/user-guide" />
+    
+    <div style="text-align: center;">
+        <ui:button label="{!v.Button1Text}" aura:id="Button1" press="{!c.gotoURL}" class="slds-button slds-button--brand NavButtonCls"/>
+        <ui:button label="{!v.Button2Text}" aura:id="Button2" press="{!c.gotoURL}" class="slds-button slds-button--brand NavButtonCls"/>
+    </div>
+</aura:component>

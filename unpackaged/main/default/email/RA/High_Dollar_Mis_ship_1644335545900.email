@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<table class="Table" style="border-collapse:collapse">
+	
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Pick ticket #</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">P21 order #</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Ship date</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Ship method</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Part # ordered</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Part # received</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Quantity ordered</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Quantity short </span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Quantity over</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="border-bottom:1px solid black; width:137px; padding:0in 7px 0in 7px; height:223px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#2f5597">Notes</span></b></span></span></td>
+			<td style="border-bottom:1px solid black; width:750px; padding:0in 7px 0in 7px; height:223px; border-top:none; border-right:1px solid black; border-left:none" valign="top">&nbsp;</td>
+		</tr>
+	
+</table>
+<br />
+Thank You,<br />
+<br />
+{{{Sender.Name}}}<br />
+Customer Support Team
+</body></html>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Contact is Inactive</description>
+        <name>Error_Email_Contact_is_INACTIVE</name>
+        <label>Error Email- Contact is INACTIVE</label>
+        <locationX>819</locationX>
+        <locationY>91</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>{!Find_Contact_Record.Name} is INACTIVE.  This contact was not sent to P21.  https://automationdirectinc.lightning.force.com/lightning/r/Contact/{!Find_Contact_Record.Id}/view </stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!UserEMail}, fmaddie@automationdirect.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>{!Find_Contact_Record.Name} is INACTIVE</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Please check required fields before Sending to P21</description>
+        <name>Error_Email_Missing_Required_Fields</name>
+        <label>Error Email - Missing Required Fields</label>
+        <locationX>1062</locationX>
+        <locationY>830</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Toggle_P21_button</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>There were required field(s) missing that have been systematically updated.  {!Find_Contact_Record.Name}:  https://automationdirectinc.lightning.force.com/lightning/r/Contact/{!Find_Contact_Record.Id}/view </stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>fmaddie@automationdirect.com, jwilliams@automationdirect.com, spurcell@automationdirect.com, {!UserEMail}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>UserEMail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Missing Required Fields </stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Missing both Direct and Phone Fields</description>
+        <name>Error_Missing_Phone_Fields</name>
+        <label>Error - Missing Phone Fields</label>
+        <locationX>889</locationX>
+        <locationY>352</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>Phone fields are missing. This contact was not sent to P21. Please indicate Direct or Phone(Mobile) for the following contact:  {!Find_Contact_Record.Name}:  https://automationdirectinc.lightning.force.com/lightning/r/Contact/{!Find_Contact_Record.Id}/view </stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>fmaddie@automationdirect.com, jwilliams@automationdirect.com, spurcell@automationdirect.com, {!UserEMail}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>UserEMail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Missing Direct and Phone from Contact {!Find_Contact_Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <description>Determines if the current Contact is INACTIVE</description>
+        <name>IsContactInactive</name>
+        <label>IsContactInactive</label>
+        <locationX>304</locationX>
+        <locationY>50</locationY>
+        <defaultConnector>
+            <targetReference>Missing_Direct_and_Mobile_Phone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>ContactActive</defaultConnectorLabel>
+        <rules>
+            <name>ContactInactive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Inactive__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Email_Contact_is_INACTIVE</targetReference>
+            </connector>
+            <label>ContactInactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Missing both Verified and Role</description>
+        <name>Missing_both_Verified_and_Role</name>
+        <label>Missing bothVerified and Role</label>
+        <locationX>407</locationX>
+        <locationY>427</locationY>
+        <defaultConnector>
+            <targetReference>Missing_Verified</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Missing_Verified_and_Role</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Verified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Role__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Verified_and_Role</targetReference>
+            </connector>
+            <label>Missing Verified and Role</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>When Missing Direct and Phone on Contact</description>
+        <name>Missing_Direct_and_Mobile_Phone</name>
+        <label>Missing Direct and Mobile Phone</label>
+        <locationX>395</locationX>
+        <locationY>270</locationY>
+        <defaultConnector>
+            <targetReference>Missing_both_Verified_and_Role</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Missing_Phones</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Direct_Phone__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.MobilePhone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Missing_Phone_Fields</targetReference>
+            </connector>
+            <label>Missing Phone(s)</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Only Role is Missing</description>
+        <name>Missing_Role</name>
+        <label>Missing Role</label>
+        <locationX>411</locationX>
+        <locationY>787</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_P21_button</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Role_Missing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Role__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Role</targetReference>
+            </connector>
+            <label>Role Missing</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Missing Verified Only</description>
+        <name>Missing_Verified</name>
+        <label>Missing Verified</label>
+        <locationX>415</locationX>
+        <locationY>629</locationY>
+        <defaultConnector>
+            <targetReference>Missing_Role</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>VerifiedMissing</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Verified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Verified__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Verified</targetReference>
+            </connector>
+            <label>Verified Missing</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Toggle Send to P21 Check box</description>
+        <name>Toggle_P21_button</name>
+        <label>Toggle P21 button</label>
+        <locationX>419</locationX>
+        <locationY>1219</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_Send_to_P21_to_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Send to P21 is True</defaultConnectorLabel>
+        <rules>
+            <name>Send_to_P21_checkbox_is_False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_Contact_Record.Send_to_P21__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Toggle_Send_to_P21_to_True</targetReference>
+            </connector>
+            <label>Send to P21 is False</label>
+        </rules>
+    </decisions>
+    <description>Revamped version of Send to P21 with Screens</description>
+    <formulas>
+        <description>Person who trigger EMail</description>
+        <name>UserEMail</name>
+        <dataType>String</dataType>
+        <expression>{!$User.Email}</expression>
+    </formulas>
+    <interviewLabel>Toggle Send to P21 checkbox on Contact Screen {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Toggle Send to P21 checkbox on Contact Screen</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Find the Contact Record that was passed in</description>
+        <name>Find_Contact_Record</name>
+        <label>Find Contact Record</label>
+        <locationX>274</locationX>
+        <locationY>423</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IsContactInactive</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>P21_ID__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set the Send to P21 to False</description>
+        <name>Toggle_Send_to_P21_to_False</name>
+        <label>Toggle Send to P21 to False</label>
+        <locationX>144</locationX>
+        <locationY>1203</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>P21_ID__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Toggle_Send_to_P21_to_True</name>
+        <label>Toggle Send to P21 to True</label>
+        <locationX>686</locationX>
+        <locationY>1198</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>P21_ID__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Role</name>
+        <label>Update Role</label>
+        <locationX>643</locationX>
+        <locationY>783</locationY>
+        <connector>
+            <targetReference>Error_Email_Missing_Required_Fields</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Role__c</field>
+            <value>
+                <stringValue>Purchasing</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Verified</name>
+        <label>Update Verified</label>
+        <locationX>662</locationX>
+        <locationY>629</locationY>
+        <connector>
+            <targetReference>Error_Email_Missing_Required_Fields</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Verified__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates Verified Checkbox if it&#39;s not checked</description>
+        <name>Update_Verified_and_Role</name>
+        <label>Update Verified and Role</label>
+        <locationX>650</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Error_Email_Missing_Required_Fields</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Role__c</field>
+            <value>
+                <stringValue>Purchasing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Verified__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>421</locationY>
+        <connector>
+            <targetReference>Find_Contact_Record</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <description>Send email error to Customer Support leads</description>
+        <name>CustomerSupportLeads</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;fmaddie@automationdirect.com&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Required field missing on Contact or Ship To Address</description>
+        <name>EmailFormat</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-family: sans-serif;&quot;&gt;There are required field(s) are missing for  contact:  {!Find_Contact_Record.Name} &lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>Contact Id of the contact being passed in from Send to P21 button</description>
+        <name>contactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>ContactId of the record passed in</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Direct Phone</description>
+        <name>varDirectPHone</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Contact Mobile PHone of current Contact</description>
+        <name>varMobilePhone</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

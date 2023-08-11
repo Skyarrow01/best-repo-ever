@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Tech Support</fullName>
+        <default>false</default>
+        <label>Tech Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Orders</fullName>
+        <default>false</default>
+        <label>Orders</label>
+    </customValue>
+    <customValue>
+        <fullName>Orders/Inquiries</fullName>
+        <default>false</default>
+        <label>Orders/Inquiries</label>
+    </customValue>
+    <customValue>
+        <fullName>Quote</fullName>
+        <default>false</default>
+        <label>Quote</label>
+    </customValue>
+    <customValue>
+        <fullName>Busi Dev</fullName>
+        <default>false</default>
+        <label>Busi Dev</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal Orders</fullName>
+        <default>false</default>
+        <label>Portal Orders</label>
+    </customValue>
+    <customValue>
+        <fullName>Credit/New Account</fullName>
+        <default>false</default>
+        <label>Credit/New Account</label>
+    </customValue>
+    <customValue>
+        <fullName>SalesTax</fullName>
+        <default>false</default>
+        <label>SalesTax</label>
+    </customValue>
+    <customValue>
+        <fullName>RA</fullName>
+        <default>false</default>
+        <label>RA</label>
+    </customValue>
+    <customValue>
+        <fullName>AR</fullName>
+        <default>false</default>
+        <label>AR</label>
+    </customValue>
+    <masterLabel>Queue Names</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Contact.Direct_Phone__c</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19 OR 20</booleanFilter>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>samantha dunn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>pam phelps</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>kori roney</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>julie moch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>laura holmes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>veronica padilla</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Doris Dinkins</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lindsey Olson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jasmine Caldwell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Theresa Johnson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Silvia Cawthon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lee Allred</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>april bagwell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>paula seals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>sue mayfield</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>patty scogings</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>michelle harrison</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>cindy powers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Madisen Ray</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Michelle Harrison</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CONTACT_CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>New Contacts created today</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

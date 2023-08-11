@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_change_Tech_Product_Group</fullName>
+    <active>true</active>
+    <description>Cannot change Tech Product Group field without updating Product field.</description>
+    <errorConditionFormula>AND( 
+  NOT(ISBLANK(Product__c)) ,
+  Tech_Product_Group__c !=  Product__r.Tech_Product_Group__c,
+  ISCHANGED(Tech_Product_Group__c)
+)</errorConditionFormula>
+    <errorDisplayField>Product__c</errorDisplayField>
+    <errorMessage>Cannot change Tech Product Group field if Product is already selected. To select Tech Product Group without Product, first clear value in Product.</errorMessage>
+</ValidationRule>

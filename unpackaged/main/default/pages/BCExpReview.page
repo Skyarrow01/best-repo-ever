@@ -1,0 +1,4 @@
+<apex:page standardController="Account" extensions="BCExpReview" action="{!startCreditPull}" >
+    <apex:sectionHeader title="Experian Review Account Temp page" subtitle="{!account.name}"/>
+    <apex:pageMessages />
+</apex:page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ship-To Addresses</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ship-To Addresses</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Ship-To Addresses Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ship-To --></label>
+            <section>Ship-To</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Send to P21 --></label>
+        <name>Send_to_P21</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot change account on ship-to-address) --></errorMessage>
+        <name>Cannot_Change_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter 2 character state code. --></errorMessage>
+        <name>State_must_be_2_characters</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- INACTIVATE --></label>
+        <name>INACTIVATE</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_P21_New --></label>
+        <name>Send_to_P21_New</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is for the Quote Automation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Need A Quote</name>
+    <pageDevName>Need_A_Quote</pageDevName>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Need A Quote?</subject>
+    <textOnly>Need a quote? Follow the easy steps in the image below to quickly get your quote, as we are no longer providing quotes by email. You can even place your order on our web store, or download your quote to save as a file. If logged in to our web store, you can access the quote on your account for use in the future. 
+
+Note: The pricing on our web store is our best price, the same low price we offer all customers. 
+
+AutomationDirect sells only within the U.S. and Canada. International customers should contact a reseller provided at https://www.automationdirect.com/adc/international/internation &lt; http://url287.automationdirect.com/ls/click?upn=Q5RN2mBTfZvrJq-2B2FPPjucrFl01Ru7dI3YRS1XpBBTgBfS-2BEv8VdJo3QCCWpQobPI4IkQsuITL8X9q77C-2FRXk7cz6AUPIm72LYS2VWXjfXE-3D1-sU_C3qtCQuzrownYNLE5ENijxFicL8nYYBxa1f2JpILHh-2Bmq4bawZA52VsILNr8R0e0Wxg8Fxtcva-2BkoMvErTp8yqrktyGtpJNfvaNaZG7y7OmGIBtoaNAa09lCiSGxknQfXJ2brPFN6p1TRy1x4PeIaF0P-2B-2F5xBMmrEIRVU4IqwIOSsmeWG2hQS6WIkXaQ1mw5AjM0STYsUCIegdWRfE1Sz8WrYL7tzyg9iBFjTA8TL5U-3D &gt;  [Image alt text: How To Quote]</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

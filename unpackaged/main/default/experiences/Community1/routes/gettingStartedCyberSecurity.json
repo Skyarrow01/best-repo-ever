@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "0fc39273-b0d6-4073-91ce-035a361df51f",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "9230bfee-59be-4709-b193-a10e92f77dda",
+  "label" : "Getting Started CyberSecurity",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-getting-started-cybersecurity",
+  "type" : "route",
+  "urlPrefix" : "getting-started-cybersecurity"
+}

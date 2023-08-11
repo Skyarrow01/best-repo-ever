@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Value Add Services Required --></label>
+        <name>Value_Add_Services_Required__c</name>
+        <picklistValues>
+            <masterLabel>Cut-to-Length Cable/Wire</masterLabel>
+            <translation><!-- Cut-to-Length Cable/Wire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cut-to-Length T-Slotted Rails</masterLabel>
+            <translation><!-- Cut-to-Length T-Slotted Rails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAS Repackaging</masterLabel>
+            <translation><!-- VAS Repackaging --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Location of Error/Issue --></label>
+        <name>Location_of_Error_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Home Page</masterLabel>
+            <translation><!-- Home Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item Page</masterLabel>
+            <translation><!-- Item Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overview Tab</masterLabel>
+            <translation><!-- Overview Tab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Page</masterLabel>
+            <translation><!-- Search Page --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

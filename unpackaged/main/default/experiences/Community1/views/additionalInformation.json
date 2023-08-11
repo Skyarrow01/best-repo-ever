@@ -1,0 +1,71 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "f36aa4ed-acb0-4ae4-a615-0f583e3b6c65",
+  "label" : "AdditionalInformation",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "Please fill in the required details to proceed to the community",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Welcome to AutomationDirect Customer Community",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "8e636b51-3d9f-4c20-98b6-f497041fef69",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><b style=\"color: rgb(230, 0, 0); font-size: 14px;\">Your first and&nbsp;last name will not be shown to other members who view your profile. The \"Name\" field will contain your nickname.</b></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "568322ce-1fbd-42ec-a36d-1ee4c472be68",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2177baa6-1758-4892-af1b-3ec5576fbc7d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:agi_FetchAdditionalInformation",
+      "id" : "7a914057-b8c3-4263-bb62-362826d70b41",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ffbec8fd-00b1-4829-ad3f-abcc15536470",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4ed13795-ed0b-4b67-9aa6-e64087a6101c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "AdditionalInformation"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "13f53ddd-b2fd-4f83-91a0-d424e9f82001",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "45a45d5a-24c2-4036-a5cb-840ce2fbf48c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-additionalinformation"
+}

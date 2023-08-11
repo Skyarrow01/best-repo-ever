@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>The Add Skill Requirement action is used to define one or more Skills that are needed for a piece of work, and add them to a collection which can later be used in the Route Work action.
+This example shows adding a single skill requirement to a collection defined in the flow.</description>
+        <name>AddSkillA</name>
+        <label>Add Skill A</label>
+        <locationX>50</locationX>
+        <locationY>830</locationY>
+        <actionName>addSkillRequirements</actionName>
+        <actionType>addSkillRequirements</actionType>
+        <connector>
+            <targetReference>RouteChat</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>skillRequirementsResourceItem</name>
+            <value>
+                <elementReference>SkillRequirements</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>skillRequirement</name>
+            <value>
+                <stringValue>[{&quot;id&quot;:&quot;&quot;,&quot;skillId&quot;:&quot;0C523000000CcnHCAS&quot;,&quot;skillLabel&quot;:&quot;CX&quot;,&quot;skillLevel&quot;:&quot;10&quot;,&quot;skillPriority&quot;:&quot;0&quot;,&quot;isAdditionalSkill&quot;:false}]</stringValue>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <description>The Add Skill Requirement action is used to define one or more Skills that are needed for a piece of work, and add them to a collection which can later be used in the Route Work action.
+This example shows adding a single skill requirement to a collection defined in the flow.</description>
+        <name>AddSkillB</name>
+        <label>Add Skill B</label>
+        <locationX>314</locationX>
+        <locationY>830</locationY>
+        <actionName>addSkillRequirements</actionName>
+        <actionType>addSkillRequirements</actionType>
+        <connector>
+            <targetReference>RouteChat</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>skillRequirementsResourceItem</name>
+            <value>
+                <elementReference>SkillRequirements</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>skillRequirement</name>
+            <value>
+                <stringValue>[{&quot;id&quot;:&quot;&quot;,&quot;skillId&quot;:&quot;&quot;,&quot;skillLabel&quot;:&quot;[REPLACE ME]&quot;,&quot;skillLevel&quot;:&quot;0&quot;,&quot;skillPriority&quot;:&quot;0&quot;,&quot;isAdditionalSkill&quot;:false}]</stringValue>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <description>The Add Skill Requirement action is used to define one or more Skills that are needed for a piece of work, and add them to a collection which can later be used in the Route Work action.
+This example shows adding a single skill requirement to a collection defined in the flow.</description>
+        <name>AddSkillC</name>
+        <label>Add Default Skill</label>
+        <locationX>578</locationX>
+        <locationY>830</locationY>
+        <actionName>addSkillRequirements</actionName>
+        <actionType>addSkillRequirements</actionType>
+        <connector>
+            <targetReference>RouteChat</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>skillRequirementsResourceItem</name>
+            <value>
+                <elementReference>SkillRequirements</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>skillRequirement</name>
+            <value>
+                <stringValue>[{&quot;id&quot;:&quot;&quot;,&quot;skillId&quot;:&quot;&quot;,&quot;skillLabel&quot;:&quot;[REPLACE ME]&quot;,&quot;skillLevel&quot;:&quot;0&quot;,&quot;skillPriority&quot;:&quot;0&quot;,&quot;isAdditionalSkill&quot;:false}]</stringValue>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <description>The Route Work action is used to input the routing requirements to Omni-Channel.
+This example shows routing to a collection of Skill Requirements which were defined previously in the Flow via the Add Skill Requirements actions.</description>
+        <name>RouteChat</name>
+        <label>Route Chat by Skill</label>
+        <locationX>314</locationX>
+        <locationY>1046</locationY>
+        <actionName>routeWork</actionName>
+        <actionType>routeWork</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>agentLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>agentId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>botLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>botId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>skillRequirementsResourceItem</name>
+            <value>
+                <elementReference>SkillRequirements</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>skillOption</name>
+            <value>
+                <stringValue>DefineSkillRequirements</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>queueId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>queueLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>routingConfigLabel</name>
+            <value>
+                <stringValue>[REPLACE ME]</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>routingConfigId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>routingType</name>
+            <value>
+                <stringValue>SkillsBased</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceChannelLabel</name>
+            <value>
+                <stringValue>[Chat Service Channel]</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceChannelDevName</name>
+            <value>
+                <stringValue>sfdc_liveagent</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceChannelId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <description>This example node saves the value of the Subject field in the pre-chat list to a variable in the Flow.</description>
+        <name>CaptureSubject</name>
+        <label>Capture Subject</label>
+        <locationX>402</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>SubjectField</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PrechatLoop.CustomDetailContextValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>PrechatLoop</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>This example decision node looks at the Subject entered by the Customer in the pre-chat form, and uses it to determine whether to add Skill A or Skill B.</description>
+        <name>AddSkillDecision</name>
+        <label>Which Skill Should be Added?</label>
+        <locationX>314</locationX>
+        <locationY>710</locationY>
+        <defaultConnector>
+            <targetReference>AddSkillC</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>All Other Skills</defaultConnectorLabel>
+        <rules>
+            <name>SkillAOutcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SubjectField</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>new order</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AddSkillA</targetReference>
+            </connector>
+            <label>Subject Contains new order</label>
+        </rules>
+        <rules>
+            <name>SkillBOutcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SubjectField</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Skill B</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AddSkillB</targetReference>
+            </connector>
+            <label>Subject Contains Skill B</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This example decision node checks to see if the entry in the pre-chat list is the Subject field.</description>
+        <name>EntryCheckDecision</name>
+        <label>Check that Entry is the Subject Field</label>
+        <locationX>534</locationX>
+        <locationY>278</locationY>
+        <defaultConnector>
+            <targetReference>PrechatLoop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SubjectOutcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PrechatLoop.CustomDetailContextKey</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Subject</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CaptureSubject</targetReference>
+            </connector>
+            <label>Entry is Subject field</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Chat Routing {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Chat Routing</label>
+    <loops>
+        <description>This example node iterates through each of the pre-chat variables so the values that the customer entered can be used in the flow decision.</description>
+        <name>PrechatLoop</name>
+        <label>Loop Over PreChat Entries</label>
+        <locationX>314</locationX>
+        <locationY>158</locationY>
+        <collectionReference>prechatInfo</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>EntryCheckDecision</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>AddSkillDecision</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>RoutingFlow</processType>
+    <sourceTemplate>omnichannel_chat__SkillsChat</sourceTemplate>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>PrechatLoop</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>The chat transcript record that is being inputted into the flow. Necessary for the flow to run.</description>
+        <name>input_record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>LiveChatTranscript</objectType>
+    </variables>
+    <variables>
+        <description>Conversation Context Entry object(s) that will provide information from Pre-Chat fields.</description>
+        <name>prechatInfo</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ConversationContextEntry</objectType>
+    </variables>
+    <variables>
+        <description>The ID of the record being inputted into the flow. Necessary for the flow to run.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Skill Requirement(s) that can be added to the work being routed.</description>
+        <name>SkillRequirements</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SkillRequirement</objectType>
+    </variables>
+    <variables>
+        <description>Value of the Subject field in the pre-chat list.</description>
+        <name>SubjectField</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

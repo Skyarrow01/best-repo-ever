@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FIT_Overview_Content_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>FIT Overview Content Manager</description>
+    <externalId>false</externalId>
+    <label>FIT Overview Content Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Launches6e0T</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

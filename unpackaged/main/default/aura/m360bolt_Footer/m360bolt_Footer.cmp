@@ -1,0 +1,99 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <ltng:require styles="{!$Resource.m360bolt_fontawesome + '/font-awesome-4.7.0/css/font-awesome.css'}" />
+    
+    <!-- Attribute -->
+    <aura:attribute name="LogoLink" type="String" default=""/>
+    <aura:attribute name="NewsLetterLink" type="String" default=""/>
+    <aura:attribute name="LinkedInLink" type="String" default="" />
+    <aura:attribute name="FacebookLink" type="String" default="" />
+    <aura:attribute name="TwitterLink" type="String" default="" />
+    <aura:attribute name="YoutubeLink" type="String" default="" />
+    <aura:attribute name="AboutUsLink" type="String" default="" />
+    <aura:attribute name="GuidelineLink" type="String" default="" />
+    <aura:attribute name="RewardsLink" type="String" default="" />
+    <aura:attribute name="IntegratorLink" type="String" default="" />
+    <aura:attribute name="VARSLink" type="String" default="" />
+    <aura:attribute name="ReviewsLink" type="String" default="" />
+    <aura:attribute name="PriceLink" type="String" default="" />
+    <aura:attribute name="ContactLink" type="String" default="" />
+    <aura:attribute name="FooterText" type="String" default="" />
+    <!-- Attributes -->
+    
+    <!-- Markup -->
+    <div class="footerContainer">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-m-bottom--medium slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-5">
+                <a href="{!v.LogoLink}" target="_blank">                                             
+                 <img class="logo" src="{!$Resource.CompanyLogoFooter}"/>
+                </a>
+            </div>
+            <div class="slds-col slds-m-bottom--medium slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--1-of-5">
+                <h5>Sign Up</h5>   
+                <ul>
+                    <li>to receive:</li>
+                    <li>
+                        <a href="{!v.NewsLetterLink}" target="_blank">
+                            <b>FREE e-Newsletter</b>
+                        </a>
+                    </li>
+                    <li>sign up today!</li>
+                </ul>
+            </div>
+            <div class="slds-col slds-m-bottom--medium slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--1-of-5">
+                <h5><b>Connect With Us</b></h5>   
+                <div class="socialContainer">
+                    <ul class="slds-list--horizontal">
+                        <li>
+                            <a href="{!v.LinkedInLink}" target="_blank">
+                                <img class="img_media" src="{!$Resource.LinkedIn_Icon}"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{!v.FacebookLink}" target="_blank">
+                                <img class="img_media" src="{!$Resource.FB_Icon}"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{!v.TwitterLink}" target="_blank">
+                                <img class="img_media" src="{!$Resource.Twitter_Icon}"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{!v.YoutubeLink}" target="_blank">
+                                <img class="img_media" src="{!$Resource.YouTube_icon}" style="width: 51px;"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slds-col slds-m-bottom--medium slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--1-of-5">
+                <h5><b>Company Information</b></h5>   
+                <ul>
+                    <li><a href="{!v.AboutUsLink}" target="_blank">About Us</a></li>
+                    <li><a onclick="{!c.gotoURL}">Community Guidelines</a></li>
+                    <li><a href="{!v.RewardsLink}" target="_blank">Reviews &amp; Rewards</a></li>
+                    <li><a href="{!v.IntegratorLink}" target="_blank">System Integrator Program</a></li>
+                    <li><a href="{!v.VARSLink}" target="_blank">VARS &amp; International Sales</a></li>
+                    <li><a href="{!v.ReviewsLink}" target="_blank">Company Reviews</a></li>
+                    <li><a href="{!v.PriceLink}" target="_blank">Download Price List</a></li>
+                </ul>
+            </div>
+            <div class="slds-col slds-m-bottom--medium slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--1-of-5">
+                <h5><b>Contact Us</b></h5>   
+                <ul>
+                    <li><a href="{!v.ContactLink}" target="_blank"> Contact Options </a></li>
+                    <li><b>1-800-633-0405</b></li>
+                    <br/>
+                    <li>Monday - Friday</li>
+                    <li>9 a.m. - 6 p.m. ET</li>
+                    <li>excluding holidays</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footerContainer-Copyright">
+        <p>
+            {!v.FooterText}
+        </p>
+    </div>
+</aura:component>

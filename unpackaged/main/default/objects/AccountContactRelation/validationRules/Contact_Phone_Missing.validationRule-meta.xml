@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Phone_Missing</fullName>
+    <active>true</active>
+    <description>Contact Direct and Mobile phone is missing or Role is missing</description>
+    <errorConditionFormula>AND(
+NOT(CreatedBy.Profile.Name = &quot;Community Profile&quot;),
+ISBLANK( Contact.Direct_Phone__c ), ISBLANK( Contact.MobilePhone ),
+NOT($Profile.Name = &quot;System Administrator&quot;),
+Not($Permission.Merge_Inactivate_Accounts))</errorConditionFormula>
+    <errorDisplayField>ContactId</errorDisplayField>
+    <errorMessage>Please navigate to contact and enter Direct or Mobile Phone.</errorMessage>
+</ValidationRule>

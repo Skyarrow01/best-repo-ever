@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HMI_BE_Case_Information__c</fullName>
+    <defaultValue>&quot;• Searching BE Cases, Knowledge Articles, Problem Reports and ECNs for information&quot; +BR()
+&amp;&quot;• Part Number&quot; +BR()
+&amp;&quot;• Detailed description of issue&quot; +BR()
+&amp;&quot;• Software and Firmware version numbers&quot; +BR()
+&amp;&quot;• Type of network/protocol (Ethernet, RS-485, EtherNet/IP, Modbus, etc…)&quot; +BR()
+&amp;&quot;• Obtain network topology diagram: even if simple hand drawing&quot; +BR()
+&amp;&quot;• Error Code and Error History&quot; +BR()
+&amp;&quot;• HMI project AND PLC project&quot; +BR()
+&amp;&quot;• Simple project test: 1 Numeric Display addressed to first and most common PLC address&quot; +BR()
+&amp;&quot;• Try Simulator with HMI&quot; +BR()
+&amp;&quot;• Have you duplicated problem?&quot; +BR()
+&amp;&quot;• Ask other Techs and Tech Lead first&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>HMI BE Case Information</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>15</visibleLines>
+</CustomField>

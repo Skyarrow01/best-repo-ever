@@ -1,0 +1,42 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,forceCommunity:profileMenuInterface" access="global" controller="AGI_Custom_MySettings">
+    
+    <aura:attribute name="options" type="String[]" default="Home,My Profile,My Settings,My Messages,Contact Support,Logout"/>
+    <aura:attribute name="currUser" type="Map"/>
+    <aura:attribute name="LogoutURL" type="String" default="" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:renderIf isTrue="{!!v.currUser.isGuest}">
+    	<div style="position:relative">
+
+    <ui:menu class="slds-dropdown__right">
+        <ui:menuTriggerLink class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" aura:id="trigger" label="{!v.currUser.nickName}">
+            <div class="slds-dropdown__item">
+              
+                <span class="slds-truncate " title="{!v.currUser.nickName}">
+                <span class="slds-avatar slds-avatar_circle slds-m-left_xx-small">
+    				<img src="{!v.currUser.photoUrl}" />
+                </span>
+                    <span class="profileName">{!v.currUser.nickName} </span>
+                    <span><lightning:icon iconName="utility:down" size="x-small" alternativeText="Side menu"/></span>
+                </span>
+              </div>
+        </ui:menuTriggerLink>
+        <ui:menuList class="actionMenu" aura:id="actionMenu">
+            <aura:iteration items="{!v.options}" var="itemLabel">
+                <ui:actionMenuItem class="slds-dropdown__item slds-truncate" label="{!itemLabel}" click="{!c.handleSelect}"/>
+            </aura:iteration>
+        </ui:menuList>
+    </ui:menu>
+            
+            
+
+        </div>
+   </aura:renderIf>
+    <aura:renderIf isTrue="{!v.currUser.isGuest}">
+    	<div style="position:relative" class="slds-text-heading_medium slds-m-top_small">
+            <a class="trigger-link" href="/login?startURL=/s/">
+                <span class="profileName">Login</span>
+            </a>
+        </div>
+    </aura:renderIf>    
+</aura:component>

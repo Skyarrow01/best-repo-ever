@@ -1,0 +1,162 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsThreeCol363Layout",
+  "dataProviders" : [ ],
+  "id" : "5e39dfc8-04e3-4b29-bc6c-e05dc41e3500",
+  "label" : "Contact Support",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.contactbanner1098x274.1}\" alt=\"\">&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "729c2eb7-9268-4411-a167-315cf5d84d5b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f95a0eee-c803-4b56-accc-15ab09ea2fcc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><b>Submit a technical support request:&nbsp;&nbsp;</b>(Please allow up to 1 business day for a response.)</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "114d0358-514b-4500-8a5d-34563bcd320b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "allowAttachments" : true,
+        "attachmentLabel" : "Upload File",
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : "",
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "callToAction" : false,
+        "callToActionButtonText" : "",
+        "callToActionText" : "",
+        "callToActionUrl" : "",
+        "confirmationSubtext" : "We’ll get back to you soon.",
+        "confirmationText" : "Your case was created.",
+        "guestQuickActionName" : "GuestCommunityCase",
+        "headerSubtitle" : "Tell us how we can help.",
+        "headerTitle" : "Contact Technical Support",
+        "quickActionName" : "CreateCommunityCase",
+        "requestSummaryText" : "Case summary"
+      },
+      "componentName" : "forceCommunity:contactSupportForm",
+      "id" : "0c8f813e-8a6f-4d8e-bf9e-3bbb91ec79e4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><strong>Telephone: </strong></p><p style=\"text-align: center;\"><strong>1-800-633-0405&nbsp;&nbsp;•&nbsp;&nbsp;1-770-844-4200</strong></p><p>Our technical support hours are from 9am to 6pm Eastern Standard Time Monday through Friday.&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "533f060f-bb00-49f9-96aa-3f9338f331c0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2ed5190a-6870-4808-b577-4d74d6459dbd",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"row tc-services-style3\">\n\t\t\t\t\t   <div class=\"services-item\">\n\n\t\t\t\t\t            <div class=\"services-desc\">\n\t\t\t\t\t                <h2 class=\"services-title\">Other Resources</h2>\n\t\t\t\t\t\t\t\t\t    <p style=\"text-align:left\">\n                                            <a href=\"https://cdn.automationdirect.com/static/manuals/index.html\" target=\"_blank\"><i class=\"fa fa-arrow-circle-o-right\"></i> Online Manuals</a><br>\n\t\t\t\t\t               \t    <a href=\"https://support.automationdirect.com/compliance.html\" target=\"_blank\"><i class=\"fa fa-arrow-circle-o-right\"></i> Agency Approvals</a><br>\n                                        <a href=\"https://www.automationdirect.com/videos/home\" target=\"_blank\"><i class=\"fa fa-arrow-circle-o-right\"></i> Video Tutorials and How-To's</a><br>\n                                        <a href=\"https://support.automationdirect.com/examples.html\" target=\"_blank\"><i class=\"fa fa-arrow-circle-o-right\"></i> Example Programs</a>\n                                    </p>\n                           </div>\n\t\t\t\t\t        </div>\n\t\t\t\t\t    </div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "158b0c35-dece-4a84-ac78-4158a61ffe8c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "askConfirmationQuestion" : true,
+        "confirmationMessageLabel" : "Got it!",
+        "deflectionSubtitle" : "These might help you find what you're looking for",
+        "deflectionTitle" : "Relevant Discussions",
+        "firstQuestion" : "Did this content solve your issue?",
+        "maxResults" : 6,
+        "measureDeflection" : true,
+        "redirectUrl" : "",
+        "secondQuestion" : "Stop creating your case?",
+        "showArticles" : true,
+        "showDiscussions" : true,
+        "topicId" : ""
+      },
+      "componentName" : "forceCommunity:caseDeflection",
+      "id" : "9df7a485-3e88-4b1c-86e9-b6f0fefa9c63",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "57c5c1fb-0a56-4a23-bbbd-37a63052b3f3",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "c0310e1b-1780-487a-a768-f4b926da489c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Contact AutomationDirect's award-winning customer support now by phone, email or online. Don't forget about our manuals, FAQs, videos and more!",
+        "title" : "Contact Support | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "031a0a7f-650c-4c33-87d8-02165d1f2af3",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2ed3bb6c-ce4c-402d-a60a-007d5ca694de",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><strong>Request for quote or need help with placing an order or checking on an already existing order?</strong></p><p><span style=\"font-size: 12px;\">&nbsp;</span><a href=\"https://www.automationdirect.com/adc/contactus/contactus#\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 12px; color: rgb(13, 114, 194); background-color: rgb(255, 255, 255);\">Live Chat</a></p><p><a href=\"https://www.automationdirect.com/adc/form/user/generalinquiry?ref=sales\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 12px; color: rgb(13, 114, 194); background-color: rgb(255, 255, 255);\">Send a Customer Support Team Inquiry</a></p><p><span style=\"font-size: 12px;\">Phone Number:</span></p><p><span style=\"font-size: 12px;\">(800) 633-0405</span></p><p><span style=\"font-size: 12px;\">(770)-889-2858</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "aa4b6cf2-2607-4a7c-bc72-fc95181dc58c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><b>Need help with a return authorization?</b></p><p><span style=\"font-size: 12px;\">Self-Service Online:</span></p><p><a href=\"https://www.automationdirect.com/myaccount/returns\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 12px; color: rgb(13, 114, 194); background-color: rgb(255, 255, 255);\"><b>Returns (RMA's)</b></a></p><p><span style=\"font-size: 12px;\">Email:</span></p><p><a href=\"mailto:ragroup@automationdirect.com\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 12px; color: rgb(13, 114, 194); background-color: rgb(255, 255, 255);\">ragroup@automationdirect.com</a></p><p><span style=\"font-size: 12px;\">Phone Number:</span></p><p><span style=\"font-size: 12px;\">(800) 633-0405</span></p><p><span style=\"font-size: 12px;\">770-889-2858</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "1e1b8033-183f-4cc6-a335-670e77ecc494",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><b>Need to make a payment, request an invoice, or questions on your account?</b></p><p><a href=\"https://www.automationdirect.com/adc/contactus/contactus#\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 12px; color: rgb(13, 114, 194); background-color: rgb(255, 255, 255);\">Live Chat</a></p><p><a href=\"https://www.automationdirect.com/adc/form/user/generalinquiry?ref=acct\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 12px; color: rgb(13, 114, 194); background-color: rgb(255, 255, 255);\">Send an Accounting Team Inquiry</a></p><p><span style=\"font-size: 12px;\">Phone Number:</span></p><p><span style=\"font-size: 12px;\">(800) 633-0405</span></p><p><span style=\"font-size: 12px;\">770-889-7588</span></p><p><span style=\"font-size: 12px;\">Credit Department:</span></p><p><span style=\"font-size: 12px;\">(770) 844-4213</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "fd385a80-c45e-486f-a0f1-f42733532733",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "54f6b68a-6633-4018-a31a-8d64eaf1ad33",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

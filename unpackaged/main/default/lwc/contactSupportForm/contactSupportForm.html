@@ -1,0 +1,77 @@
+<template>
+    <div if:false={caseNumber} >
+    <div class="slds-truncate slds-align-middle slds-text-align_center slds-var-p-top_small" >
+        <h1 class="slds-page-header__title">Contact Technical Support</h1>
+        <span class="subtitle" >Tell us how we can help.</span>
+    </div>
+    <div class="slds-m-around_medium">
+        <lightning-input label="Name" name="userName" required value={myUserName} onchange={changeHandler} class="validate"></lightning-input>
+        <div class="slds-grid slds-gutters slds-m-top_small">
+            <div class="slds-col">
+                <lightning-input label="Email" type="email" name="userEmail" required value={myEmail} onchange={changeHandler} class="validate"></lightning-input>
+            </div>
+            <div class="slds-col">
+                <label class="slds-form-element__label" style="margin-right: 0.5rem;">
+                    <abbr lightning-input_input="" title="required" class="slds-required">*</abbr>
+                    Phone
+                </label>
+                <lightning-helptext content="Your preferred call back number for this case"></lightning-helptext>
+                <lightning-input label="Phone" type="tel" name="userPhone" class="validate"
+                    pattern="^\(\d{3}\)\s\d{3}-\d{4}$"
+                    required value={myPhone} onchange={handlePhoneInputMask}
+                    message-when-pattern-mismatch="Not a valid phone number"
+                    message-when-value-missing="Phone number is required"
+                    variant="label-hidden"
+                    placeholder="(###) ###-####">
+                </lightning-input>
+            </div>
+        </div>
+        <div class="slds-m-top_medium slds-box slds-box_small">
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_5-of-12">
+                    <lightning-combobox
+                        name="select-product-group"
+                        label="Product Group"
+                        value={productGroup}
+                        placeholder="Select One"
+                        options={productGroups}
+                        disabled={hasProduct}
+                        onchange={changeProductGroup} >
+                    </lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_2-of-12 slds-align_absolute-center"> <strong> OR </strong></div>
+                <div class="slds-col slds-size_5-of-12">
+                    <lightning-input label="Product" name="product" value={product} onchange={changeProduct} placeholder="Enter part number" disabled={hasProductGroup}></lightning-input>
+                </div>
+            </div>
+            <div if:false={productGroupValid} class="slds-text-align_center slds-text-body_small slds-text-color_error">Please either select a Product Group OR enter a part number</div>
+            <div if:false={productValid} class="slds-text-align_center slds-text-body_small slds-text-color_error">Part number not found, please enter a valid part number</div>
+        </div>
+        <lightning-input class="slds-m-top_small" label="Subject"  name="subject" value={subject} onchange={changeHandler}></lightning-input>
+        <lightning-textarea class="slds-m-vertical_small validate" label="Description" name="description" required 
+            onchange={changeHandler} placeholder="Please give us details about this issue" value={description}>
+        </lightning-textarea>
+
+    </div>
+    <div class="slds-text-align_center">
+        <lightning-button variant="brand" label="Submit" title="Submit request to Tech Support" onclick={handleCreateCase} disabled={submitDisabled} ></lightning-button> 
+    </div>
+
+    </div> 
+    <!-- End if no caseNumber -->
+
+    <div if:true={caseNumber} class="slds-var-m-around_medium">
+        <div class="slds-text-heading_medium slds-m-top_medium slds-box slds-box_small">
+            Successfully created support case {caseNumber}<br>
+            You should hear from us soon.
+        </div>
+    </div>
+    
+
+    <div if:true={submitDisabled} >
+        Creating Support Case
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </div>
+
+  </template>

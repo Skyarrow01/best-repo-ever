@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>AR</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Backline Escalation - Agency Approval</layout>
+        <sections>
+            <label><!-- Blank --></label>
+            <section>Blank</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Information and Items to check before creating Agency Approval BE Case --></label>
+            <section>Information and Items to check before creating Agency Approval BE Case</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Backline Escalation - Drives/Motions</layout>
+        <sections>
+            <label><!-- Blank --></label>
+            <section>Blank</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Information and Items to check before creating Drives/Motion BE Case --></label>
+            <section>Information and Items to check before creating Drives/Motion BE Case</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Backline Escalation - HMI</layout>
+        <sections>
+            <label><!-- Blank --></label>
+            <section>Blank</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Information and Items to check before creating HMI BE Case --></label>
+            <section>Information and Items to check before creating HMI BE Case</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Backline Escalation - PLC</layout>
+        <sections>
+            <label><!-- Blank --></label>
+            <section>Blank</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Information and Items to check before creating PLC BE Case --></label>
+            <section>Information and Items to check before creating PLC BE Case</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Backline Escalation - Standard</layout>
+        <sections>
+            <label><!-- Blank --></label>
+            <section>Blank</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Information and Items to check before creating Standard BE Case --></label>
+            <section>Information and Items to check before creating Standard BE Case</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community User</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Email and Web Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orders/Inquiries</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phishing --></label>
+            <section>Phishing</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Case Detail 1 --></label>
+        <name>Chat_Transcript_Case_Detail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Child Case --></label>
+        <name>New_Case_Chat</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Forward to Payments --></label>
+        <name>Forward_to_Payments</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Forward to SupplierPayments --></label>
+        <name>Forward_to_SupplierPayments</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New BE Case --></label>
+        <name>New_BE_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- BusiDevVolCust --></label>
+        <name>BusiDevVolCust</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- BusiDevVolCustOLD1 --></label>
+        <name>BusiDevVolCustOLD1</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Contact from Case --></label>
+        <name>Create_Contact_from_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- BusiDevVolCustTEST --></label>
+        <name>LCC_BusiDevVolCustTEST</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- AR Record Type --></description>
+        <label><!-- AR --></label>
+        <name>AR</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Backline Escalation case for Agency Approvals. --></description>
+        <label><!-- Backline Escalation - Agency Approval --></label>
+        <name>Backline_Escalation_Agency_Approval</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Backline Escalation case for silos that will use the Drives/Motions form. --></description>
+        <label><!-- Backline Escalation - Drives/Motion --></label>
+        <name>Backline_Escalation_Drives_Motion</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Backline Escalation case for silos that will use the HMI form. --></description>
+        <label><!-- Backline Escalation - HMI and CLICK PLC --></label>
+        <name>Backline_Escalation_HMI</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Backline Escalation case for silos that will use the PLC form. --></description>
+        <label><!-- Backline Escalation - PLC --></label>
+        <name>Backline_Escalation_PLC</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Backline Escalation case for silos that will use the Standard form. --></description>
+        <label><!-- Backline Escalation - Standard --></label>
+        <name>Backline_Escalation_Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Busi Dev Cases --></description>
+        <label><!-- Busi Dev --></label>
+        <name>Busi_Dev</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- General Case record type. --></description>
+        <label><!-- General Case --></label>
+        <name>Case_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Credit New Account --></description>
+        <label><!-- Credit/New Account --></label>
+        <name>Credit_New_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Case with No Account or Contact Match. Use for Email and Web Cases. --></description>
+        <label><!-- Email and Web --></label>
+        <name>Email</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Orders Record type for CSR Orders --></description>
+        <label><!-- Orders --></label>
+        <name>Orders</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type for Customer Support Reps --></description>
+        <label><!-- Orders/Inquiries --></label>
+        <name>Orders_Inquiries</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Product Launch Testing Record Type --></description>
+        <label><!-- Product Launch Testing --></label>
+        <name>Product_Launch_Testing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Quote Record Type --></description>
+        <label><!-- Quote --></label>
+        <name>Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For RA Group --></description>
+        <label><!-- RA --></label>
+        <name>RA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- SalesTax Record type --></description>
+        <label><!-- SalesTax --></label>
+        <name>SalesTax</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Update Info --></label>
+        <name>Update_Info</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Webstore Support --></description>
+        <label><!-- Webstore --></label>
+        <name>Webstore</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter Product or Tech Product Group --></errorMessage>
+        <name>CRA_and_Tech_Product_and_Group</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Contact is related to Multiple Accounts, Please indicate the appropriate account for this case. --></errorMessage>
+        <name>CSR_to_Update_ADC_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the Launch CSI/eCommerce Content Coordinator can update the status to &apos;Ready for Re-Test&apos;. Please select another status. --></errorMessage>
+        <name>Cannot_Change_Status_to_Ready_to_Retest</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- User Is Unavailable --></errorMessage>
+        <name>Cannot_Move_Case_To_Unavailable_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot change Tech Product Group field if Product is already selected. To select Tech Product Group without Product, first clear value in Product. --></errorMessage>
+        <name>Cannot_change_Tech_Product_Group</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Cause to Close the case. --></errorMessage>
+        <name>Cause_cannot_be_Blank_on_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fax Error Message, Do Not Create Quote --></errorMessage>
+        <name>Fax_Quote_Email_Loop</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Case is ready to submit, please select &quot;Submit&quot; value and save. If you need to continue working on the case, leave the Status at &quot;Draft.&quot; You can submit at a later time. --></errorMessage>
+        <name>Need_to_submit_BE_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Case Reason --></errorMessage>
+        <name>Order_Quote_RA_Cases_Reason_on_Close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Parked&quot; or &quot;ON HOLD&quot; Status requires Parked #. --></errorMessage>
+        <name>Parked_No_required_when_Parked_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either the Product or Tech Product Group is required --></errorMessage>
+        <name>Product_or_Tech_Product_Group_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Part Number, Subject, Silo, Description, and Issue Type are required in order to Submit this Case. --></errorMessage>
+        <name>Required_fields_for_BE_Case_Submission</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter a Solution to Close the case. --></errorMessage>
+        <name>Solution_cannot_be_Blank_on_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Tech Support User. --></errorMessage>
+        <name>Tech_Support_User_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ADC_Webstore --></label>
+        <name>ADC_Webstore</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BusiDevVolCust2 --></label>
+        <name>BusiDevVolCust2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BusiDevVolCust3 --></label>
+        <name>BusiDevVolCust3</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BusiDevVolCustOLD --></label>
+        <name>BusiDevVolCustOLD</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Change_Queue --></label>
+        <name>Change_Queue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Contact_from_Case --></label>
+        <name>Create_Contact_from_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Contact_from_Case1 --></label>
+        <name>Create_Contact_from_Case1</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deca0K3u00000HVmCrEAL --></label>
+        <name>Deca0K3u00000HVmCrEAL</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deca0K3u00000HVmD6EAL --></label>
+        <name>Deca0K3u00000HVmD6EAL</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea0Q3u00000LEHOEEA5 --></label>
+        <name>Generatea0Q3u00000LEHOEEA5</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Launch_Case --></label>
+        <name>New_Launch_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OnlineEditora0Q3u00000LEHO4EAP --></label>
+        <name>OnlineEditora0Q3u00000LEHO4EAP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Web --></label>
+        <name>Send_to_Web</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Techs --></label>
+        <name>View_Techs</name>
+    </webLinks>
+</CustomObjectTranslation>

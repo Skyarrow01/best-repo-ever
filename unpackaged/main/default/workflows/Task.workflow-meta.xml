@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_Additional_Users_on_new_Product_Launch_Tasks</fullName>
+        <ccEmails>jcapo@automationdirect.com</ccEmails>
+        <description>Notify Additional Users on new Product Launch Tasks</description>
+        <protected>false</protected>
+        <senderAddress>productlaunch@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Tasks/Notify_Additional_Users_on_Product_Launch_Tasks</template>
+    </alerts>
+    <alerts>
+        <fullName>Task_Send_Email_Ready_to_Start</fullName>
+        <description>Task - Send Email Ready to Start</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Tasks/Task_Send_Project_Task_Ready_to_Start</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Change_Log_Call_record_type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Call_Log</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Change Log Call record type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set Log Call record type</fullName>
+        <actions>
+            <name>Change_Log_Call_record_type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.CallType</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Call log tasks created by Ingenius are changed to &quot;Call Log&quot; record type.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

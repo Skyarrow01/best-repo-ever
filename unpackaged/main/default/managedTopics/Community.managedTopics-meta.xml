@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Community.Navigational:AC</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>AC</name>
+        <parentName>Drives/Motors</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for AC drives and motors and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Atlas</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Atlas</name>
+        <parentName>HMI/Industrial Monitors</parentName>
+        <position>2</position>
+        <topicDescription>This topic is for Atlas monitor and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Breakers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Breakers</name>
+        <parentName>Power Products/Circuit Protection</parentName>
+        <position>2</position>
+        <topicDescription>This topic is for Breakers and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:C-More</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>C-More</name>
+        <parentName>HMI/Industrial Monitors</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for C-More HMI and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:C-More Micro</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>C-More Micro</name>
+        <parentName>HMI/Industrial Monitors</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for C-More Micro HMI and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Cables/Wire</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Cables/Wire</name>
+        <parentName>Wiring</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for Cables/Wire and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Click</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Click</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for CLICK line of plcs developed and designed by AutomationDirect and KOYO. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Communications Products</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Communications Products</name>
+        <parentName></parentName>
+        <position>12</position>
+        <topicDescription>Browse our communication production topic for answers to questions about switches, routers, and  associated accessories. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:CyberSecurity</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>CyberSecurity</name>
+        <parentName></parentName>
+        <position>24</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Cybersecurity Best Practices</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Cybersecurity Best Practices</name>
+        <parentName>CyberSecurity</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Cybersecurity Home Page</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Cybersecurity Home Page</name>
+        <parentName>CyberSecurity</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:DC</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>DC</name>
+        <parentName>Drives/Motors</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for DC drives and motors and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:DL Series</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>DL Series</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>3</position>
+        <topicDescription>This topic is for DirectLogic line of plcs developed and designed by AutomationDirect and KOYO. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Do-more/BRX</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Do-more/BRX</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>2</position>
+        <topicDescription>This topic is for Do-more/BRX line of plcs developed and designed by AutomationDirect and HOST Engineering. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Drives/Motors</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Drives/Motors</name>
+        <parentName></parentName>
+        <position>16</position>
+        <topicDescription>Browse our industrial electric motors topic for answers or to ask questions about AC or DC drives, motors, and associated accessories. Participate in the conversation now! 
+IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW DRIVES/MOTORS ABOVE</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Electrical Field Devices</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Electrical Field Devices</name>
+        <parentName></parentName>
+        <position>23</position>
+        <topicDescription>Browse our electrical field devices topic for answers or to ask questions about pushbuttons, indicators, Sensors, encoders, safety, stack lights. Participate in the conversation now! 
+IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW ELECTRICAL FIELD DEVICES ABOVE</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Enclosures</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Enclosures</name>
+        <parentName>Mechanical</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for Enclosures and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Encoders</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Encoders</name>
+        <parentName>Electrical Field Devices</parentName>
+        <position>3</position>
+        <topicDescription>This topic is for encoders and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Fuses</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Fuses</name>
+        <parentName>Power Products/Circuit Protection</parentName>
+        <position>3</position>
+        <topicDescription>This topic is for Fuses and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Getting Started With Cybersecurity</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Getting Started With Cybersecurity</name>
+        <parentName>CyberSecurity</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:HMI/Industrial Monitors</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>HMI/Industrial Monitors</name>
+        <parentName></parentName>
+        <position>15</position>
+        <topicDescription>Browse our HMI &amp; Industrial Monitors topic for answers or to ask questions about operator interface panels and displays. Participate in the conversation now!
+ IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW HMI/INDUSTRIAL MONITORS ABOVE.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:I/O Link</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>I/O Link</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>5</position>
+        <topicDescription>This topic is for I/O Link devices. Share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Indicators</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Indicators</name>
+        <parentName>Electrical Field Devices</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for indicators and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Industrial Cybersecurity Standards</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Industrial Cybersecurity Standards</name>
+        <parentName>CyberSecurity</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Industrial Protocol Considerations</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Industrial Protocol Considerations</name>
+        <parentName>CyberSecurity</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:LS Electric</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>LS Electric</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Mechanical</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Mechanical</name>
+        <parentName></parentName>
+        <position>22</position>
+        <topicDescription>Browse our industrial mechanical topic for answers or to ask questions about enclosures and pneumatics and associated accessories. Participate in the conversation now!
+ IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW MECHANICAL ABOVE.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Mechanical Power</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Mechanical Power</name>
+        <parentName>Mechanical</parentName>
+        <position>2</position>
+        <topicDescription>This topic is for Mechanical Power and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Misc. OT Cybersecurity</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Misc. OT Cybersecurity</name>
+        <parentName>CyberSecurity</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Motion Control</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Motion Control</name>
+        <parentName></parentName>
+        <position>17</position>
+        <topicDescription>Browse our industrial motion control topic for answers or to ask questions about servo or stepper drives, motors, and associated accessories. Participate in the conversation now! 
+IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW MOTION CONTROL ABOVE</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Open Source Devices</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Open Source Devices</name>
+        <parentName></parentName>
+        <position>13</position>
+        <topicDescription>Welcome to our newest product line with AutomationDirect. Our Arduino based P1AM-100 is currently our only product in this category, but we plan to expand.  Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:P1AM-100</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>P1AM-100</name>
+        <parentName>Open Source Devices</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for the P1AM-100 Open Source Controller developed and designed by AutomationDirect and FACTS Engineering. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:PLC/Field I/O</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>PLC/Field I/O</name>
+        <parentName></parentName>
+        <position>14</position>
+        <topicDescription>Browse our PC/Field I/O topic for answers or to ask questions about the BRX PLC, CLICK PLC and Productivity PLC. Participate in the conversation now! 
+IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW PLC/FIELD I/O ABOVE</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Pneumatics</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Pneumatics</name>
+        <parentName>Mechanical</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for Pneumatics and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Power Products/Circuit Protection</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Power Products/Circuit Protection</name>
+        <parentName></parentName>
+        <position>18</position>
+        <topicDescription>Browse our industrial power products and circuit protections topic for answers or to ask questions about power supplies, transformers, breakers, fuses, and associated accessories. Participate in the conversation now!
+IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW POWER PRODUCTS/CIRCUIT PROTECTION ABOVE.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Power Supplies</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Power Supplies</name>
+        <parentName>Power Products/Circuit Protection</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for Power Supplies and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Process Control</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Process Control</name>
+        <parentName></parentName>
+        <position>19</position>
+        <topicDescription>Browse our industrial process controls topic for answers or to ask questions about temperature/process controllers and associated accessories. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Productivity</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Productivity</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for Productivity line of controllers and hardware developed and designed by AutomationDirect and FACTS Engineering. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Protos X I/O</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Protos X I/O</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>8</position>
+        <topicDescription>This topic is for Industrial field ProtosX I/O and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Pushbuttons</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Pushbuttons</name>
+        <parentName>Electrical Field Devices</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for Pushbuttons and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Relays/Timers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Relays/Timers</name>
+        <parentName></parentName>
+        <position>20</position>
+        <topicDescription>Browse our industrial Relays &amp; Timers section for answers or to ask questions about relays, timers, and associated accessories. Or share your knowledge and experience to help another community member.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Safety</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Safety</name>
+        <parentName>Electrical Field Devices</parentName>
+        <position>4</position>
+        <topicDescription>This topic is for safety and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Security Advisories</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Security Advisories</name>
+        <parentName>CyberSecurity</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Sensors</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Sensors</name>
+        <parentName>Electrical Field Devices</parentName>
+        <position>2</position>
+        <topicDescription>This topic is for sensors and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Servo</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Servo</name>
+        <parentName>Motion Control</parentName>
+        <position>0</position>
+        <topicDescription>This topic is for Servo motion control and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Stacklights</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Stacklights</name>
+        <parentName>Electrical Field Devices</parentName>
+        <position>5</position>
+        <topicDescription>This topic is for stacklights and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Stepper</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Stepper</name>
+        <parentName>Motion Control</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for Stepper motion control and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Stride I/O</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Stride I/O</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>6</position>
+        <topicDescription>This topic is for Industrial field Stride I/O and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Terminal Blocks</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Terminal Blocks</name>
+        <parentName>Wiring</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for Terminal Blocks and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Terminator I/O</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Terminator I/O</name>
+        <parentName>PLC/Field I/O</parentName>
+        <position>7</position>
+        <topicDescription>This topic is for Industrial field Terminator I/O and associated accessories. Share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Transformers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Transformers</name>
+        <parentName>Power Products/Circuit Protection</parentName>
+        <position>1</position>
+        <topicDescription>This topic is for Transformers and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:ViewMarq</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>ViewMarq</name>
+        <parentName>HMI/Industrial Monitors</parentName>
+        <position>3</position>
+        <topicDescription>This topic is for ViewMarq displays and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Water Components</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Water Components</name>
+        <parentName>Mechanical</parentName>
+        <position>3</position>
+        <topicDescription>This topic is for Water Components and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Wiring</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Wiring</name>
+        <parentName></parentName>
+        <position>21</position>
+        <topicDescription>Browse our wiring topic for answers or to ask questions about cables or wires, terminal blocks, wiring solutions and associated accessories. Participate in the conversation now! 
+IF YOU ARE ASKING ABOUT A SPECIFIC PRODUCT LINE PLEASE CHOOSE A SUBTOPIC FROM THE LINKS BELOW WIRING ABOVE.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Community.Navigational:Wiring Solutions</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Wiring Solutions</name>
+        <parentName>Wiring</parentName>
+        <position>2</position>
+        <topicDescription>This topic is for Wiring Solutions and associated accessories. Feel free to ask questions or share your knowledge and experience to help another community member. Participate in the conversation now!</topicDescription>
+    </managedTopic>
+</ManagedTopics>

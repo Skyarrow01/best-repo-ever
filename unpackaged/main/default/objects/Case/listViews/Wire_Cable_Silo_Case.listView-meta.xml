@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wire_Cable_Silo_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Cable, Wire &amp; Tools Silo</label>
+    <queue>Cable_Wire_Tools_Silo</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

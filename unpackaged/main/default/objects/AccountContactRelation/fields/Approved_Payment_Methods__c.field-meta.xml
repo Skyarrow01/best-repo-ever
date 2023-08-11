@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Payment_Methods__c</fullName>
+    <description>Indicates the ordering method for this Contact for this Account</description>
+    <externalId>false</externalId>
+    <label>Approved Payment Methods</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit Card</fullName>
+                <default>false</default>
+                <label>Credit Card</label>
+            </value>
+            <value>
+                <fullName>PO &amp; Credit Card</fullName>
+                <default>true</default>
+                <label>PO &amp; Credit Card</label>
+            </value>
+            <value>
+                <fullName>PO</fullName>
+                <default>false</default>
+                <label>PO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="Docuvault_Helper">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:registerevent name="ChooseFoldersEvent" type="TVA_CFB:ChooseFoldersEvent"/>
+    <aura:attribute name="selectedValue" type="String" default="" access="global"/> 
+    <aura:handler event="TVA_CFB:Docuvault_refreshFolderStructure" action="{!c.doInit}"/>
+    <aura:attribute name="folders" type="List"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="true"/>
+    <aura:attribute name ="type" type = "string" default = "task"/>
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner variant="brand" size="small" aura:id="spinner" alternativeText="loading..."/>
+    </aura:if>    
+    <lightning:select name="chooseFolder" label="{!$Label.TVA_CFB.choose_folder}" aura:id="chooseFolder" 
+                      value="{!v.selectedValue}" 
+                      onchange="{!c.getSelectedValue}" required="true">
+        <option value="">-- None --</option>
+        <aura:iteration items="{!v.folders}" var="item">
+            <option value="{!item.label}" text="{!item.value}" selected="{!item.selected}" ></option>
+        </aura:iteration>
+        
+    </lightning:select>
+    
+</aura:component>

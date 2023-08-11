@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send Case Owner Email that Email was not sent to Contact or was sent to the store</description>
+        <name>Send_Case_Owner_Email_that_Email_was_not_sent_to_Contact</name>
+        <label>Send Case Owner Email that Email was not sent to Contact</label>
+        <locationX>578</locationX>
+        <locationY>71</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>Case {!Get_Email_Record.Parent.CaseNumber} reply email was not sent to the correct Contact or was sent to the store. Please check Case emails for https://automationdirectinc.lightning.force.com/lightning/r/Case/{!Get_Email_Record.Parent.Id}/view</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!Get_Email_Record.Parent.Owner:User.Email},fmaddie@automationdirect.com, bperry@automationdirect.com, ddinkins@automationdirect.com, rlewis@automationdirect.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>{!$User.Email}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Case {!Get_Email_Record.Parent.CaseNumber} reply email was not sent to correct contact.  Please Check your Case email.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <description>Was the email sent to the Contact on the Case</description>
+        <name>Did_Email_get_sent_to_Contact</name>
+        <label>Did Email get sent to Contact</label>
+        <locationX>324</locationX>
+        <locationY>65</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>EmailAddressNotMatchingContact</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Email_Record.ToAddress</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>store@automationdirect.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>DoesntContainContactEmail</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Email_Record.ToAddress</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>orderinquiries@automationdirect.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Email_Record.ToAddress</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>ragroup@automationdirect.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Email_Record.ToAddress</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>webhelpdesk@automationdirect.com</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Case_Owner_Email_that_Email_was_not_sent_to_Contact</targetReference>
+            </connector>
+            <label>EmailAddressMatchingContact</label>
+        </rules>
+    </decisions>
+    <description>Send email to Case Owner when  Email Reply went to Wrong Contact</description>
+    <formulas>
+        <description>Returns true if the To Address doesn&#39;t contact Contact Email</description>
+        <name>DoesntContainContactEmail</name>
+        <dataType>Boolean</dataType>
+        <expression>If(NOT(CONTAINS({!Get_Email_Record.ToAddress}, {!Get_Email_Record.Parent.Contact.Email})), true, false)</expression>
+    </formulas>
+    <interviewLabel>Send email to Case Owner when  Email Reply went to Wrong Contact {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send email to Case Owner when  Email Reply went to Wrong Contact</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get Current Incoming Email Record</description>
+        <name>Get_Email_Record</name>
+        <label>Get Email Record</label>
+        <locationX>168</locationX>
+        <locationY>64</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Did_Email_get_sent_to_Contact</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RelatedToId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EmailMessage</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Email_Record</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>CaseId related to the email</description>
+        <name>varCaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

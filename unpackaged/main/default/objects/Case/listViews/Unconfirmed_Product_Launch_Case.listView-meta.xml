@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unconfirmed_Product_Launch_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Unconfirmed Product Launch</label>
+    <queue>Unconfirmed_Product_Launch</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

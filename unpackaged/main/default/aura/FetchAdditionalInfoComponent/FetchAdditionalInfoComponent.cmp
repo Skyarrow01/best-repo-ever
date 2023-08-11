@@ -1,0 +1,37 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" 
+                access="global"
+                controller="FetchAdditionalInfoController">
+	
+    <aura:handler name="init" value="{!this}" action="{!c.onPageReferenceChange}"/>
+    
+    <aura:attribute name="uiMessage" type="String" default=""/>
+    <aura:attribute name="state" type="String" default=""/>
+    <aura:attribute name="firstName" type="String" default=""/>
+    <aura:attribute name="lastName" type="String" default=""/>
+    <aura:attribute name="nickname" type="String" default=""/>
+    
+    <aura:if isTrue="{!!empty(v.uiMessage)}">
+        <ui:message title="Error" severity="error" closable="true">
+                {!v.uiMessage}
+        </ui:message>
+        <br/>
+    </aura:if>
+    <div class="row">
+        <lightning:input name="input1" label="First Name" required="true" value="{!v.firstName}"/>
+        <lightning:input name="input1" label="Last Name" required="true" value="{!v.lastName}"/>
+        <lightning:input name="input1" label="Nickname" required="true" value="{!v.nickname}"/>
+    </div>
+    
+    <br/>
+    
+	<center>
+    	 <lightning:button variant="brand" label="Submit" title="Brand action" onclick="{!c.onSubmission}"/>
+    </center>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>  
+</aura:component>

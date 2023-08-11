@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomHelpMenuSection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customHelpMenuItems>
+        <linkUrl>https://adcwiki.automationdirect.com/display/SF/File+Slayer+Instructions</linkUrl>
+        <masterLabel>How To User File Slayer</masterLabel>
+        <sortOrder>1</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://adcwiki.automationdirect.com/display/SF/Highlighter+Instructions</linkUrl>
+        <masterLabel>Highlighter Key</masterLabel>
+        <sortOrder>2</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://adcwiki.automationdirect.com/display/SF/Update+Your+Availability</linkUrl>
+        <masterLabel>Update Your Availability</masterLabel>
+        <sortOrder>3</sortOrder>
+    </customHelpMenuItems>
+    <masterLabel>Automation Direct Help Section</masterLabel>
+</CustomHelpMenuSection>

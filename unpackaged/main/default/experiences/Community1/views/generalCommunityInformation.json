@@ -1,0 +1,92 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "9ba82b70-b9b3-43fd-a505-15a17ce8a345",
+  "label" : "General Community Information",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "General Community Information",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "46752e0b-dcf3-4bd0-8f50-cde9d0c67db5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "88751d0f-d85c-41e0-b8cd-45f049de4305",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "FirstTileImageLink" : "ProductAnnouncement",
+        "FirstTileLink" : "/topic/0TO3u000000l14VGAQ/new-product-announcements",
+        "FirstTileLinkGuest" : "/new-product-announcements/?topic_id=0TO3u000000l14VGAQ",
+        "FirstTileName" : "New Product Announcement",
+        "FourthTileImageLink" : "ForumFeedback",
+        "FourthTileLink" : "/topic/0TO3u000000l14YGAQ/community-forum-feedback-and-suggestions",
+        "FourthTileLinkGuest" : "",
+        "FourthTileName" : "Community Forum Feedback and Suggestions",
+        "GeneralCommunityInfoLink" : "",
+        "NumberOfTiles" : 4,
+        "SecondTileImageLink" : "FirmwareAnnouncement",
+        "SecondTileLink" : "/topic/0TO3u000000l14WGAQ/fwsw-updates-announcements",
+        "SecondTileLinkGuest" : "/fw-sw-updates-announcements/?topic_id=0TO3u000000l14WGAQ",
+        "SecondTileName" : "Firmware/Software Updates Announcements",
+        "TechnicalForumsLink" : "",
+        "ThirdTileImageLink" : "TestingSection",
+        "ThirdTileLink" : "/topic/0TO3u000000l14XGAQ/testing-section-for-new-members",
+        "ThirdTileLinkGuest" : "",
+        "ThirdTileName" : "Testing Section for New Members"
+      },
+      "componentName" : "c:CustomImageDisplayComponent",
+      "id" : "8b6274e3-9477-4fe5-94f2-49d39070e231",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "98e954a5-042e-4f0a-8be1-d6c64ceaa89c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "08886e4a-f710-417e-9c60-74d7cb6cfe9b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cb7647db-9739-4492-b4a1-fde003f8feb6",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Review all of our general community information here including new product announcements, firmware/software updates, offer feedback and more!",
+        "title" : "General Community Information | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f6766bf3-1eef-409d-bdfd-feeb4bb9d700",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6048164c-15ae-4635-ba9a-05622a70faea",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-general-community-information"
+}

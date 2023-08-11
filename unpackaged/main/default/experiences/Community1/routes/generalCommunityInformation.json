@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "9ba82b70-b9b3-43fd-a505-15a17ce8a345",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "b62ae5fa-cce8-4b9b-baee-9d0cfa581e18",
+  "label" : "General Community Information",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-general-community-information",
+  "type" : "route",
+  "urlPrefix" : "general-community-information"
+}

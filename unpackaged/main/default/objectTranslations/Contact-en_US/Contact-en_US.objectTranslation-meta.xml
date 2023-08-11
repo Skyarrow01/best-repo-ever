@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Flag Information --></label>
+            <section>Flag Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Contact --></label>
+        <name>Chat_Transcript_Contact_Detail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New Contact --></label>
+        <name>New_Contact_Chat</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>New_Task</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send to P21 --></label>
+        <name>Send_to_P21</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Contact from Case --></label>
+        <name>Create_Contact_from_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Credit Application Form --></label>
+        <name>Send_Credit_Form</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Account cannot be changed, please go to Related Tab-&gt;Related Accounts-&gt;Add Relationship to add contact to new account. --></errorMessage>
+        <name>Cannot_Change_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a Community Social Login Email (ie Google Link) and cannot be changed in Salesforce. --></errorMessage>
+        <name>Cannot_Change_Social_Login_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a placeholder contact and should not be updated. --></errorMessage>
+        <name>Cannot_Update_Dummy_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inactive Contacts cannot be edited. --></errorMessage>
+        <name>Cannot_edit_Inactive_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Use This Email For Contact. Systematic email address for multiple different companies. --></errorMessage>
+        <name>Contact_Email_Dont_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter numbers only for phone. --></errorMessage>
+        <name>DirectPhone_should_have_numbers_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Direct or Phone(Mobile) Number. --></errorMessage>
+        <name>Direct_or_Mobile_Phone_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Email Opt Out Is Checked, No Need To Verify --></errorMessage>
+        <name>Email_Opt_Out_Is_Checked_No_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Name is Required. --></errorMessage>
+        <name>First_Name_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Flag Customer is checked, please select a Flag Reason. --></errorMessage>
+        <name>Flag_Customer_needs_Flag_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select an inactive reason --></errorMessage>
+        <name>Inactive_Reason_cannot_be_blank_if_Inact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter numbers only for phone. --></errorMessage>
+        <name>IncomingPhone_should_have_numbers_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter numbers only for phone. --></errorMessage>
+        <name>Phone_should_have_numbers_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please verify contact information. --></errorMessage>
+        <name>Verified_is_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ACTIVATE --></label>
+        <name>ACTIVATE</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Inactivate --></label>
+        <name>Inactivate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Move_Activity --></label>
+        <name>Move_Activity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Related_BE_Cases --></label>
+        <name>Related_BE_Cases</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_P21_New --></label>
+        <name>Send_to_P21_New</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Web --></label>
+        <name>Send_to_Web</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

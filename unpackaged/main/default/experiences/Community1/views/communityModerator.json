@@ -1,0 +1,59 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1fe7565a-e3db-4542-b131-f52e506fe60c",
+  "label" : "Community Moderator",
+  "regions" : [ {
+    "id" : "76b890f1-4820-4e3b-940e-965256959300",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 28px;\">Please read the following before contacting the ADC Community Moderator</span></p><p style=\"text-align: center;\"><br></p><p><span style=\"font-size: 14px;\">As a community we would like for everyone to work together for the common goal of providing answers and informatin to all members of the community. We understand that when there is an open platform like this there will be members that don't follow the guidelines. Please read through the following scenarios and if any of them apply feel free to contact our moderators to help resolve the issue. </span></p><p><br></p><p style=\"text-align: center;\"><span style=\"font-size: 18px;\">When to use the moderator feedback</span></p><ol><li><span style=\"font-size: 14px;\">﻿</span><span style=\"color: rgb(85, 85, 85); font-size: 14px;\"> When you want to report a forum problem and you require a reply.</span></li><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">Please provide as much information about the problem and how to duplicate it if possible</span></li><li><span style=\"color: rgb(85, 85, 85); font-size: 14px;\">&nbsp;Site Feedback suggestions or comments. </span></li><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">Please provide what your expectations would be and if possible, an example from another forum site.</span></li><li><span style=\"color: rgb(85, 85, 85); font-size: 14px;\">&nbsp;&nbsp;You want to inquire about, question, or dispute a moderation action.</span></li><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">If a moderation action has been taken against you, we will be happy to discuss it with you in a constructive manner and see if we can come to a resolution.</span></li><li><span style=\"color: rgb(85, 85, 85); font-size: 14px;\">&nbsp;&nbsp;You want to inquire about forum rules or policies or ask if a thread topic would be OK. If you are in doubt about what you can post, we suggest that you ask in advance.</span></li><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">This forum is new to us too. While we have covered the basic guidelines in our Community Guidelines document, we may have grey areas we will need to address.</span></li></ol><p><br></p><p><br></p><p style=\"text-align: center;\"><span style=\"font-size: 18px;\">When NOT to use the moderator feedback</span></p><p><br></p><ol><li><span style=\"font-size: 14px; color: rgb(85, 85, 85);\">When you want to&nbsp;&nbsp;report posts that break forum rules. </span></li><li class=\"ql-indent-1\"><span style=\"font-size: 14px; color: rgb(85, 85, 85);\">Use the </span><b style=\"font-size: 14px; color: rgb(85, 85, 85);\">Flag </b><span style=\"font-size: 14px; color: rgb(85, 85, 85);\">on a specific post so it'll be handled more efficiently. </span><i style=\"font-size: 14px; color: rgb(85, 85, 85);\">(Exception: If you need a reply to a message about forum problems.)</i></li><li><span style=\"font-size: 14px; color: rgb(85, 85, 85);\">When you want to ask for help with technical problems with an AutomationDirect product.</span></li><li class=\"ql-indent-1\"><span style=\"font-size: 14px; color: rgb(85, 85, 85);\"> The real expertise are other customers in the community. Browse our extensive knowledge database or search the forums for an answer or start a thread with your question.&nbsp;</span></li></ol><p><br></p><p><span style=\"font-size: 14px;\">Our Moderators will strive to answer any messages as quickly as possible. However, some issues may take some research and discussion with other members of our team or this community. We will not reply to spam, ads, or extremely rude messages.&nbsp;</span>&nbsp;&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "58a628cf-9438-4efd-9189-fa0c7aaa0624",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "62e10df6-3ab8-4c46-a7cd-3bd8cf6c7487",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "label" : "Message Moderator",
+        "userId" : "0053u000003TrfzAAC"
+      },
+      "componentName" : "forceChatter:newMessageButton",
+      "id" : "3b8e8044-b8ac-4da1-95af-8fad187f4a41",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3867d671-ba2b-4f06-b69d-a45b8ba36471",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Community Moderator"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fe8f3fb2-8994-4e2c-9bfc-d715a7d7f179",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "01046bfb-df35-4ed5-a22d-b3d1e5b838ed",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-community-moderator"
+}

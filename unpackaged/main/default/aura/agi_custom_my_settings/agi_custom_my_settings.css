@@ -1,0 +1,23 @@
+.THIS input[type=checkbox] {
+	background: #ffffff;
+    box-shadow: none;
+    border: 1px solid transparent;
+    padding: 0;
+    border-color: rgb(60, 63, 61);
+    -webkit-appearance: none;
+    height: 22px;
+    width: 22px;
+    vertical-align: middle;
+    border-radius: .25rem;
+    margin-right: 8px;
+    
+}
+
+.THIS .checkboxsection .uiInput {
+    width: 42%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-right: 5.4%;
+    margin-bottom: 18px;
+}

@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "ffc46ac4-5d63-49db-b833-e07781cf6751",
+  "headMarkup" : "<link rel=\"shortcut icon\" href=\"https://qa-adconlinecommunity.cs??.force.com/resource/smileyfavicon?v=2\" />",
+  "id" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Service Community Template",
+  "type" : "appPage"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Customers</fullName>
+    <columns>X12_Month_Revenue__c</columns>
+    <columns>CID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Portal__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Email__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.SALES</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Portal__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Portal Customers</label>
+    <sharedTo>
+        <role>ADC</role>
+    </sharedTo>
+</ListView>

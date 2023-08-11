@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account (TRM) Layout</layout>
+        <sections>
+            <label><!-- Credit &amp; Collections Profile --></label>
+            <section>Credit &amp; Collections Profile</section>
+        </sections>
+        <sections>
+            <label><!-- Credit &amp; Collections Status --></label>
+            <section>Credit &amp; Collections Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- On-Boarding and Credit Limit Status --></label>
+            <section>On-Boarding and Credit Limit Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- AR Information --></label>
+            <section>AR Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout AR</layout>
+        <sections>
+            <label><!-- AR Information --></label>
+            <section>AR Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout Busi Dev</layout>
+        <sections>
+            <label><!-- AR Information --></label>
+            <section>AR Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Please contact Accounting to change Account Name --></errorMessage>
+        <name>Acct_Name_Edited_Only_by_AR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please contact Accounting to change Billing Address. --></errorMessage>
+        <name>Billing_Addr_edited_Only_by_AR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing address is required --></errorMessage>
+        <name>Billing_Address_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Shipping Zip --></errorMessage>
+        <name>CRA_needs_to_capture_Shipping_Zip</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a placeholder account and should not be updated. --></errorMessage>
+        <name>Cannot_Update_Dummy_Acct</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out &quot;Other Type.&quot; --></errorMessage>
+        <name>Other_Type_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter numbers only for phone field.  Phone field will not accept &quot;(&quot; , &quot;)&quot; &quot;-&quot;, or spaces. --></errorMessage>
+        <name>Phone_can_only_contain_Numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Address is required. --></errorMessage>
+        <name>Shipping_Address_is_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BCIRPlus --></label>
+        <name>BCIRPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Customer_Sales_Reports --></label>
+        <name>Customer_Sales_Reports</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Experian_Review --></label>
+        <name>Experian_Review</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Experian_Verify --></label>
+        <name>Experian_Verify</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Accts --></label>
+        <name>Merge_Accts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Related_BE_Cases --></label>
+        <name>Related_BE_Cases</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Review_Canada --></label>
+        <name>Review_Canada</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Review_Equifax --></label>
+        <name>Review_Equifax</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Verify_Canada --></label>
+        <name>Verify_Canada</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Verify_Equifax --></label>
+        <name>Verify_Equifax</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

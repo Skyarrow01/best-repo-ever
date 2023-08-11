@@ -1,0 +1,57 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" 
+                access="global"
+                controller="CustomImageDisplayController">
+    <!-- Attributes -->
+    <aura:attribute name="NumberOfTiles" type="Integer" default="2"/>
+    <aura:attribute name="FirstTileName" type="String" default=""/>
+    <aura:attribute name="FirstTileLink" type="String" default=""/>
+    <aura:attribute name="FirstTileLinkGuest" type="String" default=""/>
+    <aura:attribute name="FirstTileImageLink" type="String" default="ProductCategory"/>
+    
+    <aura:attribute name="SecondTileName" type="String" default=""/>
+    <aura:attribute name="SecondTileLink" type="String" default=""/>
+    <aura:attribute name="SecondTileLinkGuest" type="String" default=""/>
+    <aura:attribute name="SecondTileImageLink" type="String" default="ProductCategory"/>
+    
+    <aura:attribute name="ThirdTileName" type="String" default=""/>
+    <aura:attribute name="ThirdTileLink" type="String" default=""/>
+    <aura:attribute name="ThirdTileLinkGuest" type="String" default=""/>
+    <aura:attribute name="ThirdTileImageLink" type="String" default="ProductCategory"/>
+    
+    <aura:attribute name="FourthTileName" type="String" default=""/>
+    <aura:attribute name="FourthTileLink" type="String" default=""/>
+    <aura:attribute name="FourthTileLinkGuest" type="String" default=""/>
+    <aura:attribute name="FourthTileImageLink" type="String" default="ProductCategory"/>
+    
+    <aura:attribute name="TechnicalForumsLink" type="String" default=""/>
+    <aura:attribute name="GeneralCommunityInfoLink" type="String" default=""/>
+    
+    <aura:attribute name="MediumLargeDeviceSize" type="Integer"/>
+    <aura:attribute name="allTiles" type="List" default=""/>
+    <aura:attribute name="currentUserProfileName" type="String" default=""/>
+    <!-- Attributes -->
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- Handler -->
+    
+    <!-- Markup -->
+    <lightning:layout horizontalAlign="space" multipleRows="true">
+        <aura:iteration items="{!v.allTiles}" var="tile">
+            <lightning:layoutItem size="12" smallDeviceSize="12" mediumDeviceSize="{!v.MediumLargeDeviceSize}" largeDeviceSize="{!v.MediumLargeDeviceSize}" padding="around-small">
+                <div>
+                    <figure class="slds-image">
+                        <a href="javascript:void(0);" data-link="{!tile.linkRedirect}" onclick="{!c.linkRedirect}" class="slds-image__crop--16-by-9">
+                            <img src="{!tile.imageLink}"/>
+                        </a>
+                        <figcaption class="slds-image__title--card">
+                            <center>
+                                <a href="javascript:void(0);" data-link="{!tile.linkRedirect}" onclick="{!c.linkRedirect}"><span>{!tile.name}</span></a>
+                            </center>
+                        </figcaption>
+                    </figure>
+                </div>
+            </lightning:layoutItem>
+        </aura:iteration>
+    </lightning:layout>
+</aura:component>

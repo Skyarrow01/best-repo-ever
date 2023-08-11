@@ -1,0 +1,242 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:hasRecordId"
+                access="global"
+                controller="agi_CommunityTopicProvider">
+	
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="baseUrl" type="String" />
+    <aura:attribute name="topics" type="List" />
+    <aura:attribute name="pins" type="List" />
+    <aura:attribute name="topicName" type="String" default="TEST HERE" />
+    <aura:attribute name="topicDesc" type="String" />
+    <aura:attribute name="filterList" type="List" default="[
+    {'label': 'Latest Posts', 'value': 'latest'},                                                       
+    {'label': 'Most Recent Activity', 'value': 'activity'},
+    {'label': 'Top Questions', 'value': 'top'}                                                       
+    ]" />
+    <aura:attribute name="optFilter" type="String" default="" />
+    <aura:attribute name="optSort" type="String"  default="" />
+    <aura:attribute name="guest" type="Boolean" />
+    <aura:attribute name="CurrentUser" type="User"/>
+    <aura:attribute name="canPin" type="Boolean" />
+    <aura:attribute name="fall" type="Boolean" default="true" />
+    <aura:attribute name="fnotanswered" type="Boolean"  />
+    <aura:attribute name="fnobest" type="Boolean" />
+    <aura:attribute name="fbest" type="Boolean"  />
+    <aura:attribute name="nextPageToken" type="String" />
+    
+    
+    <div class="compactFeed forceChatterCompactFeed">
+    	<div class="forceChatterScroller" >
+            <div class="resizeCaptureFrameWrapper">
+                <div class="slds-scope forceChatterStyle--default forceChatterStyle">
+                    <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-end slds-m-vertical_small ">
+                        <span class="feeds-sorter"><lightning:combobox name="sorter" label="Sort by:" value="activity" options="{! v.filterList }" onchange="{! c.handleSort }" /></span>
+                        <span class="feeds-filter"><lightning:buttonMenu aura:Id="filterMenu" alternativeText="Show menu" variant="border-filled" iconName="utility:filterList"  onselect="{! c.handleFilter }">
+                            <lightning:menuItem value="all" 
+                                                label="All Questions" 
+                                                class="slds-is-selected feeds-filter-option slds-dropdown__item"
+                                                checked="{!v.fall}" />
+                            <lightning:menuItem value="notanswered" 
+                                                label="Unanswered Questions" 
+                                                class="slds-is-selected feeds-filter-option slds-dropdown__item" 
+                                                checked="{!v.fnotanswered}" />
+                            <lightning:menuItem value="nobest" 
+                                                label="Questions with No Best Answer" 
+                                                class="slds-is-selected feeds-filter-option slds-dropdown__item" 
+                                                checked="{!v.fnobest}"/>
+                            <lightning:menuItem value="best" 
+                                                label="Questions with Best Answer" 
+                                                class="slds-is-selected feeds-filter-option slds-dropdown__item" 
+                                                checked="{!v.fbest}"/>
+                        </lightning:buttonMenu></span>
+                    </div>
+                </div>
+
+                <aura:if isTrue="{!v.pins != null}">
+                <ul class="pinnedFeedList">
+                <aura:iteration var="topic" items="{!v.pins}">
+                    <li class="pinnedFeedListItem">
+                        <div class="pinnedFeedItem compactFeedItem slds-grid slds-grid_align-spread slds-p-around_small forceChatterCompactFeedItem">
+                            <article class="slds-grid slds-container_fluid">
+                                <div class="slds-p-right_small slds-p-top_xx-small">
+                                    <lightning:icon iconName="utility:pin" alternativeText="Pinned Post" title="Pinned Post" size="xx-small" class="slds-icon slds-icon-text-default slds-icon_xx-small" />
+                                </div>
+                                
+                                <div class="slds-grid slds-grid_vertical slds-container_fluid drillInTarget" data-id="{!topic.topicFeedId}">
+                                    <div>
+                                        <a href="{!v.baseUrl + '/s/question/' + topic.topicFeedId}">
+                                            <div class="titleContainer forceChatterCompactFeedItemBody">
+                                                <p class="title">
+                                                    <span class="title uiOutputText">{!topic.topicTitle}</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="metadata slds-m-top_xx-small slds-grid slds-wrap slds-grid_align-spread">
+                                        <div class="slds-p-right_large">
+                                            <span class="topicName">{!topic.topicName}</span>
+                                            <span class="dotSymbol"></span>
+                                            <span class="postedBy">{!topic.topicCreatedBy}</span>
+                                            <span class="dotSymbol"></span>
+                                            <span class="timestamp"><lightning:formattedDateTime value="{!topic.topicCreated}" month="long" 
+                                                    day="2-digit" year="numeric" hour="2-digit"
+                                                    minute="2-digit" timeZone="America/New_York" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="metadata slds-m-top_xx-small slds-grid slds-wrap slds-grid_align-spread">
+                                        <div class="slds-p-right_large">
+                                            <span class="postedBy">Last Activity: </span>
+                                            <span class="timestamp"><lightning:formattedDateTime value="{!topic.topicLastActivity}" month="long" 
+                                                    day="2-digit" year="numeric" hour="2-digit"
+                                                    minute="2-digit" timeZone="America/New_York" />
+                                            </span>
+                                            <aura:if isTrue="{!not(topic.topicLastCommenter == null)}">
+												<div>    
+                                                        <span class="postedBy">Last Comment By: {!topic.topicLastCommenter} on </span>
+                                                        <span class="timestamp"><lightning:formattedDateTime value="{!topic.topicLastCommentDate}" month="long" 
+                                                            day="2-digit" year="numeric" hour="2-digit"
+                                                            minute="2-digit" timeZone="America/New_York" /></span>
+                                                </div>
+                                            </aura:if>
+                                        </div>
+                                        <div class="metrics slds-wrap slds-text-body_small">
+                                            <aura:if isTrue="{!topic.topicBestAnswered}">
+                                                <span class="metric slds-text-color_success">
+                                                <span class="slds-p-right_xx-small">
+                                                    <lightning:icon iconName="utility:answer" alternativeText="Answered" title="Answered" size="xx-small" class="slds-icon-utility-answer slds-current-color slds-text-color_success slds-icon_container" />
+                                                    </span>
+                                                    <lightning:formattedText value="Answered"/>
+                                                    <span></span>
+                                                </span>
+                                            </aura:if>
+                                            <span class="metric">
+                                            <span class="slds-p-right_xx-small"><lightning:icon iconName="utility:preview" alternativeText="Number of Views" title="Number of Views" size="xx-small" /></span>
+                                                <lightning:formattedNumber value="{!topic.topicViews}"/>
+                                                <span></span>
+                                            </span>
+                                            <span class="metric">
+                                            <span class="slds-p-right_xx-small"><lightning:icon iconName="utility:like" alternativeText="Number of Likes" title="Number of Likes" size="xx-small" /></span>
+                                                <lightning:formattedNumber value="{!topic.topicLikes}"/>
+                                                <span></span>
+                                            </span>
+                                            <span class="metric">
+                                            <span class="slds-p-right_xx-small"><lightning:icon iconName="utility:comments" alternativeText="Number of Comments" title="Number of Comments" size="xx-small" /></span>
+                                                <lightning:formattedNumber value="{!topic.topicComments}"/>
+                                                <span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PIN / UNPIN BUTTON -->
+							<aura:if isTrue="{!v.canPin == true}">                            
+                            <div class="slds-p-left_large slds-text-align_center slds-align-bottom">
+                                <lightning:buttonMenu alternativeText="Actions for this Feed Item" class="slds-dropdown-trigger slds-dropdown-trigger_click cuf-feedItemActionTrigger forceChatterOverflowActionMenu" iconSize="x-small" onselect="{! c.handleUnpin}"	>
+                                    <lightning:menuItem value="{!topic.topicFeedId}" label="Unpin" />
+                                </lightning:buttonMenu>
+                            </div>
+                            </aura:if>
+                            <!-- END PIN / UNPIN BUTTON -->                            
+                        </div>
+                    </li>
+                </aura:iteration>
+                </ul>
+                </aura:if>
+                <aura:if isTrue="{!v.topics != null}">
+                <ul class="compactFeedList">
+                <aura:iteration var="topic" items="{!v.topics}">
+                    <li class="compactFeedListItem">
+                        <div class="compactFeedItem slds-grid slds-grid_align-spread slds-p-around_small forceChatterCompactFeedItem">
+                            <article class="slds-grid slds-container_fluid">
+                                <div class="slds-grid slds-grid_vertical slds-container_fluid drillInTarget" data-id="{!topic.topicFeedId}">
+                                    <div>
+                                        <a href="{!v.baseUrl + '/s/question/' + topic.topicFeedId}">
+                                            <div class="titleContainer forceChatterCompactFeedItemBody">
+                                                <p class="title">{!topic.topicTitle}
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="metadata slds-m-top_xx-small slds-grid slds-wrap slds-grid_align-spread">
+                                        <div class="slds-p-right_large">
+                                            <span class="topicName">{!topic.topicName}</span>
+                                            <span class="dotSymbol"></span>
+                                            <span class="postedBy">{!topic.topicCreatedBy}</span>
+                                            <span class="dotSymbol"></span>
+                                            <span class="timestamp"><lightning:formattedDateTime value="{!topic.topicCreated}" month="long" 
+                                                    day="2-digit" year="numeric" hour="2-digit"
+                                                    minute="2-digit" timeZone="America/New_York" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="metadata slds-m-top_xx-small slds-grid slds-wrap slds-grid_align-spread">
+                                        <div class="slds-p-right_large">
+                                            <span class="postedBy">Last Activity: </span>
+                                            <span class="timestamp"><lightning:formattedDateTime value="{!topic.topicLastActivity}" month="long" 
+                                                    day="2-digit" year="numeric" hour="2-digit"
+                                                    minute="2-digit" timeZone="America/New_York" />
+                                            </span>
+                                            <aura:if isTrue="{!not(topic.topicLastCommenter == null)}">
+                                                <div>
+                                                    <span class="postedBy">Last Comment By: {!topic.topicLastCommenter} on </span>
+                                                        <span class="timestamp"><lightning:formattedDateTime value="{!topic.topicLastCommentDate}" month="long" 
+                                                            day="2-digit" year="numeric" hour="2-digit"
+                                                            minute="2-digit" timeZone="America/New_York" /></span>
+                                                </div>
+                                            </aura:if>
+                                        </div>
+                                        <div class="metrics slds-wrap slds-text-body_small">
+                                            <aura:if isTrue="{!topic.topicBestAnswered}">
+                                                <span class="metric slds-text-color_success">
+                                                <span class="slds-p-right_xx-small">
+                                                    <lightning:icon iconName="utility:answer" alternativeText="Answered" title="Answered" size="xx-small" class="slds-icon-utility-answer slds-current-color slds-text-color_success slds-icon_container" />
+                                                    </span>
+                                                    <lightning:formattedText value="Answered"/>
+                                                    <span></span>
+                                                </span>
+                                            </aura:if>
+                                            <span class="metric">
+                                            <span class="slds-p-right_xx-small"><lightning:icon iconName="utility:preview" alternativeText="Number of Views" title="Number of Views" size="xx-small" /></span>
+                                                <lightning:formattedNumber value="{!topic.topicViews}"/>
+                                                <span></span>
+                                            </span>
+                                            <span class="metric">
+                                            <span class="slds-p-right_xx-small"><lightning:icon iconName="utility:like" alternativeText="Number of Likes" title="Number of Likes" size="xx-small" /></span>
+                                                <lightning:formattedNumber value="{!topic.topicLikes}"/>
+                                                <span></span>
+                                            </span>
+                                            <span class="metric">
+                                            <span class="slds-p-right_xx-small"><lightning:icon iconName="utility:comments" alternativeText="Number of Comments" title="Number of Comments" size="xx-small" /></span>
+                                                <lightning:formattedNumber value="{!topic.topicComments}"/>
+                                                <span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PIN / UNPIN BUTTON -->
+							<aura:if isTrue="{!v.canPin == true}">                            
+                            <div class="slds-p-left_large slds-text-align_center slds-align-bottom">
+                                <lightning:buttonMenu alternativeText="Actions for this Feed Item" class="slds-dropdown-trigger slds-dropdown-trigger_click cuf-feedItemActionTrigger forceChatterOverflowActionMenu" iconSize="x-small" onselect="{!c.handlePin}"	>
+                                    <lightning:menuItem value="{!topic.topicFeedId}" label="Pin" />
+                                </lightning:buttonMenu>
+                            </div>
+                            </aura:if>
+                            <!-- END PIN / UNPIN BUTTON -->                            
+                        </div>
+                    </li>
+                </aura:iteration>
+                </ul>
+                </aura:if>    
+                <aura:if isTrue="{!v.nextPageToken != null}">
+                    <div>
+                        <div class="cuf-showMoreContainer slds-var-p-vertical_x-small">
+                            <lightning:button label="View More" title="View More" class="slds-button slds-button_neutral cuf-showMore slds-button" onclick="{! c.handleViewMoreClick }"/>
+                        </div>
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+    </div>
+</aura:component>

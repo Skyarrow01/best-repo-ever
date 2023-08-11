@@ -1,0 +1,16 @@
+Dear {!Case.OwnerFirstName}:
+
+The following Case has been assigned to you.  
+
+Case Number:  {!Case.CaseNumber}
+Account:  {!Case.Account}
+Contact:  {!Case.Contact}
+Phone:  {!Contact.MobilePhone}
+Email: {!Contact.Email}
+Description:  {!Case.Description}
+Product:  {!Case.Product__c}
+Priority:  {!Case.Priority}
+
+{!Case.Link}
+
+Thank you!

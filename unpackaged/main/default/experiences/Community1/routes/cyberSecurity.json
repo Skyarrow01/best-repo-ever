@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "173a2b45-2d5c-4439-9c54-9f4399d027ad",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "95e5a096-7b0b-46a3-9187-9615ba8102dd",
+  "label" : "CyberSecurity",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-cybersecurity",
+  "type" : "route",
+  "urlPrefix" : "cybersecurity"
+}

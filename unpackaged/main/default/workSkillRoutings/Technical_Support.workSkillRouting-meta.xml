@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkSkillRouting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <masterLabel>Technical Support</masterLabel>
+    <relatedEntity>LiveChatTranscript</relatedEntity>
+    <workSkillRoutingAttributes>
+        <field>LiveChatTranscript.SkillId</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>C_More</skill>
+        <skillLevel>4</skillLevel>
+        <value>0C53u000000L2Ot</value>
+    </workSkillRoutingAttributes>
+</WorkSkillRouting>

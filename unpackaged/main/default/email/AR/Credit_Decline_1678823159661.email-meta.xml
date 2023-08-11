@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Credit Decline</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Credit Decline</name>
+    <pageDevName>Credit_Decline</pageDevName>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>AutomationDirect.com Inc - Credit Application</subject>
+    <textOnly>{{{Recipient.FirstName}}} {{{Recipient.LastName}}}
+
+{{{Recipient.BillingAddress__c}}}
+
+Account Number: {{{Recipient.P21_ID__c}}}
+
+Dear: {{{Recipient.FirstName}}}
+
+Thank you for your recent application for credit. We have given your request careful consideration but regret that we are unable to extend credit to you at this time. Our credit decision was based in whole or part on information obtained in a credit report we obtained from a Consumer Reporting Agency. Please make purchases using one of our other methods of payment. We accept most major credit cards and prepayment by ach or company check.
+
+Under the Fair Credit Reporting Act, you have the right to know the information contained in your credit file at the Consumer Reporting Agency. You can obtain a free copy of your report from the Reporting Agency, if you make a written request to the Reporting Agency within 60 days after you receive this notice. You also have the right to dispute directly with the Reporting Agency as to the accuracy or completeness of the information in the report. The Reporting Agency played no part in our decision and is unable to supply specific reasons why we have denied to you.
+
+Sincerely,
+
+AutomationDirect.com</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

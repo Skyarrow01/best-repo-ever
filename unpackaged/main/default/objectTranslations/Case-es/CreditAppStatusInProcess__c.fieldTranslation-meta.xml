@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Credit App Status In Process --></label>
+        <name>CreditAppStatusInProcess__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References – 1st request</masterLabel>
+            <translation><!-- References – 1st request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References – 2nd request</masterLabel>
+            <translation><!-- References – 2nd request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References – 3rd request</masterLabel>
+            <translation><!-- References – 3rd request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested Additional Refs</masterLabel>
+            <translation><!-- Requested Additional Refs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested GOA</masterLabel>
+            <translation><!-- Requested GOA --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

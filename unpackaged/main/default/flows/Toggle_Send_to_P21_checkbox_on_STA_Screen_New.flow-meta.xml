@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <description>Displays all required fields and shows users what they are missing prior to sending to P21</description>
+        <name>Missing_P21_or_Inactive</name>
+        <label>Missing P21 or Inactive</label>
+        <locationX>566</locationX>
+        <locationY>232</locationY>
+        <defaultConnector>
+            <targetReference>Missing_Required_Fields_or_Phones_contain_Text</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Missing_P21_Id_or_INactive</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_STA.P21_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Inactive__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Missing_P21Id_or_Inactive</targetReference>
+            </connector>
+            <label>Missing P21 Id or INactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Decision to determine if any required fields are missing or if Phone fields contain text.</description>
+        <name>Missing_Required_Fields_or_Phones_contain_Text</name>
+        <label>Missing Required Fields or Phones contain Text</label>
+        <locationX>580</locationX>
+        <locationY>404</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_P21_button</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Missing_Required_Fields</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Contact__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Phone__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Name</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Street_Address_1__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.City__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.State__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Zip_Code__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Country__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>MissingRequiredFields</targetReference>
+            </connector>
+            <label>Missing Required Fields</label>
+        </rules>
+        <rules>
+            <name>Phones_contain_Text</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>PhoneContainAlpha</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Phone__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Phone_field_s_still_contain_characters</targetReference>
+            </connector>
+            <label>Phones contain Text</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Toggle Send to P21 Check box</description>
+        <name>Toggle_P21_button</name>
+        <label>Toggle P21 button</label>
+        <locationX>578</locationX>
+        <locationY>644</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_Send_to_P21_to_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Send to P21 is True</defaultConnectorLabel>
+        <rules>
+            <name>Send_to_P21_is_False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_STA.Send_to_P21__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Toggle_Send_to_P21_to_True</targetReference>
+            </connector>
+            <label>Send to P21 is False</label>
+        </rules>
+    </decisions>
+    <description>Screen Flow to walk through identifying when the Ship-To Address was not sent to P21</description>
+    <formulas>
+        <description>Friendly status to present to user if the Contact is Inactive</description>
+        <name>InactiveStatus</name>
+        <dataType>String</dataType>
+        <expression>If({!Get_Current_STA.Inactive__c} = true, &quot;INACTIVE&quot;, &quot;ACTIVE&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Determines if Direct PHone Contains Alpha</description>
+        <name>PhoneContainAlpha</name>
+        <dataType>Boolean</dataType>
+        <expression>if(ISNUMBER({!Get_Current_STA.Phone__c}), false, true)</expression>
+    </formulas>
+    <interviewLabel>Toggle Send to P21 checkbox on STA Screen New {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Toggle Send to P21 checkbox on STA Screen New</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get Current ShipTo Record passed in</description>
+        <name>Get_Current_STA</name>
+        <label>Get Current STA</label>
+        <locationX>381</locationX>
+        <locationY>228</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Missing_P21_or_Inactive</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Ship_To_Addresses__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set the Send to P21 to False</description>
+        <name>Toggle_Send_to_P21_to_False</name>
+        <label>Toggle Send to P21 to False</label>
+        <locationX>420</locationX>
+        <locationY>873</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Ship_To_Addresses__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Toggle_Send_to_P21_to_True</name>
+        <label>Toggle Send to P21 to True</label>
+        <locationX>756</locationX>
+        <locationY>863</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Ship_To_Addresses__c</object>
+    </recordUpdates>
+    <screens>
+        <description>Missing P21 Id or Inactive</description>
+        <name>Missing_P21Id_or_Inactive</name>
+        <label>Missing P21Id or Inactive</label>
+        <locationX>769</locationX>
+        <locationY>78</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MissingP21orInactive</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;{!Get_Current_STA.Name} is missing P21Id or Inactive. &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Please wait for P21 Id to generate before sending to P21. &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;This Ship-To Address will not send to P21 if missing P21 Id or is Inactive.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;P21: &lt;/b&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!Get_Current_STA.P21_ID__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Status: &lt;/b&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!InactiveStatus}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Missing Role, Verified, or Phones</description>
+        <name>MissingRequiredFields</name>
+        <label>Missing Required Fields</label>
+        <locationX>803</locationX>
+        <locationY>239</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MissingRequiredFieldDisplay</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt;{!Get_Current_STA.Name} is missing one or more of  the following required fields or Phone field(s) contain invalid characters. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;This will not be sent to P21.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;﻿Please navigate to Ship-To Address record and resolve required fields or update phone by removing letters, &quot;-&quot;, &quot;()&quot; from phone fields.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;Contact:&lt;/b&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt; {!Get_Current_STA.Contact__r.Name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;Phone:&lt;/b&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt;  {!Get_Current_STA.Phone__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;Email &lt;/b&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt;{!Get_Current_STA.Email__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;Street Address &lt;/b&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt;{!Get_Current_STA.Street_Address_1__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;City: &lt;/b&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt;{!Get_Current_STA.City__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;State: &lt;/b&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt;{!Get_Current_STA.State__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px; font-family: serif;&quot;&gt;Zip: &lt;/b&gt;&lt;span style=&quot;font-size: 16px; font-family: serif;&quot;&gt;{!Get_Current_STA.Zip_Code__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Country:  &lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;{!Get_Current_STA.Country__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>If phone fields still contain characters</description>
+        <name>Phone_field_s_still_contain_characters</name>
+        <label>Phone field(s) still contain characters</label>
+        <locationX>1123</locationX>
+        <locationY>333</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>PhoneStillContainsCharactersDisplay</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;{!Get_Current_STA.Name} Phone field(s) still contain characters.  &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;This will not be sent to P21.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;﻿Please navigate to the Ship-To Address record and remove letters,  &quot;-&quot;, &quot;()&quot; from phone fields below.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Phone: &lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;{!Get_Current_STA.Phone__c} &lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>41</locationX>
+        <locationY>237</locationY>
+        <connector>
+            <targetReference>Get_Current_STA</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Current Contact Record passed in from Send to P21 New button</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,48 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "e1b37c25-a6e7-42cb-8790-c1c57a7643e6",
+  "label" : "Community Guidelines",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><b style=\"font-size: 20px;\">Community Guidelines</b></p><p><br></p><p><b>Welcome to AutomationDirect Communities - Powered by You</b></p><p><br></p><p>This is a place for all AutomationDirect community members to connect, share, and learn from others. Please treat the forums with the same respect you would a public park. These are not hard and fast rules, merely guidelines to aid the human judgment of our community and keep this a clean and knowledgeable place for engaging discussions.</p><p><br></p><p><b>Improve the Discussion</b></p><p>One way to improve the discussion is by discovering ones that are already happening. Spend time browsing the topics here before replying or starting your own, and you’ll have a better chance of helping&nbsp;others who are working with similar products.</p><p>The topics discussed here matter to us, and we want you to act as if they matter to you, too. Be respectful of the topics and the people discussing them, even if you disagree with some of what is being said.</p><p><br></p><p><b>Your Participation Counts</b></p><p>The conversations we have here set the tone for every new arrival. Help us influence the future of this community by choosing to engage in discussions that make this forum an interesting place to be — and avoiding those that do not.</p><p>We provide tools that enable the community to collectively identify the best (and worst) contributions: bookmarks, likes, flags, replies, edits, and so forth. Use these tools to improve your own experience, and everyone else’s, too.</p><p><br></p><p><b>Let’s leave our community better than we found it.</b></p><p>Sometimes We Disagree And That’s Okay</p><p>Sometimes we will disagree on topics. You may even think that the other person is outright wrong! That’s just part of being human talking to other humans. But when you respond, remember to criticize ideas, not people . Please avoid:</p><p><br></p><p>Name-calling</p><p>Ad hominem attacks (personal attacks instead of discussing content of a post)</p><p>Responding to a post’s tone instead of its actual content</p><p>Knee-jerk contradiction</p><p>Instead, provide reasoned counter-arguments that focus on the ideas instead of the person. If someone has something negative to say about AutomationDirect or our products, there’s likely a reason for that. Just tag in a mod or admin to make sure that the feedback goes where it needs to and we have an opportunity to consider and respond to what they’re saying.</p><p><br></p><p><b>Keep It Tidy</b></p><p>Make the effort to put things in the right place, so that we can spend more time discussing and less cleaning up. So:</p><p>Keep posts relevant to AutomationDirect.</p><p>Don’t start a topic in the wrong category.</p><p>Don’t cross-post the same thing in multiple topics.</p><p>Don’t post no-content replies.</p><p>Don’t divert a topic by changing it midstream.</p><p>Don’t sign your posts — every post has your profile information attached to it.</p><p>Respect our forum. Don’t post spam or otherwise vandalize the forum.</p><p>Rather than posting “+1” or “Agreed”, use the Like button.</p><p>No Hijacking – Try to keep all replies to a thread on the topic at hand. Posting’s which are intentionally off-topic or try to sway the discussion completely or partially off topic are generally considered rude. Instead use Reply as a Linked Topic.</p><p><br></p><p><b>If You See a Problem, Flag It</b></p><p>Moderators have special authority; they are responsible for this forum. But so are you. With your help, moderators can be community facilitators, not just janitors or police.</p><p>When you see bad behavior, don’t reply. It encourages the bad behavior by acknowledging it, consumes your energy, and wastes everyone’s time. Just flag it. If enough flags accrue, action will be taken, either automatically or by moderator intervention.</p><p>In order to maintain our community, moderators reserve the right to remove any content and any user account for any reason at any time. Moderators do not preview new posts; the moderators and site operators take no responsibility for any content posted by the community.</p><p><br></p><p><b>If You Want A Mod Response, </b></p><p><br></p><p>We use flags a little bit differently here. Instead of only using flags to report negative behavior, we also use them to flag areas where you want a mod response. This can be for a question many people have, if you want confirmation for something you or someone else has said, or if you are concerned that something is about to get heated and you want mods to be aware in advance.</p><p>If you run into a case like this, flag a post and use the “Something Else” option for the explanation. Please explain why you’re tagging a mod and what you want them to pay attention to. It’s the easiest way to make sure that you get a quick and effective response. This forum is community-driven but we still want to lend a hand where it’s needed.</p><p><br></p><p><b>Always Be Civil</b></p><p>Nothing sabotages a healthy conversation like rudeness:</p><p>Be civil. Don’t post anything that a reasonable person would consider offensive, abusive, or hate speech.</p><p>Keep it clean. Don’t post any swear words, obscene descriptions, or sexually explicit material. This is a family friendly area.</p><p>Respect each other. Don’t harass or grief anyone, impersonate people, or expose their private information. This includes mods and AutomationDirect employees.</p><p>This is a public forum, and search engines index these discussions. Keep the language, links, and images safe for family and friends.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "7ef576d2-28a7-4dd6-8f82-3a45c547a946",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2df1b77a-157e-4669-98d4-b1cdb1d8ec2a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "3f0bd588-1208-4a49-8429-177de41e2d07",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a70533d0-4933-49d7-b241-13b4eb9a9079",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Community Guidelines"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "026e8b09-e3eb-43c8-8b44-a4576259df06",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "adbe1601-3e9e-4ded-976f-45d34bb7ec77",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-community-guidelines"
+}

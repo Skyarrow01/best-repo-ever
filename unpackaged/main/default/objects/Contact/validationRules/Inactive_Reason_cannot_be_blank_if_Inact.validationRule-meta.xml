@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Reason_cannot_be_blank_if_Inact</fullName>
+    <active>true</active>
+    <description>Force to pick an inactive Reason for Contact</description>
+    <errorConditionFormula>AND(Inactive__c = TRUE,  ISPICKVAL(Inactive_Reason__c,&quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Inactive_Reason__c</errorDisplayField>
+    <errorMessage>Please select an inactive reason</errorMessage>
+</ValidationRule>

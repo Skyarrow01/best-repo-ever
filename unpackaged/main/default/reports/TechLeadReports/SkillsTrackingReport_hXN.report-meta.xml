@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ProfileSkill$Name</field>
+    </columns>
+    <columns>
+        <field>ProfileSkill.ProfileSkillUserChildren$Name</field>
+    </columns>
+    <columns>
+        <field>ProfileSkill.ProfileSkillUserChildren$User</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProfileSkill.ProfileSkillUserChildren$Skill_Level__c</field>
+    </columns>
+    <description>Run this with modified dates to sort out how many skill a Tech has added/modified over an evaluation period.</description>
+    <format>Tabular</format>
+    <name>SkillsTrackingReport</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Skills__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ProfileSkill.ProfileSkillUserChildren$User</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ProfileSkill.ProfileSkillUserChildren$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

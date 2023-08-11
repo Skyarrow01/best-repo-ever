@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Online Marketing Specialist --></label>
+        <name>Online_Marketing_Specialist__c</name>
+        <relationshipLabel><!-- Launches (Online Marketing Specialist) --></relationshipLabel>
+    </CustomFieldTranslation>

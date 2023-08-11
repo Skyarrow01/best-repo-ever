@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends email to Task Owner when Project Task is Ready to Start</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ADC_Internal_Letterhead</letterhead>
+    <name>Task - Send Project Task Ready to Start</name>
+    <style>freeForm</style>
+    <subject>Project {!inspire1__Project__c.Name} -Task {!Task.Subject} Ready to Start</subject>
+    <textOnly>Project {!inspire1__Project__c.Name}
+
+
+The following Task is ready to start
+
+Task Name: {!Task.Subject}
+Task Notes:  {!Task.Description}
+
+
+Task Link: {!Task.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

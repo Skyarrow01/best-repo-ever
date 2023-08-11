@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>49.0</apiVersion>
+    <constants>
+        <description>Word INACTIVE Capitalized</description>
+        <name>INACTIVE</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>INACTIVE</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Is Contact Already Inactive?</description>
+        <name>Contact_already_Inactive</name>
+        <label>Contact already Inactive?</label>
+        <locationX>325</locationX>
+        <locationY>290</locationY>
+        <defaultConnector>
+            <targetReference>Missing_Required_Fields</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>ContactActive</defaultConnectorLabel>
+        <rules>
+            <name>ContactAlreadyInactive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_Contact_Record.Inactive__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Contact_Already_Inactive2</targetReference>
+            </connector>
+            <label>ContactAlreadyInactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Missing Required Fields</description>
+        <name>Missing_Required_Fields</name>
+        <label>Missing Required Fields</label>
+        <locationX>492</locationX>
+        <locationY>291</locationY>
+        <defaultConnector>
+            <targetReference>Choose_Inactive_Reason</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>MissingRequiredFields</name>
+            <conditionLogic>1 OR (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_Contact_Record.Role__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact_Record.Direct_Phone__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact_Record.MobilePhone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>MissingKeyFields</targetReference>
+            </connector>
+            <label>MissingRequiredFields</label>
+        </rules>
+    </decisions>
+    <description>Inactivates Current Contact Record, appends .INACTIVE TO Email, Sets Inactive Reason, Inactivates all Account Contact Relatioship records. Added to check the verified box so it would not error out.</description>
+    <dynamicChoiceSets>
+        <description>Inactive Reasons on Contact</description>
+        <name>Inactive_Reason</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Inactive_Reason__c</picklistField>
+        <picklistObject>Contact</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <description>Makes the word &quot;.INACTIVE&quot;  on appending to email</description>
+        <name>MAKEINACTIVEUPPERCASE</name>
+        <dataType>String</dataType>
+        <expression>{!Get_Current_Contact_Record.Email}+&quot;.&quot;+UPPER(&quot;INACTIVE&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Indicates to the Teamer that the Verified is Checked or NOT Checked</description>
+        <name>VerifiedText</name>
+        <dataType>String</dataType>
+        <expression>IF({!Get_Current_Contact_Record.Verified__c} = true, &quot;Checked&quot;, &quot;Not Checked&quot;)</expression>
+    </formulas>
+    <interviewLabel>Inactivate Contact and Account Contact Relationship NEW {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Inactivate Contact and Account Contact Relationship</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get all Account Contact Relationship Records for this Contact</description>
+        <name>Contact_Account_Relationship_Records</name>
+        <label>Contact Account Relationship Records</label>
+        <locationX>943</locationX>
+        <locationY>702</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Account_Contact_Relationship_to_Inactive</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>AccountContactRelation</object>
+        <outputReference>AccountContactRelationshipRecords</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ContactId</queriedFields>
+        <queriedFields>IsActive</queriedFields>
+        <queriedFields>AccountId</queriedFields>
+        <queriedFields>IsDirect</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Current Contact Record</description>
+        <name>Get_Current_Contact_Record</name>
+        <label>Get Current Contact Record</label>
+        <locationX>72</locationX>
+        <locationY>219</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Contact_already_Inactive</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets all AccountContactRelationship records Inactive if the Contact is Inactive</description>
+        <name>Set_Account_Contact_Relationship_to_Inactive</name>
+        <label>Set Account Contact Relationship to Inactive</label>
+        <locationX>1188</locationX>
+        <locationY>702</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>IsActive</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>AccountContactRelation</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the Contact Inactive Flag to True, Updates User Input Inactive Reason from previous screen, Appends &quot;.INACTIVE&quot; to Contact email addresss</description>
+        <name>Update_Contact_Inactive_Email_Inactive_Reason</name>
+        <label>Update Contact Inactive Email Inactive Reason</label>
+        <locationX>931</locationX>
+        <locationY>541</locationY>
+        <connector>
+            <targetReference>Contact_Account_Relationship_Records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Inactive__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>MAKEINACTIVEUPPERCASE</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactive_Reason__c</field>
+            <value>
+                <elementReference>Inactive_Reason</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactive__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>0053u000004KeD9AAK</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Verified__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <description>User chooses Inactive Reason</description>
+        <name>Choose_Inactive_Reason</name>
+        <label>Choose Inactive Reason</label>
+        <locationX>771</locationX>
+        <locationY>288</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Update_Contact_Inactive_Email_Inactive_Reason</targetReference>
+        </connector>
+        <fields>
+            <name>InactiveReason</name>
+            <choiceReferences>Inactive_Reason</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Inactive Reason</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Contact_Already_Inactive2</name>
+        <label>Contact Already Inactive</label>
+        <locationX>326</locationX>
+        <locationY>557</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ContactInactive</name>
+            <fieldText>&lt;p&gt;Contact  {!Get_Current_Contact_Record.Name} is already marked Inactive&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Missing Requiredf Fields</description>
+        <name>MissingKeyFields</name>
+        <label>Missing Required Fields</label>
+        <locationX>499</locationX>
+        <locationY>68</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Missing_Required_Fields_Display</name>
+            <fieldText>&lt;p&gt;&lt;b&gt;{!Get_Current_Contact_Record.Name}&lt;/b&gt;&amp;nbsp;is missing required fields. Please review the following prior to Inactivating contact.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Direct Phone:&amp;nbsp;&lt;/b&gt;{!Get_Current_Contact_Record.Direct_Phone__c}&lt;/p&gt;&lt;p&gt;&lt;b&gt;Phone:&lt;/b&gt;&amp;nbsp;{!Get_Current_Contact_Record.MobilePhone}&lt;/p&gt;&lt;p&gt;&lt;b&gt;Role:&amp;nbsp;&lt;/b&gt;{!Get_Current_Contact_Record.Role__c}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>14</locationX>
+        <locationY>53</locationY>
+        <connector>
+            <targetReference>Get_Current_Contact_Record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>All of the Contacts inactive Account Contact Relationship Records</description>
+        <name>AccountContactRelationshipRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>AccountContactRelation</objectType>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

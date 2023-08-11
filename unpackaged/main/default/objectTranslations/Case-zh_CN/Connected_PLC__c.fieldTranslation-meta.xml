@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Connected PLC --></label>
+        <name>Connected_PLC__c</name>
+        <picklistValues>
+            <masterLabel>Allen Bradley</masterLabel>
+            <translation><!-- Allen Bradley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLICK</masterLabel>
+            <translation><!-- CLICK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DirectLogic</masterLabel>
+            <translation><!-- DirectLogic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do-more</masterLabel>
+            <translation><!-- Do-more --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entivity</masterLabel>
+            <translation><!-- Entivity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GE</masterLabel>
+            <translation><!-- GE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GS Drives</masterLabel>
+            <translation><!-- GS Drives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mitsubishi</masterLabel>
+            <translation><!-- Mitsubishi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modbus General</masterLabel>
+            <translation><!-- Modbus General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omron</masterLabel>
+            <translation><!-- Omron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Productivity Series</masterLabel>
+            <translation><!-- Productivity Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siemens</masterLabel>
+            <translation><!-- Siemens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solo</masterLabel>
+            <translation><!-- Solo --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirmed_by_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will be used when the contact confirms this is a contact they would like to keep if there are multiple ones on an account. TSF-65</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact confirmed to keep this contact if there are multiple on account.</inlineHelpText>
+    <label>Confirmed by Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

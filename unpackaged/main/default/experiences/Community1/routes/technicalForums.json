@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "72883fab-a93a-4603-bd7c-a38b24e46e33",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "e146a6e7-3900-4ac7-9e5d-438c58ba2180",
+  "label" : "Technical Forums",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-technical-forums",
+  "type" : "route",
+  "urlPrefix" : "technical-forums"
+}

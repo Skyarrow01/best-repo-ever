@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Terms --></label>
+        <name>Terms__c</name>
+        <picklistValues>
+            <masterLabel>0.5% 10 net 30</masterLabel>
+            <translation><!-- 0.5% 10 net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1% 10 net 30</masterLabel>
+            <translation><!-- 1% 10 net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1% 20 Net 30</masterLabel>
+            <translation><!-- 1% 20 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1% 30 Net 45</masterLabel>
+            <translation><!-- 1% 30 Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1% Net 10</masterLabel>
+            <translation><!-- 1% Net 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.5 % 10 Net 30</masterLabel>
+            <translation><!-- 1.5 % 10 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.5 % 20 Net 30</masterLabel>
+            <translation><!-- 1.5 % 20 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15% 10 Net 30</masterLabel>
+            <translation><!-- 15% 10 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 10 Net 30</masterLabel>
+            <translation><!-- 2% 10 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 10 Net 45</masterLabel>
+            <translation><!-- 2% 10 Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 10/NET 60</masterLabel>
+            <translation><!-- 2% 10/NET 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 10th prox net EOM</masterLabel>
+            <translation><!-- 2% 10th prox net EOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 14 Net 30</masterLabel>
+            <translation><!-- 2% 14 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 15 Net 30</masterLabel>
+            <translation><!-- 2% 15 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 15 net 90</masterLabel>
+            <translation><!-- 2% 15 net 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 15, NET 60</masterLabel>
+            <translation><!-- 2% 15, NET 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 15th Prox 25th Pr</masterLabel>
+            <translation><!-- 2% 15th Prox 25th Pr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 15tn proxNet 25th</masterLabel>
+            <translation><!-- 2% 15tn proxNet 25th --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 20 Net 60</masterLabel>
+            <translation><!-- 2% 20 Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 30 Net 60</masterLabel>
+            <translation><!-- 2% 30 Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% 30 Net 90</masterLabel>
+            <translation><!-- 2% 30 Net 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% Net 30</masterLabel>
+            <translation><!-- 2% Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.5 15, Net 60</masterLabel>
+            <translation><!-- 2.5 15, Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.5 25, NET 30</masterLabel>
+            <translation><!-- 2.5 25, NET 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3% 10 Net 30</masterLabel>
+            <translation><!-- 3% 10 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3% 10 Net 90</masterLabel>
+            <translation><!-- 3% 10 Net 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.5% Avg 18 Net 60</masterLabel>
+            <translation><!-- 3.5% Avg 18 Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9% 10 Net 30</masterLabel>
+            <translation><!-- 9% 10 Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boeing Terms</masterLabel>
+            <translation><!-- Boeing Terms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cutler-Hammer</masterLabel>
+            <translation><!-- Cutler-Hammer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 0</masterLabel>
+            <translation><!-- Net 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 1</masterLabel>
+            <translation><!-- Net 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 10</masterLabel>
+            <translation><!-- Net 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 11</masterLabel>
+            <translation><!-- Net 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 120</masterLabel>
+            <translation><!-- Net 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 14</masterLabel>
+            <translation><!-- Net 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation><!-- Net 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 20</masterLabel>
+            <translation><!-- Net 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 25</masterLabel>
+            <translation><!-- Net 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 31</masterLabel>
+            <translation><!-- Net 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 5</masterLabel>
+            <translation><!-- Net 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 67</masterLabel>
+            <translation><!-- Net 67 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 7</masterLabel>
+            <translation><!-- Net 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 74</masterLabel>
+            <translation><!-- Net 74 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation><!-- Net 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 97</masterLabel>
+            <translation><!-- Net 97 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 99</masterLabel>
+            <translation><!-- Net 99 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next 15th</masterLabel>
+            <translation><!-- Next 15th --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

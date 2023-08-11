@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoPlainText" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Contact:&nbsp;<font face="Arial, sans-serif"><o:p></o:p></font></font><font face="Arial, sans-serif">{!SurveyMonkeyApp__SurveyResponse__c.Contact_Name__c}</font></p>
+
+<p class="MsoPlainText" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Customer Number:&nbsp;<font face="Arial, sans-serif"><o:p></o:p></font></font><font face="Arial, sans-serif">{!SurveyMonkeyApp__SurveyResponse__c.Contact_P21Id__c}</font></p>
+
+<p class="MsoPlainText" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif">Email from Survey:&nbsp;{!SurveyMonkeyApp__SurveyResponse__c.Email_from_Survey__c}<o:p></o:p></font></p>
+
+<p class="MsoPlainText" style=""><font face="Arial, sans-serif" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Contact Email:&nbsp;</font><font color="#0000ee" face="Arial, sans-serif"><u>{!SurveyMonkeyApp__SurveyResponse__c.Contact_Email__c}</u></font></p>
+
+<font face="Arial, sans-serif" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="color: rgb(0, 0, 0);">OrderNo:&nbsp;&nbsp;</span>{!SurveyMonkeyApp__SurveyResponse__c.Order_No__c}</font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif">{!SurveyMonkeyApp__SurveyResponse__c.Survey_Responses__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>]]></td>
+</tr>
+</table>

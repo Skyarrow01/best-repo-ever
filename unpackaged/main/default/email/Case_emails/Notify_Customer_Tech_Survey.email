@@ -1,0 +1,24 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif" style=""><font style="">Dear&nbsp;</font>{!Contact.FirstName},</font></div><div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif"><br></font></div><div style="color: rgb(0, 0, 0);"><p class="MsoNormal"><font face="Arial, sans-serif">Please take part in this brief survey regarding your recent
+Technical Support inquiry by navigating to the link below. It should only take
+a few minutes to complete.&nbsp;<o:p></o:p></font></p></div><div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif"><br></font></div><div style="color: rgb(0, 0, 0);"><a href="https://www.surveymonkey.com/r/H3NS8CL?CaseNumber={!Case.Id}&amp;ContactID={!Case.ContactId}&amp;AccountID={!Case.AccountId}"><font face="Arial, sans-serif">Tech Survey</font></a></div><div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif"><br></font></div><div style="color: rgb(0, 0, 0);"><b style="font-family: Arial, sans-serif; font-size: 12pt;">Tech Support:</b><span style="font-family: Arial, sans-serif; font-size: 12pt;">&nbsp;{!Case.OwnerFirstName}</span></div><div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif"><b>Case Number:&nbsp;</b>{!Case.CaseNumber}</font></div><div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif"><b>Subject:&nbsp;</b>{!Case.Subject}</font></div><div style="color: rgb(0, 0, 0);"><br></div><div style=""><div style=""><p class="MsoNormal" style=""><font face="Arial, sans-serif">Your views and opinions are extremely important to us. Thank you in
+advance for your feedback. <o:p></o:p></font></p>
+
+<p class="MsoNormal" style=""><font face="Arial, sans-serif">&nbsp;</font></p>
+
+<p class="MsoNormal" style=""><font face="Arial, sans-serif">Please do not reply to this message. Replies to this message are
+routed to an unmonitored mailbox. We may be reached at 1-800-633-0405. <o:p></o:p></font></p>
+
+<p class="MsoNormal" style=""><font face="Arial, sans-serif">&nbsp;<o:p></o:p></font></p>
+
+<p class="MsoNormal" style=""><font face="Arial, sans-serif">&nbsp;<o:p></o:p></font></p>
+
+<p class="MsoNormal" style=""><font face="Arial, sans-serif">Thank you,<o:p></o:p></font></p>
+
+<p class="MsoNormal" style=""><font face="Arial, sans-serif">&nbsp;<o:p></o:p></font></p>
+
+<font face="Arial, sans-serif" style="">AutomationDirect Team</font></div></div>]]></td>
+</tr>
+</table>

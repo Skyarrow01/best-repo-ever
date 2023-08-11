@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Queue</fullName>
+    <availability>online</availability>
+    <description>Change the Queue and RecordType based on User Selection</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Change Queue</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Case_Change_Queue?recordId={!Case.Id}&amp;retURL={!Case.Id}</url>
+</WebLink>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date contact confirmed. --></help>
+        <label><!-- Date Confirmed by Contact --></label>
+        <name>Date_Confirmed_by_Contact__c</name>
+    </CustomFieldTranslation>

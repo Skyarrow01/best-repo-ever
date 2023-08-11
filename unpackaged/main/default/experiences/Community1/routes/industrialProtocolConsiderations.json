@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6f57bbb0-103d-4b9e-94fe-d3a875c6b113",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "b6aa96fd-7fb4-47ff-be87-6a9a53cb4077",
+  "label" : "Industrial Protocol Considerations",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-industrial-protocol-considerations",
+  "type" : "route",
+  "urlPrefix" : "industrial-protocol-considerations"
+}

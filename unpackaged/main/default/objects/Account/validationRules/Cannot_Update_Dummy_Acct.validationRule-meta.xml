@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Update_Dummy_Acct</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &#39;System Administrator&#39;, OR(Id =  &#39;0013u00000uIsB8&#39;,Id = &#39;0013u00000vlqE8&#39;))</errorConditionFormula>
+    <errorMessage>This is a placeholder account and should not be updated.</errorMessage>
+</ValidationRule>

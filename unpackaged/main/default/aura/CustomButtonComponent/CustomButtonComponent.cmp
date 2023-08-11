@@ -1,0 +1,33 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    
+    <div style="text-align: center;margin: 0px 0px 25px;">
+        <p>Can't find an answer? Try these resources.</p>
+    </div>
+    <center>
+        <lightning:layout horizontalAlign="space" multipleRows="true">
+            
+            <lightning:layoutItem size="12" smallDeviceSize="12" mediumDeviceSize="4" largeDeviceSize="4" padding="around-small">
+                <lightning:button label="Contact Support" 
+                                  variant="brand"
+                                  class="slds-button button"
+                                  onclick="{!c.handleContactSupport}"/>
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem size="12" smallDeviceSize="12" mediumDeviceSize="4" largeDeviceSize="4" padding="around-small">
+                <lightning:button label="Message Forum Moderator" 
+                                  variant="brand"
+                                  class="slds-button button"
+                                  onclick="{!c.handleMessageAdmin}"/> 
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem size="12" smallDeviceSize="12" mediumDeviceSize="4" largeDeviceSize="4" padding="around-small">
+                <lightning:button label="Support Web Page" 
+                                  variant="brand"
+                                  class="slds-button button"
+                                  onclick="{!c.handleProductDocumentation}"/>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </center>
+    
+</aura:component>

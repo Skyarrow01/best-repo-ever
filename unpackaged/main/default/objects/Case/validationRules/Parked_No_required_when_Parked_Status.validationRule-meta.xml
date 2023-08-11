@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parked_No_required_when_Parked_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(OR(ISPICKVAL(Status,&#39;Parked&#39;),ISPICKVAL(Status,&#39;ON HOLD&#39;)),  ISPICKVAL(Parked__c,&#39;&#39;))</errorConditionFormula>
+    <errorDisplayField>Parked__c</errorDisplayField>
+    <errorMessage>&quot;Parked&quot; or &quot;ON HOLD&quot; Status requires Parked #.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Order - New</fullName>
+        <default>false</default>
+        <label>Order - New</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Revised PO/Approval</fullName>
+        <default>false</default>
+        <label>Revised PO/Approval</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Backorder – Status</fullName>
+        <default>false</default>
+        <label>Backorder – Status</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Backorder – Cancel</fullName>
+        <default>false</default>
+        <label>Backorder – Cancel</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Angry – Backorder/Stock Shortage</fullName>
+        <default>false</default>
+        <label>Angry – Backorder/Stock Shortage</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order – Status/Question</fullName>
+        <default>false</default>
+        <label>Order – Status/Question</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Duplicate PO/Notification</fullName>
+        <default>false</default>
+        <label>Duplicate PO/Notification</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto Reply</fullName>
+        <default>false</default>
+        <label>Auto Reply</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order – Change</fullName>
+        <default>false</default>
+        <label>Order – Change</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Tracking – ADC</fullName>
+        <default>false</default>
+        <label>Tracking – ADC</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote/Price &amp; Availability</fullName>
+        <default>false</default>
+        <label>Quote/Price &amp; Availability</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Accounting/Payment</fullName>
+        <default>false</default>
+        <label>Accounting/Payment</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Bounce back</fullName>
+        <default>false</default>
+        <label>Bounce back</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance</fullName>
+        <default>false</default>
+        <label>Compliance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Discount</fullName>
+        <default>false</default>
+        <label>Discount</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Forecast/Performance - PA</fullName>
+        <default>false</default>
+        <label>Forecast/Performance - PA</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>International</fullName>
+        <default>false</default>
+        <label>International</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Inventory Discrepancy - CTL</fullName>
+        <default>false</default>
+        <label>Inventory Discrepancy - CTL</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Inventory Discrepancy - other</fullName>
+        <default>false</default>
+        <label>Inventory Discrepancy - other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoice</fullName>
+        <default>false</default>
+        <label>Invoice</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Key Code</fullName>
+        <default>false</default>
+        <label>Key Code</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Obsolescence Notification</fullName>
+        <default>false</default>
+        <label>Obsolescence Notification</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Open Order Report</fullName>
+        <default>false</default>
+        <label>Open Order Report</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order – Cancel</fullName>
+        <default>false</default>
+        <label>Order – Cancel</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Packing List</fullName>
+        <default>false</default>
+        <label>Packing List</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>PCI Compliance</fullName>
+        <default>false</default>
+        <label>PCI Compliance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Proforma Invoice</fullName>
+        <default>false</default>
+        <label>Proforma Invoice</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchase History</fullName>
+        <default>false</default>
+        <label>Purchase History</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Returns</fullName>
+        <default>false</default>
+        <label>Returns</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Tax</fullName>
+        <default>false</default>
+        <label>Sales Tax</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipping/Logistics</fullName>
+        <default>false</default>
+        <label>Shipping/Logistics</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipping/Order Error</fullName>
+        <default>false</default>
+        <label>Shipping/Order Error</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Spam</fullName>
+        <default>false</default>
+        <label>Spam</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Tech Support</fullName>
+        <default>false</default>
+        <label>Tech Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Tracking – Direct Ship</fullName>
+        <default>false</default>
+        <label>Tracking – Direct Ship</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Update Info</fullName>
+        <default>false</default>
+        <label>Update Info</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor Form</fullName>
+        <default>false</default>
+        <label>Vendor Form</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Voicemail</fullName>
+        <default>false</default>
+        <label>Voicemail</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Help</fullName>
+        <default>false</default>
+        <label>Web Help</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Wrong Vendor</fullName>
+        <default>false</default>
+        <label>Wrong Vendor</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User didn&#39;t attend training</fullName>
+        <default>false</default>
+        <label>User didn&#39;t attend training</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complex functionality</fullName>
+        <default>false</default>
+        <label>Complex functionality</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing problem</fullName>
+        <default>false</default>
+        <label>Existing problem</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Instructions not clear</fullName>
+        <default>false</default>
+        <label>Instructions not clear</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New problem</fullName>
+        <default>false</default>
+        <label>New problem</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Backorder</fullName>
+        <default>false</default>
+        <label>Backorder</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Portal Inquiry</fullName>
+        <default>false</default>
+        <label>Portal Inquiry</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor Packaging</fullName>
+        <default>false</default>
+        <label>Vendor Packaging</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Avalara Reviewed</fullName>
+        <default>false</default>
+        <label>Avalara Reviewed</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Needs Review</fullName>
+        <default>false</default>
+        <label>Needs Review</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Accounting</fullName>
+        <default>false</default>
+        <label>Accounting</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Denied</fullName>
+        <default>false</default>
+        <label>Credit Denied</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Mis-labeled Product</fullName>
+        <default>false</default>
+        <label>Mis-labeled Product</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Redirect Package</fullName>
+        <default>false</default>
+        <label>Redirect Package</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipping Discrepancy</fullName>
+        <default>false</default>
+        <label>Shipping Discrepancy</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>RMA – New</fullName>
+        <default>false</default>
+        <label>RMA – New</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>RMA – Status/Question</fullName>
+        <default>false</default>
+        <label>RMA – Status/Question</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Lost/Damaged</fullName>
+        <default>false</default>
+        <label>Lost/Damaged</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Return Label</fullName>
+        <default>false</default>
+        <label>Return Label</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Invoice</fullName>
+        <default>false</default>
+        <label>Commercial Invoice</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Carrier</fullName>
+        <default>false</default>
+        <label>Carrier</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Warranty Check</fullName>
+        <default>false</default>
+        <label>Warranty Check</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Status</fullName>
+        <default>false</default>
+        <label>Order Status</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Bounce Back - Admin</fullName>
+        <default>false</default>
+        <label>Bounce Back - Admin</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Bounce Back - Update Info Request</fullName>
+        <default>false</default>
+        <label>Bounce Back - Update Info Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merge Request</fullName>
+        <default>false</default>
+        <label>Merge Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto Sync Issue</fullName>
+        <default>false</default>
+        <label>Auto Sync Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Password Reset</fullName>
+        <default>false</default>
+        <label>Password Reset</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit</fullName>
+        <default>false</default>
+        <label>Credit</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Cards</fullName>
+        <default>false</default>
+        <label>Credit Cards</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Hold</fullName>
+        <default>false</default>
+        <label>Credit Hold/Account Status</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Application</fullName>
+        <default>false</default>
+        <label>Credit Application</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Service/PO</fullName>
+        <default>false</default>
+        <label>Customer Service/PO</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Forms – ACH, W-9, Vendor Forms etc</fullName>
+        <default>false</default>
+        <label>Forms – ACH, W-9, Vendor Forms etc</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoice Copy</fullName>
+        <default>false</default>
+        <label>Invoice Copy</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Packing Slips</fullName>
+        <default>false</default>
+        <label>Packing Slip and/or POD</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Remittance</fullName>
+        <default>false</default>
+        <label>Payment Remittance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Portals</fullName>
+        <default>false</default>
+        <label>Portals</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Tax – Credit/Rebill</fullName>
+        <default>false</default>
+        <label>Sales Tax – Credit/Rebill</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Statement Request</fullName>
+        <default>false</default>
+        <label>Statement Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Refund Requests</fullName>
+        <default>false</default>
+        <label>Refund Requests</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Adjustments – Freight/Other</fullName>
+        <default>false</default>
+        <label>Adjustments – Freight/Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Junk Emails</fullName>
+        <default>false</default>
+        <label>Junk Emails</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Logistics</fullName>
+        <default>false</default>
+        <label>Logistics</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Account/Contact Update</fullName>
+        <default>false</default>
+        <label>Account/Contact Update</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal – Paypal/System Generated</fullName>
+        <default>false</default>
+        <label>Internal – Paypal/System Generated</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Information</fullName>
+        <default>false</default>
+        <label>Payment Information</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shared Cart</fullName>
+        <default>false</default>
+        <label>Shared Cart</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No Response – Live Chat</fullName>
+        <default>false</default>
+        <label>No Response – Live Chat</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Pickup</fullName>
+        <default>false</default>
+        <label>Customer Pickup</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

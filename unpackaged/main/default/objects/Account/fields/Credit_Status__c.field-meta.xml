@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Status__c</fullName>
+    <defaultValue>&#39;CC/PREPA&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>Credit Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BADDEBT</fullName>
+                <default>false</default>
+                <label>Bad Debt -- Collection Issues</label>
+            </value>
+            <value>
+                <fullName>Bankrupt</fullName>
+                <default>false</default>
+                <label>Bankrupt</label>
+            </value>
+            <value>
+                <fullName>CLOSED</fullName>
+                <default>false</default>
+                <label>Company Closed</label>
+            </value>
+            <value>
+                <fullName>APPINPRO</fullName>
+                <default>false</default>
+                <label>Credit Application in Process</label>
+            </value>
+            <value>
+                <fullName>APPONFIL</fullName>
+                <default>false</default>
+                <label>Credit Application on File</label>
+            </value>
+            <value>
+                <fullName>CREDBAL</fullName>
+                <default>false</default>
+                <label>Credt Balance &gt; 60 Days</label>
+            </value>
+            <value>
+                <fullName>CC/PREPA</fullName>
+                <default>false</default>
+                <label>Credit Card or Prepay Only</label>
+            </value>
+            <value>
+                <fullName>CR HOLD</fullName>
+                <default>false</default>
+                <label>Credit Hold</label>
+            </value>
+            <value>
+                <fullName>DONOTDEL</fullName>
+                <default>false</default>
+                <label>Do Not Delete</label>
+            </value>
+            <value>
+                <fullName>DONOTUSE</fullName>
+                <default>false</default>
+                <label>Do Not Use See Notepad</label>
+            </value>
+            <value>
+                <fullName>EXCELLEN</fullName>
+                <default>false</default>
+                <label>Excellent</label>
+            </value>
+            <value>
+                <fullName>FINAL</fullName>
+                <default>false</default>
+                <label>Final Demand</label>
+            </value>
+            <value>
+                <fullName>FRAUD</fullName>
+                <default>false</default>
+                <label>Fraud Account</label>
+            </value>
+            <value>
+                <fullName>GOOD</fullName>
+                <default>false</default>
+                <label>Good Credit</label>
+            </value>
+            <value>
+                <fullName>HOLDOTHE</fullName>
+                <default>false</default>
+                <label>HOLD - OTHER</label>
+            </value>
+            <value>
+                <fullName>NOCRED</fullName>
+                <default>false</default>
+                <label>I-Check/CC/Prepay Only</label>
+            </value>
+            <value>
+                <fullName>INACTIVE</fullName>
+                <default>false</default>
+                <label>Inactive Account - Request Credt App</label>
+            </value>
+            <value>
+                <fullName>NEW</fullName>
+                <default>false</default>
+                <label>New Customer - Credit App/CC</label>
+            </value>
+            <value>
+                <fullName>PAYPEND</fullName>
+                <default>false</default>
+                <label>Payment Pending</label>
+            </value>
+            <value>
+                <fullName>REACTIVA</fullName>
+                <default>false</default>
+                <label>REACTIVATED ACCOUNT</label>
+            </value>
+            <value>
+                <fullName>UPDATE</fullName>
+                <default>false</default>
+                <label>Update Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

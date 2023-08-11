@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HMI_Click_Silo_TAG_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>HMI &amp; Click Silo &amp; TAG</label>
+    <queue>HMI_Click_Silo_TAG</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

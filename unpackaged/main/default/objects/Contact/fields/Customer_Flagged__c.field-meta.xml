@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Flagged__c</fullName>
+    <description>If &quot;Flag Customer&quot; is checked, a Flag image will display on record.</description>
+    <externalId>false</externalId>
+    <formula>IF( Flag_Customer__c = TRUE,IMAGE(&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=0686A000006R7kI&amp;operationContext=CHATTER&amp;contentId=05T6A00000M7ND5&quot;, &quot;&quot;, 15, 15),&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Flagged</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bulletin_Date_Duplicate__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Used to prevent duplicates in Bulletin Date field.</description>
+    <externalId>false</externalId>
+    <label>Bulletin Date Duplicate</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Move_Case_To_Unavailable_User</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(OwnerId),
+Owner:User.Available__c = FALSE,
+NOT($User.Id = &quot;0053u000003KEs1&quot;),
+NOT($User.Id = &quot;0056A000002IQBx&quot;),
+NOT($User.Id = &quot;0056A000002IQBw&quot;),
+NOT($User.Id = &quot;0053u000002x0V0&quot;),
+NOT($User.Id = &quot;0053u000002x0DL&quot;)
+)</errorConditionFormula>
+    <errorMessage>User Is Unavailable</errorMessage>
+</ValidationRule>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Community</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>General Community Information</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>New Product Announcements</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://community.automationdirect.com/s/new-product-announcements/?topic_id=0TO3u000000l14VGAQ</target>
+                <targetPreference>OpenExternalLinkInSameTab</targetPreference>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Community Forum Feedback and Suggestions</label>
+                <position>1</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://community.automationdirect.com/s/topic/0TO3u000000l14YGAQ/community-forum-feedback-and-suggestions</target>
+                <targetPreference>OpenExternalLinkInSameTab</targetPreference>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>FW/SW Updates Announcements</label>
+                <position>2</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://community.automationdirect.com/s/fw-sw-updates-announcements/?topic_id=0TO3u000000l14WGAQ</target>
+                <targetPreference>OpenExternalLinkInSameTab</targetPreference>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Testing Section For New Members</label>
+                <position>3</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://community.automationdirect.com/s/topic/0TO3u000000l14XGAQ/testing-section-for-new-members</target>
+                <targetPreference>OpenExternalLinkInSameTab</targetPreference>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Technical Q&amp;A</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>ShowMoreTopics</target>
+        <type>NavigationalTopic</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Share</label>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Project Examples</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/projects</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Learn</label>
+        <position>4</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Knowledge articles</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/knowledge</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Videos</label>
+                <position>1</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://www.automationdirect.com/videos/</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Learning Library</label>
+                <position>2</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/library</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>eBooks</label>
+                <position>3</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://library.automationdirect.com/automationdirects-ebooks/</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Automation Notebook</label>
+                <position>4</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://library.automationdirect.com/automation-notebook/</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Free PLC Online Training</label>
+                <position>5</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://www.automationdirect.com/programmable-logic-controllers/plc-training</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Groups</label>
+        <position>5</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>CollaborationGroup</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Contact Support</label>
+        <position>6</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/contactsupport</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>User Guide</label>
+        <position>7</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/user-guide</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>CyberSecurity</label>
+        <position>8</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>CyberSecurity Mission Statement</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/cybersecurity</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Security Advisories</label>
+                <position>1</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/security-advisories</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Getting Started CyberSecurity</label>
+                <position>2</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/getting-started-cybersecurity</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>CyberSecurity Best Practices</label>
+                <position>3</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/cybersecurity-best-practices</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Industrial CyberSecurity Standards</label>
+                <position>4</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/industrial-cybersecurity-stadards</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Industrial Protocol Considerations</label>
+                <position>5</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/industrial-protocol-considerations</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Return To Store</label>
+        <position>9</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://a-sl-faltc05.automationdirect.com/adc/home/home</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>New menu item</label>
+        <position>10</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Login</target>
+        <type>Event</type>
+    </navigationMenuItem>
+</NavigationMenu>

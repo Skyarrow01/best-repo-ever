@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <description>Displays all required fields and shows users what they are missing prior to sending to P21</description>
+        <name>Missing_P21_or_Inactive</name>
+        <label>Missing P21 or Inactive</label>
+        <locationX>448</locationX>
+        <locationY>232</locationY>
+        <defaultConnector>
+            <targetReference>Missing_Required_Fields_or_Phones_contain_Text</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Missing_P21_Id_or_INactive</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.P21_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.Inactive__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Missing_P21Id_or_Inactive</targetReference>
+            </connector>
+            <label>Missing P21 Id or INactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Decision to determine if any required fields are missing or if Phone fields contain text.</description>
+        <name>Missing_Required_Fields_or_Phones_contain_Text</name>
+        <label>Missing Required Fields or Phones contain Text</label>
+        <locationX>462</locationX>
+        <locationY>405</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_P21_button</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Missing_Required_Fields</name>
+            <conditionLogic>(1 OR 2) OR (3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.Verified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.Role__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.Direct_Phone__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.MobilePhone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>MissingRequiredFields</targetReference>
+            </connector>
+            <label>Missing Required Fields</label>
+        </rules>
+        <rules>
+            <name>Phones_contain_Text</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>DirectPhoneContainAlpha</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.Direct_Phone__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>MobilePhoneContainAlphas</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.MobilePhone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Phone_field_s_still_contain_characters</targetReference>
+            </connector>
+            <label>Phones contain Text</label>
+        </rules>
+        <rules>
+            <name>isRoleMissing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_Contact</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>isRoleMissing</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Toggle Send to P21 Check box</description>
+        <name>Toggle_P21_button</name>
+        <label>Toggle P21 button</label>
+        <locationX>459</locationX>
+        <locationY>646</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_Send_to_P21_to_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Send to P21 is True</defaultConnectorLabel>
+        <rules>
+            <name>Send_to_P21_is_False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_Contact.Send_to_P21__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Toggle_Send_to_P21_to_True</targetReference>
+            </connector>
+            <label>Send to P21 is False</label>
+        </rules>
+    </decisions>
+    <description>Toggle Send to P21 Checkbox on Contact to Send to P21 with Screens for Teamers to guide through setting Required Fields</description>
+    <dynamicChoiceSets>
+        <description>Role Picklist Values</description>
+        <name>Role</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Role__c</picklistField>
+        <picklistObject>Contact</picklistObject>
+    </dynamicChoiceSets>
+    <formulas>
+        <description>Determines if Direct PHone Contains Alpha</description>
+        <name>DirectPhoneContainAlpha</name>
+        <dataType>Boolean</dataType>
+        <expression>if(ISNUMBER({!Get_Current_Contact.Direct_Phone__c}), false, true)</expression>
+    </formulas>
+    <formulas>
+        <description>Friendly status to present to user if the Contact is Inactive</description>
+        <name>InactiveStatus</name>
+        <dataType>String</dataType>
+        <expression>If({!Get_Current_Contact.Inactive__c} = true, &quot;INACTIVE&quot;, &quot;ACTIVE&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Friendly Name to determine if Contact is verified or not.</description>
+        <name>IsVerified</name>
+        <dataType>String</dataType>
+        <expression>If({!Get_Current_Contact.Verified__c}=false, &quot;No&quot;, &quot;Yes&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Determines if Mobile PHones contains Aplhas</description>
+        <name>MobilePhoneContainAlphas</name>
+        <dataType>Boolean</dataType>
+        <expression>If(ISNUMBER({!Get_Current_Contact.MobilePhone}), FALSE, TRUE)</expression>
+    </formulas>
+    <interviewLabel>Toggle Send to P21 checkbox on Contact Screen New {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Toggle Send to P21 checkbox on Contact Screen New</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get Current Contact Record passed in</description>
+        <name>Get_Current_Contact</name>
+        <label>Get Current Contact</label>
+        <locationX>263</locationX>
+        <locationY>228</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Missing_P21_or_Inactive</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set the Send to P21 to False</description>
+        <name>Toggle_Send_to_P21_to_False</name>
+        <label>Toggle Send to P21 to False</label>
+        <locationX>302</locationX>
+        <locationY>872</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Toggle_Send_to_P21_to_True</name>
+        <label>Toggle Send to P21 to True</label>
+        <locationX>638</locationX>
+        <locationY>864</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <screens>
+        <description>Missing P21 Id or Inactive</description>
+        <name>Missing_P21Id_or_Inactive</name>
+        <label>Missing P21Id or Inactive</label>
+        <locationX>651</locationX>
+        <locationY>81</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MissingP21orInactive</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;{!Get_Current_Contact.Name} is missing P21Id or Inactive. &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Please wait for P21 Id to generate before sending to P21. &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;This contact will not send to P21 if missing P21 Id or is Inactive.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;P21: &lt;/b&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!Get_Current_Contact.P21_ID__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Status: &lt;/b&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt; {!InactiveStatus}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Missing Role, Verified, or Phones</description>
+        <name>MissingRequiredFields</name>
+        <label>Missing Required Fields</label>
+        <locationX>684</locationX>
+        <locationY>239</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MissingRequiredFieldDisplay</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;{!Get_Current_Contact.Name} is missing one or more of  the following required fields or Phone field(s) contain invalid characters. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;This will not be sent to P21.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;Please navigate to contact record and resolve required fields or update phone by removing letters, &quot;-&quot;, &quot;()&quot; from phone fields.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Verified:&lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt; {!IsVerified}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Role:&lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;  {!Get_Current_Contact.Role__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Direct Phone:&lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;  {!Get_Current_Contact.Direct_Phone__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Mobile Phone:&lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-family: serif; font-size: 16px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!Get_Current_Contact.MobilePhone}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>If phone fields still contain characters</description>
+        <name>Phone_field_s_still_contain_characters</name>
+        <label>Phone field(s) still contain characters</label>
+        <locationX>1004</locationX>
+        <locationY>332</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>PhoneStillContainsCharactersDisplay</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;{!Get_Current_Contact.Name} Phone field(s) still contain characters.  &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;This will not be sent to P21.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;Please navigate to the contact record and remove letters,  &quot;-&quot;, &quot;()&quot; from phone fields below.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Direct Phone:&lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt; {!Get_Current_Contact.Direct_Phone__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: serif; font-size: 16px;&quot;&gt;Mobile Phone:  &lt;/b&gt;&lt;span style=&quot;font-family: serif; font-size: 16px;&quot;&gt;{!Get_Current_Contact.MobilePhone}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>41</locationX>
+        <locationY>237</locationY>
+        <connector>
+            <targetReference>Get_Current_Contact</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Current Contact Record passed in from Send to P21 New button</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

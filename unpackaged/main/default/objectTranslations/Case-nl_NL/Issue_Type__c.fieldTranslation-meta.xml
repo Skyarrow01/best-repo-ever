@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Issue Type --></label>
+        <name>Issue_Type__c</name>
+        <picklistValues>
+            <masterLabel>CE Declaration of Conformity</masterLabel>
+            <translation><!-- CE Declaration of Conformity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country of Origin</masterLabel>
+            <translation><!-- Country of Origin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defect/Damage</masterLabel>
+            <translation><!-- Defect/Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European Directives</masterLabel>
+            <translation><!-- European Directives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firmware</masterLabel>
+            <translation><!-- Firmware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harmonizing Codes</masterLabel>
+            <translation><!-- Harmonizing Codes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Speed IO</masterLabel>
+            <translation><!-- High Speed IO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Improvement</masterLabel>
+            <translation><!-- Improvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keypad</masterLabel>
+            <translation><!-- Keypad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labeling/Packaging</masterLabel>
+            <translation><!-- Labeling/Packaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ladder Programming</masterLabel>
+            <translation><!-- Ladder Programming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanical/Dimensional</masterLabel>
+            <translation><!-- Mechanical/Dimensional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Listing - UL/CSA</masterLabel>
+            <translation><!-- Multiple Listing - UL/CSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Feature</masterLabel>
+            <translation><!-- New Feature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parameter</masterLabel>
+            <translation><!-- Parameter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specifications/Drawings</masterLabel>
+            <translation><!-- Specifications/Drawings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Standards</masterLabel>
+            <translation><!-- Test Standards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wiring/Electrical</masterLabel>
+            <translation><!-- Wiring/Electrical --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

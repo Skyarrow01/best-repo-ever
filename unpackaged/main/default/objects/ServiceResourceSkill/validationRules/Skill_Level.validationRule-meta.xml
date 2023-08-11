@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skill_Level</fullName>
+    <active>true</active>
+    <errorConditionFormula>(SkillLevel&gt;5||
+ SkillLevel&lt;1||
+ISBLANK(SkillLevel))&amp;&amp;
+ $User.ProfileId &lt;&gt;&#39;00e6A000000zAlA&#39;</errorConditionFormula>
+    <errorDisplayField>SkillLevel</errorDisplayField>
+    <errorMessage>Skill Level must be 1 to 5, with 5 being presales and 1 being proficient to address all requests.</errorMessage>
+</ValidationRule>

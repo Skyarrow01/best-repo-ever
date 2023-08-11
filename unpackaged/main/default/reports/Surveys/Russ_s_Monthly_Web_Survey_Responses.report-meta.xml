@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$SurveyMonkeyApp__ContactId__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$Name</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$Name</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$NPS_Label__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Question_Name__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Response_Value__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$Order_No__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__AccountId__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 7) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c$SurveyMonkeyApp__Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AutomationDirect E-commerce Order Survey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Question_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>How likely is it that you would recommend AutomationDirect to a friend or colleague?</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Question_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>What could we have done better?</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Question_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>What can we do better to improve your 0 to 6 rating?</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Question_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>We continually want to improve our site for you. If you have comments,suggestions,or new product requests,please list them below. Additionally,if you visit other web sites that have features you would recommend to us,please provide a website address.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Response_Value__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Question_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>What does AutomationDirect do really well?</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Russ&#39;s Monthly Web Survey Responses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SurveyMonkey_Survey_Responses__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SurveyMonkeyApp__SurveyResponse__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

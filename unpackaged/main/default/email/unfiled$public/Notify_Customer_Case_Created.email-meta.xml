@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifies Customer Case has been Created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notify Customer Case Created</name>
+    <style>none</style>
+    <subject>Thank You! Case {!Case.CaseNumber} has been for you.</subject>
+    <textOnly>Hi,
+
+Thank you for reaching out. A Case has been created on your behalf.  A representative will respond to you in a timely manner.
+
+If you require immediate assistance, do not hesitate to call our support number at 770-844-4200. Please note your Case Information below.
+Case Number:  {!Case.CaseNumber}
+Company: {!Case.Account}
+Contact:  {!Case.Contact}
+Phone:  {!Contact.Phone}
+Mobile:  {!Contact.MobilePhone}
+Email:  {!Contact.Email}
+
+Best Regards,
+
+ADC Support
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

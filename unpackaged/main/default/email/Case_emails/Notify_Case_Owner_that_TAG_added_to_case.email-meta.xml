@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify  Owner that Case has been changed to include TAG.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BE_Case_Created</letterhead>
+    <name>Notify BE Case Owner TAG Added to Case</name>
+    <style>freeForm</style>
+    <subject>The FUEL TAG team has been added in the Case Owner of this case.</subject>
+    <textOnly>The following BE Case case owner has been changed to include the TAG team. 
+
+Case Number: {!Case.CaseNumber}
+
+Silo: {!Case.Silo__c}
+
+Subject: {!Case.Subject}
+
+Modified By: {!Case.LastModifiedBy}
+
+
+Case Link: {!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

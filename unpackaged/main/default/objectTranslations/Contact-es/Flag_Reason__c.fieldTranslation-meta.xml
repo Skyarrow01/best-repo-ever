@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Flag Reason --></label>
+        <name>Flag_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Abusive Language</masterLabel>
+            <translation><!-- Abusive Language --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Argumentative</masterLabel>
+            <translation><!-- Argumentative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dangerous or Unintended use</masterLabel>
+            <translation><!-- Dangerous or Unintended use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Difficult Customer</masterLabel>
+            <translation><!-- Difficult Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazardous</masterLabel>
+            <translation><!-- Hazardous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refuses to Test</masterLabel>
+            <translation><!-- Refuses to Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unqualified</masterLabel>
+            <translation><!-- Unqualified --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

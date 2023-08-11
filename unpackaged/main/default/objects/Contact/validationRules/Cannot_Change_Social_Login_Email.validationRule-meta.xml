@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Social_Login_Email</fullName>
+    <active>true</active>
+    <description>Prevents the user from changing email if it identified as Social Login on Community</description>
+    <errorConditionFormula>AND( 
+NOT(ISNEW()),
+$Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+$Profile.Name &lt;&gt; &#39;Integration API&#39;,
+External_Provider__c &lt;&gt; &#39;auth0&#39;, 
+NOT(ISBLANK( External_Provider__c)), ISCHANGED(Email))</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>This is a Community Social Login Email (ie Google Link) and cannot be changed in Salesforce.</errorMessage>
+</ValidationRule>

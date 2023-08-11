@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceLiveAgent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <avatarImg>https://automationdirectinc--qa--c.sandbox.vf.force.com/resource/1678791116000/Chat_Avatar</avatarImg>
+    <embeddedServiceConfig>Chat</embeddedServiceConfig>
+    <embeddedServiceQuickActions>
+        <embeddedServiceLiveAgent>EmbeddedServiceLiveAgent_Parent04I3u0000004F14EAE_184cdcf0bb1</embeddedServiceLiveAgent>
+        <order>1</order>
+        <quickActionDefinition>Snapins_Contact_PrechatQuickAction_08h3u0000004DVF_1680272518133</quickActionDefinition>
+        <quickActionType>Prechat</quickActionType>
+    </embeddedServiceQuickActions>
+    <enabled>true</enabled>
+    <fontSize>Medium</fontSize>
+    <isOfflineCaseEnabled>false</isOfflineCaseEnabled>
+    <isQueuePositionEnabled>true</isQueuePositionEnabled>
+    <liveChatButton>CX</liveChatButton>
+    <liveChatDeployment>Chat_with_Us</liveChatDeployment>
+    <masterLabel>EmbeddedServiceLiveAgent_Parent04I3u0000004F14EAE_184cdcf0bb1</masterLabel>
+    <prechatBackgroundImg>https://automationdirectinc--qa--c.sandbox.vf.force.com/resource/1678735441000/Chat_Smiley_bkgd?</prechatBackgroundImg>
+    <prechatEnabled>true</prechatEnabled>
+    <scenario>Basic</scenario>
+    <waitingStateBackgroundImg>https://automationdirectinc--qa--c.sandbox.vf.force.com/resource/1678735441000/Chat_Smiley_bkgd?</waitingStateBackgroundImg>
+</EmbeddedServiceLiveAgent>

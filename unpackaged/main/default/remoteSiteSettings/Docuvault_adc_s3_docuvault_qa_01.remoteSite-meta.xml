@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Docuvault_adc_s3_docuvault_qa_01</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://adc-s3-docuvault-qa-01.s3.us-east-1.amazonaws.com</url>
+</RemoteSiteSetting>

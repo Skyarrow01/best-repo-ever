@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Vendor Credit Inquiry</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Vendor Credit Inquiry</name>
+    <pageDevName>Vender_Credit_Inquiry</pageDevName>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Credit Reference Request</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

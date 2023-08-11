@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServicePresenceStatus xmlns="http://soap.sforce.com/2006/04/metadata">
+    <channels>
+        <channel>sfdc_liveagent</channel>
+        <channel>F9_Custom_Call</channel>
+        <channel>F9_Custom_Voicemail</channel>
+        <channel>sfdc_livemessage</channel>
+    </channels>
+    <label>Lunch</label>
+</ServicePresenceStatus>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Needs_to_be_Verifed</fullName>
+    <active>true</active>
+    <description>Throws friendly error when Contact validation rules are triggered.</description>
+    <errorConditionFormula>AND(
+NOT(CreatedBy.Profile.Name = &quot;Community Profile&quot;),
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name = &quot;Integration API&quot;),
+NOT($Permission.Customer_Support_Leads),
+Not($Permission.Merge_Inactivate_Accounts),
+NOT($Permission.Web_Support),
+Contact.Verified__c  = FALSE
+
+)</errorConditionFormula>
+    <errorDisplayField>ContactId</errorDisplayField>
+    <errorMessage>Please navigate to Contact and that it has been verified.</errorMessage>
+</ValidationRule>

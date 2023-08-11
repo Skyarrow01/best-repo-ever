@@ -1,0 +1,15 @@
+<aura:component controller="Docuvault_Helper" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute type="TVA_CFB__Version_History__c[]" name="versionList"/>
+    <aura:attribute name="versionHistoryFields" type="List"/>
+    <aura:attribute name="recordId" type="Id" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:datatable data="{! v.versionList }"
+                         columns="{!v.versionHistoryFields}"
+                         keyField="id"
+                         hideCheckboxColumn="true"
+                         sortable= "false"
+                         onrowaction="{! c.viewRecord }"/>
+</aura:component>

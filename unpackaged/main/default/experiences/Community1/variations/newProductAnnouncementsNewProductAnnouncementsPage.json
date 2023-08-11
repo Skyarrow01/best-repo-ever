@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "8e8f4a6d-2738-4f04-9030-1146257081a3",
+    "propertyOverrides" : {
+      "activeViewId" : "a9360bf2-21ac-46e9-8e32-b268f87791ed"
+    },
+    "targetId" : "588d175f-78f8-46c3-9814-1e49ef54e1f1",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "New_Product_Announcements_New_Product_Announcements_Page",
+  "id" : "33e81da4-d889-4251-8f80-eb8153b28410",
+  "type" : "experienceVariation"
+}

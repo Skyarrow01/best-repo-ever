@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Network$Name</field>
+    </columns>
+    <columns>
+        <field>Network.NetworkMembers$FirstName</field>
+    </columns>
+    <columns>
+        <field>Network.NetworkMembers.FeedItem$Type</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Network.NetworkMembers.FeedItem$CommentCount</field>
+    </columns>
+    <columns>
+        <field>Network.NetworkMembers.FeedItem$DerivedFeedItem</field>
+    </columns>
+    <columns>
+        <field>Network.NetworkMembers.FeedItem$Body</field>
+    </columns>
+    <columns>
+        <field>Network$Id</field>
+    </columns>
+    <columns>
+        <field>Network.NetworkMembers.FeedItem$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Network.NetworkMembers$Member</field>
+    </columns>
+    <description>This is a report created as part of a customer investigation.</description>
+    <format>Tabular</format>
+    <name>SFDC TEST REPORT 2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ca_collab_2_0__Network_Feed_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Network.NetworkMembers.FeedItem$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Network.NetworkMembers.FeedItem$CreatedDate</dateColumn>
+        <endDate>2020-04-15</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-04-15</startDate>
+    </timeFrameFilter>
+</Report>

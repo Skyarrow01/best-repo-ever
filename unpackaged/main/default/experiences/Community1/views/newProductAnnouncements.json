@@ -1,0 +1,93 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "a9360bf2-21ac-46e9-8e32-b268f87791ed",
+  "label" : "New Product Announcements",
+  "regions" : [ {
+    "id" : "d579eb32-ec22-4817-a1cd-ab47485cb1ce",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "New Product Announcements",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "7f203885-2018-474a-8be5-cb2ac36a7e01",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e094c78a-75cd-4412-abbe-b00912d4f768",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "recordId" : "0TO3u000000l14VGAQ",
+        "showNotificationMenu" : true
+      },
+      "componentName" : "forceCommunity:follow",
+      "id" : "d6d5f7b0-b98a-42a6-bdf8-17f25ee13bf0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "99e47e42-f02f-4969-8e10-d1b2dd835d87",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "defaultSortOrderHomeFeed" : "Relevance",
+        "defaultSortOrderTopicsFeed" : "Relevance",
+        "showComments" : true,
+        "showLikes" : true,
+        "showViews" : true,
+        "subjectId" : "{!topic_id}",
+        "type" : "Topics"
+      },
+      "componentName" : "forceChatter:compactFeed",
+      "id" : "3e23383f-a55f-41d6-9eb8-ed73ac2a5773",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "35d9c6aa-d676-4b0d-9a95-fe65c80aa0a4",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name = \"keywords\" content = \"Just released, New Products\" />",
+        "description" : "Find all of AutomationDirect's latest and greatest products offerings here! Be sure to check back often to stay up to date.",
+        "title" : "New Product Announcements | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f5389c2a-1acb-4707-9896-9f07bca858ed",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b86c73ca-9da0-440c-9ab5-d947cdc97a3a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-new-product-announcements"
+}

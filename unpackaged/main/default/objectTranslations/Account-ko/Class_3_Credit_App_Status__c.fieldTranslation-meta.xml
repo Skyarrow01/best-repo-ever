@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Class 3 (Credit App Status)  --></label>
+        <name>Class_3_Credit_App_Status__c</name>
+        <picklistValues>
+            <masterLabel>App on File</masterLabel>
+            <translation><!-- App on File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAD DEBT</masterLabel>
+            <translation><!-- BAD DEBT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cred App Received</masterLabel>
+            <translation><!-- Cred App Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cred App Requested</masterLabel>
+            <translation><!-- Cred App Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cred App Second Request</masterLabel>
+            <translation><!-- Cred App Second Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit App -- Phone Call</masterLabel>
+            <translation><!-- Credit App - -  Phone Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit App Final Request</masterLabel>
+            <translation><!-- Credit App Final Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Approved</masterLabel>
+            <translation><!-- Credit Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card Requested</masterLabel>
+            <translation><!-- Credit Card Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guaranty on File</masterLabel>
+            <translation><!-- Guaranty on File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Approval</masterLabel>
+            <translation><!-- Out for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepay</masterLabel>
+            <translation><!-- Prepay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References -- 1st Request</masterLabel>
+            <translation><!-- References - -  1st Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References -- 2nd request</masterLabel>
+            <translation><!-- References - -  2nd request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References -- Phone Call</masterLabel>
+            <translation><!-- References - -  Phone Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested Additional Reference</masterLabel>
+            <translation><!-- Requested Additional Reference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested GOA</masterLabel>
+            <translation><!-- Requested GOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review - Credit Limit</masterLabel>
+            <translation><!-- Review - Credit Limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>z Credit Denied</masterLabel>
+            <translation><!-- z Credit Denied --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

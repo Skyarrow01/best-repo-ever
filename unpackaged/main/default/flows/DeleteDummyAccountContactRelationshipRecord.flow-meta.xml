@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>Deletes Account Contact Relationships for Dummy Accounts (Quick Call/General Community Account) when they are no longer the Direct Account</description>
+    <interviewLabel>DeleteDummyAccountContactRelationshipRecord {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DeleteDummyAccountContactRelationshipRecord</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <description>Delete Dummy (Quick Call/General Community Account) Contact Relationship when the dummy account is no longer the Direct Account</description>
+        <name>DeleteDummyAccountContactRelationRecord</name>
+        <label>DeleteDummyAccountContactRelationRecord</label>
+        <locationX>180</locationX>
+        <locationY>50</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AccountContactRelationId</elementReference>
+            </value>
+        </filters>
+        <object>AccountContactRelation</object>
+    </recordDeletes>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>DeleteDummyAccountContactRelationRecord</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>AccountContactRelation Id that will be set to deleted from AccountContactRelation</description>
+        <name>AccountContactRelationId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "13edab48-873c-4e1c-b5c5-77464ca050d7",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "78e45720-bfc1-42be-9b06-6f6a3349b960",
+  "label" : "FW SW Updates Announcements (Internal)",
+  "pageAccess" : "Public",
+  "routeType" : "custom-fw-sw-updates-announcements",
+  "type" : "route",
+  "urlPrefix" : "fw-sw-updates-announcements"
+}

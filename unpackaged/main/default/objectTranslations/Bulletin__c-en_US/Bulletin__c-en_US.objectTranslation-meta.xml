@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bulletin</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bulletins</value>
+    </caseValues>
+    
+    
+    
+    <layouts>
+        <layout>Bulletin Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- AR Support Report Type --></description>
+        <label><!-- AR Support --></label>
+        <name>AR_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Bulletin Record for CRA and Tech Support --></description>
+        <label><!-- CRA/Tech Support --></label>
+        <name>CRA_Tech_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Bulletin for Customer Support --></description>
+        <label><!-- Customer Support --></label>
+        <name>Customer_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For the RA Team --></description>
+        <label><!-- RA Support --></label>
+        <name>RA_Support</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

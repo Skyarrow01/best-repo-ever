@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(MINUTE(TIMEVALUE(StartTime))&gt;44,TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:45-&#39;&amp;TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:00&#39;,
+IF(MINUTE(TIMEVALUE(StartTime))&gt;29,TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:30-&#39;&amp;TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:45&#39;,
+IF(MINUTE(TIMEVALUE(StartTime))&gt;14,TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:15-&#39;&amp;TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:30&#39;,
+TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:00-&#39;&amp;TEXT(HOUR(TIMEVALUE(StartTime))-5)&amp;&#39;:15&#39;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

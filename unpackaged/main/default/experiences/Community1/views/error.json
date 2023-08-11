@@ -1,0 +1,61 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "35ca1782-abbc-416e-b5c5-d11f3e46fcc3",
+  "label" : "Error",
+  "regions" : [ {
+    "id" : "1cdbbd0a-415e-4394-9393-eb7ba7c83db3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><center><a href=\"https://support.automationdirect.com/\" target=\"_blank\"><img align=\"center\" alt=\"AutomationDirect Logo\" border=\"0\" height=\"33\" src=\"https://support.automationdirect.com/images/adc_logo.jpg\" title=\"Welcome to AutomationDirect Technical Support\" width=\"332\" /></a></center></p>\n&nbsp;\n\n    <p>&nbsp;</p>\n\n<p><center><font color=\"red\" size=\"4\"> If you have reached this page, you have encountered an error during processing a forum webpage or are having a login issue. Please contact the following for assistance or click \"Contact ADC\" for more options.</font></center> </p>\n\n    <p>&nbsp;</p>\n\n<p> <center>\n   <font color= \"black\" size=\"4\"> <table border=\"0\" cellPadding=\"2\">\n    \n        <thead>\n        \t\t<tr class=\"headerRow\">\n            \t\t<th class=\"headerRow\" scope=\"col\">\n                        <center>Community Forum Issues&nbsp;</center>\n                        \n                \t</th> \n            \t\t<th class=\"headerRow\" scope=\"col\">\n                        Login Issues \n            \t\t</th>\n            \t</tr> \n        </thead>\n  \n\n    <tbody>\n        <tr class=\"dataRow\">\n            <td>\n                <b><center>Contact Moderator(s):&nbsp</center></b>\n            </td>        \n                           \n            <td>\n               <b>Contact Web Support:&nbsp</b>  \n \n            </td>\n       </tr>\n      \n       <tr class=\"dataRow\">\n           <td>\n               <b><center>Click \"Message Moderator\" below</center></b>              \n            <td>\n                <b>(800) 633-0405, Option 4</b></td>\n            </td>\n      </tr>\n    </tbody>\n\n</table> \n          <p>&nbsp</p>\n \n   </font></center> </p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "8be39375-e981-4427-ad91-61d560443e02",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a9a8bd53-7a75-471b-83c6-5e8e2c556dff",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "Button1Text" : "Message Moderator",
+        "Button1URL" : "/community-moderator",
+        "Button2Text" : "Contact ADC",
+        "Button2URL" : "https://www.automationdirect.com/adc/contactus/contactus"
+      },
+      "componentName" : "c:agi_CustomNavButtons",
+      "id" : "a4625913-45be-45a4-a48c-e0730c28dbb4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d1058286-509b-4a97-8254-311ef60b2a6c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Error"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "07377f1c-79e7-49e1-873b-28e0714b8d1d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3a0494b6-9751-4be1-983a-38c62f0a990f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "error"
+}

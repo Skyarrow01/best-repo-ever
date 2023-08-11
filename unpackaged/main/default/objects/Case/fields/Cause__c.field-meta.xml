@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause__c</fullName>
+    <externalId>false</externalId>
+    <label>Cause</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Presales</fullName>
+                <default>false</default>
+                <label>Presales</label>
+            </value>
+            <value>
+                <fullName>Application Presales</fullName>
+                <default>false</default>
+                <label>Presales - Application</label>
+            </value>
+            <value>
+                <fullName>Presales - Out of Stock</fullName>
+                <default>false</default>
+                <label>Presales - Out of Stock</label>
+            </value>
+            <value>
+                <fullName>Presales - Insufficient data for selection</fullName>
+                <default>false</default>
+                <label>Presales - Insufficient data for selection</label>
+            </value>
+            <value>
+                <fullName>Application Help</fullName>
+                <default>false</default>
+                <label>Application Help</label>
+            </value>
+            <value>
+                <fullName>Agency Approvals</fullName>
+                <default>false</default>
+                <label>Agency Approvals</label>
+            </value>
+            <value>
+                <fullName>Bad Traffic</fullName>
+                <default>false</default>
+                <label>Bad Traffic</label>
+            </value>
+            <value>
+                <fullName>Bezel Problem</fullName>
+                <default>false</default>
+                <label>Bezel Problem</label>
+            </value>
+            <value>
+                <fullName>Bug</fullName>
+                <default>false</default>
+                <label>Bug</label>
+            </value>
+            <value>
+                <fullName>CAD Drawings</fullName>
+                <default>false</default>
+                <label>CAD Drawings</label>
+            </value>
+            <value>
+                <fullName>Catastrophic Failure</fullName>
+                <default>false</default>
+                <label>Catastrophic Failure</label>
+            </value>
+            <value>
+                <fullName>Communications Failure</fullName>
+                <default>false</default>
+                <label>Communications Failure</label>
+            </value>
+            <value>
+                <fullName>Contrast Problem</fullName>
+                <default>false</default>
+                <label>Contrast Problem</label>
+            </value>
+            <value>
+                <fullName>Customer Caused</fullName>
+                <default>false</default>
+                <label>Customer Caused</label>
+            </value>
+            <value>
+                <fullName>Customer Recommendation</fullName>
+                <default>false</default>
+                <label>Customer Recommendation</label>
+            </value>
+            <value>
+                <fullName>Defective Product</fullName>
+                <default>false</default>
+                <label>Defective Product</label>
+            </value>
+            <value>
+                <fullName>Display Problem</fullName>
+                <default>false</default>
+                <label>Display Problem</label>
+            </value>
+            <value>
+                <fullName>Documentation sufficient to prevent call</fullName>
+                <default>false</default>
+                <label>Documentation sufficient to prevent call</label>
+            </value>
+            <value>
+                <fullName>Firmware Problem</fullName>
+                <default>false</default>
+                <label>Firmware Problem</label>
+            </value>
+            <value>
+                <fullName>Ground Fault</fullName>
+                <default>false</default>
+                <label>Ground Fault</label>
+            </value>
+            <value>
+                <fullName>Hardware Upgrade</fullName>
+                <default>false</default>
+                <label>Hardware Upgrade</label>
+            </value>
+            <value>
+                <fullName>Incorrect Documentation</fullName>
+                <default>false</default>
+                <label>Incorrect Documentation</label>
+            </value>
+            <value>
+                <fullName>Installation Instructions</fullName>
+                <default>false</default>
+                <label>Installation Instructions</label>
+            </value>
+            <value>
+                <fullName>Made Recommendation</fullName>
+                <default>false</default>
+                <label>Made Recommendation</label>
+            </value>
+            <value>
+                <fullName>No Output Power</fullName>
+                <default>false</default>
+                <label>No Output Power</label>
+            </value>
+            <value>
+                <fullName>No Response from Customer</fullName>
+                <default>false</default>
+                <label>No Response from Customer</label>
+            </value>
+            <value>
+                <fullName>No Speed Control</fullName>
+                <default>false</default>
+                <label>No Speed Control</label>
+            </value>
+            <value>
+                <fullName>Old Hardware</fullName>
+                <default>false</default>
+                <label>Old Hardware</label>
+            </value>
+            <value>
+                <fullName>Old Software Version</fullName>
+                <default>false</default>
+                <label>Old Software Version</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out Of Warranty Failure</fullName>
+                <default>false</default>
+                <label>Out Of Warranty Failure</label>
+            </value>
+            <value>
+                <fullName>Password Removal</fullName>
+                <default>false</default>
+                <label>Password Removal</label>
+            </value>
+            <value>
+                <fullName>Problem Is 3rd Party Device</fullName>
+                <default>false</default>
+                <label>Problem Is 3rd Party Device</label>
+            </value>
+            <value>
+                <fullName>Product Specifications</fullName>
+                <default>false</default>
+                <label>Product Specifications</label>
+            </value>
+            <value>
+                <fullName>Problem Is Customer&#39;s PC</fullName>
+                <default>false</default>
+                <label>Problem Is Customer&#39;s PC</label>
+            </value>
+            <value>
+                <fullName>Programming Help - code</fullName>
+                <default>false</default>
+                <label>Programming Help - code</label>
+            </value>
+            <value>
+                <fullName>Programming Help - Parameters</fullName>
+                <default>false</default>
+                <label>Programming Help - Parameters</label>
+            </value>
+            <value>
+                <fullName>Quote</fullName>
+                <default>false</default>
+                <label>Quote</label>
+            </value>
+            <value>
+                <fullName>RMA Approved</fullName>
+                <default>false</default>
+                <label>RMA Approved</label>
+            </value>
+            <value>
+                <fullName>RMA Denied</fullName>
+                <default>false</default>
+                <label>RMA Denied</label>
+            </value>
+            <value>
+                <fullName>Sent To Federation Partner</fullName>
+                <default>false</default>
+                <label>Sent To Federation Partner</label>
+            </value>
+            <value>
+                <fullName>Software Connection</fullName>
+                <default>false</default>
+                <label>Software Connection</label>
+            </value>
+            <value>
+                <fullName>Software Installation Issue</fullName>
+                <default>false</default>
+                <label>Software Installation Issue</label>
+            </value>
+            <value>
+                <fullName>Software Problem</fullName>
+                <default>false</default>
+                <label>Software Problem</label>
+            </value>
+            <value>
+                <fullName>Software Registration Issue</fullName>
+                <default>false</default>
+                <label>Software Registration Issue</label>
+            </value>
+            <value>
+                <fullName>Touchcells/Touchscreen Not Working</fullName>
+                <default>false</default>
+                <label>Touchcells/Touchscreen Not Working</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting – Ethernet Comm</fullName>
+                <default>false</default>
+                <label>Troubleshooting – Ethernet Comm</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting Help</fullName>
+                <default>false</default>
+                <label>Troubleshooting Help</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting – Serial Comm</fullName>
+                <default>false</default>
+                <label>Troubleshooting – Serial Comm</label>
+            </value>
+            <value>
+                <fullName>Unable To Clear Fault</fullName>
+                <default>false</default>
+                <label>Unable To Clear Fault</label>
+            </value>
+            <value>
+                <fullName>Unable to Determine</fullName>
+                <default>false</default>
+                <label>Unable to Determine</label>
+            </value>
+            <value>
+                <fullName>Video Questions</fullName>
+                <default>false</default>
+                <label>Video Questions</label>
+            </value>
+            <value>
+                <fullName>Web (Tech)</fullName>
+                <default>false</default>
+                <label>Web (Tech)</label>
+            </value>
+            <value>
+                <fullName>Wiring</fullName>
+                <default>false</default>
+                <label>Wiring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

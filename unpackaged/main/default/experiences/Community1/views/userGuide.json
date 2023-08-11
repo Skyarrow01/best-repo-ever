@@ -1,0 +1,46 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "bc81517a-4e5d-4fb5-aed5-35db6fbead84",
+  "label" : "User Guide",
+  "regions" : [ {
+    "id" : "10d7e1aa-a85b-48c8-82f6-60a6345bb432",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:agi_user_guide",
+      "id" : "d7d6e21f-4621-4579-97b5-f80ff37323ff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a2a9b999-a889-4ab8-a65d-023ec6418d5e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "735875da-1257-4af7-8794-d093e825fecd",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Our Community Forum User Guide lets you know what our site is about, helps you set up an account, provide guidelines and more!",
+        "title" : "User Guide | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "addfdb9c-8224-4414-a96e-49723dae4877",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e642e9a9-8ab5-41be-a6b8-34fb527766fb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-user-guide"
+}

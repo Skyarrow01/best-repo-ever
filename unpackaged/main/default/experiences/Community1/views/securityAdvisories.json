@@ -1,0 +1,95 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "eaa6774a-cd79-46c5-b624-0ca2825ffd12",
+  "label" : "Security Advisories",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "875ade2d-eeb5-4168-a0d0-5ff2afcd7068",
+          "columns" : [ {
+            "UUID" : "ff5956a9-1bc5-4ae1-adda-4272833f71a3",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "5",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "c020607e-927e-4a98-a3b3-0091ed053ba5",
+            "columnKey" : "9c976",
+            "columnName" : "Column 2",
+            "columnWidth" : "7",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "875ade2d-eeb5-4168-a0d0-5ff2afcd7068",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Security Advisories</h1><p><br></p><p>Here you can report any cybersecurity vulnerabilities, in our products, to our product incident response team. We take all reports seriously and work diligently to assess and address any vulnerabilities promptly. Your help in identifying and reporting these issues plays a vital role in enhancing the security of our products and systems, and we appreciate your cooperation in making them safer for all our customers.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "cfda9b98-cb04-4ab2-b7a6-d28e30f063d5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ff5956a9-1bc5-4ae1-adda-4272833f71a3",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "articleListPageSize" : 10,
+            "showTitle" : true,
+            "title" : "Articles",
+            "topicId" : "0TODQ000000CaWM4A0"
+          },
+          "componentName" : "selfService:topicRelatedArticle",
+          "id" : "d30c776d-fff8-4190-8294-f02c14354c55",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c020607e-927e-4a98-a3b3-0091ed053ba5",
+        "regionLabel" : "Column 2",
+        "regionName" : "9c976",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b6b9de41-b62d-4f62-a554-308841837fe0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Security Advisories"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e67fe6c6-468c-4f3b-a15f-63ccd7249751",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6da7d8d4-cf14-43ab-87d3-819b49ebcc33",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-security-advisories"
+}

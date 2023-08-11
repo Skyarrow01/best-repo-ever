@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All Internal Users</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Internal</label>
+    <permissionSets>Data_Category_Internal</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

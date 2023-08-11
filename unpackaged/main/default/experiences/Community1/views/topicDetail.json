@@ -1,0 +1,285 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "895a4674-1768-4141-ac41-0804c82715b6",
+  "label" : "Topic Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "topic",
+        "showSubTopics" : true,
+        "title" : "Welcome!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "627abfee-ee67-4079-a173-ff573fb17248",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:topicDescription",
+      "id" : "75592647-5810-4bcf-96db-4ba245be06bb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6fb8237c-c116-43f5-92b8-2ac9462e942c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "followUpPromptLabel" : "Can we close your question?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : false,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "label" : "Create a Thread",
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : true,
+        "showTopics" : false,
+        "uneditableTopics" : true
+      },
+      "componentName" : "forceCommunity:askCommunity",
+      "id" : "eea021d4-8812-44ca-ae8d-7c221ddc6918",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "recordId" : "{!recordId}",
+        "showNotificationMenu" : true
+      },
+      "componentName" : "forceCommunity:follow",
+      "id" : "a3e23552-fcab-497b-8ceb-0c677ca929da",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "af317dc8-d011-4af3-bd0d-5734c7018a53",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "c1d2bdb2-6e6f-4483-b657-461e8d1c64fb",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "bb95a5c1-1106-410e-8aa1-3a49764fe499",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Discussions"
+          }, {
+            "UUID" : "a5b4d183-de8f-45b8-92ad-93ce87c6fad5",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "db0af",
+            "tabName" : "Knowledge Articles"
+          }, {
+            "UUID" : "fffc0597-d31b-4ddc-9abb-411a11357655",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "My Feed"
+          }, {
+            "UUID" : "a3bfc65c-45d6-4dbb-91b8-23ef5192704c",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Search Topic"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "c1d2bdb2-6e6f-4483-b657-461e8d1c64fb",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:agi_TopicDisplay",
+          "id" : "bc5c163c-23e0-46c7-9260-41c89677421b",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\">Don't see what you're looking for?</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "e95b85de-fa1d-4120-8f84-70189691cff1",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "FirstButtonLink" : "https://community.automationdirect.com/s/contactsupport",
+            "FirstButtonName" : "Contact Support"
+          },
+          "componentName" : "c:CustomForumButtonComponent",
+          "id" : "552c5eaa-1774-4c76-873c-a51dcafd8c22",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bb95a5c1-1106-410e-8aa1-3a49764fe499",
+        "regionLabel" : "Discussions",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Use our global search at the top of this page for a more detailed search of our knowledge articles.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "f6a1a756-fe8d-476c-b2fd-4a81d6d428ed",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "articleListPageSize" : 10,
+            "showTitle" : false,
+            "title" : "Articles",
+            "topicId" : "{!topicId}"
+          },
+          "componentName" : "selfService:topicRelatedArticle",
+          "id" : "44be6b11-ad99-47d0-840c-416a1a48638a",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a5b4d183-de8f-45b8-92ad-93ce87c6fad5",
+        "regionLabel" : "Knowledge Articles",
+        "regionName" : "db0af",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "AllQuestions",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "BROWSE",
+            "hasFeedSearch" : true,
+            "subjectId" : "",
+            "type" : "News"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "9391a8bf-2520-48be-8347-5bc4e1590e3c",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "fffc0597-d31b-4ddc-9abb-411a11357655",
+        "regionLabel" : "My Feed",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "AllQuestions",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "BROWSE",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!topicId}",
+            "type" : "Record"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "c8c06eb2-d54a-4b62-b8e8-db1fac51771a",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a3bfc65c-45d6-4dbb-91b8-23ef5192704c",
+        "regionLabel" : "Search Topic",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "26c73db0-e4c5-444d-b238-b4fb3c6a888f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfArticles" : 5,
+        "title" : "Trending Articles",
+        "topicId" : "{!topicId}"
+      },
+      "componentName" : "selfService:topicTrendingArticles42",
+      "id" : "cae7cada-496d-428d-b4df-8047305874ce",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "title" : "Knowledgeable People",
+        "topicId" : "{!topicId}"
+      },
+      "componentName" : "forceCommunity:knowledgeablePeople",
+      "id" : "52e0d408-b173-4dff-bef6-9d12391ef848",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d39a4ca8-fddc-47fa-ad87-45847ad008dd",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "2e3965fd-34ea-4623-9432-11ccd0d6aaf2",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name = \"keywords\" content = \"Arduino, PLC, VFD, Motion Control, Relay, Timer, Wiring, HMI, Drives\" />",
+        "description" : "{!Record.Description}",
+        "title" : "{!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c90c0b6f-e9b0-4b05-a473-e9f5cddd6c93",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c23eca24-d407-4fbb-a219-2fc04617ab64",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "topic"
+}

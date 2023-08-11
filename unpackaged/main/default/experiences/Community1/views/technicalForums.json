@@ -1,0 +1,133 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "72883fab-a93a-4603-bd7c-a38b24e46e33",
+  "label" : "Technical Forums",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Technical Forums by Product Category",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "082b0652-b83b-41cb-8ad2-de9c449ac0a7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "45e244d2-66fb-41c5-93f6-023ec2628955",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "FirstTileImageLink" : "TechForum_Arduino",
+        "FirstTileLink" : "",
+        "FirstTileName" : "Open Source Devices",
+        "FourthTileImageLink" : "TechForum_Drives",
+        "FourthTileLink" : "",
+        "FourthTileName" : "Drives/Motors",
+        "GeneralCommunityInfoLink" : "",
+        "NumberOfTiles" : 4,
+        "SecondTileImageLink" : "TechForum_PLC",
+        "SecondTileLink" : "",
+        "SecondTileName" : "PLC/Field I/O",
+        "TechnicalForumsLink" : "",
+        "ThirdTileImageLink" : "TechForum_HMI",
+        "ThirdTileLink" : "",
+        "ThirdTileName" : "HMI/Industrial Monitors"
+      },
+      "componentName" : "c:TechnicalForumImageComponent",
+      "id" : "f0039990-a406-41ac-8073-680a65bcb653",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "FirstTileImageLink" : "TechForum_MotionControl",
+        "FirstTileLink" : "",
+        "FirstTileName" : "Motion Control",
+        "FourthTileImageLink" : "TechForum_PowerProducts",
+        "FourthTileLink" : "",
+        "FourthTileName" : "Power Products/Circuit Protection",
+        "GeneralCommunityInfoLink" : "",
+        "NumberOfTiles" : 4,
+        "SecondTileImageLink" : "TechForum_CommunicationsProduct",
+        "SecondTileLink" : "",
+        "SecondTileName" : "Communications Products",
+        "TechnicalForumsLink" : "",
+        "ThirdTileImageLink" : "TechForum_ProcessControl",
+        "ThirdTileLink" : "",
+        "ThirdTileName" : "Process Control"
+      },
+      "componentName" : "c:TechnicalForumImageComponent",
+      "id" : "43925b57-7dff-4f8f-aa11-e06777770a49",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "FirstTileImageLink" : "TechForum_Relays",
+        "FirstTileLink" : "",
+        "FirstTileName" : "Relays/Timers",
+        "FourthTileImageLink" : "TechForum_FieldDevice",
+        "FourthTileLink" : "",
+        "FourthTileName" : "Electrical Field Devices",
+        "GeneralCommunityInfoLink" : "",
+        "NumberOfTiles" : 4,
+        "SecondTileImageLink" : "TechForum_Wiring",
+        "SecondTileLink" : "",
+        "SecondTileName" : "Wiring",
+        "TechnicalForumsLink" : "",
+        "ThirdTileImageLink" : "TechForum_Mechanical",
+        "ThirdTileLink" : "",
+        "ThirdTileName" : "Mechanical"
+      },
+      "componentName" : "c:TechnicalForumImageComponent",
+      "id" : "e3d4ff87-4f3d-4ac8-a2bd-a6f93a3e9865",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "fc752476-2768-4608-ad7c-140443572e57",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "04e29317-0b98-4268-96ef-2ba0d942210c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "5a057627-b32a-488f-a65e-eaf1efc718dd",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name = \"keywords\" content = \"Arduino, PLC, VFD, Motion Control, Relay, Timer, Wiring, HMI, Drives\" />",
+        "description" : "AutomationDirect Community provides a variety of technical forums for your review. Get your questions about PLCs, HMIs, Drives and much more answered today!",
+        "title" : "Technical Forums | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0deb9560-fd1a-4623-a332-a62f922ad2fe",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fbf321b5-7c27-42a7-befd-65f79fd9e21e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-technical-forums"
+}

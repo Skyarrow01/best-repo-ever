@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Reassign_Project_Tasks</fullName>
+    <active>true</active>
+    <description>If Record Type is ADC_Project_Task, you cannot reassign Project Tasks if you are not a project Admin or System Admin</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &#39;ADC_Project_Task&#39;,
+ NOT($Permission.Project_Admins),
+ $Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+ ISCHANGED( OwnerId )
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>You do not have permission to reassign this task.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,172 @@
+/* Hides and Shows Elements in top nav menu (Start)*/
+@media(max-width: 991px) {
+	.THIS .slds-nav-vertical__item_hide-mobile {
+		display: none;
+	}
+}
+
+.THIS .slds-dropdown_medium {
+	min-width: 24rem;    
+}
+
+.THIS .icn svg{
+	fill : white;    
+}
+
+.THIS .slds-nav-vertical__item_hide-desktop {
+	margin: 2px 7px;
+}
+@media(min-width: 991px) {
+	.THIS .slds-nav-vertical__item_hide-desktop {
+		display: none;
+	}
+}
+
+.THIS .slds-dropdown {
+    
+    border-radius: 0px;
+}
+/* Hides and Shows Elements in top nav menu (End)*/
+.THIS .slds-grid {
+	width: 100%;
+}
+.THIS .slds-context-bar__item_float-right {
+	float: right;
+}
+.THIS .slds-nav-vertical__action {
+    color: #0d72c2;
+}
+
+.THIS .slds-context-bar__label-action {
+    text-decoration:  none;
+    font-size: .875rem;
+}
+
+.THIS .cCustomMenu .slds-context-bar__label-action:hover .slds-truncate {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+}
+.THIS .slds-truncate {
+}
+.THIS.slds-context-bar {
+    background: #0d72c2;
+	border-bottom: none;
+    /*-webkit-box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);*/
+    height: 3rem;
+    position: relative;
+    z-index: 1007;
+}
+
+.THIS .menu-dropdown {
+    background: #0d72c2;
+    color:#fff;
+}
+
+.THIS.navMenuWrapper.showElement {
+    display: block;
+}
+
+.THIS.navMenuWrapper {
+    display: none;
+}
+.THIS .navigationMenu li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.THIS .navigationMenu li a.active {
+    color: #F2B44F;
+}
+
+.THIS .slds-context-bar__item {
+ 	    max-width: 20rem!important ;  
+}
+
+.THIS .slds-context-bar__item:not(.slds-no-hover):hover,
+.THIS .slds-context-bar__item.slds-is-active {
+	background: transparent;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.THIS .slds-nav-vertical__action:hover {
+	color:black;
+	background:white;    
+}
+
+.THIS .slds-context-bar__item:not(.slds-no-hover):hover::after {
+	background: transparent;
+}
+
+.THIS .navigationMenu {
+    padding: 0;
+    margin: 0;
+    /*max-width: 1140px;*/
+    margin: 0 auto;
+    white-space: nowrap;
+}
+@media only screen and (max-width: 991px) {
+	.THIS.navMenuWrapper {
+	    position: fixed;
+	    display: none;
+	    top: 40px;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    /*background: transparent;*/
+        z-index: 1000;
+	    overflow-y: scroll;
+        overflow-x: hidden;
+	}
+	.THIS.navMenuWrapper a {
+		text-decoration: none;
+	    width: 100%;
+	    background: transparent;
+	}
+	.THIS .navigationMenu {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    margin: 0;
+	    
+	    /*box-shadow: 1px 0 0 0 #fff;*/
+        background-color: #0d72c2;
+	 }
+    
+	.THIS.bodyMenuMobile {
+	    position: fixed;
+	    top: 0px;
+	    left: 80%;
+	    width: 100%;
+	    backface-visibility: hidden;
+	    overflow: visible;
+	    transition: transform 0.35s ease, left 0.35s ease, top 0.35s ease, box-shadow 0.35s ease, right 0.35s ease;
+	}
+}
+
+.THIS.bodyMenuMobile {
+    left: 0px;
+    position: absolute;
+}
+.THIS .message-count {
+  color: #395E8D;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  font: bold 13px/12px Arial, san-serif;
+  text-align: center;
+  margin: 0;
+  top: 2px;
+}
+
+.THIS .selectedTab {
+    color: #F2B44F;
+}
+.THIS .uiMenuList--default .uiMenuItem>a:active, 
+.THIS .uiMenuList--default .uiMenuItem>span:active {
+    background-color: #F2B44F;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sensor Questions For Customers</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Sensor Questions For Customers</name>
+    <pageDevName>Sensor_Questions_For_Customers</pageDevName>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Thank You For Choosing Automation Direct For Your Sensor Needs</subject>
+    <textOnly>Thank you for choosing Automation Direct for your Sensor need. Please provide us with as much of the following information as possible. This information will ensure that one of our Technical Experience team members has good information to assist you effectively and quickly.
+
+ 1. Are you looking for a cross reference for another manufacturer’s sensor?
+ 1. Who is the manufacturer?
+ 2. What is the manufacturer’s part number?
+
+ 2. Are you looking for a cross reference to an Automation Direct sensor that is out of stock?
+ 1. What is the part number?
+ 2. Are there any physical characteristics that can’t change?
+
+ 3. Do you know the type of sensor you are looking for (example: proximity, photo electric….)? Provide as much detail as you can.
+ 4. Are there any special environmental conditions to be aware of?
+ 5. What will the sensor connect to; PLC, timer, relay, etc....?
+ 6. What voltage do you need the sensor to be (120VAC, 24VAC, 24VDC, …)?
+ 7. What is the maximum distance that your sensor needs to cover?
+ 8. Any other information that would be helpful?
+
+You may also want to try our sensor selector tool &lt; https://www.automationdirect.com/adc/shopping/catalog/sensors_-z-_encoders?showSelectionAssistance=true&amp;disabledFacetGroups=Item_Type_ms%23Item_Type_ms=(%22Area%20Sensor%22%22Limit%20Switch%22%22Photoelectric%20Sensor%22%22Photoelectric%20Fork%20Sensor%22%22Proximity%20Sensor%22%22Optical%20Fiber%22%22Fiber%20Amplifier%22) &gt;</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether this Silo Member should be on a Pricing Project</description>
+    <externalId>false</externalId>
+    <label>Pricing</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

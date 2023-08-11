@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connected_PLC__c</fullName>
+    <description>Connected PLC</description>
+    <externalId>false</externalId>
+    <label>Connected PLC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allen Bradley</fullName>
+                <default>false</default>
+                <label>Allen Bradley</label>
+            </value>
+            <value>
+                <fullName>CLICK</fullName>
+                <default>false</default>
+                <label>CLICK</label>
+            </value>
+            <value>
+                <fullName>DirectLogic</fullName>
+                <default>false</default>
+                <label>DirectLogic</label>
+            </value>
+            <value>
+                <fullName>Do-more</fullName>
+                <default>false</default>
+                <label>Do-more</label>
+            </value>
+            <value>
+                <fullName>Entivity</fullName>
+                <default>false</default>
+                <label>Entivity</label>
+            </value>
+            <value>
+                <fullName>GE</fullName>
+                <default>false</default>
+                <label>GE</label>
+            </value>
+            <value>
+                <fullName>GS Drives</fullName>
+                <default>false</default>
+                <label>GS Drives</label>
+            </value>
+            <value>
+                <fullName>Mitsubishi</fullName>
+                <default>false</default>
+                <label>Mitsubishi</label>
+            </value>
+            <value>
+                <fullName>Modbus General</fullName>
+                <default>false</default>
+                <label>Modbus General</label>
+            </value>
+            <value>
+                <fullName>Omron</fullName>
+                <default>false</default>
+                <label>Omron</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Productivity Series</fullName>
+                <default>false</default>
+                <label>Productivity Series</label>
+            </value>
+            <value>
+                <fullName>Siemens</fullName>
+                <default>false</default>
+                <label>Siemens</label>
+            </value>
+            <value>
+                <fullName>Solo</fullName>
+                <default>false</default>
+                <label>Solo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

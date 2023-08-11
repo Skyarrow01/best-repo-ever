@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId" access="global" controller="Docuvault_Helper" >
+    <aura:attribute type="Aura.Component[]" name="body"/>
+    <aura:attribute type="Boolean" name="fileLibrary" default="false"/>
+    <aura:attribute type="Boolean" name="enableDownloadAllFiles" default="true"/>
+    <aura:attribute type="Boolean" name="enableDelete" default="true"/>
+    <aura:attribute type="Boolean" name="enableRenameFile" default="false"/>
+    <aura:attribute type="Boolean" name="uploadNewVersion" default="false"/>
+    <aura:attribute type="Boolean" name="enablePasswordLink" default="false"/>
+    <aura:attribute type="Boolean" name="enableChangeFolder" default="true"/>
+    <aura:attribute type="String" name="label" default=""/>
+    <aura:attribute type="String" name="recordId" />
+    <aura:attribute type="String" name="recordActions" default='{"Actions":[{"label":"Check Out","header": "Check Out","component":"c:Docuvault_CheckOut","labelIcon":"utility:arrowup","showHeader":"true","componentWidth":"40%","componentHeight":"18rem"}, {"label":"Check In","header":"Check In","component":"c:Docuvault_CheckIn","labelIcon":"utility:arrowdown","showHeader":"true","componentWidth": "40%","componentHeight":"18rem"}, {"label":"Cancel Check Out","header":"Cancel Check Out","component":"c:Docuvault_CancelCheckIn","labelIcon":"utility:cancel_file_request","showHeader":"true","componentWidth": "40%","componentHeight":"18rem"}]}'/>
+    <aura:attribute type="String" name="tableColumns" default="CheckOut_By__c,Last_Modified_By__c,Last_Modified_Date__c"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    {!v.body}
+</aura:component>

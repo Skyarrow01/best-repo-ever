@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Tech Support --></label>
+        <name>Tech_Support__c</name>
+        <relationshipLabel><!-- Cases (Tech Support) --></relationshipLabel>
+    </CustomFieldTranslation>

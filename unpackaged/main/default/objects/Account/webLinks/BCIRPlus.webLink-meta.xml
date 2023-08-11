@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCIRPlus</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>BCIR+ (Full Report)</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/{!$Setup.forseva1__ForsevaPreferences__c.forseva1__BarNamespace__c}ProcessingPage?id={!Account.Id}&amp;TRMProcess=AccountPrequalification</url>
+</WebLink>

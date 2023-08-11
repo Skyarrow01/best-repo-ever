@@ -1,0 +1,95 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "6f57bbb0-103d-4b9e-94fe-d3a875c6b113",
+  "label" : "Industrial Protocol Considerations",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "afb652bf-e58f-4776-8ef4-8d99e6ab6d71",
+          "columns" : [ {
+            "UUID" : "1a02cf63-90b2-4a55-9ce8-9daa77befd68",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "5",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "5c3e87e3-7f34-424d-b2b0-7a8991b0b19a",
+            "columnKey" : "18854",
+            "columnName" : "Column 2",
+            "columnWidth" : "7",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "afb652bf-e58f-4776-8ef4-8d99e6ab6d71",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Industrial Protocol Considerations</h1><p style=\"text-align: center;\"><br></p><p>In our collection of articles, you can find valuable information on industrial protocol cybersecurity considerations for operational technology. Understanding the specific security requirements and vulnerabilities of industrial protocols is crucial for protecting your operational technology from cyber threats. Our articles cover various industrial protocols and provide practical guidance on how to implement cybersecurity measures to secure your systems and equipment.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "fae25162-f63f-4d12-9013-66cd5f835545",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1a02cf63-90b2-4a55-9ce8-9daa77befd68",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "articleListPageSize" : 10,
+            "showTitle" : false,
+            "title" : "Articles",
+            "topicId" : "0TODQ000000CaW64AK"
+          },
+          "componentName" : "selfService:topicRelatedArticle",
+          "id" : "409a9cbf-c1a7-4592-86ed-fbd7c335e032",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5c3e87e3-7f34-424d-b2b0-7a8991b0b19a",
+        "regionLabel" : "Column 2",
+        "regionName" : "18854",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dd3ba219-e0ce-4996-afbb-0f3e28681a74",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Industrial Protocol Considerations"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b1a1820e-adb5-434b-9fd1-5bab17bc9746",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "612b3db8-52b7-4067-9fe7-656b31f3b2be",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-industrial-protocol-considerations"
+}

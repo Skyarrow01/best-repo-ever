@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>52.0</apiVersion>
+    <description>Functionality to allow Teamer to easily select Queue to change the Case Owner</description>
+    <dynamicChoiceSets>
+        <description>Allows Teamer to select a Queue to send the Case too</description>
+        <name>Queue</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Queue_Names__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <formulas>
+        <description>Default Case Reason for Quote, if not Case Reason should be Blank</description>
+        <name>formCaseReason</name>
+        <dataType>String</dataType>
+        <expression>If({!Get_Queue.Name}=&#39;Quote&#39;, &#39;Quote/Price &amp; Availability&#39;, &#39;&#39;)</expression>
+    </formulas>
+    <formulas>
+        <description>Opens the Case if closed, otherwise keeps the Same value</description>
+        <name>formOpenCaseifClosed</name>
+        <dataType>String</dataType>
+        <expression>IF({!Get_Case.IsClosed}=True, &quot;Open&quot;, Text({!Get_Case.Status}))</expression>
+    </formulas>
+    <formulas>
+        <name>formQueueName</name>
+        <dataType>String</dataType>
+        <expression>If({!Select_a_Queue}=&#39;Tech Support&#39;, &#39;Email and Web Queue&#39;, {!Select_a_Queue})</expression>
+    </formulas>
+    <formulas>
+        <name>formRecordTypeName</name>
+        <dataType>String</dataType>
+        <expression>If({!Select_a_Queue} = &#39;Tech Support&#39;, &#39;Email and Web&#39;, {!Select_a_Queue})</expression>
+    </formulas>
+    <interviewLabel>Case Change Queue {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Change Queue</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get Current CAse</description>
+        <name>Get_Case</name>
+        <label>Get Case</label>
+        <locationX>173</locationX>
+        <locationY>155</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Select_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Queue of from the Selected Picklist Value</description>
+        <name>Get_Queue</name>
+        <label>Get Queue</label>
+        <locationX>174</locationX>
+        <locationY>416</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Change_Case_Owner_and_Record_Types</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>formQueueName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Change_Case_Owner_and_Record_Types</name>
+        <label>Change Case Owner and Record Types</label>
+        <locationX>498</locationX>
+        <locationY>419</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Reason</field>
+            <value>
+                <elementReference>formCaseReason</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <screens>
+        <name>Select_Queue</name>
+        <label>Select Queue</label>
+        <locationX>173</locationX>
+        <locationY>280</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Get_Queue</targetReference>
+        </connector>
+        <fields>
+            <name>Select_a_Queue</name>
+            <choiceReferences>Queue</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select a Queue</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Case</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Get Current Record Id</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

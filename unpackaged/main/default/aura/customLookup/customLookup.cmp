@@ -1,0 +1,56 @@
+<aura:component controller="lookUpController" 
+                access="global" 
+                implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:availableForFlowScreens">
+    
+    <!--declare attributes-->
+    <aura:attribute name="varSelectedProduct" type="String" access="global"/>
+    <aura:attribute name="selectedRecord" type="Product2" default="{}" description="Use,for store SELECTED sObject Record"/>
+    <aura:attribute name="listOfSearchRecords" type="Account[]" description="Use,for store the list of search records which returns from apex class"/>
+    <aura:attribute name="SearchKeyWord" type="string"/>
+    <aura:attribute name="Message" type="String" default="Search Result.."/>
+    
+    <!--declare events hendlers-->  
+    <aura:handler name="oSelectedProductEvent" event="c:selectedProductEvent" action="{!c.handleComponentEvent}"/>
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <!-- https://www.lightningdesignsystem.com/components/lookups/ --> 
+    <div>
+        <div aura:id="searchRes" class="slds-form-element slds-lookup slds-is-close" data-select="single">
+            <label class="slds-form-element__label" for="lookup-348"> Product </label>
+            <!--This part is for display search bar for lookup-->  
+            <div class="slds-form-element__control">
+                <div class="slds-input-has-icon slds-input-has-icon--right">
+                    <c:svg class="slds-input__icon slds-show" xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                    <!-- This markup is for when an record is selected -->
+                    <div class="slds-hide slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right" role="none" aura:id="lookup-pill">
+                        <span class="slds-icon_container slds-icon-standard-account slds-combobox__input-entity-icon" title="Product">
+                            <lightning:icon iconName="standard:product" size="xx-small"/>
+                            <span class="slds-assistive-text">Product</span>
+                        </span>
+                        <input type="text" class="slds-input slds-combobox__input slds-combobox__input-value" 
+                               id="combobox-id-5" aria-controls="listbox-id-5" autoComplete="off" role="textbox" 
+                               value="{!v.selectedRecord.Name}" />
+                        <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right" title="Remove selected option" onclick="{!c.clear}">
+                            <lightning:icon iconName="utility:close" size="xx-small"/>
+                            <span class="slds-assistive-text">Remove selected option</span>
+                        </button>
+                    </div>
+                    
+                    <div aura:id="lookupField" class="slds-show">
+                        <ui:inputText  required="true" updateOn="keyup" keyup="{!c.keyPressController}" class="slds-lookup__search-input slds-input " value="{!v.SearchKeyWord}" placeholder="Search Products.."/>
+                    </div>   
+                </div>
+            </div>
+            <!--This part is for Display typehead lookup result List-->  
+            <div class="slds-lookup__menu slds" id="lookup-348">
+                <div class="slds-lookup__item--label slds-text-body--small">{!v.Message}</div>
+                <center> <ui:spinner aura:id="spinner"/> </center>
+                <ul class="slds-lookup__list" role="listbox">
+                    <aura:iteration items="{!v.listOfSearchRecords}" var="singleRec">
+                        <c:customLookupResult oProduct="{!singleRec}" />
+                    </aura:iteration>
+                </ul>
+            </div>
+        </div>
+    </div>
+</aura:component>

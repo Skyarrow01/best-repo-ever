@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SkillLevel</fullName>
+    <businessStatus>Active</businessStatus>
+    <inlineHelpText>Skill Lrvrl must be 1-5 with 5 being presales and 1 being proficient to respond to all issues</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

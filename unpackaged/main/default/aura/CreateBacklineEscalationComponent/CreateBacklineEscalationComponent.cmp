@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable,lightning:isUrlAddressable,force:lightningQuickAction">
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="caseId" type="String"/>
+    <aura:attribute name="agencyApproval" type="Boolean"/>
+    <aura:attribute name="description" type="String"/>
+    <aura:attribute name="originalCaseId" type="String"/>
+    <aura:attribute name="partNumber" type="String"/>
+    <aura:attribute name="product" type="String"/>
+    <aura:attribute name="recordTypeId" type="String"/>
+    <aura:attribute name="silo" type="String"/>
+    <aura:attribute name="subject" type="String"/>
+    <aura:attribute name="recordId" type="String"/>
+    
+    
+    <lightning:flow aura:id="flowData" onstatuschange="{!c.handleStatusChange}"/>
+</aura:component>

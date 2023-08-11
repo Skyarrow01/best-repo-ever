@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Contact confirmed to keep this contact if there are multiple on account. --></help>
+        <label><!-- Confirmed by Contact --></label>
+        <name>Confirmed_by_Contact__c</name>
+    </CustomFieldTranslation>

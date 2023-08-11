@@ -1,0 +1,1 @@
+A new Chatter Post has been made on {!Case.CaseNumber} Link: {!Case.Thread_Id}

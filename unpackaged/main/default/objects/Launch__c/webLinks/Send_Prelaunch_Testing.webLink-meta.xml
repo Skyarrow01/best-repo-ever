@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Prelaunch_Testing</fullName>
+    <availability>online</availability>
+    <description>Send email to key Prelaunch users that launch is ready for testing</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send Prelaunch Testing</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Send_Email_to_Launch_Teamers_Prelaunch_Testing?recordId={!Launch__c.Id}&amp;retURL={!Launch__c.Id}</url>
+</WebLink>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Launch_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Additional_Notes__c</columns>
+    <columns>Launch__c</columns>
+    <columns>Team_Ownership__c</columns>
+    <columns>Define_Error_Issue__c</columns>
+    <columns>Location_of_Error_Issue__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Ready to Launch,Duplicate</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Product_Launch_Testing</value>
+    </filters>
+    <filters>
+        <field>Launch__c</field>
+        <operation>notEqual</operation>
+        <value>Frankie Test Launch</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>Unconfirmed Product Launch</value>
+    </filters>
+    <label>All Open Launch Cases</label>
+</ListView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Addr_edited_Only_by_AR</fullName>
+    <active>true</active>
+    <description>Billing address is required</description>
+    <errorConditionFormula>And( 
+$Profile.Name &lt;&gt; &#39;AR User&#39;,$Profile.Name &lt;&gt; &#39;Customer Support User&#39;, $Profile.Name &lt;&gt; &#39;Customer Experience Specialist&#39;,$Profile.Name &lt;&gt; &#39;System Administrator&#39;, $Profile.Name &lt;&gt; &#39;Integration API&#39;, 
+NOT(ISBLANK(CID__c)), 
+
+OR(
+ISCHANGED(BillingCity),
+ISCHANGED(BillingState),
+ISCHANGED(BillingStreet),
+ISCHANGED ( BillingPostalCode )
+
+)
+
+)</errorConditionFormula>
+    <errorMessage>Please contact Accounting to change Billing Address.</errorMessage>
+</ValidationRule>

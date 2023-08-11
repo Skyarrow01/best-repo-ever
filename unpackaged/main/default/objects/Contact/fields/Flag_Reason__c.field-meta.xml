@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flag_Reason__c</fullName>
+    <description>Reason for flagging Customer.</description>
+    <externalId>false</externalId>
+    <label>Flag Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abusive Language</fullName>
+                <default>false</default>
+                <label>Abusive Language</label>
+            </value>
+            <value>
+                <fullName>Argumentative</fullName>
+                <default>false</default>
+                <label>Argumentative</label>
+            </value>
+            <value>
+                <fullName>Refuses to Test</fullName>
+                <default>false</default>
+                <label>Refuses to Test</label>
+            </value>
+            <value>
+                <fullName>Dangerous or Unintended use</fullName>
+                <default>false</default>
+                <label>Dangerous or Unintended use</label>
+            </value>
+            <value>
+                <fullName>Unqualified</fullName>
+                <default>false</default>
+                <label>Unqualified</label>
+            </value>
+            <value>
+                <fullName>Hazardous</fullName>
+                <default>false</default>
+                <label>Hazardous</label>
+            </value>
+            <value>
+                <fullName>Difficult Customer</fullName>
+                <default>false</default>
+                <label>Difficult Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

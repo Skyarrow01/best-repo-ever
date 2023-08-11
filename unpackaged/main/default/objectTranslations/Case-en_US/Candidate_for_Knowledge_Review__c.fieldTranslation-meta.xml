@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Candidate for Knowledge Review --></label>
+        <name>Candidate_for_Knowledge_Review__c</name>
+    </CustomFieldTranslation>

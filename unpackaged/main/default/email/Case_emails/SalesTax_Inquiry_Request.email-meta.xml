@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Case Auto Response Email to SalesTax Customers</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SalesTax Inquiry Request</name>
+    <style>none</style>
+    <subject>Your SalesTax Inquiry has been Received - Case {!Case.CaseNumber}</subject>
+    <textOnly>and will be processed as soon as possible.
+
+Email not displaying correctly? View it in your browser.
+
+SALES TAX EXEMPTION CERTIFICATE RECEIPT
+
+Thank you for your email.  Your exemption certificate has been forwarded for upload into our tax system. If the certificate meets all requirements, it will be applied to your account as soon as possible.  If you have questions regarding tax on previously invoiced orders, please forward those questions to ar@automationdirect.com.
+
+For reference, details of your request are shown below.
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+
+Valid Exemption Certificates received are typically uploaded within four hours and orders shipping the next day will have tax adjusted prior to shipping. (If you have an order in the cart, please close all the way out of your browser and log back in to view your updated cart.)
+
+Thank you,
+
+AutomationDirect Sales Tax Department
+
+{!Case.Thread_Id}
+(Please do not remove the above line when replying.)
+
+www.AutomationDirect.com
+The common sense way to buy industrial controls.
+3505 Hutchinson Road, Cumming, GA 30040 | 1-800-633-0405</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

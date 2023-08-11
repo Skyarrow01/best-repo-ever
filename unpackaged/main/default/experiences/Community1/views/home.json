@@ -1,0 +1,245 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "f063e0a0-699f-4e75-b7df-23ee803c14e6",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\">&nbsp;&nbsp;<strong style=\"font-size: 20px;\">Welcome to AutomationDirect Communities - Connecting People with Solutions</strong></p><p style=\"text-align: center;\">The Community is here to help you find what your looking for. Ask Questions, get answers, learn, share and collaborate.&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "0b197146-5703-4477-83a4-a4f01cbe95f0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "bannerBackgroundColor" : "",
+        "bannerPosition" : "bottom",
+        "bannerSizePercent" : 20,
+        "borderRadius" : 10,
+        "boxShadow" : true,
+        "haveBanner" : true,
+        "iconBackgroundColor" : "rgb(255,255,255)",
+        "iconSize" : "medium",
+        "noImageColor" : "rgb(212, 212, 212)",
+        "overlay" : "rgba(0,0,0,0.01)",
+        "templateType" : "full",
+        "tileMenuEditor" : "Knowledge",
+        "titleColor" : "",
+        "titleFontSize" : "medium",
+        "titleHorizontalAlign" : "center"
+      },
+      "componentName" : "community_navigation:tileMenu",
+      "id" : "cbd628d4-0d68-49df-9100-95cf772d723e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8fe664ab-e8a1-46c6-ad53-4bc20e04b853",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfItems" : 5,
+        "showViewCounts" : true,
+        "title" : "Do you have the answer?"
+      },
+      "componentName" : "forceChatter:unansweredQuestions",
+      "id" : "c6325de0-18ef-4e32-9f3a-a6bff94db149",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bfb358d5-74c6-4877-a629-b754a932cd92",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "3e45ff6b-40cd-4c97-b999-3d0f9f9e1f8a",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "959e01ad-e671-4365-8273-febd18a328fd",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Discussions"
+          }, {
+            "UUID" : "1ce8a07f-74ae-4e9b-a003-e965205f36d1",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "6fcfd",
+            "tabName" : "My Feed"
+          }, {
+            "UUID" : "a5f5618b-f48c-41ac-9e92-b91180d3fcfc",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "926dc",
+            "tabName" : "Bookmarks"
+          }, {
+            "UUID" : "996cac57-8fee-4307-bddf-ba51d74624b2",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "b1f07",
+            "tabName" : "Cases"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "3e45ff6b-40cd-4c97-b999-3d0f9f9e1f8a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:agi_TopicDisplay",
+          "id" : "beca8191-9b38-4596-acbe-aa899b3712d6",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "959e01ad-e671-4365-8273-febd18a328fd",
+        "regionLabel" : "Discussions",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "showComments" : true,
+            "showLikes" : true,
+            "showViews" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "News"
+          },
+          "componentName" : "forceChatter:compactFeed",
+          "id" : "40252e58-4fa6-4d7a-ab47-44194efc36f6",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1ce8a07f-74ae-4e9b-a003-e965205f36d1",
+        "regionLabel" : "My Feed",
+        "regionName" : "6fcfd",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "showComments" : true,
+            "showLikes" : false,
+            "showViews" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Bookmarks"
+          },
+          "componentName" : "forceChatter:compactFeed",
+          "id" : "fd94d27a-29fc-4522-af58-a81c0ecc7d0d",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a5f5618b-f48c-41ac-9e92-b91180d3fcfc",
+        "regionLabel" : "Bookmarks",
+        "regionName" : "926dc",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : false,
+            "filterName" : "All_Cases_for_Community",
+            "layout" : "STANDARD",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : false,
+            "showChartsPanel" : false,
+            "showDisplay" : "showall",
+            "showFilterPanel" : false,
+            "showImageIcon" : false,
+            "showManualRefreshButton" : true,
+            "showObjectName" : false,
+            "showPinnedList" : false,
+            "showSearchBar" : false
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "af979efb-272d-4387-b783-b93e4fe04787",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "996cac57-8fee-4307-bddf-ba51d74624b2",
+        "regionLabel" : "Cases",
+        "regionName" : "b1f07",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6051c39a-c224-45f0-b6bf-ebcbc668a04f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><b>Helpful Tips</b></p>\n<ol>\n <li>Use the filter buttons at the left and right to refine your view.</li>\n</ol>\n<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.hints.1}\" style=\"width: 247.188px; height: 401.547px;\" /></p>\n<p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6ee025ad-db4b-4e8a-98eb-146c3879ec60",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6b8c1f3c-68c6-48d3-8be2-259530ee10d8",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:CustomButtonComponent",
+      "id" : "9d00fd5e-d7f7-45c0-b24a-e0c5cbce5d02",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "79269fb6-a3d4-46f1-97c8-a9383e0c7775",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cdbcc22e-3e2c-4943-8aef-e4e6579ebdfb",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name = \"keywords\" content = \"Community, Forum, ADC Community, ADC Customer Forum, Technical Forum, General Community Information\" />",
+        "description" : "Get answers to your questions, connect with AutomationDirect community members and more on our new and improved customer forum site!",
+        "title" : "Home | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4def9d66-d9d4-474b-8438-686b39895b7f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "910f056e-6296-4100-9fb3-b539493c599b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

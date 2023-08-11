@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Admin</profile>
+            <profile>AR Leads</profile>
+            <profile>AR User</profile>
+            <profile>Customer Experience Specialist</profile>
+            <profile>Customer Experience Specialist %28General Case%29</profile>
+            <profile>Customer Support Leads</profile>
+            <profile>Customer Support User</profile>
+            <profile>Product Engineer User</profile>
+            <profile>Tech Support User</profile>
+        </profiles>
+        <users>
+            <user>agrossi@automationdirect.com.sfdc</user>
+            <user>abagwell@automationdirect.com.sfdc</user>
+            <user>bboatright@automationdirect.com.sfdc</user>
+            <user>bcantrell@automationdirect.com.sfdc</user>
+            <user>bcarty@automationdirect.com.sfdc</user>
+            <user>bperry@automationdirect.com.sfdc</user>
+            <user>cholbrooks@automationdirect.com.sfdc</user>
+            <user>clathem@automationdirect.com.sfdc</user>
+            <user>cwelsch@automationdirect.com.sfdc</user>
+            <user>dbark@automationdirect.com.sfdc</user>
+            <user>dstanford@automationdirect.com.sfdc</user>
+            <user>dmarshall@automationdirect.com.sfdc</user>
+            <user>default@adc.com</user>
+            <user>dglover@automationdirect.com.sfdc</user>
+            <user>ddinkins@automationdirect.com.sfdc</user>
+            <user>erosado@automationdirect.com.sfdc</user>
+            <user>ecooke@automationdirect.com.sfdc</user>
+            <user>fmaddie@automationdirect.com.sfdc</user>
+            <user>gjoines@automationdirect.com.sfdc</user>
+            <user>gmiller@automationdirect.com.sfdc</user>
+            <user>onboarding@inspireplanner.com.sfdc</user>
+            <user>ivaserman@automationdirect.com.sfdc</user>
+            <user>jfirth@automationdirect.com.sfdc</user>
+            <user>jrayburn@automationdirect.com.sfdc</user>
+            <user>jcaldwell@automationdirect.com.sfdc</user>
+            <user>jmccall@automationdirect.com.sfdc</user>
+            <user>jspiller@automationdirect.com.sfdc</user>
+            <user>jyoumans@automationdirect.com.sfdc</user>
+            <user>jcapo@automationdirect.com.sfdc</user>
+            <user>jconnell@automationdirect.com.sfdc</user>
+            <user>jgurtner@automationdirect.com.sfdc</user>
+            <user>jposey@automationdirect.com.sfdc</user>
+            <user>jswan@automationdirect.com.sfdc</user>
+            <user>jmirolli@automationdirect.com.sfdc</user>
+            <user>jmyers@automationdirect.com.sfdc</user>
+            <user>jcarwile@automationdirect.com.sfdc</user>
+            <user>jwilliams@automationdirect.com.sfdc</user>
+            <user>jhurst@automationdirect.com.sfdc</user>
+            <user>klittle@automationdirect.com.sfdc</user>
+            <user>kruda@automationdirect.com.sfdc</user>
+            <user>kvandeusen@automationdirect.com.sfdc</user>
+            <user>lphillips@automationdirect.com.sfdc</user>
+            <user>lolson@automationdirect.com.sfdc</user>
+            <user>lkjellstrom@automationdirect.com.sfdc</user>
+            <user>mposey@automationdirect.com.sfdc</user>
+            <user>mallen@automationdirect.com</user>
+            <user>mmcgrath@automationdirect.com.sfdc</user>
+            <user>mpeck@automationdirect.com.sfdc</user>
+            <user>mrobertson@automationdirect.com.sfdc</user>
+            <user>mharrison@automationdirect.com.sfdc</user>
+            <user>mswanger@automationdirect.com.sfdc</user>
+            <user>njackson@automationdirect.com</user>
+            <user>njackson@automationdirect.com.sfdc</user>
+            <user>prichard@automationdirect.com.sfdc</user>
+            <user>rrudd@automationdirect.com.sfdc</user>
+            <user>rsparks@automationdirect.com.sfdc</user>
+            <user>rcrisp@automationdirect.com.sfdc</user>
+            <user>rslabaugh@automationdirect.com.sfdc</user>
+            <user>rlewis@automationdirect.com.sfdc</user>
+            <user>sdunn@automationdirect.com.sfdc</user>
+            <user>spurcell@automationdirect.com.sfdc</user>
+            <user>scameron@automationdirect.com.sfdc</user>
+            <user>sbrown@automationdirect.com.sfdc</user>
+            <user>sfurse@automationdirect.com.sfdc</user>
+            <user>smayfield@automationdirect.com.sfdc</user>
+            <user>ssamples@automationdirect.com.sfdc</user>
+            <user>techsupport@automationdirect.com.sfdc</user>
+            <user>tkee@automationdirect.com.sfdc</user>
+            <user>vpadilla@automationdirect.com.sfdc</user>
+            <user>wabston@automationdirect.com.sfdc</user>
+        </users>
+    </assignments>
+    <capacity>1</capacity>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>true</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>Phone</label>
+</PresenceUserConfig>

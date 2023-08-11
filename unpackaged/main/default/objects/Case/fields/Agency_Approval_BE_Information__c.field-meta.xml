@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_Approval_BE_Information__c</fullName>
+    <defaultValue>&quot;• Searching BE Cases, Knowledge Articles, Problem Reports and ECNs for information&quot; +BR()
+&amp;&quot;• Part Number&quot; +BR()
+&amp;&quot;• Type of query: listed in Issue Type&quot; +BR()
+&amp;&quot;• Agency Type&quot; +BR()
+&amp;&quot;• Check the Agency website.  Many answers can be found by entering in the UL number&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Agency Approval BE Information</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

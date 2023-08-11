@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request Account information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Request Account Information</name>
+    <style>none</style>
+    <subject>ACTION NEEDED: Please reply with additional information Case Number {!Case.CaseNumber}</subject>
+    <textOnly>Hi,
+
+Thank you for reaching out. In order to proceed with your inquiry, we require a confirmation reply to this auto-generated message, and if you haven&#39;t already done so, be sure to include your Company and Phone number so we can best provide you with assistance.
+
+If you require immediate assistance, do not hesitate to call our support number at 770-844-4200.
+
+
+Best Regards,
+
+ADC Support
+Case Number: {!Case.CaseNumber} {!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,68 @@
+.THIS.footerContainer {
+	padding:20px 60px;
+    background-color: rgba(61, 63, 61, 1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356278', endColorstr='#356278',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color:#ffffff;
+}
+
+.THIS.footerContainer-Copyright {
+    padding:10px 60px;
+    background-color: #2d8e00;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356278', endColorstr='#356278',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color:#FFF;
+    text-align:center;
+}
+
+.THIS h5 {
+    color: #9bb9ce;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom:.5em;
+}
+
+.THIS li {
+    color:#ffffff;
+    padding:.25em 0;
+}
+.THIS a {
+    color:#ffffff;
+}
+.THIS hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.THIS img.logo {
+}
+
+.THIS .socialContainer {
+    /*text-align:center;*/
+}
+.THIS .socialContainer .label {
+    color: #9bb9ce;
+    font-size: 1em;
+    text-transform: uppercase;
+    display:block;
+}
+.THIS .socialContainer ul {
+    display:inline-block;
+    text-align:center;
+}
+
+.THIS .socialContainer li {
+    display:inline-block;
+    padding:0 .5em;
+}
+
+.THIS .socialContainer li i {
+    font-size:2em;
+}
+
+.THIS .img_media {
+    width: 26px;
+    height: 26px;
+}

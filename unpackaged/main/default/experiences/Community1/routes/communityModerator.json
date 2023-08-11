@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "1fe7565a-e3db-4542-b131-f52e506fe60c",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "24e5b914-39be-4564-866c-f39635f5e925",
+  "label" : "Community Moderator",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-community-moderator",
+  "type" : "route",
+  "urlPrefix" : "community-moderator"
+}

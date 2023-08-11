@@ -1,0 +1,300 @@
+<aura:component extends="forceCommunity:navigationMenuBase" 
+                implements="forceCommunity:availableForAllPageTypes"
+                access="global"
+                controller="agi_CustomMenuController">
+    
+    <!-- attributes -->
+    <aura:attribute name="ContactSupportLink" type="String" default="/contactsupport"/>
+    <aura:attribute name="ReturnToStoreLink" type="String" default="https://www.automationdirect.com/adc/home/home"/>
+    <aura:attribute name="FirstMenuItemLabel" type="String" default="General Community Information"/>
+    <aura:attribute name="FirstMenuItemSubtopicsName" type="String" default="New Product Announcements, FW/SW Updates Announcements, Testing Section For New Members, Community Forum Feedback and Suggestions"/>
+    <aura:attribute name="FirstMenuItemLink" type="String" default="/general-community-information"/>
+    <aura:attribute name="SecondMenuItemLabel" type="String" default="Technical Forums Topic"/>
+    <aura:attribute name="SecondMenuItemSubtopicsName" type="String" default="Open Source Devices, PLC/Field I/O, HMI/Industrial Monitors, Drives/Motors, Motion Control, Communications Products, Process Control, Power Products/Circuit Protection, Relays/Timers, Wiring, Mechanical, Electrical Field Devices"/>
+    <aura:attribute name="SecondMenuItemLink" type="String" default="/technical-forums"/>
+    <aura:attribute name="NewProductAnnouncementLink" type="String" default="/new-product-announcement"/>
+    <aura:attribute name="FwSWUpdatesAnnouncementLink" type="String" default="/fw-sw-updates-announcements"/>
+    <aura:attribute name="UserGuideLink" type="String" default="/user-guide"/>
+    
+    <aura:attribute name="FirstMenuItemSubtopicsList" type="List" default=""/>
+    <aura:attribute name="SecondMenuItemSubtopicsList" type="List" default=""/>
+    <aura:attribute name="currentUserProfileName" type="String" default=""/>
+    <!-- attributes -->
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- Handler -->
+    <div class="slds-context-bar">
+        <nav class="navigationMenu slds-context-bar__secondary" role="navigation">
+            <ul class="slds-grid slds-nav-vertical__item_hide-desktop">
+                <!-- Mobile Navigation -->
+                <li class="slds-nav-vertical__item_hide-desktop">
+                    <button class="slds-button toggleNav slds-button--icon-border" type="button" onclick="{!c.toggleNav}">
+                        <span><lightning:icon iconName="utility:rows" size="x-small" alternativeText="Side menu" class="icn"/></span>
+                        <span class="slds-assistive-text">Toggle SideBar</span>
+                    </button>
+                </li>
+                <!-- Mobile Navigation -->
+            </ul>
+            
+            <ul class="slds-grid" style="padding-left:20%">
+                
+                <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover slds-nav-vertical__item_hide-mobile">
+                    <div class="slds-context-bar__icon-action slds-p-left_none">
+                        <a href="/s">
+                            <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="AutomationDirect Customer Forum Home Page" >
+                                <lightning:icon iconName="utility:home" size="x-small" alternativeText="Indicates approval" class="icn"/>
+                                <span class="slds-assistive-text">AutomationDirect Customer Forum Home Page</span>
+                            </button>
+                        </a>
+                    </div>
+                </li>
+                
+                <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover slds-nav-vertical__item_hide-mobile">
+                    <span class="slds-context-bar__label-action" title="{!v.FirstMenuItemLabel}">
+                        <a href="javascript:void(0);" data-link="{!v.FirstMenuItemLink}" onclick="{!c.linkRedirect}">
+                            {!v.FirstMenuItemLabel}
+                        </a>
+                    </span>
+                    <div class="slds-context-bar__icon-action slds-p-left_none">
+                        <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
+                            <lightning:icon iconName="utility:down" size="x-small" alternativeText="Indicates approval" class="icn"/>
+                            <span class="slds-assistive-text">Open menu item submenu</span>
+                        </button>
+                    </div>
+                    <div class="slds-dropdown slds-dropdown_left slds-dropdown_medium menu-dropdown slds-p-around--medium">
+                        <a href="">
+                            <ul role="menu">
+                                <aura:iteration items="{!v.FirstMenuItemSubtopicsList}" var="subtopics">
+                                    <!-- added by Zameer 8/12 -->
+                                    <aura:if isTrue="{!or(subtopics.Name == 'New Product Announcements', subtopics.Name == 'FW/SW Updates Announcements')}">
+                                        <aura:if isTrue="{!subtopics.Name == 'New Product Announcements'}">
+                                            
+                                            <aura:if isTrue="{!or(v.currentUserProfileName == 'ADC Community User', v.currentUserProfileName == 'Community Profile')}">
+                                                <li class="slds-nav-vertical__item" role="presentation">
+                                                    <a class="slds-nav-vertical__action" onclick="{!c.announcementRedirect}" data-link="{!v.NewProductAnnouncementLink}" data-recordid="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                        {!subtopics.Name}
+                                                    </a>
+                                                </li>
+                                                
+                                                <aura:set attribute="else">
+                                                    <li class="slds-nav-vertical__item" role="presentation" onclick="{!c.onClick}">
+                                                        <a class="slds-nav-vertical__action" data-menu-item-id="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                            {!subtopics.Name}
+                                                        </a>
+                                                    </li>
+                                                </aura:set>
+                                            </aura:if>
+                                        </aura:if>
+                                        
+                                        <aura:if isTrue="{!subtopics.Name == 'FW/SW Updates Announcements'}">
+                                            <aura:if isTrue="{!or(v.currentUserProfileName == 'ADC Community User', v.currentUserProfileName == 'Community Profile')}">
+                                                <li class="slds-nav-vertical__item" role="presentation">
+                                                    <a class="slds-nav-vertical__action" onclick="{!c.announcementRedirect}" data-link="{!v.FwSWUpdatesAnnouncementLink}" data-recordid="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                        {!subtopics.Name}
+                                                    </a>
+                                                </li>
+                                                <aura:set attribute="else">
+                                                    <li class="slds-nav-vertical__item" role="presentation" onclick="{!c.onClick}">
+                                                        <a class="slds-nav-vertical__action" data-menu-item-id="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                            {!subtopics.Name}
+                                                        </a>
+                                                    </li>
+                                                </aura:set>
+                                            </aura:if>
+                                        </aura:if>
+                                        <aura:set attribute="else">
+                                            <li class="slds-nav-vertical__item" role="presentation" onclick="{!c.onClick}">
+                                                <a class="slds-nav-vertical__action" data-menu-item-id="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                    {!subtopics.Name}
+                                                </a>
+                                            </li>
+                                        </aura:set>
+                                    </aura:if>
+                                    
+                                </aura:iteration>
+                            </ul>
+                        </a>
+                        
+                    </div>
+                </li>
+                
+                <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover slds-nav-vertical__item_hide-mobile">
+                    <span class="slds-context-bar__label-action" title="{!v.SecondMenuItemLabel}">
+                        <a href="javascript:void(0);" data-link="{!v.SecondMenuItemLink}" onclick="{!c.linkRedirect}">
+                            {!v.SecondMenuItemLabel}
+                        </a>
+                    </span>
+                    <div class="slds-context-bar__icon-action slds-p-left_none">
+                        <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
+                            <lightning:icon iconName="utility:down" size="x-small" alternativeText="Indicates approval" class="icn"/>
+                            <span class="slds-assistive-text">Open menu item submenu</span>
+                        </button>
+                    </div>
+                    <div class="slds-dropdown slds-dropdown_left slds-dropdown_medium menu-dropdown slds-p-around--medium">
+                        <ul role="menu">
+                            <aura:iteration items="{!v.SecondMenuItemSubtopicsList}" var="subtopics">
+                                <li class="slds-nav-vertical__item" role="presentation" onclick="{!c.onClick}">
+                                    <a class="slds-nav-vertical__action" data-menu-item-id="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                        {!subtopics.Name}
+                                    </a>
+                                </li>
+                            </aura:iteration>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover slds-nav-vertical__item_hide-mobile">
+                    <span class="slds-context-bar__label-action" title="Contact Support">
+                        <a href="javascript:void(0);" data-link="{!v.ContactSupportLink}" onclick="{!c.linkRedirect}">
+                            Contact Support
+                        </a>
+                    </span>
+                </li>
+
+                <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover slds-nav-vertical__item_hide-mobile">
+                    <span class="slds-context-bar__label-action" title="User Guide">
+                        <a href="javascript:void(0);" data-link="{!v.UserGuideLink}" onclick="{!c.linkRedirect}">
+                            User Guide
+                        </a>
+                    </span>
+                </li>
+                
+                <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover slds-nav-vertical__item_hide-mobile">
+                    <span class="slds-context-bar__label-action" title="Return to Store">
+                        <a href="{!v.ReturnToStoreLink}" target="_blank">
+                            Return to Store
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navMenuWrapper" aura:id="sideMenuPageContainer">
+        <a href="javascript:void(0);">
+            <div class="navigationMenu" style="top: 82px;background-color:#0d72c2;" aura:id="sideMenu">
+                <div style="width: 100%;display:inline-block;">
+                    <nav class="slds-nav-vertical slds-nav-vertical_shade" aria-label="Sub page" role="navigation">
+                        <div class="slds-nav-vertical__section">
+                            <ul style="background-color: #0d72c2;">
+                                <li class="slds-nav-vertical__item">
+                                    <span class="slds-nav-vertical__action">
+                                        <a href="/s">
+                                            Home
+                                        </a>
+                                    </span>
+                                </li>
+                                
+                                <li class="slds-nav-vertical__item">
+                                    <span class="slds-nav-vertical__action" title="{!v.FirstMenuItemLabel}">
+                                        <a href="javascript:void(0);" data-link="{!v.FirstMenuItemLink}" onclick="{!c.linkRedirect}">
+                                            {!v.FirstMenuItemLabel}
+                                        </a>    
+                                    </span>
+                                    
+                                    <ul style = "padding-left:10%;">
+                                        <aura:iteration items="{!v.FirstMenuItemSubtopicsList}" var="subtopics">
+                                            <aura:if isTrue="{!or(subtopics.Name == 'New Product Announcements', subtopics.Name == 'FW/SW Updates Announcements')}">
+                                                <aura:if isTrue="{!subtopics.Name == 'New Product Announcements'}">
+                                                    
+                                                    <aura:if isTrue="{!or(v.currentUserProfileName == 'ADC Community User', v.currentUserProfileName == 'Community Profile')}">
+                                                        <li class="slds-nav-vertical__item">
+                                                            <a class="slds-nav-vertical__action" onclick="{!c.announcementRedirect}" data-link="{!v.NewProductAnnouncementLink}" data-recordid="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                                {!subtopics.Name}
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        <aura:set attribute="else">
+                                                            <li class="slds-nav-vertical__item" role="presentation" onclick="{!c.onClick}">
+                                                                <a class="slds-nav-vertical__action" data-menu-item-id="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                                    {!subtopics.Name}
+                                                                </a>
+                                                            </li>
+                                                        </aura:set>
+                                                    </aura:if>
+                                                </aura:if>
+                                                
+                                                <aura:if isTrue="{!subtopics.Name == 'FW/SW Updates Announcements'}">
+                                                    <aura:if isTrue="{!or(v.currentUserProfileName == 'ADC Community User', v.currentUserProfileName == 'Community Profile')}">
+                                                        <li class="slds-nav-vertical__item" role="presentation">
+                                                            <a class="slds-nav-vertical__action" onclick="{!c.announcementRedirect}" data-link="{!v.FwSWUpdatesAnnouncementLink}" data-recordid="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                                {!subtopics.Name}
+                                                            </a>
+                                                        </li>
+                                                        <aura:set attribute="else">
+                                                            <li class="slds-nav-vertical__item" role="presentation" onclick="{!c.onClick}">
+                                                                <a class="slds-nav-vertical__action" data-menu-item-id="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                                    {!subtopics.Name}
+                                                                </a>
+                                                            </li>
+                                                        </aura:set>
+                                                    </aura:if>
+                                                </aura:if>
+                                                <!-- added by zameer -->
+                                                <aura:set attribute="else">
+                                                    <li class="slds-nav-vertical__item" role="presentation" onclick="{!c.onClick}">
+                                                        <a class="slds-nav-vertical__action" data-menu-item-id="{!subtopics.Id}" role="menuitem" tabindex="-1" >
+                                                            {!subtopics.Name}
+                                                        </a>
+                                                    </li>
+                                                </aura:set>
+                                            </aura:if>
+                                        </aura:iteration>
+                                    </ul>
+                                </li>
+                                
+                                <li class="slds-nav-vertical__item">
+                                    <span class="slds-nav-vertical__action" title="{!v.SecondMenuItemLabel}">
+                                        <a href="javascript:void(0);" data-link="{!v.SecondMenuItemLink}" onclick="{!c.linkRedirect}">
+                                            {!v.SecondMenuItemLabel}
+                                        </a>    
+                                    </span>
+                                    
+                                    <ul style = "padding-left:10%;">
+                                        <aura:iteration items="{!v.SecondMenuItemSubtopicsList}" var="subtopics">
+                                            <li class="slds-nav-vertical__item" onclick="{!c.onClick}">
+                                                <span class="slds-nav-vertical__action">
+                                                    <a href="javascript:void(0);" class="" data-menu-item-id="{!subtopics.Id}" aria-describedby="folder-header">
+                                                        {!subtopics.Name}
+                                                    </a>
+                                                </span>
+                                            </li>
+                                        </aura:iteration>
+                                    </ul>
+                                </li>
+                                
+                                
+                                <li class="slds-nav-vertical__item"> 
+                                    <span class="slds-nav-vertical__action">
+                                        <a href="javascript:void(0);" class="" data-link="{!v.ContactSupportLink}" onclick="{!c.linkRedirect}" aria-describedby="entity-header" aria-current="page"> 
+                                            Contact Support
+                                        </a>
+                                    </span>
+                                </li>
+
+                                <li class="slds-nav-vertical__item"> 
+                                    <span class="slds-nav-vertical__action">
+                                        <a href="{!v.UserGuideLink}" class="" data-link="{!v.UserGuideLink}" onclick="{!c.linkRedirect}" aria-describedby="entity-header" aria-current="page"> 
+                                            User Guide
+                                        </a>
+                                    </span>
+                                </li>
+                                
+                                <li class="slds-nav-vertical__item"> 
+                                    <span class="slds-nav-vertical__action">
+                                        <a href="{!v.ReturnToStoreLink}" class="" data-link="{!v.ReturnToStoreLink}" onclick="{!c.linkRedirect}" aria-describedby="entity-header" aria-current="page"> 
+                                            Return to Store
+                                        </a>
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </a>
+    </div>
+</aura:component>

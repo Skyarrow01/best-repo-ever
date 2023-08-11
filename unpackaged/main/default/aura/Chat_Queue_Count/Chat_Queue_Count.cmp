@@ -1,0 +1,6 @@
+<aura:component >
+	SELECT Id, WorkItemId
+FROM PendingServiceRouting
+WHERE IsPushed = FALSE
+AND IsReadyForRouting = TRUE
+</aura:component>

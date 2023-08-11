@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Esker_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines if this account is considered to be sent to Esker</description>
+    <externalId>false</externalId>
+    <label>Esker Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Assign_NPS_Label_to_SM_Survey_Response_Record</name>
+        <label>Assign NPS Label to SM Survey Response Record</label>
+        <locationX>188</locationX>
+        <locationY>627</locationY>
+        <assignmentItems>
+            <assignToReference>Get_SM_Survey_Response.NPS_Label__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varNPSLabel</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_SM_Survey_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign NPS Label to a variable</description>
+        <name>Assign_NPS_Lable</name>
+        <label>Assign NPS Lable</label>
+        <locationX>179</locationX>
+        <locationY>486</locationY>
+        <assignmentItems>
+            <assignToReference>varNPSLabel</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>forNPSLabel</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_NPS_Label_to_SM_Survey_Response_Record</targetReference>
+        </connector>
+    </assignments>
+    <description>Survey Populate Survey Responses with NPS Label for reporting</description>
+    <formulas>
+        <name>forNPSLabel</name>
+        <dataType>String</dataType>
+        <expression>{!Get_NPS_SM_Responses.SurveyMonkeyApp__NPS_Label__c}</expression>
+    </formulas>
+    <interviewLabel>Survey Populate Survey Responses with NPS Label {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Survey Populate Survey Responses with NPS Label</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get NPS Survey Responses</description>
+        <name>Get_NPS_SM_Responses</name>
+        <label>Get NPS SM Responses</label>
+        <locationX>176</locationX>
+        <locationY>345</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_NPS_Lable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SurveyMonkeyApp__Response_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_SM_Survey_Response.SurveyMonkeyApp__Response_ID__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SurveyMonkeyApp__NPS_Label__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveyMonkeyApp__Response__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the passed in SM Survey Response</description>
+        <name>Get_SM_Survey_Response</name>
+        <label>Get SM Survey Response</label>
+        <locationX>177</locationX>
+        <locationY>197</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_NPS_SM_Responses</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveyMonkeyApp__SurveyResponse__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the Survey new NPS Label Field</description>
+        <name>Update_SM_Survey_Response</name>
+        <label>Update SM Survey Response</label>
+        <locationX>392</locationX>
+        <locationY>484</locationY>
+        <inputReference>Get_SM_Survey_Response</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_SM_Survey_Response</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>RecordId of the past in Survey created</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>holds th NPS Label of each Survey</description>
+        <name>varNPSLabel</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varSurveyResponse</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>SurveyMonkeyApp__Response__c</objectType>
+    </variables>
+    <variables>
+        <description>Survey Responses Collection</description>
+        <name>varSurveyResponsesCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>SurveyMonkeyApp__Response__c</objectType>
+    </variables>
+    <variables>
+        <name>varSurveyResponsesCollection2</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>SurveyMonkeyApp__Response__c</objectType>
+    </variables>
+</Flow>

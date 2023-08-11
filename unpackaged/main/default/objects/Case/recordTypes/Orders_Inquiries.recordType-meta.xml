@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Orders_Inquiries</fullName>
+    <active>true</active>
+    <businessProcess>Orders_Inquiries</businessProcess>
+    <compactLayoutAssignment>Customer_Support_Compact_Layout</compactLayoutAssignment>
+    <description>Record Type for Customer Support Reps</description>
+    <label>Orders/Inquiries</label>
+    <picklistValues>
+        <picklist>Agency_Type__c</picklist>
+        <values>
+            <fullName>CCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TUV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BusiDevVolCust__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cause__c</picklist>
+        <values>
+            <fullName>Agency Approvals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Help</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Presales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bezel Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAD Drawings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catastrophic Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrast Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Caused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Recommendation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation sufficient to prevent call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firmware Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Made Recommendation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Output Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response from Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Speed Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Software Version</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out Of Warranty Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem Is 3rd Party Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem Is Customer%27s PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programming Help - Parameters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programming Help - code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent To Federation Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Installation Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Registration Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Touchcells%2FTouchscreen Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troubleshooting %E2%80%93 Ethernet Comm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troubleshooting %E2%80%93 Serial Comm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troubleshooting Help</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable To Clear Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Determine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web %28Tech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wiring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Connected_PLC__c</picklist>
+        <values>
+            <fullName>Allen Bradley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLICK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DirectLogic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do-more</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GS Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mitsubishi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modbus General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Productivity Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siemens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CreditAppStatusInProcess__c</picklist>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>References %E2%80%93 1st request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>References %E2%80%93 2nd request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>References %E2%80%93 3rd request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested Additional Refs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested GOA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Define_Error_Issue__c</picklist>
+        <values>
+            <fullName>Brochure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Description</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harmonization Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Depth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Made in USA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Gallery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended Item%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Weight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spec Table</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WITB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Forward_to_Payments__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Forward_to_Supplier_Payments__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_need_help_with__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a billing question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an existing or new order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_Type__c</picklist>
+        <values>
+            <fullName>CE Declaration of Conformity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Country of Origin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defect%2FDamage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>European Directives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firmware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harmonizing Codes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Speed IO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keypad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labeling%2FPackaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ladder Programming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical%2FDimensional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Listing - UL%2FCSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parameter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specifications%2FDrawings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Standards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wiring%2FElectrical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location_of_Error_Issue__c</picklist>
+        <values>
+            <fullName>Home Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overview Tab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Search Page</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Network_Type__c</picklist>
+        <values>
+            <fullName>Ethernet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS-232</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS-485</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Chat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Parked__c</picklist>
+        <values>
+            <fullName>50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>57</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>58</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>59</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>62</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>63</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>64</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>67</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>69</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>73</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>74</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>76</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Phishing_Confirmed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Power_Supply__c</picklist>
+        <values>
+            <fullName>Dedicated 24 VDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EA-AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shared 24 VDC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Group__c</picklist>
+        <values>
+            <fullName>Advanced Soft Starters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arduino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRX HSIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRX PID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basic Contactors%2FStarters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Built in HSIO%2F05%2F06%2FCTRINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C-More</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C-More Micro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Circuit Breakers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Click HSIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Click PID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Click PLC Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Click Programming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connection Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Timer Tachometer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D3%2FD4 counters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DDE%2FOPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DL PID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DL PLC Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DL%2FCTRIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DV-1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Touch Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DirectSoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do-More</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do-More HSIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do-More PID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do-More Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECT Promis-e</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ERM Remote IO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EZText Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EZTouch Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enclosures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encoders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entivity%2FTND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethernet Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuses%2FAccessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GS1%2F2%2F3 Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GS20 Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GS4 Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial PCs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interworx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LookoutDirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Transmissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odd%2FOldComm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimate Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAC Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAC Programming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PX PID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PX-HSIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pneumatics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosense Loop Controllers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ProtosX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Controllers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors%2FSwitches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serial Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serial Remote I%2FO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servo Motion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signal Conditioners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Starters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solo Loop Controllers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stepper Motion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stride IO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminator I%2FO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timers%2FRelays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VPN Routers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viewmarq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WEG Drives</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Queue_Names__c</picklist>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Busi Dev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit%2FNew Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orders%2FInquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalesTax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Accounting%2FPayment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angry %E2%80%93 Backorder%2FStock Shortage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backorder %E2%80%93 Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backorder %E2%80%93 Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bounce back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Pickup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate PO%2FNotification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forecast%2FPerformance - PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory Discrepancy - CTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory Discrepancy - other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response %E2%80%93 Live Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obsolescence Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Order Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order %E2%80%93 Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order %E2%80%93 Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order %E2%80%93 Status%2FQuestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order - New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCI Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packing List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proforma Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FPrice %26 Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revised PO%2FApproval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shared Cart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping%2FLogistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping%2FOrder Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tracking %E2%80%93 ADC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tracking %E2%80%93 Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Help</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Showstopper__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Silo__c</picklist>
+        <values>
+            <fullName>Cable%2C Wire %26 Tools Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable%2C Wire %26 Tools Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control %26 Signaling Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control %26 Signaling Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drives %26 Motors Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drives %26 Motors Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enclosures %26 Tools Silo  %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enclosures Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fluid Power Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fluid Power Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HMI %26 CLICK Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HMI %26 Click Silo  %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Products Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Products Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion Control SIlo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion Control Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power %26 Circuit Protection Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power %26 Circuit Protection Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Instrumentation Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Instrumentation Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety %26 Identification Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety %26 Identification Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors %26 Power Supplies Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors %26 Power Supplies Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire%2C Cable %26 Tools Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire%2C Cable %26 Tools Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wiring Solutions Silo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wiring Solutions Silo %26 TAG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Team_Ownership__c</picklist>
+        <values>
+            <fullName>CSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FUEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undetermined%2FUnsure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Windows_OS__c</picklist>
+        <values>
+            <fullName>Windows 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 7 32 bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 7 64 bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 8%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows XP 32 bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows XP 64 bit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

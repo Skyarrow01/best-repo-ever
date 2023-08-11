@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Sent_to_Avalara__c</fullName>
+    <description>Denotes the date time SalesTax pdf file was sent to Avalara via Push Topic</description>
+    <externalId>false</externalId>
+    <label>Latest Sent to Avalara</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

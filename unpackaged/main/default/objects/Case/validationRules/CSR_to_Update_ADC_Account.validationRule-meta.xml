@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSR_to_Update_ADC_Account</fullName>
+    <active>false</active>
+    <description>Prompt CSR to Update ADC Account if related Contact account is greater than 1</description>
+    <errorConditionFormula>AND( of_Related_Accounts_for_Contact__c &gt; 1,ISBLANK( ADC_Account__c ),  OR($Profile.Name = &#39;Customer Support User&#39;, 
+$Profile.Name = &#39;Customer Experience Specialist&#39;))</errorConditionFormula>
+    <errorDisplayField>ADC_Account__c</errorDisplayField>
+    <errorMessage>This Contact is related to Multiple Accounts, Please indicate the appropriate account for this case.</errorMessage>
+</ValidationRule>

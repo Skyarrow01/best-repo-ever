@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_must_be_2_characters</fullName>
+    <active>true</active>
+    <errorConditionFormula>LEN( State__c) &lt;&gt; 2</errorConditionFormula>
+    <errorDisplayField>State__c</errorDisplayField>
+    <errorMessage>Please enter 2 character state code.</errorMessage>
+</ValidationRule>

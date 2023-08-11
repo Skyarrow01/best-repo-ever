@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Community</container>
+    <containerType>Network</containerType>
+    <label>Knowledge</label>
+    <navigationMenuItem>
+        <label>Join the Discussion</label>
+        <menuItemBranding>
+            <tileImage>homebuttonsjoindiscussion321x215</tileImage>
+        </menuItemBranding>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/topiccatalog</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Knowledge Articles</label>
+        <menuItemBranding>
+            <tileImage>homebuttonsarticles321x215</tileImage>
+        </menuItemBranding>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/knowledge</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Software &amp; Firmware downloads</label>
+        <menuItemBranding>
+            <tileImage>homebuttonsdownload321x215</tileImage>
+        </menuItemBranding>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.automationdirect.com/support/software-downloads</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Video Library</label>
+        <menuItemBranding>
+            <tileImage>homebuttonsvideolibrary321x215</tileImage>
+        </menuItemBranding>
+        <position>4</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.automationdirect.com/videos/home</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

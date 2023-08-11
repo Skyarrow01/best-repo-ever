@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delete_Case__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used by a Case workflow to flag an Unconfirmed Email if it has not received a response in 7 days. This will trigger a Process Builder to delete the record.</description>
+    <externalId>false</externalId>
+    <label>Delete Case</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,95 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "0fc39273-b0d6-4073-91ce-035a361df51f",
+  "label" : "Getting Started CyberSecurity",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "e0dd148a-5a51-4917-be1b-697d3003116a",
+          "columns" : [ {
+            "UUID" : "9aec0629-1911-4875-89f4-0032d49b7aeb",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "5",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "601f03f5-83ba-4ada-b7a1-1b634bbb7a11",
+            "columnKey" : "4d33b",
+            "columnName" : "Column 2",
+            "columnWidth" : "7",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "e0dd148a-5a51-4917-be1b-697d3003116a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Getting Started With Cybersecurity</h1><p style=\"text-align: center;\"><br></p><p>If you're new to the field of cybersecurity for operational technology, you may be wondering where to start. Here you can find a wide variety of articles to help you get started. These articles can help you gain a foundational understanding of key concepts, so you can begin to implement effective cybersecurity measures in your organization. Whether you're an IT professional, a plant manager, or a business owner, these articles can be a valuable starting point on your journey towards better cybersecurity.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "70e18f94-ac00-4166-b22d-ea96566cf501",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9aec0629-1911-4875-89f4-0032d49b7aeb",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "articleListPageSize" : 10,
+            "showTitle" : false,
+            "title" : "Articles",
+            "topicId" : "0TODQ000000CaW34AK"
+          },
+          "componentName" : "selfService:topicRelatedArticle",
+          "id" : "41c618ae-1c59-4dce-8bdd-9f35d735b881",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "601f03f5-83ba-4ada-b7a1-1b634bbb7a11",
+        "regionLabel" : "Column 2",
+        "regionName" : "4d33b",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "332f28d6-8225-49bd-8c44-ae87fba1d9c8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Getting Started CyberSecurity"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e0a224fb-bfdb-4aeb-a5e9-0b5d19ce662d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ce050ef2-ff3b-4093-b980-93fcb72f69cc",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-getting-started-cybersecurity"
+}

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Contact is Inactive</description>
+        <name>Error_Email_Contact_is_INACTIVE</name>
+        <label>Error Email- Contact is INACTIVE</label>
+        <locationX>689</locationX>
+        <locationY>83</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>{!varContactRecord.Name} is INACTIVE.   This  ShipTo was not sent to P21.  https://automationdirectinc.lightning.force.com/lightning/r/Ship_To_Addresses__c/{!varShipToRecord.Id}/view  </stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!$User.Email}, fmaddie@automationdirect.com, jwilliams@automationdirect.com,spurcell@automationdirect.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>{!varContactRecord.Name} related to Ship-To is INACTIVE </stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <description>Is Contact Inactive</description>
+        <name>Contact_Inactive</name>
+        <label>Contact Inactive</label>
+        <locationX>421</locationX>
+        <locationY>72</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_P21_button</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ContactInactive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varContactRecord.Inactive__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Email_Contact_is_INACTIVE</targetReference>
+            </connector>
+            <label>Contact Inactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Toggle Send to P21 Check box</description>
+        <name>Toggle_P21_button</name>
+        <label>Toggle P21 button</label>
+        <locationX>149</locationX>
+        <locationY>221</locationY>
+        <defaultConnector>
+            <targetReference>Toggle_Send_to_P21_to_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Send to P21 is True</defaultConnectorLabel>
+        <rules>
+            <name>Send_to_P21_checkbox_is_False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varShipToRecord.Send_to_P21__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Toggle_Send_to_P21_to_True</targetReference>
+            </connector>
+            <label>Send to P21 is False</label>
+        </rules>
+    </decisions>
+    <description>Systematically Toggle ShipTo Check box so users do not have to toggle manually.</description>
+    <interviewLabel>Toggle Send to P21 checkbox on Ship To {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Toggle Send to P21 checkbox on Ship To</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Find the ShipTo Address Record that was passed in</description>
+        <name>Find_Ship_To</name>
+        <label>Find Ship To</label>
+        <locationX>154</locationX>
+        <locationY>51</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Contact_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Ship_To_Addresses__c</object>
+        <outputReference>varShipToRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Contact__c</queriedFields>
+        <queriedFields>P21_ID__c</queriedFields>
+        <queriedFields>Send_to_P21__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Contact Record Associated with the ShipTo</description>
+        <name>Get_Contact_Record</name>
+        <label>Get Contact Record</label>
+        <locationX>265</locationX>
+        <locationY>41</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Contact_Inactive</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varShipToRecord.Contact__r.Id</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>varContactRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>P21_ID__c</queriedFields>
+        <queriedFields>Inactive__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set the Send to P21 to False</description>
+        <name>Toggle_Send_to_P21_to_False</name>
+        <label>Toggle Send to P21 to False</label>
+        <locationX>44</locationX>
+        <locationY>405</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>P21_ID__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Ship_To_Addresses__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Toggle_Send_to_P21_to_True</name>
+        <label>Toggle Send to P21 to True</label>
+        <locationX>303</locationX>
+        <locationY>419</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>P21_ID__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_to_P21__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Ship_To_Addresses__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Find_Ship_To</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>Contact Id of the contact being passed in from Send to P21 button</description>
+        <name>contactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>ContactId of the record passed in</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Contact Record on the Ship-To</description>
+        <name>varContactRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <description>ShipTo Record Variable</description>
+        <name>varShipToRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Ship_To_Addresses__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,53 @@
+<apex:page controller="Docuvault_Helper" showHeader="false" >
+    <apex:slds />
+     <script>
+        window.onload=function(){
+            if(confirm("{!JSENCODE($Label.TVA_CFB__Are_you_Sure_You_want_to_Make_the_Current_Version_as_Primary)}") == true){
+                makeAsPrimary();    
+            }else{
+                var recid = '{!JSENCODE($CurrentPage.parameters.cloudFileId)}';
+                window.location.replace('/'+recid);
+            } 
+        }
+          
+     </script> 
+     <apex:form styleClass="slds-scope">
+         <apex:actionFunction name="makeAsPrimary" status="status" action="{!restoreFile}" reRender="panelId,errorDiv"/>
+
+         <apex:outputpanel id="panelId">
+            <input type="hidden" value="{!restoreStatus}" id="access" />
+            
+            <script>
+                var x = document.getElementById('access').value;
+                if(x != '') {
+                    var recid = '{!JSENCODE($CurrentPage.parameters.cloudFileId)}';
+                    window.location.replace('/'+recid);
+                    
+                }     
+            </script>
+        </apex:outputpanel>
+        <apex:actionStatus id="status">
+            <apex:facet name="start">
+                <div>
+                    <div class="slds-spinner_container" style="position: fixed;">
+                        <div role="status" class="slds-spinner slds-spinner--large slds-spinner--brand" >
+                            <span class="slds-assistive-text">Loading</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionStatus>
+        <apex:outputpanel id="errorDiv">
+            <apex:outputPanel styleClass="slds-text-heading--small" layout="block" rendered="{!IF(errorMessage != '', true, false)}">
+                <div id="errorDiv">
+                    <div class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture">
+                        {!errorMessage}
+                    </div>
+                </div>
+            </apex:outputpanel>
+        </apex:outputpanel>
+          
+     </apex:form>
+</apex:page>

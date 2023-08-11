@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sensors_Silo_TAG_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Sensors &amp; Power Supplies Silo &amp; TAG</label>
+    <queue>Sensors_Power_Supplies_Silo_TAG</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

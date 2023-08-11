@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Silo__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product_Line</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Do-more/DL &amp; Networking Silo</controllingFieldValue>
+            <valueName>BRX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do-more/DL &amp; Networking Silo</controllingFieldValue>
+            <valueName>DirectLOGIC/Do-more</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do-more/DL &amp; Networking Silo</controllingFieldValue>
+            <valueName>Terminator I/O</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Do-more/DL &amp; Networking Silo</controllingFieldValue>
+            <valueName>Networking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI &amp; CLICK Silo</controllingFieldValue>
+            <valueName>C-more Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI &amp; CLICK Silo</controllingFieldValue>
+            <valueName>Message Boards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI &amp; CLICK Silo</controllingFieldValue>
+            <valueName>Other HMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI &amp; CLICK Silo</controllingFieldValue>
+            <valueName>CLICK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drives &amp; Motors Silo</controllingFieldValue>
+            <valueName>AC/DC Drives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drives &amp; Motors Silo</controllingFieldValue>
+            <valueName>AC/DC Motors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drives &amp; Motors Silo</controllingFieldValue>
+            <valueName>Soft Starters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drives &amp; Motors Silo</controllingFieldValue>
+            <valueName>Line Reactors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drives &amp; Motors Silo</controllingFieldValue>
+            <valueName>Filters</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

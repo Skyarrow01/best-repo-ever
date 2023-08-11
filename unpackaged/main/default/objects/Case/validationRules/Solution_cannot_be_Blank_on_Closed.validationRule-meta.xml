@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_cannot_be_Blank_on_Closed</fullName>
+    <active>true</active>
+    <description>When a case is Closed, &quot;Solution&quot; is required. This only applies to General Case and Email record types.</description>
+    <errorConditionFormula>AND(
+  OR(
+     RecordType.Name = &quot;General Case&quot;,
+     RecordType.Name = &quot;Email and Web&quot;
+  ),
+  ISBLANK(Solution__c),  
+  ISPICKVAL(Status,&#39;Closed&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Solution__c</errorDisplayField>
+    <errorMessage>Please Enter a Solution to Close the case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "58638bf8-3780-4f22-ac47-bf16d6544544",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "44540879-1b3c-485b-96e1-8657d679eef1",
+  "label" : "Industrial CyberSecurity Stadards",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-industrial-cybersecurity-stadards",
+  "type" : "route",
+  "urlPrefix" : "industrial-cybersecurity-stadards"
+}

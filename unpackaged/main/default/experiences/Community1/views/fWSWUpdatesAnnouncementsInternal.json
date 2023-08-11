@@ -1,0 +1,121 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "13edab48-873c-4e1c-b5c5-77464ca050d7",
+  "label" : "FW SW Updates Announcements (Internal)",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><strong style=\"font-size: 20px;\">FW/SW Updates Announcements&nbsp;</strong></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Your one stop shop for all firmware and software updates for AutomationDirect wide array of products including PLCs, HMIs and more!</span>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "ce74636c-4b5b-4d81-8156-9edc8e9a600c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "bannerBackgroundColor" : "",
+        "bannerPosition" : "bottom",
+        "bannerSizePercent" : 15,
+        "borderRadius" : 10,
+        "boxShadow" : true,
+        "haveBanner" : true,
+        "iconBackgroundColor" : "rgb(255,255,255)",
+        "iconSize" : "medium",
+        "noImageColor" : "rgb(212, 212, 212)",
+        "overlay" : "rgba(0,0,0,0.01)",
+        "templateType" : "full",
+        "tileMenuEditor" : "Firmware_Software",
+        "titleColor" : "",
+        "titleFontSize" : "medium",
+        "titleHorizontalAlign" : "center"
+      },
+      "componentName" : "community_navigation:tileMenu",
+      "id" : "fef40ccc-acfa-4f16-a525-cc7ba0d8ad3d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a1f58946-d9a5-4944-be59-69ab2960ed12",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "defaultSortOrderHomeFeed" : "Relevance",
+        "defaultSortOrderTopicsFeed" : "Relevance",
+        "showComments" : true,
+        "showLikes" : true,
+        "showViews" : true,
+        "subjectId" : "{!topic_id}",
+        "type" : "Topics"
+      },
+      "componentName" : "forceChatter:compactFeed",
+      "id" : "92d1cb5f-cf35-4730-92cd-4a063fbb5a4a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "90b176ba-0fc4-424f-a2d8-b63b225a6c07",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "followUpPromptLabel" : "Can we close your question?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : false,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "label" : "Create a Thread",
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : false,
+        "showTopics" : true,
+        "uneditableTopics" : false
+      },
+      "componentName" : "forceCommunity:askCommunity",
+      "id" : "e5163356-e9ec-43a0-8625-a9e4e237cbec",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "428af1d4-9c51-4cec-afe9-6f1f84b60f4d",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "f58a71ba-9826-43db-8422-681ea4de8a37",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name = \"keywords\" content = \"Firmware, Software\" />",
+        "description" : "Your one stop shop for all firmware and software updates for AutomationDirect wide array of products including PLCs, HMIs and more!",
+        "title" : "FW SW Updates Announcements | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2c36dc1c-720f-4487-b628-673e16ece7e4",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a9c228a8-0c06-44a2-8d1b-74446bae68cd",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-fw-sw-updates-announcements"
+}

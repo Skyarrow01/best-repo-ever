@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delete_AccountContactRelationship__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Delete Quick Call and or General Community Case if it is not the Direct Account</description>
+    <externalId>false</externalId>
+    <label>Delete AccountContactRelationship</label>
+    <type>Checkbox</type>
+</CustomField>

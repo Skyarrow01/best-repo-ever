@@ -1,0 +1,30 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" controller="Docuvault_Helper" >
+    <aura:attribute name="objectApiName" type="String" default="TVA_CFB__Cloud_Files__c" />
+    <aura:attribute name="CloudFileId" type="String"  access="global" />
+    <aura:attribute name="parentRecordID" type="String"  access="global" />
+    <aura:attribute name="showSpinner" type="Boolean" default="true"/>
+    <aura:attribute name="showChooseFolders" type="boolean" default="false" />
+   
+    <aura:attribute type="String" name="projectId" />
+    <aura:attribute type="String" name="objectName" />
+    <aura:attribute type="String" name="cloudFileName" />
+    <aura:attribute type="String" name="selectedFolder" access="global"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="TVA_CFB:ChooseFoldersEvent" action="{!c.folderSelectionEvent}"/>
+    
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner variant="brand" size="small" aura:id="spinner" alternativeText="loading..."/>
+    </aura:if>  
+    <lightning:input label = "File Name" required="true"  name="Name" value="{!v.cloudFileName}" onchange="{!c.nameChangeHandler}" maxlength="60"/>
+    
+    <aura:if isTrue="{!v.showChooseFolders}"> 
+        <c:Docuvault_ChooseFoldersTask 
+                                       recordId = "{!v.projectId}"
+                                       showSpinner = "false"
+                                       type = "{!v.objectName}"/>
+    </aura:if>
+    
+    <div class="slds-align_absolute-center" style="height:5rem">
+        <lightning:button variant="brand" label="Copy" title="Copy" onclick="{! c.copyFileHandler }" />
+    </div>
+</aura:component>

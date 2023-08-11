@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial"><span style="font-size: 12pt;">Dear Teamer,</span></font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">The following Case has been assigned to you.</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style=""><font face="arial">Case #: {!Case.CaseNumber}</font></div><div style=""><font face="arial">Subject:&nbsp;{!Case.Subject}</font></div><div style="">Contact:&nbsp;{!Case.Contact}</div><div style="">Contact Number:&nbsp;{!Case.Contact_Direct_Phone__c}</div><div style="">Contact Email:&nbsp;{!Contact.Email}</div><div style=""><br></div><div style=""><font face="arial"><br></font></div><div style=""><span style="font-family: arial;"><a href="{!Case.Link}">{!Case.CaseNumber}</a></span></div><div style=""><br></div><div style="">Thank you,</div><div style=""><br></div><div style="">AutomationDirect</div>]]></td>
+</tr>
+</table>

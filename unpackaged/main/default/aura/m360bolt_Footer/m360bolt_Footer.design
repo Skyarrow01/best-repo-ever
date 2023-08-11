@@ -1,0 +1,17 @@
+<design:component label="Footer">
+    <design:attribute name="LogoLink" label="Logo Link"/>
+	<design:attribute name="NewsLetterLink" label="News Letter Link"/>
+    <design:attribute name="LinkedInLink" label="LinkedIn Link" />
+    <design:attribute name="FacebookLink" label="Facebook Link" />
+    <design:attribute name="TwitterLink" label="Twitter Link" />
+    <design:attribute name="YoutubeLink" label="YouTube Link" />
+    <design:attribute name="AboutUsLink" label="About Us Link" />
+    <design:attribute name="GuidelineLink" label="Community Guidelines Link" />
+    <design:attribute name="RewardsLink" label="Reviews &amp; Reward Link" />
+    <design:attribute name="IntegratorLink" label="System Integrator Program Link"/>
+    <design:attribute name="VARSLink" label="VARS &amp; International Sales Link" />
+    <design:attribute name="ReviewsLink" label="Company Reviews Link" />
+    <design:attribute name="PriceLink" label="Download Price List Link" />
+    <design:attribute name="ContactLink" label="Contact Us Link" />
+    <design:attribute name="FooterText" label="Copyright text" />
+</design:component>

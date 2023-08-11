@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Update_Dummy_Contact</fullName>
+    <active>true</active>
+    <description>Cannot update Quick Call Contact</description>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &#39;System Administrator&#39;, Id = &#39;0033u00000zBscL&#39;)</errorConditionFormula>
+    <errorMessage>This is a placeholder contact and should not be updated.</errorMessage>
+</ValidationRule>

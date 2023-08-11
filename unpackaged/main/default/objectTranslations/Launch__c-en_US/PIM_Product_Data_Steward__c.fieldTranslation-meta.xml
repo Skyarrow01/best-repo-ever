@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- PIM Product Data Steward --></label>
+        <name>PIM_Product_Data_Steward__c</name>
+        <relationshipLabel><!-- Launches (PIM Product Data Steward) --></relationshipLabel>
+    </CustomFieldTranslation>

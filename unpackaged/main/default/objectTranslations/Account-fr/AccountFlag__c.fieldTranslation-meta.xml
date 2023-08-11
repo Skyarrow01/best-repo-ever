@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- One or more contact that has been flagged on the account. --></help>
+        <label><!-- Account Flag --></label>
+        <name>AccountFlag__c</name>
+    </CustomFieldTranslation>

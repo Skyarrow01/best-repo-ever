@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enclosures_Tools_Silo_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Enclosures Silo</label>
+    <queue>Enclosures_Silo</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

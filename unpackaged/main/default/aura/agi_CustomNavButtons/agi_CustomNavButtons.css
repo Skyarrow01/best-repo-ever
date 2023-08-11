@@ -1,0 +1,15 @@
+.THIS {
+    /*width:100%;*/
+    font-weight:700;
+    padding-top: .4em;
+    padding-bottom: .4em;   
+    text-transform: uppercase;
+}
+
+.THIS .NavButtonCls {
+    padding:6px 20px;
+}
+
+.THIS .align-center{
+        text-align: center;
+}

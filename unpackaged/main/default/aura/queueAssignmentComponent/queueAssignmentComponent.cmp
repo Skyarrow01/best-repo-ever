@@ -1,0 +1,112 @@
+<aura:component access="global" 
+                controller="QueueAssignmentController"
+                implements="flexipage:availableForAllPageTypes,lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable,lightning:isUrlAddressable">
+    
+    <aura:attribute name="listOfAllQueues" type="List" />
+    <aura:attribute name="chosenQueueId" type="String" default=""/>
+    <aura:attribute name="chosenQueueName" type="String" default=""/>
+    <aura:attribute name="assignUserList" type="List"/>
+    <aura:attribute name="removeUserList" type="List"/>
+    
+    <!-- Datatable Attributes -->
+    <aura:attribute name="isLoading" type="Boolean" default="false"/>
+    <aura:attribute name="AssignUserData" type="Object"/>
+    <aura:attribute name="RemoveUserData" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="AssignUserSelectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="RemoveUserSelectedRowsCount" type="Integer" default="0"/>
+    <!-- DataTable Attributes -->
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" size="small"/>
+            <b>Queues</b>
+            
+        </aura:set>
+        <!--<div class="slds-p-around-medium">
+            <p>
+                Queues allow groups of users to manage a shared workload more effectively. 
+                A queue is a location where records can be routed to await processing by a group member. 
+                The records remain in the queue until a user accepts them for processing or they are transferred to another queue. 
+                You can specify the set of objects that are supported by each queue, as well as the set of users that are allowed to retrieve records from the queue.*
+            </p>
+        </div>-->
+        <hr/>
+        
+        <aura:if isTrue="{!not(empty(v.chosenQueueId))}">
+            <a href="" onclick="{!c.backToHomePage}">
+                <span style="font-size:smaller;">&#x219e; Back To All Queues</span>
+            </a>
+            <!-- Selected Queue Heading -->
+            <center>
+                <div class="slds-media__body">
+                    <div class="slds-input-has-icon slds-input-has-icon--right">
+                        <div class="slds-lookup__result-text"><b>{!v.chosenQueueName}</b></div>
+                    </div>
+                </div> 
+            </center>
+            <!-- Selected Queue Heading -->
+            
+            <!-- Assign Users DataTable -->
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <div class="slds-p-around--small">
+                            <b>Choose Users To Assign to this Queue:</b>
+                            
+                            <span class="slds-p-around--large">
+                                <lightning:button label="Assign Users" onclick="{! c.assignUsers }"/>
+                            </span>
+                            <div style="height:200px;width:50%" >
+                                <h1>Selected Rows: {! v.AssignUserSelectedRowsCount }</h1>
+                                <lightning:datatable
+                                                     columns="{! v.columns }"
+                                                     data="{! v.AssignUserData }"
+                                                     keyField="id"
+                                                     onrowselection="{! c.updateAssignSelectedText }"/>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="vertical-align: unset;">
+                        <div class="slds-p-around--small">
+                            <b>Choose Users To Remove From this Queue:</b>
+                            
+                            <span class="slds-p-around--large">
+                                <lightning:button label="Remove Users" onclick="{! c.removeAssignedUsers }"/>
+                            </span>
+                            <div style="width:50%" >
+                                <h1>Selected Rows: {! v.RemoveUserSelectedRowsCount }</h1>
+                                <lightning:datatable
+                                                     columns="{! v.columns }"
+                                                     data="{! v.RemoveUserData }"
+                                                     keyField="id"
+                                                     onrowselection="{! c.updateRemoveSelectedText }"/>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- Assign Users DataTable -->
+            
+            <aura:set attribute="else">
+                <aura:iteration items="{!v.listOfAllQueues}" var="singleRec">
+                    <span class="slds-lookup__item-action slds-media slds-media--center" id="lookup-option-350" role="option" onclick="{!c.getSelectedQueueDetails}" data-queueName ="{!singleRec.Name}" data-record="{!singleRec.Id}">
+                        <div class="slds-media__body">
+                            <div class="slds-input-has-icon slds-input-has-icon--right">
+                                <div class="slds-lookup__result-text"><a>{!singleRec.Name}</a></div>
+                            </div>
+                        </div>    
+                    </span>
+                </aura:iteration>
+            </aura:set>
+        </aura:if>
+        
+        <aura:if isTrue="{! v.isLoading }">
+            <lightning:spinner alternativeText="Loading"/>
+        </aura:if>
+    </lightning:card>
+    
+</aura:component>

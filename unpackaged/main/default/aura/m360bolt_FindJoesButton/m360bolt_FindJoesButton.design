@@ -1,0 +1,4 @@
+<design:component label="Redirect Button">
+    <design:attribute name="FindJoesButtonText" label="Find Joes" description="Enter text you would like to have as the button text." />
+    <design:attribute name="FindJoesButtonURL" description="URL path you wish to link button to." />
+</design:component>

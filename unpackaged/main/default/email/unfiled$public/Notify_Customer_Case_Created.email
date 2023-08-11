@@ -1,0 +1,18 @@
+Hi,<Br>
+<BR>
+Thank you for reaching out. A Case has been created on your behalf.  A representative will respond to you in a timely manner. <BR>
+<br>
+If you require immediate assistance, do not hesitate to call our support number at 770-844-4200. Please note your Case Information below.<br>
+
+Case Number:  {!Case.CaseNumber}<br>
+Company: {!Case.Account} <br>
+Contact:  {!Case.Contact}<br>
+Phone:  {!Contact.Phone}<br>
+Mobile:  {!Contact.MobilePhone}<br>
+Email:  {!Contact.Email}
+<br>
+<br>
+Best Regards,<br>
+<br>
+ADC Support<br>
+{!Case.Thread_Id}

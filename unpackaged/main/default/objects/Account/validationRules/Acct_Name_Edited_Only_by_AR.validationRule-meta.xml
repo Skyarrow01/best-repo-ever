@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acct_Name_Edited_Only_by_AR</fullName>
+    <active>true</active>
+    <description>Billing address is required</description>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &#39;AR User&#39;,$Profile.Name &lt;&gt; &#39;Customer Support User&#39;,$Profile.Name &lt;&gt; &#39;Customer Experience Specialist (General Case)&#39;,$Profile.Name &lt;&gt; &#39;Customer Experience Specialist&#39;,$Profile.Name &lt;&gt; &#39;Integration API&#39;, $Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+NOT($Permission.Customer_Support_Leads),NOT($Permission.CRA_Leads),
+ISCHANGED(Name) 
+)</errorConditionFormula>
+    <errorMessage>Please contact Accounting to change Account Name</errorMessage>
+</ValidationRule>

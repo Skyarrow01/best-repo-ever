@@ -1,0 +1,48 @@
+{
+  "forgotPasswordRouteId" : "31cadd0b-c22b-4a5c-9bd8-5395c0453870",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : true,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "8f2366df-24a4-44ef-ab7f-d1a9fedcf802",
+  "mainAppPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "preferredDomain" : "automationdirectinc--qa.sandbox.my.site.com",
+  "selfRegistrationRouteId" : "e83844f3-a7f7-42f6-9737-4be88ef2ef47",
+  "trustedSitesForScript" : [ {
+    "id" : "89945eef-a790-4033-938e-85cba1a471e6",
+    "isActive" : true,
+    "trustedSiteName" : "www.google-analytics.com",
+    "trustedSiteUrl" : "https://www.google-analytics.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "7d3a9164-647d-4d18-917a-8f5773c8efc3",
+    "isActive" : true,
+    "trustedSiteName" : "stats.g.doubleclick.net",
+    "trustedSiteUrl" : "https://stats.g.doubleclick.net",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "d3296aeb-4ffe-42ca-8ce5-a46c08bf2ce0",
+    "isActive" : true,
+    "trustedSiteName" : "www.googletagmanager.com",
+    "trustedSiteUrl" : "https://www.googletagmanager.com/gtag/js",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "2527726c-98cf-47ce-b8ee-f4b2553dcff9",
+    "isActive" : true,
+    "trustedSiteName" : "d.la1-c1cs-ia7.salesforceliveagent.com",
+    "trustedSiteUrl" : "https://d.la1-c1cs-ia7.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "ff302e9f-3c90-40fa-87d9-43f4ba9e5db7",
+    "isActive" : true,
+    "trustedSiteName" : "d.la1-c1cs-ia7.salesforceliveagent.com1",
+    "trustedSiteUrl" : "https://d.la1-c1cs-ia7.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "e64078d0-9f23-4a2c-ad46-fb25e94d99af",
+    "isActive" : true,
+    "trustedSiteName" : "d.la1-c1cs-ia7.salesforceliveagent.com2",
+    "trustedSiteUrl" : "https://d.la1-c1cs-ia7.salesforceliveagent.com/chat/rest/Visitor/Availability.jsonp",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

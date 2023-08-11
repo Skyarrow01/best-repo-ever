@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_Entry__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether a not the Order needs to be manually enteed rather then being sent to Esker</description>
+    <externalId>false</externalId>
+    <inlineHelpText>r</inlineHelpText>
+    <label>Manual Entry</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

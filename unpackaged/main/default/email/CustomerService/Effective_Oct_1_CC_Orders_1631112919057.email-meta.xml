@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Letter sent to credit card customers</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Effective Oct 1 - CC Orders</name>
+    <style>none</style>
+    <subject>New order process for AutomationDirect for credit card orders and customers without Net 30 payment terms</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

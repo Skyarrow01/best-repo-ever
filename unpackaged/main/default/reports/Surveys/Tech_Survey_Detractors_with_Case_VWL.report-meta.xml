@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$Name</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$SurveyMonkeyApp__CaseId__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Response_Value__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__NPS_Label__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$Order_No__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__AccountId__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$Resolution__c</field>
+    </columns>
+    <columns>
+        <field>SurveyMonkeyApp__SurveyResponse__c$Resolution_Comments__c</field>
+    </columns>
+    <description>Tech Survey Detractos with link to Cases</description>
+    <filter>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Technical Support Survey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__NPS_Label__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Detractor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyMonkeyApp__SurveyResponse__c.SurveyMonkeyApp__SurveyMonkey_Responses__r$SurveyMonkeyApp__Question_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>How likely is it that you would recommend AutomationDirect to a friend or colleague?</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>SurveyMonkeyApp__SurveyResponse__c$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyMonkeyApp__SurveyResponse__c$SurveyMonkeyApp__ContactId__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tech Survey Detractors with Case</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SurveyMonkey_Survey_Responses__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyMonkeyApp__SurveyResponse__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-04-01</startDate>
+    </timeFrameFilter>
+</Report>

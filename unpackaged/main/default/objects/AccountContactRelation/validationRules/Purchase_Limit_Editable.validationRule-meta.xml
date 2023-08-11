@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Limit_Editable</fullName>
+    <active>true</active>
+    <description>Purchase Limit is only Editable when Purchase Approval = &#39;Required Over Purchase Limit&#39;</description>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+$Profile.Name &lt;&gt; &#39;Integration API&#39;,
+NOT(ISPICKVAL(Purchase_Approval__c , &#39;Required Over Purchase Limit&#39;)), 
+ISCHANGED( Purchase_Limit__c )
+)</errorConditionFormula>
+    <errorDisplayField>Purchase_Limit__c</errorDisplayField>
+    <errorMessage>Purchase Limit cannot be overriden on this Purchase Approval.</errorMessage>
+</ValidationRule>

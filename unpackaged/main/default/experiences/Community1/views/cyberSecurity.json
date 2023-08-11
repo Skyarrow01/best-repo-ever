@@ -1,0 +1,134 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "173a2b45-2d5c-4439-9c54-9f4399d027ad",
+  "label" : "CyberSecurity",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(37,124,208,0.9)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "d1bdca94-4adc-43e9-9565-2bfbee26e666",
+          "columns" : [ {
+            "UUID" : "d8edbe75-4de0-41bb-828e-5049a4ab605e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 112
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "d1bdca94-4adc-43e9-9565-2bfbee26e666",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.ADCCyberSecurity.1}\" alt=\"\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.CyberSecurity_ADC2.1}\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.CyberSecurity_ADC1.1}\"></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "ce1c92f8-0bbd-427e-afaa-84dc8eea4070",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d8edbe75-4de0-41bb-828e-5049a4ab605e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "6878a86f-927d-4276-b892-7e88ea66fab7",
+          "columns" : [ {
+            "UUID" : "cd830df1-5bdd-444a-a884-8069ed658e2a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "5",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "656436ef-4e7a-4201-8e01-a1f69b90cf02",
+            "columnKey" : "72b46",
+            "columnName" : "Column 2",
+            "columnWidth" : "7",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "6878a86f-927d-4276-b892-7e88ea66fab7",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><strong><u>Mission</u></strong></p><p><strong><u>&nbsp;</u></strong></p><p>AutomationDirect places a high priority on the security of our customers. We are committed to addressing cybersecurity vulnerabilities in our products, software, and systems in a timely, proactive manner.&nbsp;Our mission is to respond to cyberthreats through effective response techniques, education, training, research, collaboration with subject matter experts and efficient management strategies.</p><p>&nbsp;</p><p style=\"text-align: center;\"><strong><u>Vision</u></strong></p><p><strong><u>&nbsp;</u></strong></p><p>To assist our Teamers, suppliers, and customers in securing our products, software and systems against cyber-attacks and intrusions through the development of a suitable incident management framework.</p><p>&nbsp;</p><p style=\"text-align: center;\"><strong><u>Goals</u></strong></p><p><strong><u>&nbsp;</u></strong></p><p>1.&nbsp;&nbsp;&nbsp;&nbsp;Develop a framework of policies and procedures for the coordinated response and management of cyber incidents.</p><p><br></p><p><br></p><p>2.&nbsp;&nbsp;&nbsp;&nbsp;Develop and implement a coordinated disclosure program with security researchers.</p><p><br></p><p><br></p><p>3.&nbsp;&nbsp;&nbsp;&nbsp;Create and grow a set of knowledge-based articles that provide knowledge and support in connection with cybersecurity.</p><p><br></p><p><br></p><p>4.&nbsp;&nbsp;&nbsp;&nbsp;Collect data and statistics on cyber incidents.</p><p><br></p><p><br></p><p>5.&nbsp;&nbsp;&nbsp;&nbsp;Report periodically on gathered data and statistics.</p><p><br></p><p><br></p><p>6.&nbsp;&nbsp;&nbsp;&nbsp;Build capabilities in managing cyberthreats and enhancing cyber security.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "5a466a05-e3bd-447b-9303-ad60ebfb2796",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "cd830df1-5bdd-444a-a884-8069ed658e2a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "articleListPageSize" : 10,
+            "showTitle" : true,
+            "title" : "Articles",
+            "topicId" : "0TODQ000000CaW24AK"
+          },
+          "componentName" : "selfService:topicRelatedArticle",
+          "id" : "e5c66cd9-ba55-47ae-81e8-dd21421e5d1d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "656436ef-4e7a-4201-8e01-a1f69b90cf02",
+        "regionLabel" : "Column 2",
+        "regionName" : "72b46",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "50aa2ad0-cef3-45e3-8d9e-b706e86d2e51",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "CyberSecurity"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "437b871a-d6e6-4e40-8e21-c650ee9e6d30",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b1b987bc-ee38-4bd2-8cab-126a9976624e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-cybersecurity"
+}

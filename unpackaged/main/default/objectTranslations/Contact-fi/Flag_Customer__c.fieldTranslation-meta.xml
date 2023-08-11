@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Check if caller may potentially be doing something dangerous. This will set a flag on the Account, Contact, and Case level for future calls. --></help>
+        <label><!-- Flag Customer --></label>
+        <name>Flag_Customer__c</name>
+    </CustomFieldTranslation>

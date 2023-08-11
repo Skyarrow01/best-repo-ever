@@ -1,0 +1,9 @@
+.THIS .slds-button{
+	border-color:transparent !important;
+    background-color:transparent !important;
+    padding-left:3px;
+}
+
+.THIS .customCSSClass .slds-grid .slds-button{
+    color : black !important;
+}

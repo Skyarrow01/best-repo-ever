@@ -1,0 +1,51 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" 
+                access="global"
+                controller="agi_FetchAdditionalInfoController">
+	
+    <aura:handler name="init" value="{!this}" action="{!c.onPageReferenceChange}"/>
+    
+    <aura:attribute name="uiMessage" type="String" default=""/>
+    <aura:attribute name="state" type="String" default=""/>
+    <aura:attribute name="firstName" type="String" default=""/>
+    <aura:attribute name="lastName" type="String" default=""/>
+    <aura:attribute name="nickname" type="String" default=""/>
+    <aura:attribute name="disclaimeraccepted" type="Boolean" default="false"/>
+    <aura:attribute name="tctext" type="String" default=""/>
+    
+    <aura:if isTrue="{!!empty(v.uiMessage)}">
+        <ui:message title="Error" severity="error" closable="true">
+                {!v.uiMessage}
+        </ui:message>
+        <br/>
+    </aura:if>
+    <div class="row">
+        <lightning:input name="input1" label="First Name" required="true" value="{!v.firstName}"/>
+        <lightning:input name="input1" label="Last Name" required="true" value="{!v.lastName}"/>
+        <lightning:input name="input1" label="Nickname" required="true" value="{!v.nickname}"/>
+    </div>
+    	<br/>
+    <div class="slds-align_absolute-center">
+         <div class="scrollerdiv" aura:id="tctext" id="tctext" onscroll="{!c.scroll}"> 
+             <aura:unescapedHtml value="{!v.tctext}" />
+    	 </div>
+   </div>
+    <br></br>
+    <div class="slds-text-align_center">
+        <lightning:input name="agreed" aura:id="agreed" type="checkbox" label="I have read and accept the Terms and Conditions"  checked="{!v.disclaimeraccepted}" disabled="true"/>
+	</div>
+<br/>
+	<center>
+    	 <lightning:button variant="brand" label="Submit" title="Brand action" onclick="{!c.onSubmission}"/>
+    </center>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>  
+
+    
+
+    
+</aura:component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INACTIVATE</fullName>
+    <availability>online</availability>
+    <description>Sets the current Shiptoaddress to Inactive</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>INACTIVATE</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Inactive_ShipToAddress?recordId={!Ship_To_Addresses__c.Id}&amp;retURL={!Ship_To_Addresses__c.Id}</url>
+</WebLink>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>clathem@automationdirect.com.sfdc</user>
+            <user>cwelsch@automationdirect.com.sfdc</user>
+            <user>dglover@automationdirect.com.sfdc</user>
+            <user>jswan@automationdirect.com.sfdc</user>
+            <user>lkjellstrom@automationdirect.com.sfdc</user>
+            <user>rsparks@automationdirect.com.sfdc</user>
+            <user>rcrisp@automationdirect.com.sfdc</user>
+            <user>ssamples@automationdirect.com.sfdc</user>
+        </users>
+    </assignments>
+    <criticalWaitTime>2</criticalWaitTime>
+    <disableTransferConferenceGreeting>false</disableTransferConferenceGreeting>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>true</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>true</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>true</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>true</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>true</enableChatTransferToButton>
+    <enableChatTransferToSkill>false</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>true</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>AR Chat</label>
+    <supervisorDefaultAgentStatusFilter>Online</supervisorDefaultAgentStatusFilter>
+</LiveChatAgentConfig>

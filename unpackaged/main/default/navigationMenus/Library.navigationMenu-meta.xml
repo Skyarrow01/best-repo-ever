@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Community</container>
+    <containerType>Network</containerType>
+    <label>Library</label>
+    <navigationMenuItem>
+        <label>Programmable Control</label>
+        <menuItemBranding>
+            <tileImage>programmablecontrol250x125</tileImage>
+        </menuItemBranding>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/programmable-control/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Operator Interface</label>
+        <menuItemBranding>
+            <tileImage>operatorinterface250x125</tileImage>
+        </menuItemBranding>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/operator-interface/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Communications</label>
+        <menuItemBranding>
+            <tileImage>communications250x125</tileImage>
+        </menuItemBranding>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/communications/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Variable Speed Drives</label>
+        <menuItemBranding>
+            <tileImage>variablespeeddrives250x125</tileImage>
+        </menuItemBranding>
+        <position>4</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/variable-speed-drives/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Motor Controls</label>
+        <menuItemBranding>
+            <tileImage>motorcontrols250x125</tileImage>
+        </menuItemBranding>
+        <position>5</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/motor-controls/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Motor</label>
+        <menuItemBranding>
+            <tileImage>motors250x125</tileImage>
+        </menuItemBranding>
+        <position>6</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/motor/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Motion Control</label>
+        <menuItemBranding>
+            <tileImage>motioncontrol250x125</tileImage>
+        </menuItemBranding>
+        <position>7</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/motion-control/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Mech. Power Transmission</label>
+        <menuItemBranding>
+            <tileImage>powertransmission250x125</tileImage>
+        </menuItemBranding>
+        <position>8</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/mechanical-power-transmission/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Discrete Sensing</label>
+        <menuItemBranding>
+            <tileImage>discretesensing250x125</tileImage>
+        </menuItemBranding>
+        <position>9</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/discrete-sensing/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Process Sensing Control</label>
+        <menuItemBranding>
+            <tileImage>processsensingcontrol250x125</tileImage>
+        </menuItemBranding>
+        <position>10</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/process-sensing-control/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Control Signaling Devices</label>
+        <menuItemBranding>
+            <tileImage>controlsignalingdevices250x125</tileImage>
+        </menuItemBranding>
+        <position>11</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/control-signaling-devices/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Relays &amp; Timers</label>
+        <menuItemBranding>
+            <tileImage>relaystimers250x125</tileImage>
+        </menuItemBranding>
+        <position>12</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/relays-timers/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Pneumatics Product</label>
+        <menuItemBranding>
+            <tileImage>pneumatics250x1251</tileImage>
+        </menuItemBranding>
+        <position>13</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/pneumatics-product/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Safety</label>
+        <menuItemBranding>
+            <tileImage>safety250x1251</tileImage>
+        </menuItemBranding>
+        <position>14</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/safety/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Electrical Power</label>
+        <menuItemBranding>
+            <tileImage>electricalpower250x1251</tileImage>
+        </menuItemBranding>
+        <position>15</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/electrical-power/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Circuit Protection</label>
+        <menuItemBranding>
+            <tileImage>circuitprotection250x125</tileImage>
+        </menuItemBranding>
+        <position>16</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/circuit-protection/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Enclosures Accessories</label>
+        <menuItemBranding>
+            <tileImage>enclosureaccessories250x125</tileImage>
+        </menuItemBranding>
+        <position>17</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/enclosures-accessories/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Terminal Blocks &amp; Wiring</label>
+        <menuItemBranding>
+            <tileImage>terminalblockswiring250x125</tileImage>
+        </menuItemBranding>
+        <position>18</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/terminal-blocks-wiring/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Hand Tools &amp; Test Equipment</label>
+        <menuItemBranding>
+            <tileImage>tools250x125</tileImage>
+        </menuItemBranding>
+        <position>19</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://library.automationdirect.com/category/product/hand-tools-test-equipment/?utm_source=Community&amp;utm_medium=OutboundLinks</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProfileSkill.ProfileSkillUserChildren$Skill_Level__c</field>
+    </columns>
+    <description>See a chart of all skills and each Techs skill level for that skill</description>
+    <filter>
+        <criteriaItems>
+            <column>ProfileSkill.ProfileSkillUserChildren$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Larry Jolley</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProfileSkill.ProfileSkillUserChildren$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lisa Tenerovich</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProfileSkill.ProfileSkillUserChildren$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Billy Sonnenthal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProfileSkill.ProfileSkillUserChildren$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Luis Miranda</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProfileSkill.ProfileSkillUserChildren$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Kyle Vandeusen</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ProfileSkill.ProfileSkillUserChildren$User</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ProfileSkill$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tech Skills by Product Group</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Skills__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ProfileSkill$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

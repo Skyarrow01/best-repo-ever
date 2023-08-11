@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div>Thank you for taking the time to fill out our inquiry form.</div><div><br></div><div>Your request will be assigned to a member of our Technical Support team for follow-up. Please allow up to one business day for a response. Please do not reply to this email.</div><div><br></div><div>For reference, details of your request are shown below.</div><div><br></div><div><b>Contact Information:</b></div><div><br></div><div>Name: {!Case.Contact}<br></div><div>Company: {!Case.Company__c}<br></div><div><span style="font-size: 12pt;">Phone: {!Case.Phone__c}</span></div><div>Email: {!Case.Email_Formula__c}<br></div><div><br></div><div><b>About the Inquiry:</b></div><div><br></div><div>Case Number:&nbsp;{!Case.CaseNumber}</div><div>Product Group: {!Case.Product_Group__c}<br></div><div>Product: {!Case.Product__c}</div><div>Subject: {!Case.Subject}<br></div><div>Description: {!Case.Description}</div><div><br></div><div><br></div>]]></td>
+</tr>
+</table>

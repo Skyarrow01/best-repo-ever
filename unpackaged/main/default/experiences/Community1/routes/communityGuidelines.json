@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "e1b37c25-a6e7-42cb-8790-c1c57a7643e6",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "4397c890-96e7-4fd2-a0a3-91cb9eb5a1f4",
+  "label" : "Community Guidelines",
+  "pageAccess" : "Public",
+  "routeType" : "custom-community-guidelines",
+  "type" : "route",
+  "urlPrefix" : "community-guidelines"
+}

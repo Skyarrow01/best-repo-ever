@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>P1AM-100</label>
+                <name>P1AM_100</name>
+            </dataCategory>
+            <label>Open Source Devices</label>
+            <name>Open_Source_Devices</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Communication Products</label>
+            <name>Communication_Products</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>AC</label>
+                <name>AC</name>
+            </dataCategory>
+            <dataCategory>
+                <label>DC</label>
+                <name>DC</name>
+            </dataCategory>
+            <label>Drives/Motors</label>
+            <name>Drives_Motors</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Encoders</label>
+                <name>Encoders</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Indicators</label>
+                <name>Indicators</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Pushbuttons</label>
+                <name>Pushbuttons</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Safety</label>
+                <name>Safety</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Sensors</label>
+                <name>Sensors</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Stack lights</label>
+                <name>Stack_lights</name>
+            </dataCategory>
+            <label>Electrical Field Devices</label>
+            <name>Electrical_Field_Devices</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>ViewMarq</label>
+                <name>ViewMarq</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Atlas</label>
+                <name>Atlas</name>
+            </dataCategory>
+            <dataCategory>
+                <label>C-More</label>
+                <name>C_More</name>
+            </dataCategory>
+            <dataCategory>
+                <label>C-More Micro</label>
+                <name>C_More_Micro</name>
+            </dataCategory>
+            <label>HMI/Industrial Monitors</label>
+            <name>HMI_Industrial_Monitors</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Enclosures</label>
+                <name>Enclosures</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Mechanical Power</label>
+                <name>Mechanical_Power</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Pneumatics</label>
+                <name>Pneumatics</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Water Components</label>
+                <name>Water_Components</name>
+            </dataCategory>
+            <label>Mechanical</label>
+            <name>Mechanical</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Servo</label>
+                <name>Servo</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Stepper</label>
+                <name>Stepper</name>
+            </dataCategory>
+            <label>Motion Control</label>
+            <name>Motion_Control</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Click</label>
+                <name>Click</name>
+            </dataCategory>
+            <dataCategory>
+                <label>DirectLogic</label>
+                <name>DirectLogic</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Do-more/BRX</label>
+                <name>Do_more_BRX</name>
+            </dataCategory>
+            <dataCategory>
+                <label>I/O Link</label>
+                <name>I_O_Link</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Productivity</label>
+                <name>Productivity</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Protos X I/O</label>
+                <name>Protos_X_I_O</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Terminator I/O</label>
+                <name>Terminator_I_O</name>
+            </dataCategory>
+            <label>PLC/Field I/O</label>
+            <name>PLC_Field_I_O</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Breakers</label>
+                <name>Breakers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fuses</label>
+                <name>Fuses</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Power Supplies</label>
+                <name>Power_Supplies</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Transformers</label>
+                <name>Transformers</name>
+            </dataCategory>
+            <label>Power Products/Circuit Protection</label>
+            <name>Power_Products_Circuit_Protection</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Process Control</label>
+            <name>Process_Control</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Relays/Timers</label>
+            <name>Relays_Timers</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Cables/Wires</label>
+                <name>Cables_Wires</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Terminal Blocks</label>
+                <name>Terminal_Blocks</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Wiring Solutions</label>
+                <name>Wiring_Solutions</name>
+            </dataCategory>
+            <label>Wiring</label>
+            <name>Wiring</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <description>Definition of Community Categories</description>
+    <label>Product</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

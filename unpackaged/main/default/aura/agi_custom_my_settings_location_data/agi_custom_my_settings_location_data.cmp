@@ -1,0 +1,39 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global" controller="AGI_Custom_MySettings">
+    <aura:attribute name="TimeZoneOptions" type="List" default="[]" />
+    <aura:attribute name="currTZ" type="String" />
+    
+    <aura:method name="saveLoc" action="{!c.save}" access="PUBLIC" />    
+    <aura:handler name="init" value="{! this }" action="{! c.loadTimeZoneOptions }"/> 
+
+    <br></br>
+    <div class="slds-text-heading_medium slds-border_bottom">
+        Location
+    </div>
+    <br></br>
+    
+
+    <aura:attribute name="Language" type="List" default="[
+    {'label': 'English (US)', 'value': 'english'}
+    ]"/>
+	
+    
+    <aura:attribute name="Locale" type="List" default="[
+    {'label': 'English (United States)', 'value': 'english united states'}
+    ]"/>
+        
+ <div class="slds-grid slds-wrap">
+    	<div class="slds-size_1-of-4  slds-m-right_small">   
+    		<lightning:combobox name="lang" aura:id="lang" label="Language" value="english" placeholder="English (US)" options="{! v.Language }"/>
+       </div>
+    
+    	<div class="slds-size_1-of-4  slds-m-horizontal_small">  
+    		<lightning:combobox name="locale" aura:id="locale" label="Locale" value="english united states" placeholder="English (United States)" options="{! v.Locale }"/>
+    	</div>
+    
+    	<div class="slds-size_1-of-4  slds-m-horizontal_small"> 
+    		<lightning:combobox name="tz" aura:id="tz" label="Time-Zone" value="{!v.currTZ}" options="{! v.TimeZoneOptions }" />    
+	</div>
+
+</div>
+	<br></br>
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="FindJoesButtonText" type="String" default="Find Joes"/>
+    <aura:attribute name="FindJoesButtonURL" type="String" default="/locations" />
+    
+    <div style="text-align: center;">
+        <ui:button label="{!v.FindJoesButtonText}" aura:id="FindJoeButton" press="{!c.gotoURL}" class="slds-button slds-button--brand FindJoeButtonCls"/>
+    </div>
+</aura:component>

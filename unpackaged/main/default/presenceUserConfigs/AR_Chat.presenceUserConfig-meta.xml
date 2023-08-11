@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <capacity>1</capacity>
+    <declineReasons>Busy_in_current_Work</declineReasons>
+    <declineReasons>In_a_Meeting</declineReasons>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>true</enableDecline>
+    <enableDeclineReason>true</enableDeclineReason>
+    <enableDisconnectSound>true</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>AR Chat</label>
+    <presenceStatusOnDecline>Busy</presenceStatusOnDecline>
+    <presenceStatusOnPushTimeout>Busy</presenceStatusOnPushTimeout>
+</PresenceUserConfig>

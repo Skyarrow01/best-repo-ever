@@ -1,0 +1,60 @@
+.cBrandingProfile {
+    width:30%!important;
+}
+
+.forceCommunityGlobalNavigation {
+    visibility:visible;
+}
+
+.tileLabel {
+   white-space: normal!important;
+}
+
+.imagePreview {
+    height:250px!Important;
+}
+
+.search-button{
+    background-color: rgb(51, 153, 0)!important;
+}
+
+.content .slds-form.slds-form_stacked .slds-grid.slds-gutters_small.forcePageBlockSectionRow:first-child {
+    display: none;
+}
+
+.cTopLeftCon {
+    display: none;
+}
+
+.cHeaderPanel {
+    z-index:1008;
+}
+.follow-button{
+    test-align:center;
+}
+.button2 {border-radius: 4px;
+  background-color: #2574a9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;}
+.tc-services-style4 .services-item {padding: 0px 25px 25px;position: relative;text-align: center;background-color: #fff;border: 1px solid rgba(0, 0, 0, 0.05);margin-bottom: 10px;}
+.tc-services-style4 .services-icon {font-size: 42px;display: inline-block;color: #999;text-align: center;margin-bottom: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+.tc-services-style4 .services-title {background-color: #2574a9;color: #fff;padding: 15px;font-size: 17px;margin-bottom: 30px;margin-left: -25px;margin-right: -25px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+.tc-services-style4 .services-item:hover .services-title {background-color: #222;}
+.tc-services-style4 .services-desc p {font-size: 13px;line-height: 1.4;color: #777;}
+.tc-services-style3 .services-desc a {position: relative;display: inline-block;color: #2574a9;font-size: 13px;line-height: normal;text-decoration: none !important;margin-top: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+.tc-services-style3 .services-desc a:hover {color: #222;border-color: #222;}
+.tc-services-style3 .services-item {padding: 0px 25px 25px;position: relative;text-align: center;background-color: #fafafa;border: 1px solid rgba(0, 0, 0, 0.05);margin-bottom: 25px;}
+.tc-services-style3 .services-icon {font-size: 42px;display: inline-block;color: #999;text-align: center;margin-bottom: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+.tc-services-style3 .services-title {background-color: #2574a9;color: #fff;padding: 15px;font-size: 17px;margin-bottom: 30px;margin-left: -25px;margin-right: -25px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+.tc-services-style3 .services-item:hover .services-title {background-color: #222;}
+.tc-services-style3 .services-desc p {font-size: 13px;line-height: 1.4;color: #777;}
+.tc-services-style3 .services-desc a {position: relative;display: inline-block;color: #2574a9;font-size: 13px;line-height: normal;text-decoration: none !important;margin-top: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+.tc-services-style3 .services-desc a:hover {color: #222;border-color: #222;}
+:root { --dxp-c-section-columns-max-width: 1170px; }

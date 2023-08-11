@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Teamer should forward call or case from this Contact to the Teamer indicated in this field --></help>
+        <label><!-- Forward to Teamer --></label>
+        <name>Forward_to_Teamer__c</name>
+        <relationshipLabel><!-- Contacts (Forward to Teamer) --></relationshipLabel>
+    </CustomFieldTranslation>

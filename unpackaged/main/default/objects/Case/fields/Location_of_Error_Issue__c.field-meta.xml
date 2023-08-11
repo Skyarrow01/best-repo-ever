@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_of_Error_Issue__c</fullName>
+    <description>Location of Error/Issue for Product Launch</description>
+    <externalId>false</externalId>
+    <label>Location of Error/Issue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home Page</fullName>
+                <default>false</default>
+                <label>Home Page</label>
+            </value>
+            <value>
+                <fullName>Search Page</fullName>
+                <default>false</default>
+                <label>Search Page</label>
+            </value>
+            <value>
+                <fullName>Item Page</fullName>
+                <default>false</default>
+                <label>Item Page</label>
+            </value>
+            <value>
+                <fullName>Overview Tab</fullName>
+                <default>false</default>
+                <label>Overview Tab</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Manuals Tab</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manuals Tab</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,110 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "2764742a-e4c8-4d99-9ade-43ea03525608",
+  "label" : "FW SW Updates Announcements",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><strong style=\"font-size: 20px;\">FW/SW Updates Announcements&nbsp;</strong></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Your one stop shop for all firmware and software updates for AutomationDirect wide array of products including PLCs, HMIs and more!</span>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "fdecfd4f-69b6-44ad-81f7-b09f99a55b09",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "bannerBackgroundColor" : "",
+        "bannerPosition" : "bottom",
+        "bannerSizePercent" : 15,
+        "borderRadius" : 10,
+        "boxShadow" : true,
+        "haveBanner" : true,
+        "iconBackgroundColor" : "rgb(255,255,255)",
+        "iconSize" : "medium",
+        "noImageColor" : "rgb(212, 212, 212)",
+        "overlay" : "rgba(0,0,0,0.01)",
+        "templateType" : "full",
+        "tileMenuEditor" : "Firmware_Software",
+        "titleColor" : "",
+        "titleFontSize" : "medium",
+        "titleHorizontalAlign" : "center"
+      },
+      "componentName" : "community_navigation:tileMenu",
+      "id" : "a42e9068-62ce-4592-a545-3f5dd9036b8e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "787d787d-f081-441d-b502-09ab47b242a7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "defaultSortOrderHomeFeed" : "Relevance",
+        "defaultSortOrderTopicsFeed" : "Relevance",
+        "showComments" : true,
+        "showLikes" : true,
+        "showViews" : true,
+        "subjectId" : "{!topic_id}",
+        "type" : "Topics"
+      },
+      "componentName" : "forceChatter:compactFeed",
+      "id" : "907b6186-51ab-4bba-9db0-6544ee8ddd5f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4ddf762d-3122-40fc-a50f-82afc9e9df67",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "recordId" : "0TO3u000000l14W",
+        "showNotificationMenu" : true
+      },
+      "componentName" : "forceCommunity:follow",
+      "id" : "2c245df9-d59e-4a76-b49a-b1cfa97112dd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5bcda179-811c-4c85-8694-f86692a2e9a8",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "77c51053-a63a-4928-bb1f-99c04eaef6e0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name = \"keywords\" content = \"Firmware, Software\" />",
+        "description" : "Your one stop shop for all firmware and software updates for AutomationDirect wide array of products including PLCs, HMIs and more!",
+        "title" : "FW SW Updates Announcements | AutomationDirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2f199975-2386-42cf-ad4a-7f9673a218aa",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2e0aefac-59d6-4784-b59f-8ef25b1cb931",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-fw-sw-updates-announcements"
+}

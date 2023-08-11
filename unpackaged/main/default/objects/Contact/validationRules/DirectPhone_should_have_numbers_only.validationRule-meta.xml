@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DirectPhone_should_have_numbers_only</fullName>
+    <active>true</active>
+    <description>The phone fields should contain numbers only.  Preventing users from copying pasting email address into phone</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Direct_Phone__c)), 
+NOT(ISNUMBER(Direct_Phone__c)),
+NOT($Profile.Name = &quot;System Administrator&quot;))</errorConditionFormula>
+    <errorDisplayField>Direct_Phone__c</errorDisplayField>
+    <errorMessage>Please enter numbers only for phone.</errorMessage>
+</ValidationRule>

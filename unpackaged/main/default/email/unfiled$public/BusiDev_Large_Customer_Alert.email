@@ -1,0 +1,4 @@
+This is a notification of a possible large customer.
+{!Case.Account}
+{!Case.Contact}
+{!Case.Id}

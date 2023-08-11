@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_fields_for_BE_Case_Submission</fullName>
+    <active>true</active>
+    <description>Required fields for BE Case submission</description>
+    <errorConditionFormula>AND(
+  CONTAINS( RecordType.DeveloperName,&quot;Backline&quot;),
+  ISPICKVAL( Status,&quot;Submit&quot;),
+  OR(
+    ISNULL(  Part_Number__c ),
+    ISBLANK(  Subject ),
+    ISPICKVAL( Silo__c,&quot;&quot; ),
+    ISBLANK(  Description ),
+    ISBLANK( Issue_Type__c )
+  )
+)</errorConditionFormula>
+    <errorMessage>Part Number, Subject, Silo, Description, and Issue Type are required in order to Submit this Case.</errorMessage>
+</ValidationRule>

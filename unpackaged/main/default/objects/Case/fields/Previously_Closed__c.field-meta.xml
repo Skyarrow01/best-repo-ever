@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previously_Closed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines if the Case was closed at any point time, this is special for Case for Esker Accounts that get automatically reopened through Code.</description>
+    <externalId>false</externalId>
+    <label>Previously Closed?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

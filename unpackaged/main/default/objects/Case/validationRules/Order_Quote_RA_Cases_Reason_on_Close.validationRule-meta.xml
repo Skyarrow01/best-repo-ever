@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Quote_RA_Cases_Reason_on_Close</fullName>
+    <active>true</active>
+    <description>When a Order, Order Inquiries Case, RA Case is closed, the Crase Reason must be selected</description>
+    <errorConditionFormula>AND( 
+OR(RecordType.DeveloperName = &#39;Orders_Inquiries&#39;, 
+RecordType.DeveloperName = &#39;Orders&#39;, 
+RecordType.DeveloperName = &#39;Quote&#39;,
+RecordType.DeveloperName = &#39;RA&#39;), 
+ISCHANGED(Status),
+ NOT(ISPICKVAL(Origin,&#39;Live Chat&#39;)),
+OR(ISPICkVAL(Status, &#39;Closed&#39;),
+ISPICkVAL(Status, &#39;Sent To Esker&#39;)),
+ISPICKVAL(Reason,&#39;&#39;))</errorConditionFormula>
+    <errorDisplayField>Reason</errorDisplayField>
+    <errorMessage>Please select a Case Reason</errorMessage>
+</ValidationRule>

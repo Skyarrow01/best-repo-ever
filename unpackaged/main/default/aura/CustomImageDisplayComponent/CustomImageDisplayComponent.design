@@ -1,0 +1,22 @@
+<design:component>
+    <design:attribute name="NumberOfTiles" label="Number Of Tiles" max="4"/>
+	<design:attribute name="FirstTileName" label="First Tile Name"/>
+    <design:attribute name="FirstTileLink" label="First Tile href Link"/>
+    <design:attribute name="FirstTileLinkGuest" label="First Tile href Link (Guest)"/>
+    <design:attribute name="FirstTileImageLink" label="First Tile Image Static Resource Name"/>
+    <design:attribute name="SecondTileName" label="Second Tile Name"/>
+    <design:attribute name="SecondTileLink" label="Second Tile href Link"/>
+    <design:attribute name="SecondTileLinkGuest" label="Second Tile href Link (Guest)"/>
+    <design:attribute name="SecondTileImageLink" label="Second Tile Image Static Resource Name"/>
+    <design:attribute name="ThirdTileName" label="Third Tile Name"/>
+    <design:attribute name="ThirdTileLink" label="Third Tile href Link"/>
+    <design:attribute name="ThirdTileLinkGuest" label="Third Tile href Link (Guest)"/>
+    <design:attribute name="ThirdTileImageLink" label="Third Tile Image Static Resource Name"/>
+    <design:attribute name="FourthTileName" label="Fourth Tile Name"/>
+    <design:attribute name="FourthTileLink" label="Fourth Tile href Link"/>
+    <design:attribute name="FourthTileLinkGuest" label="Fourth Tile href Link (Guest)"/>
+    <design:attribute name="FourthTileImageLink" label="Fourth Tile Image Static Resource Name"/>
+    
+    <design:attribute name="GeneralCommunityInfoLink" label="General Community Info Link"/>
+    <design:attribute name="TechnicalForumsLink" label="Technical Forums by Category Link" />
+</design:component>

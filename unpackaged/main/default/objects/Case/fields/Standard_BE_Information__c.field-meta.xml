@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_BE_Information__c</fullName>
+    <defaultValue>&quot;• Searching BE Cases, Knowledge Articles, Problem Reports and ECNs for information&quot; +BR()
+&amp;&quot;• Part Number&quot; +BR()
+&amp;&quot;• Detailed description of issue&quot; +BR()
+&amp;&quot;• If wiring issue, describe customer wiring in detail&quot; +BR()
+&amp;&quot;• If packaging issue, provide photos&quot; +BR()
+&amp;&quot;• If documentation issue, provide exact document name and page number (screen caps are better)&quot;+BR()
+&amp;&quot;• If applicable, provide project files or configuration files associated with all case related devices.&quot; +BR()
+&amp;&quot;• If Ethernet communication issue: Provide network settings (IP Address, Subnet Mask, and Default Gateway) of all case related devices.&quot; +BR()
+&amp;&quot;• If Ethernet communication issue: Obtain network topology diagram; even if simple hand drawing.&quot; +BR()
+&amp;&quot;• If Serial communication issue: Obtain network diagram, protocol, baud rate, parity and node address.&quot; +BR()
+&amp;&quot;• Have you duplicated problem?&quot;+BR()
+&amp;&quot;• Ask other Techs and Tech Lead first&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Standard BE Information</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

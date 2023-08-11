@@ -1,0 +1,86 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global" controller="AGI_Custom_MySettings" >
+    <aura:attribute name="networkMember" type="NetworkMember" />    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:method name="saveNotif" action="{!c.save}" access="PUBLIC" />
+<section class="tabs__content active uiTab">
+<div class="forceCommunityUserSettingsInternal">
+<div class="emailsection">
+    
+<br></br>
+    <div class="row emailNotificationsSection slds-text-heading_medium">
+        Email Notifications 
+    </div>
+    
+    <div class="checkboxsection slds-border_top">
+        <br></br>
+      
+        
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox ">
+    <lightning:input type="checkbox" label="Enable email notifications" checked="{!!v.networkMember.PreferencesDisableAllFeedsEmail}" name="AllFeedsEmail" aura:id="AllFeedsEmail" onchange="{!c.toggled}"></lightning:input> 
+    </div>
+	    <br></br>
+        <br></br>
+   
+        
+        <div>
+    When email notifications are enabled, email me when someone:
+        </div>
+        <br></br>
+
+        
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Endorses me on a topic" checked="{!!v.networkMember.PreferencesDisableEndorsementEmail}" name="EndorsementEmail" aura:id="EndorsementEmail"></lightning:input> 
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label= "Posts on my profile" checked="{!!v.networkMember.PreferencesDisableProfilePostEmail}" name="ProfilePostEmail" aura:id="ProfilePostEmail" ></lightning:input> 
+    </div>        
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Follows me" checked="{!!v.networkMember.PreferencesDisableFollowersEmail}" name="FollowersEmail" aura:id="FollowersEmail"></lightning:input>  
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Likes or upvotes my post or comment" checked="{!!v.networkMember.PreferencesDisableLikeEmail}" name="LikeEmail" aura:id="LikeEmail"></lightning:input> 
+    </div>           
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label= "Comments on my posts" checked="{!!v.networkMember.PreferencesDisableChangeCommentEmail}" name="ChangeCommentEmail" aura:id="ChangeCommentEmail"></lightning:input>
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Comments on a post on my profile" checked="{!!v.networkMember.PreferencesDisProfPostCommentEmail}" name="ProfPostCommentEmail" aura:id="ProfPostCommentEmail" ></lightning:input>  
+    </div>        
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label= "Comments after me" checked="{!!v.networkMember.PreferencesDisableLaterCommentEmail}" name="LaterCommentEmail" aura:id="LaterCommentEmail"></lightning:input>  
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Comments on an item I bookmarked" checked="{!!v.networkMember.PreferencesDisableBookmarkEmail}" name="BookmarkEmail" aura:id="BookmarkEmail"></lightning:input> 
+    </div>         
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label= "Comments on an item I like" checked="{!!v.networkMember.PreferencesDisCommentAfterLikeEmail}" name="CommentAfterLikeEmail" aura:id="CommentAfterLikeEmail"></lightning:input> 
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Mentions me in a post" checked="{!!v.networkMember.PreferencesDisableMentionsPostEmail}" name="MentionsPostEmail" aura:id="MentionsPostEmail"></lightning:input> 
+    </div>        
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label= "Mentions me in a comment" checked="{!!v.networkMember.PreferencesDisMentionsCommentEmail}" name="MentionsCommentEmail" aura:id="MentionsCommentEmail"></lightning:input> 
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Selects my answer as best" checked="{!!v.networkMember.PreferencesDisableBestAnswerEmail}" name="BestAnswerEmail" aura:id="BestAnswerEmail"></lightning:input> 
+    </div>
+        <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label= "Flags an item as inappropriate" checked="{!!v.networkMember.PreferencesDisableItemFlaggedEmail}" name="ItemFlaggedEmail" aura:id="ItemFlaggedEmail"></lightning:input> 
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Sends me a direct message" checked="{!!v.networkMember.PreferencesDisableDirectMessageEmail}" name="DirectMessageEmail" aura:id="DirectMessageEmail"></lightning:input>  
+    </div>       
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label= "Requires approval on a feed item" checked="{!!v.networkMember.PreferencesDisablePendingReviewEmail}" name="PendingReviewEmail" aura:id="PendingReviewEmail"></lightning:input> 
+    </div>
+    <div class="uiInput uiInputCheckbox uiInput--default uiInput--checkbox">
+    <lightning:input type="checkbox" disabled="{!v.networkMember.PreferencesDisableAllFeedsEmail}" label="Posts on one of my cases" checked="{!!v.networkMember.PreferencesDisableCaseContactEmail}" name="CaseContactEmail" aura:id="CaseContactEmail"></lightning:input> 
+    </div>
+    </div>
+    <br></br>
+    <div class="slds-border_bottom"></div>
+</div>
+</div>
+</section> 
+    
+</aura:component>

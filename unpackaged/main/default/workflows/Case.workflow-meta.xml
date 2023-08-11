@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BE_Case_Include_TAG</fullName>
+        <description>BE Case Include TAG</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>backline@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Case_Owner_that_TAG_added_to_case</template>
+    </alerts>
+    <alerts>
+        <fullName>BE_Case_Owner_Updated</fullName>
+        <description>BE Case Owner Updated</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>backline@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Owner_BE_Case_Owner_Changed</template>
+    </alerts>
+    <alerts>
+        <fullName>CCM_Notify_ADC_Owner_Case_is_Assigned</fullName>
+        <description>CCM Notify ADC Owner Case is Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>techbox@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/CCM_Notify_ADC_Owner_Case_is_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Email_Notification_Origin_Web</fullName>
+        <description>Case Email Notification - Origin=Web</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>donotreply@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Community_Case_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Is_Still_Open_30_Days</fullName>
+        <description>Case Is Still Open 30 Days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case_Still_Open_30_Day_Notice_1623176472292</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Updated</fullName>
+        <description>Case_Updated</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case_Chatter_Post</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_ADC_Case_Onwer_that_Case_Status_is_Call_Back</fullName>
+        <description>Notify ADC Case Onwer that Case Status is Call Back</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>techbox@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Case_Owner_on_Callback</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_ADC_Case_Owner_that_Case_Status_is_Call_Back</fullName>
+        <description>Notify ADC Case Owner that Case Status is Call Back</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>techbox@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Case_Owner_on_Callback</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_BE_Case_Field_Updated</fullName>
+        <description>Notify BE Case Field Updated</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>backline@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_BE_Case_Field_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_BE_Case_Status_Updated</fullName>
+        <description>Notify BE Case Status Updated</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>backline@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_BE_Case_Status_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_BE_Case_Updated</fullName>
+        <description>Notify BE Case Updated</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>backline@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Silo_Group_Case_has_Updated_Post</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Customer_Tech_Survey</fullName>
+        <description>Notify Customer Tech Survey</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>donotreply@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Customer_Tech_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Launch_Case_Owner_Ready_for_Retest</fullName>
+        <description>Notify Launch Case Owner Ready for Retest</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>productlaunch@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Launch_Case_Owner_Ready_for_Retest</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Launch_Team_Case_Owner_when_Case_is_not_being_worked</fullName>
+        <ccEmails>jcapo@automationdirect.com</ccEmails>
+        <ccEmails>lcudworth@automationdirect.com</ccEmails>
+        <ccEmails>jhamelly@automationdirect.com</ccEmails>
+        <ccEmails>kdeveikis@automationdirect.com</ccEmails>
+        <ccEmails>mkronz@automationdirect.com</ccEmails>
+        <description>Notify Launch Team/Case Owner when Case is not being worked</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>productlaunch@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Launch_Team_Case_has_not_changed</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Product_Launch_Case_Owner_that_Case_Assigned</fullName>
+        <description>Notify Product Launch Case Owner that Case Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>productlaunch@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Product_Launch_Case_Owner_on_assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Silo_Case_Reopened</fullName>
+        <description>Notify Silo - Case Reopened</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Case_emails/Notify_Silo_Groups_Case_Reopened</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Submitted_Case</fullName>
+        <description>Notify Submitted Case</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>backline@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Silo_Group</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Teamer_New_Case_Assigned</fullName>
+        <description>Notify Teamer New Case Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>donotreply@automationdirect.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_emails/Notify_Teamer_New_Case_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>SendEmailToCaseOwneraboutNewChatterPosts</fullName>
+        <description>SendEmailToCaseOwneraboutNewChatterPosts</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Case_emails/Notify_Case_Owner_about_New_Chatter_Posts</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Case_Is_Still_Open_30_Days</fullName>
+        <field>X30_Day_Warning_Notice__c</field>
+        <formula>NOW()+ 30</formula>
+        <name>Case Is Still Open 30 Days</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Urgent</fullName>
+        <field>Urgent__c</field>
+        <literalValue>1</literalValue>
+        <name>Case Urgent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Owner_to_Email_and_Web_Queue</fullName>
+        <description>Sets Case Owner to &quot;Email and Web Queue&quot;</description>
+        <field>OwnerId</field>
+        <lookupValue>Email_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Change Owner to Email and Web Queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Last_Modified_Date_for_Flow</fullName>
+        <description>Populates Last Modified Date for Flow.</description>
+        <field>Last_Modified_Date_for_Flow__c</field>
+        <formula>LastModifiedDate</formula>
+        <name>Populate Last Modified Date for Flow</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Product_Search</fullName>
+        <field>Product_Search__c</field>
+        <formula>Product__r.Name</formula>
+        <name>Populate Product Search</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Delete_Case_field_to_TRUE</fullName>
+        <description>Sets &quot;Delete Case&quot; field to true</description>
+        <field>Delete_Case__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Delete Case field to TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Assign Web case to Email and Web Queue</fullName>
+        <actions>
+            <name>Change_Owner_to_Email_and_Web_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Web</value>
+        </criteriaItems>
+        <description>Assigns Web to Case to Email and Web Queue</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CCM Notify ADC Owner Case is Assigned</fullName>
+        <actions>
+            <name>CCM_Notify_ADC_Owner_Case_is_Assigned</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify Case Owner when it is assigned and case is not closed Status. Excludes Queues and Phone Cases.</description>
+        <formula>AND(  NOT(CONTAINS( RecordType.Name, &quot;Backline&quot;)),  RecordType.DeveloperName  &lt;&gt; &quot;Chat&quot;, RecordType.DeveloperName  &lt;&gt; &quot;Product_Launch_Testing&quot;,   RecordType.DeveloperName  &lt;&gt; &quot;Orders&quot;, RecordType.DeveloperName  &lt;&gt; &quot;Orders_Inquiries&quot;, RecordType.DeveloperName  &lt;&gt; &quot;Quote&quot;, RecordType.DeveloperName &lt;&gt; &quot;SalesTax&quot;, RecordType.DeveloperName &lt;&gt; &quot;Credit_New_Account&quot;, RecordType.DeveloperName &lt;&gt; &quot;AR&quot;,  RecordType.DeveloperName &lt;&gt; &quot;RA&quot;,ISCHANGED(OwnerId),   OwnerId &lt;&gt; $User.Id,   Owned_by_Queue__c = FALSE,   NOT(ISPICKVAL(Status, &quot;Closed&quot;)),   NOT(ISPICKVAL(Origin,&quot;Phone&quot;)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Is Still Open 30 Days</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Case_Owner_Profile__c</field>
+            <operation>equals</operation>
+            <value>Tech Support User</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Is_Still_Open_30_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.X30_Day_Warning_Notice__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Case Is Still Open 30 Days Setting</fullName>
+        <actions>
+            <name>Case_Is_Still_Open_30_Days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Urgent</fullName>
+        <actions>
+            <name>Case_Urgent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>contains</operation>
+            <value>@automationdirect.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>notEqual</operation>
+            <value>store@automationdirect.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>pwright2@hubbell.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>wiegmannreturns@hubbell.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>twetzel@robroy.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>csr@robroy.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>cayres@robroy.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>eburgess@hammfg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>rmiller@hammfg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>keisha.mynatt@saginawcontrol.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>lc@saginawcontrol.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>lenoircity@saginawcontrol.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>equals</operation>
+            <value>sdaily@hubbell.com</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Delete Unassigned Emails after 7 days</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Unconfirmed Emails</value>
+        </criteriaItems>
+        <description>If Sender has not responded to Auto-Response email after 7 days, the related Case is deleted.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Set_Delete_Case_field_to_TRUE</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.CreatedDate</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Notify ADC Owner when status is Call Back</fullName>
+        <actions>
+            <name>Notify_ADC_Case_Onwer_that_Case_Status_is_Call_Back</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Notify Case Owner when case status is Call Back.</description>
+        <formula>AND( OR( RecordType.Name = &quot;General Case&quot;, RecordType.Name = &quot;Email and Web&quot; ), OwnerId &lt;&gt; $User.Id,   NOT(ISPICKVAL(Status, &quot;Closed&quot;)),  ISPICKVAL( Status, &#39;Callback&#39;)   )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Launch Team Case Status is not actively being worked</fullName>
+        <active>true</active>
+        <description>Notify Launch Team Members that Case is not being worked</description>
+        <formula>AND(RecordType.DeveloperName = &#39;Product_Launch_Testing&#39;, NOT(ISPICKVAL(Status,&#39;Ready to Launch&#39;)),  NOT(ISPICKVAL(Status,&#39;Ready for CSI&#39;)), NOT(ISPICKVAL(Status,&#39;Duplicate&#39;)))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_Launch_Team_Case_Owner_when_Case_is_not_being_worked</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.LastModifiedDate</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Populate Last Modified Date for Flow on BE Case update</fullName>
+        <actions>
+            <name>Populate_Last_Modified_Date_for_Flow</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow populate Last Modified Date for Flow on BE Case update if Case Owner is not the current user and is Backline Escalation Case.</description>
+        <formula>AND(      CONTAINS(RecordType.Name ,&quot;Backline&quot;),      ISCHANGED(LastModifiedDate),      OwnerId&lt;&gt;$User.Id,   NOT(ISPICKVAL(Status,&quot;Submit&quot;)),   NOT(ISPICKVAL(Status,&quot;Submitted&quot;)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Product Search</fullName>
+        <actions>
+            <name>Populate_Product_Search</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update the product search field with current</description>
+        <formula>Or(ISCHANGED(Product__c),ISNEW() )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

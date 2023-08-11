@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- CSI Faceted Search Data Analyst --></label>
+        <name>CSI_Faceted_Search_Data_Analyst__c</name>
+        <relationshipLabel><!-- Launches (CSI Faceted Search Data Analyst) --></relationshipLabel>
+    </CustomFieldTranslation>

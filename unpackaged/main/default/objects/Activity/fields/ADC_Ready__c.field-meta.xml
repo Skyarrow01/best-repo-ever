@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADC_Ready__c</fullName>
+    <externalId>false</externalId>
+    <formula>inspire1__Inspire_Task__r.ADC_Ready__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ADC Ready</label>
+    <type>Checkbox</type>
+</CustomField>

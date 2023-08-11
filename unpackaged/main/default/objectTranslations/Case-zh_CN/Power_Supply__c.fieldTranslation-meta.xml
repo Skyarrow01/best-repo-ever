@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Power Supply --></label>
+        <name>Power_Supply__c</name>
+        <picklistValues>
+            <masterLabel>Dedicated 24 VDC</masterLabel>
+            <translation><!-- Dedicated 24 VDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EA-AC</masterLabel>
+            <translation><!-- EA-AC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shared 24 VDC</masterLabel>
+            <translation><!-- Shared 24 VDC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

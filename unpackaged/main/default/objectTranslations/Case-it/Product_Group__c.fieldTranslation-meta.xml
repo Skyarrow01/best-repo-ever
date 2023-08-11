@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+        <picklistValues>
+            <masterLabel>Advanced Soft Starters</masterLabel>
+            <translation><!-- Advanced Soft Starters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arduino</masterLabel>
+            <translation><!-- Arduino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRX HSIO</masterLabel>
+            <translation><!-- BRX HSIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRX PID</masterLabel>
+            <translation><!-- BRX PID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bar Code/Vision</masterLabel>
+            <translation><!-- Bar Code/Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic Contactors/Starters</masterLabel>
+            <translation><!-- Basic Contactors/Starters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Built in HSIO/05/06/CTRINT</masterLabel>
+            <translation><!-- Built in HSIO/05/06/CTRINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-More</masterLabel>
+            <translation><!-- C-More --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-More Micro</masterLabel>
+            <translation><!-- C-More Micro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Circuit Breakers</masterLabel>
+            <translation><!-- Circuit Breakers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click HSIO</masterLabel>
+            <translation><!-- Click HSIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click PID</masterLabel>
+            <translation><!-- Click PID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click PLC Hardware</masterLabel>
+            <translation><!-- Click PLC Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click Programming</masterLabel>
+            <translation><!-- Click Programming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connection Systems</masterLabel>
+            <translation><!-- Connection Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter Timer Tachometer</masterLabel>
+            <translation><!-- Counter Timer Tachometer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Products</masterLabel>
+            <translation><!-- Custom Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D3/D4 counters</masterLabel>
+            <translation><!-- D3/D4 counters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC Drives</masterLabel>
+            <translation><!-- DC Drives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDE/OPC</masterLabel>
+            <translation><!-- DDE/OPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL PID</masterLabel>
+            <translation><!-- DL PID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL PLC Hardware</masterLabel>
+            <translation><!-- DL PLC Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL/CTRIO</masterLabel>
+            <translation><!-- DL/CTRIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DV-1000</masterLabel>
+            <translation><!-- DV-1000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Touch Panels</masterLabel>
+            <translation><!-- Direct Touch Panels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DirectSoft</masterLabel>
+            <translation><!-- DirectSoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do-More</masterLabel>
+            <translation><!-- Do-More --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do-More HSIO</masterLabel>
+            <translation><!-- Do-More HSIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do-More PID</masterLabel>
+            <translation><!-- Do-More PID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do-More Software</masterLabel>
+            <translation><!-- Do-More Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drives</masterLabel>
+            <translation><!-- Drives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECT Promis-e</masterLabel>
+            <translation><!-- ECT Promis-e --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERM Remote IO</masterLabel>
+            <translation><!-- ERM Remote IO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EZText Panels</masterLabel>
+            <translation><!-- EZText Panels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EZTouch Panels</masterLabel>
+            <translation><!-- EZTouch Panels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enclosures</masterLabel>
+            <translation><!-- Enclosures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encoders</masterLabel>
+            <translation><!-- Encoders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entivity/TND</masterLabel>
+            <translation><!-- Entivity/TND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethernet Communications</masterLabel>
+            <translation><!-- Ethernet Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow Meters</masterLabel>
+            <translation><!-- Flow Meters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuses/Accessories</masterLabel>
+            <translation><!-- Fuses/Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GS1/2/3 Drives</masterLabel>
+            <translation><!-- GS1/2/3 Drives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GS20 Drives</masterLabel>
+            <translation><!-- GS20 Drives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GS4 Drives</masterLabel>
+            <translation><!-- GS4 Drives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial PCs</masterLabel>
+            <translation><!-- Industrial PCs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interworx</masterLabel>
+            <translation><!-- Interworx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LookoutDirect</masterLabel>
+            <translation><!-- LookoutDirect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanical Transmissions</masterLabel>
+            <translation><!-- Mechanical Transmissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motors</masterLabel>
+            <translation><!-- Motors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odd/OldComm</masterLabel>
+            <translation><!-- Odd/OldComm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimate Panels</masterLabel>
+            <translation><!-- Optimate Panels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Communications</masterLabel>
+            <translation><!-- Other Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAC Hardware</masterLabel>
+            <translation><!-- PAC Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAC Programming</masterLabel>
+            <translation><!-- PAC Programming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POV</masterLabel>
+            <translation><!-- POV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PX PID</masterLabel>
+            <translation><!-- PX PID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PX-HSIO</masterLabel>
+            <translation><!-- PX-HSIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panel Meters</masterLabel>
+            <translation><!-- Panel Meters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatics</masterLabel>
+            <translation><!-- Pneumatics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Accessories</masterLabel>
+            <translation><!-- Power Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presales</masterLabel>
+            <translation><!-- Presales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Control</masterLabel>
+            <translation><!-- Process Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prosense Loop Controllers</masterLabel>
+            <translation><!-- Prosense Loop Controllers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProtosX</masterLabel>
+            <translation><!-- ProtosX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Controllers</masterLabel>
+            <translation><!-- Safety Controllers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Equipment</masterLabel>
+            <translation><!-- Safety Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sensors/Switches</masterLabel>
+            <translation><!-- Sensors/Switches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serial Communications</masterLabel>
+            <translation><!-- Serial Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serial Remote I/O</masterLabel>
+            <translation><!-- Serial Remote I/O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servo Motion</masterLabel>
+            <translation><!-- Servo Motion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signal Conditioners</masterLabel>
+            <translation><!-- Signal Conditioners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft Starters</masterLabel>
+            <translation><!-- Soft Starters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solo Loop Controllers</masterLabel>
+            <translation><!-- Solo Loop Controllers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Modules</masterLabel>
+            <translation><!-- Specialty Modules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepper Motion</masterLabel>
+            <translation><!-- Stepper Motion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stride IO</masterLabel>
+            <translation><!-- Stride IO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminator I/O</masterLabel>
+            <translation><!-- Terminator I/O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thermal Management</masterLabel>
+            <translation><!-- Thermal Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timers/Relays</masterLabel>
+            <translation><!-- Timers/Relays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tools</masterLabel>
+            <translation><!-- Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPN Routers</masterLabel>
+            <translation><!-- VPN Routers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viewmarq</masterLabel>
+            <translation><!-- Viewmarq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEG Drives</masterLabel>
+            <translation><!-- WEG Drives --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<apex:page contentType="text/plain">
+User-agent: *
+
+Disallow: /s/profile/
+Disallow: /s/additionalinformation/
+Disallow: /s/community-moderator/
+Disallow: /s/article/
+Disallow: /s/relatedlist/
+Disallow: /s/mysettings/
+
+Sitemap: https://community.automationdirect.com/s/sitemap.xml
+</apex:page>

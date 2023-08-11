@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Status_to_Ready_to_Retest</fullName>
+    <active>true</active>
+    <description>Only the CSI/Ecommerce user on Launch should change status to Ready to Re-Test</description>
+    <errorConditionFormula>AND(  
+RecordType.DeveloperName = &#39;Product_Launch_Testing&#39;,
+Launch__r.CSI_eCommerce_Content_Coordinator__r.Id &lt;&gt; $User.Id,
+$Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+NOT($Permission.Manage_Product_Launch),
+ ISCHANGED(Status),
+ ISPICKVAL(Status, &#39;Ready to Re-Test&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Only the Launch CSI/eCommerce Content Coordinator can update the status to &#39;Ready for Re-Test&#39;. Please select another status.</errorMessage>
+</ValidationRule>

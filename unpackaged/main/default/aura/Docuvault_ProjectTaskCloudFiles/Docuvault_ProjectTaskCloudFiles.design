@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="enableRenameFile" label="Enable Rename File" description="Enable Rename File" />
+    <design:attribute name="enablePasswordLink" label="Enable Password protected File" description="Enable Password protected File" />
+</design:component>

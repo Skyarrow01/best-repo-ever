@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users with this permission set will have the ability to switch Sending to Esker on and off</description>
+    <isLicensed>false</isLicensed>
+    <label>Manage Switch Send to Esker</label>
+</CustomPermission>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_variable_ADCLastUserUpdateDateTimeInspirePlanner</name>
+        <label>Assign variable ADCLastUserUpdateDateTimeInspirePlanner</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>ADCLastUserUpdateDateTimeInspirePlanner</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.inspire1__Last_User_Update__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ADCLastUserUpdateDateTimeInspirePlanner</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>, </stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ADCLastUserUpdateDateTimeInspirePlanner</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.inspire1__Last_User_Update_Time__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_ADC_Project_Admin_Updated</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Current_User_Project_Admin</name>
+        <label>Is Current User Project Admin?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ProjectAdmin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Project_Admins</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_variable_ADCLastUserUpdateDateTimeInspirePlanner</targetReference>
+            </connector>
+            <label>ProjectAdmin?</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>ADCLastUserUpdateDateTime</name>
+        <dataType>DateTime</dataType>
+        <expression>{!$Record.inspire1__Last_User_Update_Time__c}</expression>
+    </formulas>
+    <formulas>
+        <name>ADCLastUserUpdateTime</name>
+        <dataType>String</dataType>
+        <expression>IF(OR(
+VALUE(MID(TEXT({!$Record.inspire1__Last_User_Update_Time__c}- 5/24), 12, 2)) = 0,
+VALUE(MID(TEXT({!$Record.inspire1__Last_User_Update_Time__c}- 5/24), 12, 2)) = 12
+),
+&quot;12&quot;,
+TEXT(VALUE(MID(TEXT({!$Record.inspire1__Last_User_Update_Time__c}- 5/24), 12, 2)) - IF(VALUE(MID( TEXT({!$Record.inspire1__Last_User_Update_Time__c}- 5/24), 12, 2 )) &lt; 12, 0, 12))
+) &amp;
+&quot;:&quot; &amp;
+MID(TEXT({!$Record.inspire1__Last_User_Update_Time__c}), 15, 2) &amp;
+&quot;:&quot; &amp;
+MID(TEXT({!$Record.inspire1__Last_User_Update_Time__c}), 18, 2) &amp;
+&quot; &quot; &amp;
+IF(VALUE(MID(TEXT({!$Record.inspire1__Last_User_Update_Time__c}- 5/24), 12, 2 )) &lt; 12, &quot;AM&quot;, &quot;PM&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>UserFirstLastName</name>
+        <dataType>String</dataType>
+        <expression>{!$User.FirstName} &amp; &quot; &quot; &amp; {!$User.LastName}</expression>
+    </formulas>
+    <formulas>
+        <name>UserName</name>
+        <dataType>String</dataType>
+        <expression>{!$User.FirstName} &amp; &quot; &quot; &amp; {!$User.LastName} &amp; &quot; &quot; &amp; Text(Month(DateValue(Now()))) &amp; &quot;/&quot; &amp; Text(Day(DateValue(Now()))) &amp; &quot;/&quot; &amp; Text(Year(DateValue(Now()))) &amp; &quot; &quot; &amp; {!ADCLastUserUpdateTime}</expression>
+    </formulas>
+    <interviewLabel>Project - Update ADC last Update by Project Admin {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project - Update ADC last Update by Project Admin</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_ADC_Project_Admin_Updated</name>
+        <label>Update ADC Project Admin Updated</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>ADC_Last_Project_Admin_Updated__c</field>
+            <value>
+                <elementReference>ADCLastUserUpdateDateTimeInspirePlanner</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Current_User_Project_Admin</targetReference>
+        </connector>
+        <object>inspire1__Project__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ADCLastUserUpdateDateTimeInspirePlanner</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

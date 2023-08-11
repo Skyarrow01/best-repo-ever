@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "222a88d3-6753-4ce4-a129-8116eecab8d7",
+    "propertyOverrides" : {
+      "activeViewId" : "2764742a-e4c8-4d99-9ade-43ea03525608"
+    },
+    "targetId" : "78e45720-bfc1-42be-9b06-6f6a3349b960",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "FW_SW_Updates_Announcements_Internal_FW_SW_Updates_Announcements_Page",
+  "id" : "6479c7f6-01ed-4eb4-a79a-5ae23ee260c8",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verified_is_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( 
+NOT(CreatedBy.Profile.Name = &quot;Community Profile&quot;), 
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+NOT($Profile.Name = &quot;Integration API&quot;),
+NOT($Permission.Customer_Support_Leads),
+NOT($Permission.Web_Support),
+Not($Permission.Merge_Inactivate_Accounts),
+ Verified__c = FALSE
+
+)</errorConditionFormula>
+    <errorDisplayField>Verified__c</errorDisplayField>
+    <errorMessage>Please verify contact information.</errorMessage>
+</ValidationRule>

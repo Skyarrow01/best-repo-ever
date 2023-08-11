@@ -1,0 +1,32 @@
+<aura:component implements="force:appHostable" controller="agi_EskerSetupController">
+    <aura:attribute name="customSetting" type="EskerSettings__c"/>
+    <aura:attribute name="recordId" type="String"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div> 
+        <lightning:card iconName="standard:account" title="Esker Configuration" >
+           <p class="slds-p-horizontal_small">
+               <lightning:input type="text" label="Name" title="Name" value="{!v.customSetting.Name}" 
+                                                          disabled="true" readOnly="true"/>
+            </p>
+            <br></br>
+           <p class="slds-p-horizontal_small">
+               <lightning:input type="checkbox" label="Integration Active" title="Integration Active" 
+                                value="{!v.customSetting.Global_Enabled__c}" checked="{!v.customSetting.Global_Enabled__c}"
+                                disabled="false" readOnly="false" aura:id="intEnabled" name="intEnabled" />
+            </p>
+           <p class="slds-p-horizontal_small">
+               <lightning:input type="checkbox" label="Automation Enabled" title="Automation Enabled" 
+                                value="{!v.customSetting.Auto_Trigger_Enabled__c}" checked="{!v.customSetting.Auto_Trigger_Enabled__c}"
+                                disabled="false" readOnly="false" aura:id="triggerEnabled" name="triggerEnabled" />
+            </p>
+            <br></br>
+           <p class="slds-p-horizontal_small">
+               <lightning:input type="email" label="Esker Email Address" title="Esker Email Address" 
+                                value="{!v.customSetting.Esker_Notification_Email__c}"
+                                disabled="false" readOnly="false" aura:id="eskerEmail" name="eskerEmail" />
+            </p>
+            
+            <lightning:button class="slds-m-top_small" variant="brand" type="button" name="Update" label="Update" onclick="{!c.update}" />
+        </lightning:card>
+    </div>
+</aura:component>

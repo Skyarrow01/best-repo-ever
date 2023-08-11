@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>5q7MzfTlzc9RrZw6SW9S</issuer>
+    <loginUrl>https://saml-automationdirect.goskope.com/saml2/http-post/sso/5q7MzfTlzc9RrZw6SW9S/5</loginUrl>
+    <name>Netskope</name>
+    <oauthTokenEndpoint>https://automationdirectinc--qa.sandbox.my.salesforce.com/services/oauth2/token?so=00DDQ0000008aII</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P13u000004CeAh</requestSigningCertId>
+    <salesforceLoginUrl>https://automationdirectinc--qa.sandbox.my.salesforce.com?so=00DDQ0000008aII</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>false</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIETzCCAzegAwIBAgIEAXog+zANBgkqhkiG9w0BAQsFADCBxDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkdBMRAwDgYDVQQHEwdDdW1taW5nMRowGAYDVQQKExFBdXRvbWF0aW9uIERpcmVjdDEpMCcGA1UECxMgM2E1NTUzNGMwNWY4ZDFjNGI1NmQxMjdhNDYwZmEzODExKDAmBgNVBAMTH2NhLmF1dG9tYXRpb25kaXJlY3QuZ29za29wZS5jb20xJTAjBgkqhkiG9w0BCQEWFmNlcnRhZG1pbkBuZXRza29wZS5jb20wHhcNMTkwMjIyMjM1MDQ5WhcNMjkwMjE5MjM1MDQ5WjCByTELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkdBMRAwDgYDVQQHEwdDdW1taW5nMRowGAYDVQQKExFBdXRvbWF0aW9uIERpcmVjdDEpMCcGA1UECxMgM2E1NTUzNGMwNWY4ZDFjNGI1NmQxMjdhNDYwZmEzODExLTArBgNVBAMTJHNhbWxpZHAuYXV0b21hdGlvbmRpcmVjdC5nb3Nrb3BlLmNvbTElMCMGCSqGSIb3DQEJARYWY2VydGFkbWluQG5ldHNrb3BlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANWbsr+hpXazJEAzHNtndwOMdnGagmeQdeKRpUR0fQFPC48OoeHCWMgOZ9Xx/ShoMGcrRbqwkWQUByfHJhTcLk28WRA1SBwNTraeThOXx+Ol/lbjiXQMm3HWnHEQYONxyoiKT0uID2sMxsiV2CnFnLNuYEm+4vurtHpNwrZrTD8NNn7mqG4NQvnQvHT835CBnf6b4pfdK/BJ2Bife5lRhJqr7t1MbJNMfuUzDW+n3uai2y7EufsEKj0OZ/xJwo8zlGL2IcPFSMQOPM5nZaIgA5NQ3h7sZUWCAsvNXmhpIgWbQuMYcesSvJ2luq9WI4OCOH90sm03kyHmQ9m4A8otkdsCAwEAAaNCMEAwHQYDVR0OBBYEFHsgMkMHU2ak17C2DdSQjtUGcfecMB8GA1UdIwQYMBaAFOriKzoV/tYoJrnaRhCYHScOgYHoMA0GCSqGSIb3DQEBCwUAA4IBAQC/N6SHZh16Z6JbF4jSotauBGaonRBVBnHTgLEzNGUGyMObs6oXxFWvOHIXDlGBe0N4gBni01h7Vwi0U2nJUY1b7bEHrrh89Yb0fpLo23Kt65X/2BF6pJw/BYIxvEZmcIXYl5V9OQ4e4oetV0lt2CgRMoHPSEh6K9I5u3mku+83DdjXzTA/D9zjoKzRxNC8ycPKywaoBcUTnFXxMqKdwFVes2q89hjJubbbnf7faPMz6H9q++d1pQ8jzFGt6ok3K5Tpoq5003oTws5pTwLsKmvjQhqCnasX7YR8GHBgGvwDITgdu1eJVVDGpov8pcoZDfEhA2J3LKUska9Sg54K0PtQ</validationCert>
+</SamlSsoConfig>

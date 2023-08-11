@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>49.0</apiVersion>
+    <constants>
+        <description>Word INACTIVE Capitalized</description>
+        <name>INACTIVE</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>INACTIVE</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Is Contact Already Inactive?</description>
+        <name>ShipToAddress_already_Inactive</name>
+        <label>ShipToAddress already Inactive?</label>
+        <locationX>325</locationX>
+        <locationY>290</locationY>
+        <defaultConnector>
+            <targetReference>Choose_Inactive_Reason</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>ShipToActive</defaultConnectorLabel>
+        <rules>
+            <name>ShipToAlreadyInactive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_ShipTo_Record.Inactive__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ShipToAddress_Already_Inactive2</targetReference>
+            </connector>
+            <label>ShiptoAlreadyInactive</label>
+        </rules>
+    </decisions>
+    <description>Inactivates the ShipToAddress</description>
+    <dynamicChoiceSets>
+        <description>Inactive Reasons on Contact</description>
+        <name>Inactive_Reason</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Inactive_Reason__c</picklistField>
+        <picklistObject>Contact</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>Ship ToA ddress Inactive Reason Picklist</description>
+        <name>ShipToAddressInactiveReasonPicklist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Inactive_Reason__c</picklistField>
+        <picklistObject>Ship_To_Addresses__c</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>Inactive ShipToAddress {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Inactive ShipToAddress</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get Current ShipTo Record</description>
+        <name>Get_Current_ShipTo_Record</name>
+        <label>Get Current ShipTo Record</label>
+        <locationX>354</locationX>
+        <locationY>54</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ShipToAddress_already_Inactive</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Ship_To_Addresses__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the Contact Inactive Flag to True, Updates User Input Inactive Reason from previous screen, Appends &quot;.INACTIVE&quot; to Contact email addresss</description>
+        <name>Update_ShipToAddress_Inactive_Inactive_Reason</name>
+        <label>Update ShipToAddress Inactive Inactive Reason</label>
+        <locationX>801</locationX>
+        <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Inactive_Reason__c</field>
+            <value>
+                <elementReference>InactiveReason</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactive__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Ship_To_Addresses__c</object>
+    </recordUpdates>
+    <screens>
+        <description>User chooses Inactive Reason</description>
+        <name>Choose_Inactive_Reason</name>
+        <label>Choose Inactive Reason</label>
+        <locationX>569</locationX>
+        <locationY>300</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Update_ShipToAddress_Inactive_Inactive_Reason</targetReference>
+        </connector>
+        <fields>
+            <name>InactiveReason</name>
+            <choiceReferences>ShipToAddressInactiveReasonPicklist</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Inactive Reason</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ShipToAddress_Already_Inactive2</name>
+        <label>ShipTo Address Already Inactive</label>
+        <locationX>327</locationX>
+        <locationY>512</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ShipToInactive</name>
+            <fieldText>&lt;p&gt;Ship-To Address {!Get_Current_ShipTo_Record.Name}/P21 Id:  {!Get_Current_ShipTo_Record.P21_ID__c} is already marked Inactive&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>14</locationX>
+        <locationY>53</locationY>
+        <connector>
+            <targetReference>Get_Current_ShipTo_Record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>All of the Contacts inactive Account Contact Relationship Records</description>
+        <name>AccountContactRelationshipRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>AccountContactRelation</objectType>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

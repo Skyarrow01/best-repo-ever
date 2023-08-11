@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Invoice Batch --></label>
+        <name>Invoice_Batch__c</name>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation><!-- CANADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credits</masterLabel>
+            <translation><!-- Credits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Request Mail</masterLabel>
+            <translation><!-- Customer Request Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DO NOT SEND TO BILLTRUST</masterLabel>
+            <translation><!-- DO NOT SEND TO BILLTRUST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Send Statement</masterLabel>
+            <translation><!-- Do Not Send Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Mail</masterLabel>
+            <translation><!-- E-Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDI</masterLabel>
+            <translation><!-- EDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAX</masterLabel>
+            <translation><!-- FAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed Email</masterLabel>
+            <translation><!-- Failed Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I-Check</masterLabel>
+            <translation><!-- I-Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Invoice Sent</masterLabel>
+            <translation><!-- No Invoice Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAYPAL</masterLabel>
+            <translation><!-- PAYPAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statements</masterLabel>
+            <translation><!-- Statements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dummy</masterLabel>
+            <translation><!-- dummy --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

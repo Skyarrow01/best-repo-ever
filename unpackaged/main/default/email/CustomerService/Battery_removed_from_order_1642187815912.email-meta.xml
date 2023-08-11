@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Before sending to customer, make sure to add the correct battery part number and generic part number.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Battery removed from order shipping to Canada</name>
+    <style>none</style>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

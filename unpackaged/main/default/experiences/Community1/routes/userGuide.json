@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "bc81517a-4e5d-4fb5-aed5-35db6fbead84",
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "configurationTags" : [ ],
+  "id" : "3c41c8e5-9ff3-45aa-abc0-1e165f2d871f",
+  "label" : "User Guide",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-user-guide",
+  "type" : "route",
+  "urlPrefix" : "user-guide"
+}

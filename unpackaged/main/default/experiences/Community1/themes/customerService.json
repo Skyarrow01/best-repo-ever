@@ -1,0 +1,211 @@
+{
+  "activeBrandingSetId" : "c25fd2a4-9a23-4f2c-9e9b-3dddcbe01b54",
+  "customCSS" : ".cBrandingProfile {\n    width:30%!important;\n}\n\n.forceCommunityGlobalNavigation {\n    visibility:visible;\n}\n\n.tileLabel {\n   white-space: normal!important;\n}\n\n.imagePreview {\n    height:250px!Important;\n}\n\n.search-button{\n    background-color: rgb(51, 153, 0)!important;\n}\n\n.content .slds-form.slds-form_stacked .slds-grid.slds-gutters_small.forcePageBlockSectionRow:first-child {\n    display: none;\n}\n\n.cTopLeftCon {\n    display: none;\n}\n\n.cHeaderPanel {\n    z-index:1008;\n}\n.follow-button{\n    test-align:center;\n}\n.button2 {border-radius: 4px;\n  background-color: #2574a9;\n  border: none;\n  color: white;\n  padding: 15px 32px;\n  text-align: right;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 14px;\n  margin: 4px 2px;\n  cursor: pointer;}\n.tc-services-style4 .services-item {padding: 0px 25px 25px;position: relative;text-align: center;background-color: #fff;border: 1px solid rgba(0, 0, 0, 0.05);margin-bottom: 10px;}\n.tc-services-style4 .services-icon {font-size: 42px;display: inline-block;color: #999;text-align: center;margin-bottom: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}\n.tc-services-style4 .services-title {background-color: #2574a9;color: #fff;padding: 15px;font-size: 17px;margin-bottom: 30px;margin-left: -25px;margin-right: -25px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}\n.tc-services-style4 .services-item:hover .services-title {background-color: #222;}\n.tc-services-style4 .services-desc p {font-size: 13px;line-height: 1.4;color: #777;}\n.tc-services-style3 .services-desc a {position: relative;display: inline-block;color: #2574a9;font-size: 13px;line-height: normal;text-decoration: none !important;margin-top: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}\n.tc-services-style3 .services-desc a:hover {color: #222;border-color: #222;}\n.tc-services-style3 .services-item {padding: 0px 25px 25px;position: relative;text-align: center;background-color: #fafafa;border: 1px solid rgba(0, 0, 0, 0.05);margin-bottom: 25px;}\n.tc-services-style3 .services-icon {font-size: 42px;display: inline-block;color: #999;text-align: center;margin-bottom: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}\n.tc-services-style3 .services-title {background-color: #2574a9;color: #fff;padding: 15px;font-size: 17px;margin-bottom: 30px;margin-left: -25px;margin-right: -25px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}\n.tc-services-style3 .services-item:hover .services-title {background-color: #222;}\n.tc-services-style3 .services-desc p {font-size: 13px;line-height: 1.4;color: #777;}\n.tc-services-style3 .services-desc a {position: relative;display: inline-block;color: #2574a9;font-size: 13px;line-height: normal;text-decoration: none !important;margin-top: 15px;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}\n.tc-services-style3 .services-desc a:hover {color: #222;border-color: #222;}",
+  "developerName" : "service",
+  "id" : "ffc46ac4-5d63-49db-b833-e07781cf6751",
+  "label" : "Customer Service",
+  "layouts" : {
+    "Inner" : "e4dd735d-6f26-4358-997b-76938178ab39",
+    "Login" : "d18a2be6-0eb9-4731-9e72-7dbc52765535",
+    "ServiceNotAvailable" : "c6f8de87-ab55-4598-8cac-139fb0e56d3f"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "d18a2be6-0eb9-4731-9e72-7dbc52765535",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "dbd07b6e-820c-4122-b188-3e13ce83f889",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "95eb38d9-10e7-4a3e-9f52-3d64cd61c718",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "3233bf20-4385-4c0b-8dd5-f1dd2466c440",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "IsDefaultHeaderHidden" : false,
+      "IsDefaultNotificationsHidden" : false,
+      "fixedPageWidth" : 1140,
+      "isPageWidthFixed" : true
+    },
+    "componentName" : "siteforce:serviceBody",
+    "id" : "e4dd735d-6f26-4358-997b-76938178ab39",
+    "label" : "Default",
+    "regions" : [ {
+      "id" : "5fec3020-94b4-4f66-91ee-9130f53e98b5",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "contineActionLabel" : "Ask the community",
+          "continueLabel" : "Don’t see it?",
+          "crossObjectTypeaheadApiNames" : [ {
+            "isPublic" : true,
+            "name" : "Knowledge__kav"
+          }, {
+            "isPublic" : true,
+            "name" : "FeedItem"
+          }, {
+            "isPublic" : false,
+            "name" : "Case"
+          }, {
+            "isPublic" : true,
+            "name" : "Topic"
+          }, {
+            "isPublic" : true,
+            "name" : "User"
+          }, {
+            "isPublic" : true,
+            "name" : "Account"
+          } ],
+          "disableCrossObjectRelevance" : false,
+          "enableAutocomplete" : true,
+          "maxNumberOfResults" : 6,
+          "placeholder" : "Search for Questions, Answers & Knowledge Articles",
+          "questionResultsFirst" : false,
+          "showContinueAction" : true,
+          "showDetails" : false,
+          "showTopics" : true,
+          "signInActionLabel" : "Sign in to ask the community"
+        },
+        "componentName" : "forceCommunity:searchBox",
+        "id" : "577f98e5-6aa8-4e5d-9eeb-8cbe47fd69b3",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "70d84737-a7b6-476f-a15a-cb4cfb8a2759",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "LogoutURL" : "/secur/logout.jsp?retUrl=https%3A%2F%2Fqa-adccommunity.cs79.force.com%2Fs%2F"
+        },
+        "componentName" : "c:custom_user_profile",
+        "id" : "f08a9355-a57c-4712-a2c1-36baf79d7790",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "3c2ccf01-7bc3-4d0f-87ed-9f4ba2a79098",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "Default_Navigation",
+          "hideAppLauncher" : true,
+          "hideHomeText" : true
+        },
+        "componentName" : "forceCommunity:globalNavigation",
+        "id" : "934d2f67-c5f3-4c25-8784-50b1acdab9b0",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "98a0ca5f-8430-4c3a-9d48-a726865ee175",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "id" : "aac94406-69d6-4876-a32a-2421c636981f",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "allowPrepopulatePrechatFields" : true,
+          "avatarImgURL" : "",
+          "codeSettingsName" : "",
+          "defaultMinimizedText" : "Chat with an Expert",
+          "displayHelpButton" : true,
+          "eswConfigurationJSON" : {
+            "baseCoreURL" : "https://automationdirectinc--qa.sandbox.my.salesforce.com",
+            "baseLiveAgentContentURL" : "https://c.la1-c1cs-ia7.salesforceliveagent.com/content",
+            "baseLiveAgentURL" : "https://d.la1-c1cs-ia7.salesforceliveagent.com/chat",
+            "buttonId" : "5733u000000lB2S",
+            "deploymentId" : "5723u000000Q13a",
+            "enabledFeatures" : [ "LiveAgent" ],
+            "entryFeature" : "LiveAgent",
+            "eswConfigDevName" : "Chat",
+            "eswConfigId" : "04I3u0000004F14EAE",
+            "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I3u0000004F14EAE_184cdcf0bb1",
+            "gslbBaseURL" : "https://service.force.com",
+            "isOfflineCasesEnabled" : "0",
+            "orgId" : "00DDQ0000008aII"
+          },
+          "externalScripts" : "",
+          "externalStyles" : "",
+          "fallbackRouting" : "",
+          "offlineSupportMinimizedText" : "Contact Us",
+          "offlineText" : "Agent Offline",
+          "onlineLoadingText" : "Loading",
+          "prechatBackgroundImgURL" : "",
+          "smallCompanyLogoImgURL" : "",
+          "snippetSettingsFile" : "",
+          "storageDomain" : "",
+          "waitingStateBackgroundImgURL" : ""
+        },
+        "componentName" : "forceCommunity:embeddedService",
+        "id" : "43321995-7f89-4bf2-b767-ce9f2c63e000",
+        "renditionMap" : { },
+        "type" : "component"
+      }, {
+        "componentAttributes" : {
+          "AboutUsLink" : "https://about.automationdirect.com/",
+          "ContactLink" : "https://www.automationdirect.com/adc/contactus/contactus",
+          "FacebookLink" : "https://www.facebook.com/AutomationDirect",
+          "FooterText" : "Copyright © 1999-2022 AutomationDirect. ALL RIGHTS RESERVED",
+          "GuidelineLink" : "/community-guidelines",
+          "IntegratorLink" : "https://www.automationdirect.com/adc/form/admin/si?mode=integrators",
+          "LinkedInLink" : "https://www.linkedin.com/company/automationdirect",
+          "LogoLink" : "https://www.automationdirect.com/adc/home/home",
+          "NewsLetterLink" : "https://library.automationdirect.com/automationdirect-newsletter/",
+          "PriceLink" : "https://www.automationdirect.com/adc/pricelist/catalogrequest",
+          "ReviewsLink" : "https://www.automationdirect.com/adc/form/user/companyreview",
+          "RewardsLink" : "https://www.automationdirect.com/content/adcpress#news",
+          "TwitterLink" : "http://twitter.com/AutomationDirec",
+          "VARSLink" : "https://www.automationdirect.com/adc/international/international",
+          "YoutubeLink" : "http://www.youtube.com/AutomationDirect"
+        },
+        "componentName" : "c:m360bolt_Footer",
+        "id" : "d5b4f0d8-3c8b-4192-9664-c1698544d098",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "d0f4a9ce-7438-40c1-9a82-f686db43438d",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "c6f8de87-ab55-4598-8cac-139fb0e56d3f",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "cae80731-2604-42cd-a2fb-0d6102c436a0",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "10d4eb4f-40e2-4301-886e-81d88e642505",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

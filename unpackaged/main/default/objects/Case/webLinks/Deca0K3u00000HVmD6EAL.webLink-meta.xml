@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deca0K3u00000HVmD6EAL</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Vendor Credit Check FAX</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &#39;/s&#39;,&#39;/apex/dfsle__sending&#39;, $Site.Prefix +&#39;/apex/dfsle__sending&#39;), null, [sId = Case.Id, sendingExperience = &#39;null&#39;, isEmbedded = false, templateId = &#39;a0K3u00000HVmD6EAL&#39;, recordId = Case.Id, title = &#39;Vendor Credit Check FAX&#39;])}</url>
+</WebLink>

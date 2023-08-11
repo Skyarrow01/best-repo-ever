@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Define_Error_Issue__c</fullName>
+    <externalId>false</externalId>
+    <label>Define Error/Issue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brochure</fullName>
+                <default>false</default>
+                <label>Brochure</label>
+            </value>
+            <value>
+                <fullName>COO</fullName>
+                <default>false</default>
+                <label>COO</label>
+            </value>
+            <value>
+                <fullName>Description</fullName>
+                <default>false</default>
+                <label>Description</label>
+            </value>
+            <value>
+                <fullName>Drawing</fullName>
+                <default>false</default>
+                <label>Drawing</label>
+            </value>
+            <value>
+                <fullName>Facets</fullName>
+                <default>false</default>
+                <label>Facets</label>
+            </value>
+            <value>
+                <fullName>FAQ</fullName>
+                <default>false</default>
+                <label>FAQ</label>
+            </value>
+            <value>
+                <fullName>Harmonization Code</fullName>
+                <default>false</default>
+                <label>Harmonization Code</label>
+            </value>
+            <value>
+                <fullName>Image(s)</fullName>
+                <default>false</default>
+                <label>Image(s)</label>
+            </value>
+            <value>
+                <fullName>In Depth</fullName>
+                <default>false</default>
+                <label>In Depth</label>
+            </value>
+            <value>
+                <fullName>Insert</fullName>
+                <default>false</default>
+                <label>Insert</label>
+            </value>
+            <value>
+                <fullName>Made in USA</fullName>
+                <default>false</default>
+                <label>Made in USA</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <label>Manual</label>
+            </value>
+            <value>
+                <fullName>Media Gallery</fullName>
+                <default>false</default>
+                <label>Media Gallery</label>
+            </value>
+            <value>
+                <fullName>Note</fullName>
+                <default>false</default>
+                <label>Note</label>
+            </value>
+            <value>
+                <fullName>Overview</fullName>
+                <default>false</default>
+                <label>Overview</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Recommended Item(s)</fullName>
+                <default>false</default>
+                <label>Recommended Item(s)</label>
+            </value>
+            <value>
+                <fullName>Shipping Weight</fullName>
+                <default>false</default>
+                <label>Shipping Weight</label>
+            </value>
+            <value>
+                <fullName>Spec</fullName>
+                <default>false</default>
+                <label>Spec</label>
+            </value>
+            <value>
+                <fullName>Spec Table</fullName>
+                <default>false</default>
+                <label>Spec Table</label>
+            </value>
+            <value>
+                <fullName>WITB</fullName>
+                <default>false</default>
+                <label>WITB</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

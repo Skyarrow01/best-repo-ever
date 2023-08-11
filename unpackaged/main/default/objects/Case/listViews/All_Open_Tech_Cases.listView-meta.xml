@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Tech_Cases</fullName>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Short_Description__c</columns>
+    <columns>Product__c</columns>
+    <columns>Tech_Product_Group__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>Unconfirmed Emails</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Backline_Escalation_Agency_Approval,Case.Backline_Escalation_Drives_Motion,Case.Backline_Escalation_HMI,Case.Backline_Escalation_PLC,Case.Backline_Escalation_Standard,Case.Email,Case.Case_Record_Type</value>
+    </filters>
+    <label>All Open Tech Cases</label>
+</ListView>

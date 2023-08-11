@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Email_Dont_Create</fullName>
+    <active>true</active>
+    <description>Contacts who use the same systematic email address for multiple different companies:</description>
+    <errorConditionFormula>And(
+OR(
+Email = &quot;mailman@macmms.com&quot;,
+Email = &quot;do_not_reply@daikin.coupahost.com&quot;,
+Email = &quot;system@sent-via.netsuite.com&quot;,
+Email = &quot;do_not_reply@vailresorts.coupahost.com&quot;,
+Email = &quot;no-reply@emaintx3.net&quot;,
+Email = &quot;mailman@macmms.com&quot;,
+Email = &quot;quickbooks@notification.intuit.com&quot;,
+Email = &quot;outbox@mg.sosinventory.com&quot;,
+Email = &quot;support@sciquest.com&quot;,
+Email = &quot;message-service@sender.zohobooks.com&quot;,
+Email = &quot;reports@mvpplant.com&quot;,
+Email = &quot;portal@taulia.com&quot;,
+Email = &quot;somax_hosted@somax.com&quot;,
+Email = &quot;wfprod@telamon.com&quot;,
+Email = &quot;ae-noreply@smtp.dudesolutions.com&quot;,
+Email = &quot;cmms@dxpe.com&quot;,
+Email = &quot;support@gep.com&quot;,
+Email = &quot;no-reply@ordertime.com&quot;),
+$Profile.Name != &quot;System Administrator&quot;,
+$Profile.Name != &quot;Integration API&quot;)</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>Cannot Use This Email For Contact. Systematic email address for multiple different companies.</errorMessage>
+</ValidationRule>

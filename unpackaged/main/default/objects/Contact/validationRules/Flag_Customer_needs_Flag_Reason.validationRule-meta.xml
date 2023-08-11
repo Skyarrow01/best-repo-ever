@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flag_Customer_needs_Flag_Reason</fullName>
+    <active>true</active>
+    <description>If Flag Customer is checked, a Flag Reason should be selected.</description>
+    <errorConditionFormula>AND( Flag_Customer__c = TRUE, ISPICKVAL( Flag_Reason__c , &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Flag_Reason__c</errorDisplayField>
+    <errorMessage>If Flag Customer is checked, please select a Flag Reason.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HMI &amp; CLICK Silo</fullName>
+        <default>false</default>
+        <label>HMI &amp; CLICK Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>HMI &amp; Click Silo  &amp; TAG</fullName>
+        <default>false</default>
+        <label>HMI &amp; Click Silo  &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Drives &amp; Motors Silo</fullName>
+        <default>false</default>
+        <label>Drives &amp; Motors Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Drives &amp; Motors Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Drives &amp; Motors Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Motion Control Silo</fullName>
+        <default>false</default>
+        <label>Motion Control Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Motion Control SIlo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Motion Control SIlo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Process Instrumentation Silo</fullName>
+        <default>false</default>
+        <label>Process Instrumentation Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Process Instrumentation Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Process Instrumentation Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Cable, Wire &amp; Tools Silo</fullName>
+        <default>false</default>
+        <label>Cable, Wire &amp; Tools Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Cable, Wire &amp; Tools Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Cable, Wire &amp; Tools Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Control &amp; Signaling Silo</fullName>
+        <default>false</default>
+        <label>Control &amp; Signaling Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Control &amp; Signaling Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Control &amp; Signaling Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Wiring Solutions Silo</fullName>
+        <default>false</default>
+        <label>Wiring Solutions Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Wiring Solutions Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Wiring Solutions Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Power &amp; Circuit Protection Silo</fullName>
+        <default>false</default>
+        <label>Power &amp; Circuit Protection Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Power &amp; Circuit Protection Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Power &amp; Circuit Protection Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Sensors &amp; Power Supplies Silo</fullName>
+        <default>false</default>
+        <label>Sensors &amp; Power Supplies Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Sensors &amp; Power Supplies Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Sensors &amp; Power Supplies Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety &amp; Identification Silo</fullName>
+        <default>false</default>
+        <label>Safety &amp; Identification Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety &amp; Identification Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Safety &amp; Identification Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Fluid Power Silo</fullName>
+        <default>false</default>
+        <label>Fluid Power Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Fluid Power Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Fluid Power Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Mechanical Products Silo</fullName>
+        <default>false</default>
+        <label>Mechanical Products Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Mechanical Products Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Mechanical Products Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Enclosures Silo</fullName>
+        <default>false</default>
+        <label>Enclosures Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Enclosures &amp; Tools Silo  &amp; TAG</fullName>
+        <default>false</default>
+        <label>Enclosures &amp; Tools Silo  &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Productivity Silo</fullName>
+        <default>false</default>
+        <label>Productivity Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Productivity Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Productivity Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Do-more/DL &amp; Networking Silo</fullName>
+        <default>false</default>
+        <label>Do-more/DL &amp; Networking Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Do-more/DL &amp; Networking Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Do-more/DL &amp; Networking Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Wire, Cable &amp; Tools Silo</fullName>
+        <default>false</default>
+        <label>Wire, Cable &amp; Tools Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Wire, Cable &amp; Tools Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>Wire, Cable &amp; Tools Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>LS PLC Silo</fullName>
+        <default>false</default>
+        <label>LS PLC Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>LS PLC Silo &amp; TAG</fullName>
+        <default>false</default>
+        <label>LS PLC Silo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>PLC SIlo &amp; TAG</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PLC SIlo &amp; TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Automation Controls Silo &amp;TAG</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Automation Controls Silo &amp;TAG</label>
+    </customValue>
+    <customValue>
+        <fullName>PLC Silo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PLC Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Automation Controls &amp; Connectivity Silo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Automation Controls &amp; Connectivity Silo</label>
+    </customValue>
+    <customValue>
+        <fullName>Enclosures &amp; Tools  Silo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Enclosures &amp; Tools  Silo</label>
+    </customValue>
+    <masterLabel>Silo</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

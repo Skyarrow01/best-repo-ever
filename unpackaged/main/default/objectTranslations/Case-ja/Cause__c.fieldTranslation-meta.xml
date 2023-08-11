@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Cause --></label>
+        <name>Cause__c</name>
+        <picklistValues>
+            <masterLabel>Agency Approvals</masterLabel>
+            <translation><!-- Agency Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Help</masterLabel>
+            <translation><!-- Application Help --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Traffic</masterLabel>
+            <translation><!-- Bad Traffic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bezel Problem</masterLabel>
+            <translation><!-- Bezel Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bug</masterLabel>
+            <translation><!-- Bug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAD Drawings</masterLabel>
+            <translation><!-- CAD Drawings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catastrophic Failure</masterLabel>
+            <translation><!-- Catastrophic Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications Failure</masterLabel>
+            <translation><!-- Communications Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrast Problem</masterLabel>
+            <translation><!-- Contrast Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Caused</masterLabel>
+            <translation><!-- Customer Caused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Recommendation</masterLabel>
+            <translation><!-- Customer Recommendation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defective Product</masterLabel>
+            <translation><!-- Defective Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display Problem</masterLabel>
+            <translation><!-- Display Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation sufficient to prevent call</masterLabel>
+            <translation><!-- Documentation sufficient to prevent call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firmware Problem</masterLabel>
+            <translation><!-- Firmware Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ground Fault</masterLabel>
+            <translation><!-- Ground Fault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware Upgrade</masterLabel>
+            <translation><!-- Hardware Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Documentation</masterLabel>
+            <translation><!-- Incorrect Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Instructions</masterLabel>
+            <translation><!-- Installation Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Made Recommendation</masterLabel>
+            <translation><!-- Made Recommendation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Output Power</masterLabel>
+            <translation><!-- No Output Power --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response from Customer</masterLabel>
+            <translation><!-- No Response from Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Speed Control</masterLabel>
+            <translation><!-- No Speed Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old Hardware</masterLabel>
+            <translation><!-- Old Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old Software Version</masterLabel>
+            <translation><!-- Old Software Version --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out Of Warranty Failure</masterLabel>
+            <translation><!-- Out Of Warranty Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password Removal</masterLabel>
+            <translation><!-- Password Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presales</masterLabel>
+            <translation><!-- Presales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presales - Application</masterLabel>
+            <translation><!-- Presales - Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presales - Insufficient data for selection</masterLabel>
+            <translation><!-- Presales - Insufficient data for selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presales - Out of Stock</masterLabel>
+            <translation><!-- Presales - Out of Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem Is 3rd Party Device</masterLabel>
+            <translation><!-- Problem Is 3rd Party Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem Is Customer&#39;s PC</masterLabel>
+            <translation><!-- Problem Is Customer&apos;s PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Specifications</masterLabel>
+            <translation><!-- Product Specifications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programming Help - Parameters</masterLabel>
+            <translation><!-- Programming Help - Parameters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programming Help - code</masterLabel>
+            <translation><!-- Programming Help - code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMA Approved</masterLabel>
+            <translation><!-- RMA Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMA Denied</masterLabel>
+            <translation><!-- RMA Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent To Federation Partner</masterLabel>
+            <translation><!-- Sent To Federation Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Connection</masterLabel>
+            <translation><!-- Software Connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Installation Issue</masterLabel>
+            <translation><!-- Software Installation Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Problem</masterLabel>
+            <translation><!-- Software Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Registration Issue</masterLabel>
+            <translation><!-- Software Registration Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touchcells/Touchscreen Not Working</masterLabel>
+            <translation><!-- Touchcells/Touchscreen Not Working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting Help</masterLabel>
+            <translation><!-- Troubleshooting Help --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting – Ethernet Comm</masterLabel>
+            <translation><!-- Troubleshooting – Ethernet Comm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting – Serial Comm</masterLabel>
+            <translation><!-- Troubleshooting – Serial Comm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable To Clear Fault</masterLabel>
+            <translation><!-- Unable To Clear Fault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Determine</masterLabel>
+            <translation><!-- Unable to Determine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Questions</masterLabel>
+            <translation><!-- Video Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web (Tech)</masterLabel>
+            <translation><!-- Web (Tech) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wiring</masterLabel>
+            <translation><!-- Wiring --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

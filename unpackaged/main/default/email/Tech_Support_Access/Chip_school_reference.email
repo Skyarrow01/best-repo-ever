@@ -1,0 +1,9 @@
+Please contact 
+Case# {!Case.Id}
+Company {!Case.Account} 
+Contact {!Case.Contact} 
+phone {!Contact.Phone} 
+mobile {!Contact.MobilePhone} 
+email {!Contact.Email} 
+
+{!Case.Email_Thread}

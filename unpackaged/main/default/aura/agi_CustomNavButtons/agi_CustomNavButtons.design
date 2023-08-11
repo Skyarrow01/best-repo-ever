@@ -1,0 +1,6 @@
+<design:component label="Custom Nav Button">
+    <design:attribute name="Button1Text" label="Button 1 Text" description="Enter text you would like to have as the button text." />
+    <design:attribute name="Button1URL" description="URL path you wish to link button to." />
+    <design:attribute name="Button2Text" label="Button 2 Text" description="Enter text you would like to have as the button text." />
+    <design:attribute name="Button2URL" description="URL path you wish to link button to." />
+</design:component>

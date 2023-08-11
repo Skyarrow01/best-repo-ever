@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute name="oProduct" type="Product2" />
+    <!--Register the component level event-->
+    <aura:registerEvent name="oSelectedProductEvent" type="c:selectedProductEvent"/>
+    
+    <li class="slds-listbox__item slds-p-around_x-small lookup_result_item l_lookupCustomLookupResult l_lookupCustomLookupResultWrapper" role="presentation" data-aura-class="l_lookupCustomLookupResult l_lookupCustomLookupResultWrapper">
+        <span class="slds-lookup__item-action slds-media slds-media--center" id="lookup-option-350" role="option" onclick="{!c.selectProduct}">
+            <span class="slds-media__figure" style="padding-top: 0;">
+                <lightning:icon iconName="standard:product" size="xx-small"/>                   
+
+            </span>
+            <span class="slds-media__body">
+                <span class="slds-listbox__option-text slds-listbox__option-text_entity" style="color: #18345e;">
+                    {!v.oProduct.Name}
+                </span>
+            </span>
+        </span>
+    </li>
+</aura:component>

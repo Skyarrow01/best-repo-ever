@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <auraComponent>agi_EskerConfiguration</auraComponent>
+    <description>Esker Setup. Allows users with Manage Switch Send to Esker Permission Set to start and Stop Esker. Also, ability to change Esker Email.</description>
+    <label>Esker Setup</label>
+    <motif>Custom95: Stopwatch</motif>
+</CustomTab>

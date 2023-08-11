@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IncomingPhone_should_have_numbers_only</fullName>
+    <active>true</active>
+    <description>The phone fields should contain numbers only.  Preventing users from copying pasting email address into phone</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(  Incoming_Phone__c )), NOT(ISNUMBER(Incoming_Phone__c )),
+NOT($Profile.Name = &quot;System Administrator&quot;))</errorConditionFormula>
+    <errorDisplayField>Incoming_Phone__c</errorDisplayField>
+    <errorMessage>Please enter numbers only for phone.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div>
+        <c:agi_custom_my_settings_password_sync aura:id="password" /><br></br>
+    </div>
+    <div>
+        <c:agi_custom_my_settings_location_data aura:id="location" /><br></br>
+    </div>
+    <div>
+        <c:agi_custom_my_settings_profile_vis aura:id="vis" /><br></br>
+    </div>
+    <div>
+        <c:agi_custom_my_settings_email_notif aura:id="notif" /><br></br>
+    </div>
+    <br></br>
+    <div class="slds-align_absolute-center">
+    	<lightning:button variant="brand" label="Save Changes" title="Save All Changes Button" onclick="{! c.saveChanges}" />
+	</div>
+    <br></br>
+</aura:component>

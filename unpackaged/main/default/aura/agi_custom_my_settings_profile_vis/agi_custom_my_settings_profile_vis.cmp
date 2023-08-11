@@ -1,0 +1,28 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="AGI_Custom_MySettings">
+<aura:attribute name="photoSettings" type="Map"/>
+    <aura:method name="saveVis" action="{!c.save}" access="PUBLIC" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div class="slds-text-heading_medium slds-border_bottom">
+    Profile Avatar
+    </div>
+    <br></br>
+
+
+    <aura:attribute name="Photo" type="List" default="[
+    {'label': 'Members', 'value': 'false'}, 
+    {'label': 'Public', 'value': 'true'}                                                      
+    ]"/>
+   
+    
+    <div class="slds-grid slds-wrap" >
+        <div class="slds-m-top_large">
+        <span class="slds-avatar slds-avatar_circle" >
+            <img src="{!v.photoSettings.imgUrl}" />
+        </span>
+        </div>
+        	<div class="slds-size_1-of-5 slds-m-left_small " >
+    <lightning:combobox name="visSetting" aura:id="visSetting" label="Visibility" value="{!v.photoSettings.flag}" options="{! v.Photo }"/>
+			</div>
+        </div>
+</aura:component>

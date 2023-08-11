@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botMlDomain>
+        <label>Smiley Bot</label>
+        <mlIntents>
+            <developerName>Account_Administration</developerName>
+            <label>Account Administration</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Ask_the_virtual_assistant_a_question</developerName>
+            <label>Ask the virtual assistant a question</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Backorder_Dialog</developerName>
+            <label>Backorder Dialog</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Backorder</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Backorder_Dialog_Without_Order</developerName>
+            <label>Backorder Dialog Without Order</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Certificate_of_Origin</developerName>
+            <label>Certificate of Origin</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Certificate_of_Origin</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Chat_with_a_Live_Rep</developerName>
+            <label>Chat with a Live Rep</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Compliance</developerName>
+            <label>Compliance</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Compliance_Intent</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Conflict_Mineral</developerName>
+            <label>Conflict Mineral</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Conflict_Mineral_Intent</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Confused</developerName>
+            <label>Confused</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Discount</developerName>
+            <label>Discount</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Discount</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>End_Chat</developerName>
+            <label>End Chat</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Error_Handling</developerName>
+            <label>Error Handler</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Help_with_returns</developerName>
+            <label>Help with returns</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Return_an_Item</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Invoice</developerName>
+            <label>Invoice</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Invoice_Information</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <description>This dialog helps a user unlock his account.</description>
+            <developerName>Locked_Account</developerName>
+            <label>Locked Account</label>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>I can&#39;t get into the web</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>I&#39;ve tried to login and can&#39;t</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>I need to get the tech specs for d2-fill</utterance>
+            </mlIntentUtterances>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Locked_Account</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Main_Menu</developerName>
+            <label>Main Menu</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>No_Agent_Available</developerName>
+            <label>No Agent</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Order_Information</developerName>
+            <label>Order Information</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Order_Information</relatedMlIntent>
+            </relatedMlIntents>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Tracking</relatedMlIntent>
+            </relatedMlIntents>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Cancel_Order</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Pay_Invoice</developerName>
+            <label>Pay Invoice</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Quote</developerName>
+            <label>Quote</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Quotes_Information</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Setup_Account</developerName>
+            <label>Setup Account</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Setup_Account</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Technical_Specifications</developerName>
+            <label>Technical Specifications</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Technical_Specifications</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Technical_Support</developerName>
+            <label>Technical Support</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Tech_Support_Intent</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Transfer_To_Agent</developerName>
+            <label>Transfer To Agent</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Transfer_to_Agent</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Update_Quantity_of_Items_Ordered</developerName>
+            <label>Cancel an Order</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Upload_Tax_Exempt_Certificate</developerName>
+            <label>Upload Tax Exempt Certificate</label>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>Upload tax exempt certificate</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>upload tax certificate</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>How can I upload my tax exempt certificate?</utterance>
+            </mlIntentUtterances>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Tax_Exempt_Information</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>View_Invoice</developerName>
+            <label>View Invoice</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>View_Invoice_by_Order_Number</developerName>
+            <label>View Invoice by Order Number</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>View_Invoice_by_PO</developerName>
+            <label>View Invoice by PO</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Warranty_Dialog</developerName>
+            <label>Warranty Dialog</label>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>Warranty Replacement</utterance>
+            </mlIntentUtterances>
+            <relatedMlIntents>
+                <relatedMlIntent>Smiley_Bot_Intents.Warranty_Intent</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Welcome</developerName>
+            <label>Welcome</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Wrap_Up_Dialog</developerName>
+            <label>Wrap Up Dialog</label>
+        </mlIntents>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>customerName</developerName>
+            <extractionType>Value</extractionType>
+            <label>customerName</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>OrderStringNumber</developerName>
+            <extractionRegex>\bO\-\d{8}\b</extractionRegex>
+            <extractionType>Pattern</extractionType>
+            <label>OrderStringNumber</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>sReturnChoice</developerName>
+            <extractionType>Value</extractionType>
+            <label>sReturnChoice</label>
+        </mlSlotClasses>
+        <name>Smiley_Bot</name>
+    </botMlDomain>
+    
+    
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ChatKey</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Text</dataType>
+        <developerName>ChatKey</developerName>
+        <label>Chat Key</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ContactId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>ContactId</developerName>
+        <label>Contact Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.LiveChatVisitorId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>EndUserId</developerName>
+        <label>End User Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.Id</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>RoutableId</developerName>
+        <label>Routable Id</label>
+    </contextVariables>
+    <conversationChannelProviders>
+        <agentRequired>false</agentRequired>
+        <chatButtonName>CX</chatButtonName>
+    </conversationChannelProviders>
+    <description>A bot from scratch.</description>
+    <label>Smiley Bot</label>
+    <logPrivateConversationData>true</logPrivateConversationData>
+    <richContentEnabled>false</richContentEnabled>
+</Bot>

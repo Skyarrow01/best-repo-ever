@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assign Email Cases to Queue</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Email_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(Origin,&quot;Email&quot;),RecordType.DeveloperName = &#39;Email&#39;,   NOT(ISBLANK( Contact.Id )), NOT(CONTAINS( Contact.Email ,&#39;@automationdirect.com&#39;)),  Contact.Email &lt;&gt; &#39;cs_ptc@ptc.com&#39;, NOT(Begins(Subject, &#39;Automatic reply&#39;))
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unconfirmed_Emails</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(   ISPICKVAL(Origin,&quot;Email&quot;),RecordType.DeveloperName = &#39;Email&#39;,  OR(ISBLANK( Contact.Id ),CONTAINS( Contact.Email ,&#39;@automationdirect.com&#39;)), Contact.Email &lt;&gt; &#39;cs_ptc@ptc.com&#39;, NOT(Begins(Subject, &#39;Automatic reply&#39;))
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unconfirmed_Product_Launch</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL(Origin,&quot;Launch&quot;), RecordType.DeveloperName = &#39;Product_Launch_Testing&#39;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unconfirmed_Orders_Inquiries</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL(Origin,&quot;Email&quot;), RecordType.DeveloperName = &#39;Orders_Inquiries&#39;, ISBLANK( Contact.Id ), OR(AND(NOT(CONTAINS(UPPER(Subject),&#39;RFQ&#39;)), NOT(CONTAINS(Subject,&#39;rfq&#39;)),NOT(CONTAINS(UPPER(Subject),&#39;QUOTE&#39;)),NOT(CONTAINS(Subject,&#39;Quote&#39;))), ISBLANK(Subject)) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Orders_Inquiries</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL(Origin,&quot;Email&quot;), RecordType.DeveloperName = &#39;Orders_Inquiries&#39;, NOT(ISBLANK( Contact.Id )), OR(AND(NOT(CONTAINS(UPPER(Subject),&#39;RFQ&#39;)), NOT(CONTAINS(Subject,&#39;rfq&#39;)),NOT(CONTAINS(UPPER(Subject),&#39;QUOTE&#39;)),NOT(CONTAINS(Subject,&#39;Quote&#39;))), ISBLANK(Subject)) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Orders</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL(Origin,&quot;Email&quot;),RecordType.DeveloperName = &#39;Orders&#39;, NOT(ISBLANK( Contact.Id )), OR(AND(NOT(CONTAINS(UPPER(Subject),&#39;RFQ&#39;)), NOT(CONTAINS(Subject,&#39;rfq&#39;)),NOT(CONTAINS(UPPER(Subject),&#39;QUOTE&#39;)),NOT(CONTAINS(Subject,&#39;Quote&#39;))), ISBLANK(Subject)))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unconfirmed_Orders</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL(Origin,&quot;Email&quot;), RecordType.DeveloperName = &#39;Orders&#39;, ISBLANK( Contact.Id ) , OR(AND(NOT(CONTAINS(UPPER(Subject),&#39;RFQ&#39;)), NOT(CONTAINS(Subject,&#39;rfq&#39;)),NOT(CONTAINS(UPPER(Subject),&#39;QUOTE&#39;)),NOT(CONTAINS(Subject,&#39;Quote&#39;))), ISBLANK(Subject)))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Quote</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL(Origin,&quot;Email&quot;), OR(RecordType.DeveloperName = &#39;Orders&#39;, RecordType.DeveloperName = &#39;Quote&#39;,RecordType.DeveloperName = &#39;Orders_Inquiries&#39;), OR(CONTAINS(UPPER(Subject),&#39;RFQ&#39;),CONTAINS(Subject,&#39;rfq&#39;),CONTAINS(UPPER(Subject),&#39;QUOTE&#39;),CONTAINS(Subject,&#39;Quote&#39;)) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>default@adc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

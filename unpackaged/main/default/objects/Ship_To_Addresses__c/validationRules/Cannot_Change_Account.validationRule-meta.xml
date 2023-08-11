@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(Not(IsNew()), ISCHANGED(Account__c),
+Not($Permission.Merge_Inactivate_Accounts))</errorConditionFormula>
+    <errorMessage>Cannot change account on ship-to-address)</errorMessage>
+</ValidationRule>

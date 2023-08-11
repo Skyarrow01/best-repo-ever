@@ -1,0 +1,22 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    
+    <aura:attribute name="FirstButtonName" type="String" default=""/>
+    <aura:attribute name="FirstButtonLink" type="String" default=""/>
+    
+ 
+	<center>
+        <lightning:layout horizontalAlign="space" multipleRows="true">
+            
+            <lightning:layoutItem size="12" smallDeviceSize="12" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                <span data-link="{!v.FirstButtonLink}">
+                	<lightning:button label="{!v.FirstButtonName}" 
+                                  variant="brand"
+                                  class="slds-button button"
+                                  onclick="{!c.handleClick}"/>
+                </span>
+            </lightning:layoutItem>
+           
+       
+        </lightning:layout>
+    </center>
+</aura:component>

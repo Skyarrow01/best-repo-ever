@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Product_Launch_Task</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(Owner:User.Id &lt;&gt; $User.Id,
+$Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+NOT($Permission.Manage_Product_Launch), 
+ISPICKVAL(Type,&quot;Product Launch&quot;), NOT(ISNEW()))</errorConditionFormula>
+    <errorMessage>You cannot change Product Launch Task, please reach out to the Assigned user to update this task.</errorMessage>
+</ValidationRule>

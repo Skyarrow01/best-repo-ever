@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloud_Files__c</fullName>
+    <externalId>false</externalId>
+    <label>Cloud Files</label>
+    <referenceTo>TVA_CFB__Cloud_Files__c</referenceTo>
+    <relationshipLabel>Cloud File Histories</relationshipLabel>
+    <relationshipName>Cloud_File_Histories</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

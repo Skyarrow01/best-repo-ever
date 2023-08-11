@@ -1,0 +1,6 @@
+<aura:component controller="Docuvault_Helper" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="projectId" type="String" default="{!v.recordId}"/>
+    <aura:attribute type="Aura.Component[]" name="body"/>
+    {!v.body}
+</aura:component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fax_Quote_Email_Loop</fullName>
+    <active>false</active>
+    <errorConditionFormula>Subject= &quot;We are unable to process your email: Need A Quote?&quot;</errorConditionFormula>
+    <errorMessage>Fax Error Message, Do Not Create Quote</errorMessage>
+</ValidationRule>

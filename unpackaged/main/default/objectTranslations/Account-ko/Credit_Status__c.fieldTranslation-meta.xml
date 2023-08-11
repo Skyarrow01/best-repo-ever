@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Credit Status --></label>
+        <name>Credit_Status__c</name>
+        <picklistValues>
+            <masterLabel>Bad Debt -- Collection Issues</masterLabel>
+            <translation><!-- Bad Debt - -  Collection Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankrupt</masterLabel>
+            <translation><!-- Bankrupt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Closed</masterLabel>
+            <translation><!-- Company Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Application in Process</masterLabel>
+            <translation><!-- Credit Application in Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Application on File</masterLabel>
+            <translation><!-- Credit Application on File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card or Prepay Only</masterLabel>
+            <translation><!-- Credit Card or Prepay Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Hold</masterLabel>
+            <translation><!-- Credit Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credt Balance &gt; 60 Days</masterLabel>
+            <translation><!-- Credt Balance &gt; 60 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Delete</masterLabel>
+            <translation><!-- Do Not Delete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Use See Notepad</masterLabel>
+            <translation><!-- Do Not Use See Notepad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Demand</masterLabel>
+            <translation><!-- Final Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud Account</masterLabel>
+            <translation><!-- Fraud Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good Credit</masterLabel>
+            <translation><!-- Good Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOLD - OTHER</masterLabel>
+            <translation><!-- HOLD - OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I-Check/CC/Prepay Only</masterLabel>
+            <translation><!-- I-Check/CC/Prepay Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive Account - Request Credt App</masterLabel>
+            <translation><!-- Inactive Account - Request Credt App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Customer - Credit App/CC</masterLabel>
+            <translation><!-- New Customer - Credit App/CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Pending</masterLabel>
+            <translation><!-- Payment Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REACTIVATED ACCOUNT</masterLabel>
+            <translation><!-- REACTIVATED ACCOUNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Required</masterLabel>
+            <translation><!-- Update Required --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

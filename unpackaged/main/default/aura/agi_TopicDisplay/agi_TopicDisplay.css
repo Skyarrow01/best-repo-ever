@@ -1,0 +1,47 @@
+.THIS .titleContainer {
+    width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: var(--lwc-lineHeightHeading,1.25);
+}
+        
+.THIS .title {
+    margin-top: var(--lwc-spacingXxSmall,0.25rem);
+    font-size: var(--lwc-fontSizeLarge,1rem);
+}
+
+.THIS .metadata .timestamp {
+    color: var(--lwc-colorTextLabel,#696969);
+    font-size: var(--lwc-fontSizeSmall,0.75rem);
+}                   
+                    
+.THIS .metadata .postedBy {
+    color: var(--lwc-colorTextLabel,#696969);
+    font-size: var(--lwc-fontSizeSmall,0.75rem);
+}                   
+                               
+.THIS .metadata .topicName {
+    color: var(--lwc-colorTextLabel,#696969);
+    font-size: var(--lwc-fontSizeSmall,0.75rem);
+}                                             
+
+.THIS .metrics .metric:not(:last-child) {
+    margin-right: var(--lwc-spacingLarge,1.5rem);
+}   
+                                                                
+.THIS .forceChatterCompactFeedItem{
+    border-bottom: var(--lwc-borderStrokeWidthThin,1px) solid var(--lwc-colorBorder,#D4D4D4);                                                                    
+}     
+                                                                            
+.THIS .cuf-showMoreContainer {text-align: center;}
+
+.THIS .pinnedFeedItem {
+    background-color: var(--lwc-colorBackgroundRowHover,rgba(37, 116, 169, 0.05));
+}
+                                                                                    
+.THIS .dotSymbol:after {
+    content: "\000B7";
+    margin: 0 var(--lwc-spacingXxSmall,0.25rem);
+    font-size: var(--lwc-fontSizeSmall,0.75rem);
+    color: #000;
+}

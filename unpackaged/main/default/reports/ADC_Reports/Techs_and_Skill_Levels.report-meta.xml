@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ProfileSkill$Name</field>
+    </columns>
+    <columns>
+        <field>ProfileSkill.ProfileSkillUserChildren$User</field>
+    </columns>
+    <columns>
+        <field>ProfileSkill.ProfileSkillUserChildren$Skill_Level__c</field>
+    </columns>
+    <description>List of all Techs by Skills and Skill Levels. Used on Cases when user clicks on the &quot;View Techs&quot; button. Skill Name is populated by the &quot;Tech Product Group&quot; field on a case.</description>
+    <filter>
+        <criteriaItems>
+            <column>ProfileSkill$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PAC Hardware</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProfileSkill.ProfileSkillUserChildren$User.IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Techs and Skill Levels</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Skills__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ProfileSkill.ProfileSkillUserChildren$Skill_Level__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ProfileSkill$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

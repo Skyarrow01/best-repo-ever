@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- All BE Fields Filled Out --></label>
+        <name>All_BE_Fields_Filled_Out__c</name>
+    </CustomFieldTranslation>

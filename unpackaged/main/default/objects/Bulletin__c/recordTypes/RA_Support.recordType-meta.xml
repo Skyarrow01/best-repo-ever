@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RA_Support</fullName>
+    <active>true</active>
+    <description>For the RA Team</description>
+    <label>RA Support</label>
+</RecordType>

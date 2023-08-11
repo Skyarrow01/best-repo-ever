@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK($Label.Online_Credit_Application_URL&amp;Id&amp;&quot;&amp;Name=&quot;&amp;SUBSTITUTE(SUBSTITUTE(Account.Name, &quot; &quot;, &quot;%20&quot;),&quot;&amp;&quot;,&quot;%26&quot;)  &amp;&quot;&amp;CustomerID=&quot;&amp;Account.CID__c&amp;&quot;&amp;FirstName=&quot;&amp;FirstName&amp;&quot;&amp;LastName=&quot;&amp;LastName&amp;&quot;&amp;Email=&quot;&amp;Email, &quot;Credit Application Form&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

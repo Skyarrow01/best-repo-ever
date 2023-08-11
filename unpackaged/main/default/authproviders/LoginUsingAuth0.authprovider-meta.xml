@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://automationdirect--qa.auth0.com/authorize</authorizeUrl>
+    <consumerKey>jYhvq1ge96xr7QGZiJgnfCK1wpK13gHP</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <defaultScopes>openid profile email</defaultScopes>
+    <errorUrl>https://automationdirectinc--qa.sandbox.my.site.com/s/error</errorUrl>
+    <executionUser>mrobertson@automationdirect.com.sfdc.qa</executionUser>
+    <friendlyName>Auth0 QA</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <logoutUrl>https://automationdirect--qa.auth0.com/v2/logout?returnTo=https%3A%2F%2Fautomationdirectinc--qa.sandbox.my.site.com%2Fs%2F</logoutUrl>
+    <providerType>OpenIdConnect</providerType>
+    <registrationHandler>SocialRegHandler</registrationHandler>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://automationdirect--qa.auth0.com/oauth/token</tokenUrl>
+    <userInfoUrl>https://automationdirect--qa.auth0.com/userinfo</userInfoUrl>
+</AuthProvider>

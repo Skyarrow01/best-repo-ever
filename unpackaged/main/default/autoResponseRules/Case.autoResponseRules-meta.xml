@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>ADC Case Auto-Response Rule</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>techsandbox@automationdirect.com</replyToEmail>
+            <senderEmail>techinquiries@automationdirect.com</senderEmail>
+            <senderName>AutomationDirect Tech Inquiries</senderName>
+            <template>Case_emails/Community_Case_Created</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Quote</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>orderinquiriessandbox@automationdirect.com</replyToEmail>
+            <senderEmail>customersupportcasereplies@automationdirect.com</senderEmail>
+            <senderName>AutomationDirect Customer Support Case Reply</senderName>
+            <template>unfiled$public/Need_A_Quote_1665097130674</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Orders,Orders/Inquiries,RA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Contact.Stop_Case_Auto_Reply_Email__c</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.ContactEmail</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>orderinquiriessandbox@automationdirect.com</replyToEmail>
+            <senderEmail>customersupportcasereplies@automationdirect.com</senderEmail>
+            <senderName>AutomationDirect Customer Support Case Reply</senderName>
+            <template>Case_emails/Notify_Customer_when_Order_Case_is_Created</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SalesTax</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Contact.Stop_Case_Auto_Reply_Email__c</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.ContactEmail</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>salestaxsandbox@automationdirect.com</replyToEmail>
+            <senderEmail>salestax_smb@automationdirect.com</senderEmail>
+            <senderName>AutomationDirect SalesTax</senderName>
+            <template>Case_emails/SalesTax_Inquiry_Request</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>ADC Case Auto-Response RulesORIGINAL</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <booleanFilter>1</booleanFilter>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Unconfirmed Emails</value>
+            </criteriaItems>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>techbox@automationdirect.com</replyToEmail>
+            <senderEmail>techinquiries@automationdirect.com</senderEmail>
+            <senderName>AutomationDirect Tech Inquiries</senderName>
+            <template>unfiled$public/Request_Account_Information</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

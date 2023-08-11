@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifies Customer when Order Case is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ADC_Letterhead</letterhead>
+    <name>Notify Customer when Order Case is Created</name>
+    <style>freeForm</style>
+    <subject>Your Order/Order Inquiry has been Received - Case {!Case.CaseNumber}</subject>
+    <textOnly>Thank you for your email. It has been received and will be processed as soon as possible. Please do not re-send, as it may be duplicated.
+
+Your request will be assigned to a member of our Customer Support Team.
+
+To better serve you, our customers, we ask that follow up questions are asked by replying to this email.
+
+For reference, details of your request are shown below.
+
+About your Inquiry:
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+
+We will serve you as quickly as possible, but our web store is even faster. Please visit www.automationdirect.com for order status, order tracking, price and availability, product returns, and many other features provided for your convenience.
+
+Link to quote feature:
+https://www.automationdirect.com/adc/quotes/quotes/
+
+Thank you,
+
+AutomationDirect Customer Support Team
+
+
+{!Case.Thread_Id}
+(Please do not remove the above line when replying.)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

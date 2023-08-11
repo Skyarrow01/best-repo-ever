@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Product Availability Planner --></label>
+        <name>Product_Availability_Planner__c</name>
+        <relationshipLabel><!-- Launches (Product Availability Planner) --></relationshipLabel>
+    </CustomFieldTranslation>

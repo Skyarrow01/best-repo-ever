@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Agency Type --></label>
+        <name>Agency_Type__c</name>
+        <picklistValues>
+            <masterLabel>CCC</masterLabel>
+            <translation><!-- CCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CE</masterLabel>
+            <translation><!-- CE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSA</masterLabel>
+            <translation><!-- CSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETL</masterLabel>
+            <translation><!-- ETL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUV</masterLabel>
+            <translation><!-- TUV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UL</masterLabel>
+            <translation><!-- UL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

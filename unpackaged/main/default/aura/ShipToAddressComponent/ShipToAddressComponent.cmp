@@ -1,0 +1,286 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable,lightning:isUrlAddressable"
+                access="global"
+                controller="AddressSearchController">
+    
+    <lightning:workspaceAPI aura:id="workspace"/>
+    
+    
+    <!-- attributes -->
+    <aura:attribute name="showModalBox" type="boolean" default="false"/>
+    <aura:attribute name="searchKey" type="string" default=""/>
+    <aura:attribute name="placeholder" type="string" default="Search address" />
+    <aura:attribute name="AddressList" type="String[]"/>
+    <aura:attribute name="phone" type="String"/>
+    <aura:attribute name="email" type="String"/>
+    <aura:attribute name="street" type="String"/>
+    <aura:attribute name="postalCode" type="String"/>
+    <aura:attribute name="state" type="String"/>
+    <aura:attribute name="country" type="String"/>
+    <aura:attribute name="city" type="String"/>
+    <aura:attribute name="recordId" type="String" default=""/>
+    <aura:attribute name="parentAccountId" type="String"/>
+    <aura:attribute name="parentContactId" type="String"/>
+    <aura:attribute name="parentAccountName" type="String"/>
+    
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+    <!-- attributes -->
+    
+    <!-- Handler-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- Handler-->
+    
+    <!-- Spinner -->
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner size="medium" />
+    </aura:if>
+    <!-- Spinner -->
+    
+    <!-- Markup -->
+    <div class="actionBody slds-p-around_medium" style="background: white;">
+        <div class="slds-brand-band slds-brand-band_cover slds-brand-band_none slds-template_default forceBrandBand">
+            <div class="slds-template__container">
+                <div class="slds-clearfix slds-card inlineEditEnabled groupDependentFieldEnabled  allow-horizontal-form wide-input-break forceDetailPanelDesktop">
+                    
+                    <article>
+                        <h2 class="inlineTitle slds-p-top--large slds-p-horizontal--medium slds-p-bottom--medium slds-text-heading--medium">New Ship-To Addresses</h2>
+                    </article>
+                    
+                    <div class="test-id__record-layout-container riseTransitionEnabled">
+                        <div class="full forcePageBlock forceRecordLayout">
+                            <div class="full forcePageBlock forceRecordLayout">
+                                
+                                <lightning:recordEditForm aura:id="recordViewForm" 
+                                                          recordId="{!v.recordId}"
+                                                          objectApiName="Ship_To_Addresses__c"
+                                                          onsubmit="{!c.handleSubmit}"
+                                                          onsuccess="{!c.handleSuccess}">
+                                    <lightning:messages />
+                                    <div class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionEdit">
+                                        <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container">
+                                            <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate">
+                                                Information
+                                            </span>
+                                        </h3>
+                                        
+                                        <div class="test-id__section-content slds-section__content section__content">
+                                            
+                                            <div class="slds-form slds-form_stacked slds-is-editing">
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:outputfield fieldName="Name" />
+                                                    </div>
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="Phone__c" required="true" value="{!v.phone}"/>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputfield fieldName="Nickname__c" />
+                                                    </div>
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="Fax__c" />
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputfield fieldName="Contact__c" value="{!v.parentContactId}" required="true"/>
+                                                    </div>
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="Email__c" required="false" value="{!v.email}"/>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputfield fieldName="Account__c" required="true" value="{!v.parentAccountId}" disabled="true" class="slds-hidden"/>
+                                                    </div>
+                                                    
+                                                    <!--<div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                            <lightning:inputField fieldName="Send_to_P21__c" />
+                                                  </div>-->
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    
+                                    <!-- Ship to Column -->
+                                    <div class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionEdit">
+                                        <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container">
+                                            <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate">
+                                                Ship-To
+                                            </span>
+                                        </h3>
+                                        <div class="test-id__section-content slds-section__content section__content">
+                                            
+                                            <div class="slds-form slds-form_stacked slds-is-editing">
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="Ship_to_Name__c" required="true" value="{!v.parentAccountName}"/>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Ship to Column -->
+                                    <div class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionEdit">
+                                        <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container">
+                                            <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate">
+                                                Address
+                                            </span>
+                                        </h3>
+                                        
+                                        <div class="test-id__section-content slds-section__content section__content">
+                                            <div class="slds-form slds-form_stacked slds-is-editing">
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <button class="slds-button slds-button--neutral lookupButton uiButton" type="button" style="width:100%" onclick="{!c.OpenModal}">
+                                                            <lightning:icon size="xx-small" iconName="utility:search" class="slds-button__icon slds-icon-utility-search slds-icon_container forceIcon">
+                                                            </lightning:icon >
+                                                            <span class="searchLabel">Search Address</span>
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputfield fieldName="Street_Address_1__c" value="{!v.street}" required="true"/>
+                                                    </div>
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputfield fieldName="Street_Address_2__c" />
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputfield fieldName="City__c" value="{!v.city}" required="true" />
+                                                    </div>
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="State__c" value="{!v.state}" required="true" />
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="Zip_Code__c" value="{!v.postalCode}" required="true" />
+                                                    </div>
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="Country__c" value="{!v.country}" required="true" />
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionEdit">
+                                        <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container">
+                                            <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate">
+                                                System Information
+                                            </span>
+                                        </h3>
+                                        
+                                        <div class="test-id__section-content slds-section__content section__content">
+                                            <div class="slds-form slds-form_stacked slds-is-editing">
+                                                <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow">
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputfield fieldName="P21_ID__c"/>
+                                                    </div>
+                                                    <div class="slds-col slds-grid slds-has-flexi-truncate  full forcePageBlockItem forcePageBlockItemView">
+                                                        <lightning:inputField fieldName="Web_ID__c"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </lightning:recordEditForm>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inlineFooter slds-p-bottom_medium" style="bottom: 40px;background: white;">
+        <div class="button-container slds-text-align_center forceRecordEditActions">
+            <div class="actionsContainer">
+                <button class="slds-button slds-button--neutral uiButton--neutral uiButton forceActionButton" aria-live="off" type="button" title="Cancel" onclick="{!c.handleCancel}">
+                    <span class=" label bBody">Cancel</span>
+                </button>
+                <!--<lightning:button type="submit" name="save" label="Save &amp; New" onclick="{!c.handleSave}"/>-->
+                <lightning:button variant="brand" type="submit" name="save" label="Save" onclick="{!c.handleSave}"/>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal box starts -->
+    <aura:if isTrue="{!v.showModalBox}">
+        <div class="" style="">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"><b>Address Search</b></h2>
+                    </header>
+                    
+                    <div class="">
+                        <div class="slds-size_12-of-12 slds-form-element__control slds-input-has-icon slds-input-has-icon_right slds-input-has-icon_group-right">
+                            <lightning:ButtonIcon size="medium" iconName="utility:close"  onclick="{!c.clear}" class="slds-m-right_xx-large slds-input__icon slds-input__icon_right" variant="bare"/>
+                            <lightning:input name="searchKey"
+                                             class="slds-p-bottom_large slds-input slds-combobox__input"
+                                             value="{!v.searchKey}"
+                                             onkeyup ="{!c.keyPressController}"
+                                             placeholder="Enter address.."/> 
+                        </div>
+                        <!-- list of address display -->
+                        <aura:if isTrue="{!not(empty(v.AddressList))}">
+                            <div class="Address-listbox" role="listbox">
+                                <ul aura:id="Address-listbox" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid" role="presentation">
+                                    <aura:iteration items="{!v.AddressList}" var="addList">
+                                        <li role="presentation"
+                                            onclick="{!c.selectOption}"
+                                            data-value="{!addList.place_id}"
+                                            class="slds-listbox__item">
+                                            <span id="listbox-option-unique-id-01"
+                                                  class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                                  role="option">
+                                                <span class="slds-media__body slds-m-left_xx-small slds-m-bottom_xx-small">
+                                                    <div class="slds-grid slds-m-bottom_small">
+                                                        <div class="slds-col slds-size_1-of-10"> 
+                                                            <lightning:ButtonIcon size="medium" iconName="utility:checkin" class="slds-input__icon" variant="bare"/></div>
+                                                        <div class="slds-m-left_medium slds-col slds-size_8-of-10"> 
+                                                            <span class="slds-listbox__option-text slds-listbox__option-text_entity"><b>{!addList.main_text}</b></span>
+                                                            <span class="slds-listbox__option-text slds-listbox__option-text_entity slds-m-top_xxx-small">{!addList.secondary_text}</span></div>
+                                                        <div class="slds-col slds-size_1-of-10"></div>
+                                                    </div>
+                                                </span>
+                                            </span>
+                                        </li>
+                                    </aura:iteration>
+                                </ul>
+                            </div>
+                        </aura:if>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{!c.closeModal}" />
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+        <!-- Modal box ends here -->
+    </aura:if>
+</aura:component>

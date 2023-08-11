@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_to_P21_New</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send to P21 New</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Toggle_Send_to_P21_checkbox_on_Contact_Screen_New?recordId={!Contact.Id}&amp;retURL={!Contact.Id}</url>
+</WebLink>

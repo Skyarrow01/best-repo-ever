@@ -1,0 +1,16 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes"
+                access="global">
+    <aura:attribute name="menuItems" type="List" Default="['ABC', 'DEF', 'HIG', KJH]" access="global"/>
+    <div>
+    <ul class="slds-list_horizontal">
+     <aura:iteration items="{!v.menuItems}" var="item">
+               <li class="{!item.active ? 'slds-is-active' : ''}">
+                   <a href="javascript:void(0);" data-menu-item-id="{!item.id}" class="slds-navigation-list--vertical__action slds-text-link--reset">
+                       {!item.label}
+                   </a>
+               </li>
+           </aura:iteration>
+
+    </ul>
+    </div>
+</aura:component>

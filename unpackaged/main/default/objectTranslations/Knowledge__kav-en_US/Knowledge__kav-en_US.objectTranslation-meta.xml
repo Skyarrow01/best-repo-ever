@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    
+    <layouts>
+        <layout>Knowledge Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- External Visibility --></label>
+            <section>External Visibility</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Visiblity --></label>
+            <section>Internal Visiblity</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Knowledge --></label>
+        <name>Knowledge</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

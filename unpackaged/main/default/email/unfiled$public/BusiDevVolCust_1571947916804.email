@@ -1,0 +1,26 @@
+<html style="overflow-y: hidden;">
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Case #{{{Case.CaseNumber}}}<br />
+Part#{{{Case.Product__c}}}<br />
+Contact:&nbsp;{{{Recipient.Name}}}<br />
+Company:&nbsp;{{{Case.Account}}}<br />
+Contact Phone #{{{Recipient.Direct_Phone__c}}}<br />
+Contact Mobile Phone #{{{Recipient.MobilePhone}}}<br />
+Zip Code: {{{Case.Postal_Code__c}}}<br />
+City:&nbsp;{{{Recipient.City}}}<br />
+State:&nbsp;{{{Case.State__c}}}<br />
+Email:&nbsp;{{{Recipient.Email}}}<br />
+<br />
+Description<br />
+----------------------------<br />
+{{{Case.Description}}}<br />
+----------------------------<br />
+<br />
+<br />
+Solution<br />
+----------------------------<br />
+{{{Case.Solution__c}}}<br />
+----------------------------</body>
+</html>

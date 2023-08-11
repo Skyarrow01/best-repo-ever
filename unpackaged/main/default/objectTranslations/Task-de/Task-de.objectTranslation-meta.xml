@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>ADC Inspire Planner Task Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Call Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspire Planner v1.75 Task Layout</layout>
+        <sections>
+            <label>Individuelle Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Projekt Details</label>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Task Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Defer --></label>
+        <name>Defer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- EditDescription --></label>
+        <name>EditDescription</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority --></label>
+        <name>UpdatePriority</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus --></label>
+        <name>UpdateStatus</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- ADC Project Tasks Linked to Projects --></description>
+        <label><!-- ADC Project Task --></label>
+        <name>ADC_Project_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Call Log Record --></description>
+        <label><!-- Call Log --></label>
+        <name>Call_Log</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Task Record --></description>
+        <label><!-- General Task --></label>
+        <name>General_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Task Record Type --></label>
+        <name>Task_Record_Type</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot change Product Launch Task, please reach out to the Assigned user to update this task. --></errorMessage>
+        <name>Cannot_Change_Product_Launch_Task</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to reassign this task. --></errorMessage>
+        <name>Cannot_Reassign_Project_Tasks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to reassign the Related to on this Task. --></errorMessage>
+        <name>Cannot_Reassign_Related_on_Project_Tasks</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Task_Notification --></label>
+        <name>Task_Notification</name>
+    </webLinks>
+</CustomObjectTranslation>

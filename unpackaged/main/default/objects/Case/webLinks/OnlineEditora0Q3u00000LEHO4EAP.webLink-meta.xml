@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlineEditora0Q3u00000LEHO4EAP</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>GEN Vendor Credit Check</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &#39;/s&#39;,&#39;/apex/dfsle__onlineeditordocumentgenerator&#39;, $Site.Prefix +&#39;/apex/dfsle__onlineeditordocumentgenerator&#39;), null, [sId = Case.Id, templateId = &#39;a0Q3u00000LEHO4EAP&#39;, recordId = Case.Id, title = &#39;GEN Vendor Credit Check&#39;])}</url>
+</WebLink>

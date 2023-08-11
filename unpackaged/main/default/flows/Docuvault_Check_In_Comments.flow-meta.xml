@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Cloud_File_Check_In_Comments_to_Version_History</name>
+        <label>Cloud File Check In Comments to Version History</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Check_In_Comments__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.TVA_CFB__Cloud_Files__r.Check_In_Comments__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Copying Cloud File check-in Comments to version History</description>
+    <environments>Default</environments>
+    <interviewLabel>Docuvault Check In Comments {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Docuvault - Cloud File Check In Comments To Version</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Cloud_File_Check_In_Comments_to_Version_History</targetReference>
+        </connector>
+        <object>TVA_CFB__Version_History__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

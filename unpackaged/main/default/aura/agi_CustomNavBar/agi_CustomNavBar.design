@@ -1,0 +1,13 @@
+<design:component label="Custom Navigation Bar">
+	<design:attribute name="ContactSupportLink" label="Contact Support Page Link"/>
+    <design:attribute name="ReturnToStoreLink" label="Return To Store Page Link"/>
+    <design:attribute name="FirstMenuItemLabel" label="First Menu Item Label"/>
+    <design:attribute name="FirstMenuItemSubtopicsName" label="Menu Item Subtopics Name (Comma Seperated)"/>
+    <design:attribute name="FirstMenuItemLink" label="Menu Item Redirect Link"/>
+    <design:attribute name="SecondMenuItemLabel" label="Second Menu Item Label"/>
+    <design:attribute name="SecondMenuItemSubtopicsName" label="Menu Item Subtopics Name (Comma Seperated)"/>
+    <design:attribute name="SecondMenuItemLink" label="Menu Item Redirect Link"/>
+    <design:attribute name="NewProductAnnouncementLink" label="New Product Announcement Link"/>
+    <design:attribute name="FwSWUpdatesAnnouncementLink" label="FW/SW Updates Announcement Link"/>
+    <design:attribute name="UserGuideLink" label="User Guide Redirect Link"/>
+</design:component>

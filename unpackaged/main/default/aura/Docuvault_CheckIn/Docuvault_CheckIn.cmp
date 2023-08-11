@@ -1,0 +1,25 @@
+<aura:component access="global" controller="Docuvault_Helper">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="CloudFileId" type="String" access="global" />
+    <aura:attribute name="cloudFile" type="TVA_CFB__Cloud_Files__c" access="global" />
+    <aura:attribute name="buttonLabel" type="String" access="global" default="Save" />
+    <aura:attribute name="showComponent" type="Boolean" default="true" />
+    <aura:attribute name="loading" type="Boolean" default="true" />
+    <aura:attribute name="versionComponent" type="Aura.Component[]" access="global" />
+    <aura:attribute name="note" type="ContentNote" default="{'sobjectType': 'ContentNote','Title': '','Content': ''}"/>
+    <aura:handler event="TVA_CFB:versionUploadModal" name="uploadVal" action="{!c.checkinCloudFiles}"/>
+    <aura:if isTrue="{!v.loading}">
+        <lightning:spinner alternativeText="Loading" size="medium" />
+    </aura:if>
+    <aura:if isTrue="{!v.showComponent}">
+        <lightning:inputRichText value="{!v.note.Content}" label="Description"/>
+        <br/>
+        <center>
+            <lightning:button variant="brand" label="{!v.buttonLabel}" title="{!v.buttonLabel}" onclick="{! c.saveContentNote }"/>
+            <!--<lightning:button variant="destructive-text" label="Cancel CheckOut" title="Cancel CheckOut" onclick="{!c.cancelCheckOutActn}"/>-->
+        </center>
+    </aura:if>
+    <div class="slds-hide" aura:id="versionUploadModal">
+        {!v.versionComponent}         
+    </div>
+</aura:component>

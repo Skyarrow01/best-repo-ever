@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify the Owner or Queue that case is updated.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BE_Case_Created</letterhead>
+    <name>Notify Silo Group Case has Updated Post</name>
+    <style>freeForm</style>
+    <subject>A {!Case.Silo__c} Backline Escalation Case has a new post.</subject>
+    <textOnly>Backline Escalation Case {!Case.CaseNumber} has a new post. 
+
+
+
+Subject: {!Case.Subject}
+
+Tech Support: {!Case.Tech_Support__c}
+
+Silo: {!Case.Silo__c}
+
+Modified By: {!Case.LastModifiedBy}
+
+Post: {!Case.Feed_Body_Post_b__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="FirstButtonName" label="First Button Label"/>
+	<design:attribute name="FirstButtonLink" label="First Button Redirect Link"/>
+</design:component>

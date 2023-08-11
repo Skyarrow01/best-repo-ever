@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable" >
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-3">
+            <TVA_CFB:Docuvault_UploadFiles enableNew="true" enableFolder="true" folderRequired="true" />
+        </div>
+        <div class="slds-col slds-size_2-of-3">
+            <c:Docuvault_ProjectTaskCloudFiles recordActions=""
+                                               fileLibrary="true"
+                                               enableChangeFolder="true"
+                                               enableDownloadAllFiles="false"
+                                               uploadNewVersion="true"
+                                               enableDelete="true"
+                                               enableRenameFile="true"
+                                               tableColumns="Last_Modified_By__c,Last_Modified_Date__c"/>
+        </div>
+    </div>
+</aura:component>

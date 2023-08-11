@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Group__c</fullName>
+    <description>Product Group used in Community.</description>
+    <externalId>false</externalId>
+    <label>Product Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arduino</fullName>
+                <default>false</default>
+                <label>Arduino</label>
+            </value>
+            <value>
+                <fullName>Advanced Soft Starters</fullName>
+                <default>false</default>
+                <label>Advanced Soft Starters</label>
+            </value>
+            <value>
+                <fullName>Bar Code/Vision</fullName>
+                <default>false</default>
+                <label>Bar Code/Vision</label>
+            </value>
+            <value>
+                <fullName>Basic Contactors/Starters</fullName>
+                <default>false</default>
+                <label>Basic Contactors/Starters</label>
+            </value>
+            <value>
+                <fullName>BRX HSIO</fullName>
+                <default>false</default>
+                <label>BRX HSIO</label>
+            </value>
+            <value>
+                <fullName>BRX PID</fullName>
+                <default>false</default>
+                <label>BRX PID</label>
+            </value>
+            <value>
+                <fullName>Built in HSIO/05/06/CTRINT</fullName>
+                <default>false</default>
+                <label>Built in HSIO/05/06/CTRINT</label>
+            </value>
+            <value>
+                <fullName>Circuit Breakers</fullName>
+                <default>false</default>
+                <label>Circuit Breakers</label>
+            </value>
+            <value>
+                <fullName>Click HSIO</fullName>
+                <default>false</default>
+                <label>Click HSIO</label>
+            </value>
+            <value>
+                <fullName>Click PID</fullName>
+                <default>false</default>
+                <label>Click PID</label>
+            </value>
+            <value>
+                <fullName>Click PLC Hardware</fullName>
+                <default>false</default>
+                <label>Click PLC Hardware</label>
+            </value>
+            <value>
+                <fullName>Click Programming</fullName>
+                <default>false</default>
+                <label>Click Programming</label>
+            </value>
+            <value>
+                <fullName>C-More</fullName>
+                <default>false</default>
+                <label>C-More</label>
+            </value>
+            <value>
+                <fullName>C-More Micro</fullName>
+                <default>false</default>
+                <label>C-More Micro</label>
+            </value>
+            <value>
+                <fullName>Connection Systems</fullName>
+                <default>false</default>
+                <label>Connection Systems</label>
+            </value>
+            <value>
+                <fullName>Counter Timer Tachometer</fullName>
+                <default>false</default>
+                <label>Counter Timer Tachometer</label>
+            </value>
+            <value>
+                <fullName>Custom Products</fullName>
+                <default>false</default>
+                <label>Custom Products</label>
+            </value>
+            <value>
+                <fullName>D3/D4 counters</fullName>
+                <default>false</default>
+                <label>D3/D4 counters</label>
+            </value>
+            <value>
+                <fullName>DC Drives</fullName>
+                <default>false</default>
+                <label>DC Drives</label>
+            </value>
+            <value>
+                <fullName>DDE/OPC</fullName>
+                <default>false</default>
+                <label>DDE/OPC</label>
+            </value>
+            <value>
+                <fullName>DirectSoft</fullName>
+                <default>false</default>
+                <label>DirectSoft</label>
+            </value>
+            <value>
+                <fullName>Direct Touch Panels</fullName>
+                <default>false</default>
+                <label>Direct Touch Panels</label>
+            </value>
+            <value>
+                <fullName>DL/CTRIO</fullName>
+                <default>false</default>
+                <label>DL/CTRIO</label>
+            </value>
+            <value>
+                <fullName>DL PID</fullName>
+                <default>false</default>
+                <label>DL PID</label>
+            </value>
+            <value>
+                <fullName>DL PLC Hardware</fullName>
+                <default>false</default>
+                <label>DL PLC Hardware</label>
+            </value>
+            <value>
+                <fullName>Do-More</fullName>
+                <default>false</default>
+                <label>Do-More</label>
+            </value>
+            <value>
+                <fullName>Do-More HSIO</fullName>
+                <default>false</default>
+                <label>Do-More HSIO</label>
+            </value>
+            <value>
+                <fullName>Do-More PID</fullName>
+                <default>false</default>
+                <label>Do-More PID</label>
+            </value>
+            <value>
+                <fullName>Do-More Software</fullName>
+                <default>false</default>
+                <label>Do-More Software</label>
+            </value>
+            <value>
+                <fullName>Drives</fullName>
+                <default>false</default>
+                <label>Drives</label>
+            </value>
+            <value>
+                <fullName>DV-1000</fullName>
+                <default>false</default>
+                <label>DV-1000</label>
+            </value>
+            <value>
+                <fullName>ECT Promis-e</fullName>
+                <default>false</default>
+                <label>ECT Promis-e</label>
+            </value>
+            <value>
+                <fullName>Enclosures</fullName>
+                <default>false</default>
+                <label>Enclosures</label>
+            </value>
+            <value>
+                <fullName>Encoders</fullName>
+                <default>false</default>
+                <label>Encoders</label>
+            </value>
+            <value>
+                <fullName>Entivity/TND</fullName>
+                <default>false</default>
+                <label>Entivity/TND</label>
+            </value>
+            <value>
+                <fullName>ERM Remote IO</fullName>
+                <default>false</default>
+                <label>ERM Remote IO</label>
+            </value>
+            <value>
+                <fullName>Ethernet Communications</fullName>
+                <default>false</default>
+                <label>Ethernet Communications</label>
+            </value>
+            <value>
+                <fullName>EZText Panels</fullName>
+                <default>false</default>
+                <label>EZText Panels</label>
+            </value>
+            <value>
+                <fullName>EZTouch Panels</fullName>
+                <default>false</default>
+                <label>EZTouch Panels</label>
+            </value>
+            <value>
+                <fullName>Flow Meters</fullName>
+                <default>false</default>
+                <label>Flow Meters</label>
+            </value>
+            <value>
+                <fullName>Fuses/Accessories</fullName>
+                <default>false</default>
+                <label>Fuses/Accessories</label>
+            </value>
+            <value>
+                <fullName>GS1/2/3 Drives</fullName>
+                <default>false</default>
+                <label>GS1/2/3 Drives</label>
+            </value>
+            <value>
+                <fullName>GS20 Drives</fullName>
+                <default>false</default>
+                <label>GS20 Drives</label>
+            </value>
+            <value>
+                <fullName>GS4 Drives</fullName>
+                <default>false</default>
+                <label>GS4 Drives</label>
+            </value>
+            <value>
+                <fullName>Industrial PCs</fullName>
+                <default>false</default>
+                <label>Industrial PCs</label>
+            </value>
+            <value>
+                <fullName>Interworx</fullName>
+                <default>false</default>
+                <label>Interworx</label>
+            </value>
+            <value>
+                <fullName>LookoutDirect</fullName>
+                <default>false</default>
+                <label>LookoutDirect</label>
+            </value>
+            <value>
+                <fullName>Mechanical Transmissions</fullName>
+                <default>false</default>
+                <label>Mechanical Transmissions</label>
+            </value>
+            <value>
+                <fullName>Motors</fullName>
+                <default>false</default>
+                <label>Motors</label>
+            </value>
+            <value>
+                <fullName>Odd/OldComm</fullName>
+                <default>false</default>
+                <label>Odd/OldComm</label>
+            </value>
+            <value>
+                <fullName>Optimate Panels</fullName>
+                <default>false</default>
+                <label>Optimate Panels</label>
+            </value>
+            <value>
+                <fullName>Other Communications</fullName>
+                <default>false</default>
+                <label>Other Communications</label>
+            </value>
+            <value>
+                <fullName>PAC Hardware</fullName>
+                <default>false</default>
+                <label>PAC Hardware</label>
+            </value>
+            <value>
+                <fullName>PAC Programming</fullName>
+                <default>false</default>
+                <label>PAC Programming</label>
+            </value>
+            <value>
+                <fullName>Panel Meters</fullName>
+                <default>false</default>
+                <label>Panel Meters</label>
+            </value>
+            <value>
+                <fullName>Pneumatics</fullName>
+                <default>false</default>
+                <label>Pneumatics</label>
+            </value>
+            <value>
+                <fullName>POV</fullName>
+                <default>false</default>
+                <label>POV</label>
+            </value>
+            <value>
+                <fullName>Power Accessories</fullName>
+                <default>false</default>
+                <label>Power Accessories</label>
+            </value>
+            <value>
+                <fullName>Process Control</fullName>
+                <default>false</default>
+                <label>Process Control</label>
+            </value>
+            <value>
+                <fullName>Prosense Loop Controllers</fullName>
+                <default>false</default>
+                <label>Prosense Loop Controllers</label>
+            </value>
+            <value>
+                <fullName>ProtosX</fullName>
+                <default>false</default>
+                <label>ProtosX</label>
+            </value>
+            <value>
+                <fullName>PX-HSIO</fullName>
+                <default>false</default>
+                <label>PX-HSIO</label>
+            </value>
+            <value>
+                <fullName>PX PID</fullName>
+                <default>false</default>
+                <label>PX PID</label>
+            </value>
+            <value>
+                <fullName>Safety Controllers</fullName>
+                <default>false</default>
+                <label>Safety Controllers</label>
+            </value>
+            <value>
+                <fullName>Safety Equipment</fullName>
+                <default>false</default>
+                <label>Safety Equipment</label>
+            </value>
+            <value>
+                <fullName>Sensors/Switches</fullName>
+                <default>false</default>
+                <label>Sensors/Switches</label>
+            </value>
+            <value>
+                <fullName>Serial Communications</fullName>
+                <default>false</default>
+                <label>Serial Communications</label>
+            </value>
+            <value>
+                <fullName>Serial Remote I/O</fullName>
+                <default>false</default>
+                <label>Serial Remote I/O</label>
+            </value>
+            <value>
+                <fullName>Servo Motion</fullName>
+                <default>false</default>
+                <label>Servo Motion</label>
+            </value>
+            <value>
+                <fullName>Signal Conditioners</fullName>
+                <default>false</default>
+                <label>Signal Conditioners</label>
+            </value>
+            <value>
+                <fullName>Soft Starters</fullName>
+                <default>false</default>
+                <label>Soft Starters</label>
+            </value>
+            <value>
+                <fullName>Solo Loop Controllers</fullName>
+                <default>false</default>
+                <label>Solo Loop Controllers</label>
+            </value>
+            <value>
+                <fullName>Specialty Modules</fullName>
+                <default>false</default>
+                <label>Specialty Modules</label>
+            </value>
+            <value>
+                <fullName>Stepper Motion</fullName>
+                <default>false</default>
+                <label>Stepper Motion</label>
+            </value>
+            <value>
+                <fullName>Stride IO</fullName>
+                <default>false</default>
+                <label>Stride IO</label>
+            </value>
+            <value>
+                <fullName>Terminator I/O</fullName>
+                <default>false</default>
+                <label>Terminator I/O</label>
+            </value>
+            <value>
+                <fullName>Thermal Management</fullName>
+                <default>false</default>
+                <label>Thermal Management</label>
+            </value>
+            <value>
+                <fullName>Timers/Relays</fullName>
+                <default>false</default>
+                <label>Timers/Relays</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>Viewmarq</fullName>
+                <default>false</default>
+                <label>Viewmarq</label>
+            </value>
+            <value>
+                <fullName>VPN Routers</fullName>
+                <default>false</default>
+                <label>VPN Routers</label>
+            </value>
+            <value>
+                <fullName>WEG Drives</fullName>
+                <default>false</default>
+                <label>WEG Drives</label>
+            </value>
+            <value>
+                <fullName>Presales</fullName>
+                <default>false</default>
+                <label>Presales</label>
+            </value>
+            <value>
+                <fullName>DBA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DBA</label>
+            </value>
+            <value>
+                <fullName>Ethernet IP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ethernet IP</label>
+            </value>
+            <value>
+                <fullName>Generic Presales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Generic Presales</label>
+            </value>
+            <value>
+                <fullName>Grand Total</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Grand Total</label>
+            </value>
+            <value>
+                <fullName>IT Help Desk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IT Help Desk</label>
+            </value>
+            <value>
+                <fullName>Infrastructure</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Logistics Systems</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Logistics Systems</label>
+            </value>
+            <value>
+                <fullName>P21</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P21</label>
+            </value>
+            <value>
+                <fullName>P2K Hardware</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P2K Hardware</label>
+            </value>
+            <value>
+                <fullName>P2K Programming</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P2K Programming</label>
+            </value>
+            <value>
+                <fullName>PC HW-SW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PC HW-SW</label>
+            </value>
+            <value>
+                <fullName>Server HW-SW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Server HW-SW</label>
+            </value>
+            <value>
+                <fullName>Skill 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Skill 1</label>
+            </value>
+            <value>
+                <fullName>Solo Process Controller</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Solo Process Controller</label>
+            </value>
+            <value>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spanish</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Web Store Emails</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Web Store Emails</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

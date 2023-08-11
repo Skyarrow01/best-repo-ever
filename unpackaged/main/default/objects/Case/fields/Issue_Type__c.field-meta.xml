@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Type__c</fullName>
+    <description>Issue Type</description>
+    <externalId>false</externalId>
+    <label>Issue Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CE Declaration of Conformity</fullName>
+                <default>false</default>
+                <label>CE Declaration of Conformity</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Country of Origin</fullName>
+                <default>false</default>
+                <label>Country of Origin</label>
+            </value>
+            <value>
+                <fullName>Defect/Damage</fullName>
+                <default>false</default>
+                <label>Defect/Damage</label>
+            </value>
+            <value>
+                <fullName>European Directives</fullName>
+                <default>false</default>
+                <label>European Directives</label>
+            </value>
+            <value>
+                <fullName>Firmware</fullName>
+                <default>false</default>
+                <label>Firmware</label>
+            </value>
+            <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <fullName>Harmonizing Codes</fullName>
+                <default>false</default>
+                <label>Harmonizing Codes</label>
+            </value>
+            <value>
+                <fullName>High Speed IO</fullName>
+                <default>false</default>
+                <label>High Speed IO</label>
+            </value>
+            <value>
+                <fullName>Improvement</fullName>
+                <default>false</default>
+                <label>Improvement</label>
+            </value>
+            <value>
+                <fullName>Keypad</fullName>
+                <default>false</default>
+                <label>Keypad</label>
+            </value>
+            <value>
+                <fullName>Labeling/Packaging</fullName>
+                <default>false</default>
+                <label>Labeling/Packaging</label>
+            </value>
+            <value>
+                <fullName>Ladder Programming</fullName>
+                <default>false</default>
+                <label>Ladder Programming</label>
+            </value>
+            <value>
+                <fullName>Mechanical/Dimensional</fullName>
+                <default>false</default>
+                <label>Mechanical/Dimensional</label>
+            </value>
+            <value>
+                <fullName>Multiple Listing - UL/CSA</fullName>
+                <default>false</default>
+                <label>Multiple Listing - UL/CSA</label>
+            </value>
+            <value>
+                <fullName>New Feature</fullName>
+                <default>false</default>
+                <label>New Feature</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Parameter</fullName>
+                <default>false</default>
+                <label>Parameter</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Specifications/Drawings</fullName>
+                <default>false</default>
+                <label>Specifications/Drawings</label>
+            </value>
+            <value>
+                <fullName>Test Standards</fullName>
+                <default>false</default>
+                <label>Test Standards</label>
+            </value>
+            <value>
+                <fullName>Wiring/Electrical</fullName>
+                <default>false</default>
+                <label>Wiring/Electrical</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

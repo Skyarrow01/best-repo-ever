@@ -1,0 +1,95 @@
+{
+  "appPageId" : "c8baa187-aa1a-49b4-b26c-45e38ea482a6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "58638bf8-3780-4f22-ac47-bf16d6544544",
+  "label" : "Industrial CyberSecurity Stadards",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "73e43b59-484b-4dd9-be72-9a100b3990de",
+          "columns" : [ {
+            "UUID" : "1a970a8b-1d0c-4d06-9e8a-7db9f777a649",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "5",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "2c0f2aa5-e1a0-4a3c-afa6-d98e0f1e21fe",
+            "columnKey" : "0c4c7",
+            "columnName" : "Column 2",
+            "columnWidth" : "7",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "73e43b59-484b-4dd9-be72-9a100b3990de",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\">Industrial Cybersecurity Standards</h1><p style=\"text-align: center;\"><br></p><p>Welcome to our collection of articles on industrial cybersecurity standards for operational technology. By familiarizing yourself with these standards and guidelines, you can better protect your operational technology from cyber threats. Browse our collection of articles today to learn more about these industrial cybersecurity standards and how they can help you safeguard your systems and equipment.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "0c823178-43a8-4bcf-80c6-b6eb99ec531c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1a970a8b-1d0c-4d06-9e8a-7db9f777a649",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "articleListPageSize" : 10,
+            "showTitle" : true,
+            "title" : "Articles",
+            "topicId" : "0TODQ000000CaW54AK"
+          },
+          "componentName" : "selfService:topicRelatedArticle",
+          "id" : "f078af0a-d7e2-4bca-aa0d-aa182c1f5aeb",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "2c0f2aa5-e1a0-4a3c-afa6-d98e0f1e21fe",
+        "regionLabel" : "Column 2",
+        "regionName" : "0c4c7",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c2798115-a1ac-4038-9c6e-f119fe4e1b65",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Industrial CyberSecurity Stadards"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ed79c639-cd9c-458f-bfd5-6a0703e364a5",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6162fb0f-9ba3-498e-8fc0-78138ceb0305",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-industrial-cybersecurity-stadards"
+}
